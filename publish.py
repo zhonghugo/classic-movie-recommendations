@@ -227,6 +227,8 @@ def main():
     r = subprocess.run([trash, str(card)], text=True, capture_output=True, encoding="utf-8")
     if r.returncode != 0:
         die(f"移到废纸篓失败：{r.stderr.strip()}（本地卡片仍在）")
+    if card.exists():
+        die("trash 返回成功但卡片仍在原位置，清理未生效（本地卡片仍在）")
 
     base = pages_base()
     online = (base + "outputs/" + urllib.parse.quote(card.name)) if base else None
