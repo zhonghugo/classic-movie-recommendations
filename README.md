@@ -24,10 +24,11 @@
 .
 ├── index.html          # 索引页（由 build_index.py 生成，勿手改）
 ├── build_index.py      # 索引生成器，仅依赖 Python 标准库
+├── publish.py          # 发布入口：推送 + 校验 + 清理本地（每日自动化调用）
 ├── movies.json         # 44 条元数据，唯一数据源
 ├── README.md
 ├── .nojekyll           # 让 GitHub Pages 跳过 Jekyll
-└── outputs/            # 44 张原始卡片 HTML
+└── outputs/            # 仓库内归档的全部卡片 HTML
     └── 电影推荐-*.html
 ```
 
@@ -41,19 +42,36 @@ python3 -m http.server 8000
 # 打开 http://localhost:8000
 ```
 
-## 新增一期（3 步）
+## 每日自动发布（生成即推送，本地不留存）
+
+每日自动化任务生成新卡片后，**不再保留本地副本**：卡片只是临时落在工作区 `outputs/`，发布成功后即移入废纸篓。仓库是唯一真源。
+
+一键发布（自动化每期调用一次）：
 
 ```bash
-# 1. 把新卡片放进 outputs/，命名沿用 电影推荐-片名.html
-# 2. 在 movies.json 末尾追加一条，字段：
-#    n / date / title_cn / title_en / year / scores / note / file
-#    file 必须与 outputs/ 里的文件名完全一致
-# 3. 重建索引并提交
-python3 build_index.py
-git add . && git commit -m "add: 第 45 期 …" && git push
+python3 publish.py \
+  --card "/abs/path/outputs/电影推荐-片名.html" \
+  --meta '{"n":45,"date":"2026-11-23","title_cn":"片名","title_en":"Original Title","year":1957,"scores":"豆瓣 9.4 · IMDb 9.0","note":"评分口径与奖项备注"}'
 ```
 
-`build_index.py` 会校验「期号必须连续」和「引用的卡片文件必须真实存在」，任一不满足都会直接报错，避免索引静悄悄少一部。
+`publish.py` 内部严格按顺序执行：
+
+1. 把卡片放进本仓库 `outputs/`，在 `movies.json` 追加一条元数据
+2. 运行 `build_index.py` 重建索引并校验（期号连续、引用文件存在）
+3. `git commit` + `git push`
+4. **校验远端 `HEAD` 与本地一致**（推送确实生效）
+5. 只有第 4 步通过，才把本地临时卡片移入 **废纸篓**（可恢复）
+
+> **顺序铁律**：推送失败、校验不过或任何异常，脚本都会报错退出且**绝不删除本地卡片**。本地那份是唯一还没进远端的副本，不能先删。
+> 删除用系统的 `trash` 命令；若系统没有 `trash`，脚本会拒绝删除并提示手动处理，不会用 `rm`。
+
+演练（在 `/tmp` 的仓库副本里跑完整本地流程，**不推送、不删除、真实仓库零改动**）：
+
+```bash
+python3 publish.py --card ... --meta ... --dry-run
+```
+
+`build_index.py` 会校验「期号必须连续」和「引用的卡片文件必须真实存在」，`publish.py` 额外拦「期号跳号／重复」，任一不满足都会直接报错，避免索引静悄悄少一部。
 
 ### movies.json 字段
 
