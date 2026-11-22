@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 楚门的世界</title>
+<style>
+  :root{
+    --bg:#0e1216; --panel:#171d24; --panel2:#1e2530; --line:#2c3542;
+    --tx:#e8eef5; --tx2:#a3b0bf; --tx3:#6f7d8d;
+    --acc:#5fb3d4; --acc2:#7ed0a8; --warn:#e0a95c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:34px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .score.flat b{color:var(--tx2);font-size:19px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--tx3);line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">今日电影推荐 · 2026-10-12</div>
+  <h1>楚门的世界</h1>
+  <div class="en">The Truman Show · 1998</div>
+
+  <div class="meta">
+    <span>导演　彼得·威尔</span>
+    <span>编剧　安德鲁·尼科尔</span>
+    <span>主演　金·凯瑞 / 劳拉·琳妮 / 艾德·哈里斯 / 诺亚·艾默里奇</span>
+    <span>摄影　彼得·比奇乌</span>
+    <span>配乐　布尔克哈德·达尔维茨 / 菲利普·格拉斯</span>
+    <span>类型　剧情 / 科幻 / 喜剧</span>
+    <span>片长　103 分钟</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.4</b><small>豆瓣 · 202 万+ 人 · TOP250</small></div>
+    <div class="score"><b>8.2</b><small>IMDb · 140 万+ 票</small></div>
+    <div class="score"><b>94%</b><small>烂番茄 · 专业影评</small></div>
+    <div class="score"><b>90</b><small>Metacritic · 专业影评</small></div>
+    <div class="score flat"><b>89%</b><small>烂番茄 · 观众爆米花指数</small></div>
+  </div>
+  <div class="note">
+    这五个数难得地整齐——<strong>观众和影评人这次站在一起</strong>。
+    昨天《美丽人生》是观众 96% 对影评人 58 分（本系列分歧最大的一部），
+    今天这部是 94% 对 90，两边都服气。
+    但别急着下结论：<strong>口碑这么齐的一部片，奥斯卡拿了三项提名，一项都没中</strong>。
+    这个落差是今天最值得聊的东西，下面会展开。
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（无剧透）</h2>
+    <p>楚门·伯班克是海滨小镇「海景镇」的一名保险推销员。三十岁上下，有稳定的工作、当护士的妻子、唠叨的母亲、随叫随到的发小。他每天开同一条路去上班，跟同一个邻居说同一句话，买同一份报纸。日子过得不错——只是「不错」得有点过于规整了。</p>
+    <p>这里有个必须说清楚的前提，它不算剧透，因为影片<strong>开场二十分钟就会交代给你</strong>：整个海景镇是一个巨大的摄影棚，天空是布景，海浪可以调，他身边所有人——包括妻子和最好的朋友——都是拿工资的演员。他这三十年的每一天，都在全球同步直播。</p>
+    <p>影片真正的起点在这里：<strong>楚门开始注意到一些"重复得太整齐"的细节</strong>。从这一句之后，剩下的我一个字都不写。</p>
+    <p>我能说的是：这部片真正的问题并不是"他能不能逃出去"。而是——<strong>如果门外的世界并不比里面更安全、也更谈不上更真实，那"出去"这件事到底还值不值得。</strong>控制一切的那个人叫克里斯托弗，他不是卡通反派，他手上握着一个相当有说服力的理由，而且他自己是真心爱楚门的。这是全片最锋利的地方。</p>
+    <p>带着一个问题进去：<strong>你有多确定，你生活里那些"刚刚好"的安排，真的只是巧合？</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在</h2>
+    <ul>
+      <li><strong>金·凯瑞的赌注。</strong>1998 年的他刚成为史上首位单片片酬 2000 万美元的演员，为了这部片主动降到<strong>1200 万</strong>。导演彼得·威尔说选他是因为"他让我想起卓别林"。结果是金球奖剧情类影帝——一个靠夸张肢体吃饭的喜剧演员，用最收着的方式演了一个「普通人」，而且演得比任何人都可信。</li>
+      <li><strong>剧本写于真人秀诞生之前。</strong>安德鲁·尼科尔 1991 年动笔时，原始设定是「一部发生在纽约的科幻惊悚片」，不是喜剧。影片 1998 年上映时，"真人秀"还是个新鲜词；一年后《老大哥》在荷兰开播，之后才是全民直播、短视频、算法推荐的时代。烂番茄的评论共识原话是：它有着<strong>"惊人地具有先见之明的视野"</strong>——关于失控的名人文化，和一个对普通人私生活细节贪得无厌的社会。</li>
+      <li><strong>取景地是真实存在的"完美小镇"。</strong>海景镇不是搭出来的，是佛罗里达州的 Seaside——一个真实的新城市主义规划社区，三百多栋风格统一的房子，每条街道都通向海边。导演要的就是它<strong>真实得可疑</strong>。这种"太完美"本身制造的不适感，比任何特效都有效。</li>
+      <li><strong>艾德·哈里斯演的那个"反派"其实不是反派。</strong>他凭这个角色拿下金球最佳男配、美国国家评论协会最佳男配、奥斯卡提名。难点在于：他必须让你相信他是真诚地、甚至是深情地在做这件事。如果他是坏人，这片子就浅了一半。</li>
+      <li><strong>配乐里有菲利普·格拉斯。</strong>极简主义音乐的代表人物之一，和达尔维茨合作。拿到金球奖最佳原创配乐和芝加哥影评人协会最佳配乐。注意听钢琴的处理——它在"日常"段落里带着一种轻微的、循环的不安。</li>
+      <li><strong>只有 103 分钟，几乎没废戏。</strong>在 1998 年的好莱坞大片里这个长度算短的。信息密度很高，很多线索是一闪而过的：背景里的道具、路人的站位、角色口中那些"广告植入"。</li>
+      <li><strong>它留下了真实的临床后遗症。</strong>2006 年，美国精神病学家 Joel Gold 在学术会议上首次报告了一类妄想：患者坚信自己生活中的人都在照剧本演戏、一切都在被拍摄。多名患者主动提到这部片来解释自己的感受。它后来被称为"楚门秀妄想症"。这不是影评人的比喻，是写在病例里的。</li>
+    </ul>
+    <div class="quote">
+      “假如再也见不到你，祝你早安、午安、晚安。”
+      <em>—— Good morning, and in case I don't see ya: good afternoon, good evening, and good night. 一句日常道别，在片中每出现一次，意思都不一样</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p><strong>评分和地位都是实的，而且两边罕见地一致。</strong>豆瓣 9.4（202 万+ 人）、IMDb 8.2（140 万+ 票）、烂番茄专业 94% / 观众 89%、Metacritic 90。参照系：本系列第 5 期《教父》MC 满分 100，第 6 期《美丽人生》MC 58。这部 90，属于专业界的高度共识，但没到"零异议"——后面会讲它被人挑毛病的地方。</p>
+    <p><strong>奖项很硬，但那一年的奥斯卡很微妙。</strong>第 71 届奥斯卡<strong>三项提名、零获奖</strong>：最佳导演、最佳男配角、最佳原创剧本——全落空，连最佳影片提名都没有。更微妙的是金·凯瑞：他<strong>连最佳男主提名都没拿到</strong>。反倒是金球奖给了他剧情类影帝。英国电影学院奖（BAFTA）这边拿下三项：最佳导演、最佳原创剧本、最佳艺术指导。此外还有土星奖最佳奇幻电影与最佳编剧、<strong>雨果奖最佳戏剧呈现</strong>、伦敦影评人协会年度影片／导演／编剧。全球票房 2.64 亿美元，成本 6000 万。</p>
+    <p><strong>它问的问题在你身上也成立，而且是越往后越成立。</strong>1998 年它像科幻；今天它更像纪实。你的信息流是被挑选的，你的选择是被推荐的，你的"我想去"和"算法觉得我会想去"之间那条线在哪——这部片把这条线画了出来，而且画得让你坐不住。</p>
+    <p><strong>它不替你下结论，这是它最诚实的地方。</strong>影评人挑的毛病也很明确：《好莱坞报道者》认为结局的情感释放"需要更大的分量"；影评人安德鲁·萨里斯则提醒不要把它简单当成"反电视"的警示寓言，因为它偏执地暗示——<strong>即便是最亲近的人，你也永远无法确定其真诚</strong>。而最核心的那道题影片一直到最后一帧都没替你回答：克里斯托弗给楚门的那个没有痛苦的世界，和门外的真实世界，<strong>哪个更好？</strong></p>
+    <div class="ask">
+      <small>留给你的一道题（有三层）</small>
+      <strong>第一层：</strong>如果有人替你安排了一个毫无痛苦、绝对安全、但没一样东西是真的的人生，而你永远不会被允许知道真相——你会希望那个人继续瞒着你吗？<br><br>
+      <strong>第二层：</strong>如果你的答案是"希望"，那楚门的愤怒，到底是因为<strong>被骗</strong>，还是因为<strong>被剥夺了选择权</strong>？这两件事是一回事吗？<br><br>
+      <strong>第三层：</strong>昨天那部《美丽人生》里，一位父亲也在替儿子编织一个虚构的世界。同样是谎言，<strong>为什么一个是庇护，一个是牢笼？</strong>区别在动机，还是在"被瞒着的那个人有没有权利知道"？
+    </div>
+    <div class="ver">
+      <strong>观看建议：</strong>103 分钟，节奏快，一次看完最好。不需要任何前置知识，也不用补任何背景。
+      唯一的提醒是<strong>别边看边刷手机</strong>——它的很多线索只出现一两秒，走神就漏了。
+      另外，这片子在"大笑"和"脊背发凉"之间切换得非常快，前一秒还在笑后一秒就不想笑了，这就是它的调性，不是 bug。
+      <strong>不适合：</strong>想找一部轻松爆米花片的时候。
+    </div>
+  </div>
+
+  <div class="foot">
+    本推荐不剧透关键情节 · 已记入推荐台账，后续不重复推荐<br>
+    已推荐：天堂电影院（1988） · 十二怒汉（1957） · 千与千寻（2001） · 星际穿越（2014） · 教父（1972） · 美丽人生（1997） · 楚门的世界（1998）
+  </div>
+
+</div>
+</body>
+</html>

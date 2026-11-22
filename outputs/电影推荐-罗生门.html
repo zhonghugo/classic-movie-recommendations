@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 罗生门</title>
+<style>
+  :root{
+    --bg:#0e1216; --panel:#171d24; --panel2:#1e2530; --line:#2c3542;
+    --tx:#e8eef5; --tx2:#a3b0bf; --tx3:#6f7d8d;
+    --acc:#5fb3d4; --acc2:#7ed0a8; --warn:#e0a95c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:34px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .score.flat b{color:var(--tx2);font-size:19px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--tx3);line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">今日电影推荐 · 2026-10-14</div>
+  <h1>罗生门</h1>
+  <div class="en">羅生門 / Rashōmon · 1950</div>
+
+  <div class="meta">
+    <span>导演　黑泽明</span>
+    <span>原著　芥川龙之介《竹林中》《罗生门》</span>
+    <span>编剧　黑泽明 / 桥本忍</span>
+    <span>主演　三船敏郎 / 京町子 / 森雅之 / 志村乔</span>
+    <span>摄影　宫川一夫</span>
+    <span>配乐　早坂文雄</span>
+    <span>类型　剧情 / 悬疑 / 犯罪</span>
+    <span>片长　88 分钟</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>8.8</b><small>豆瓣 · 35 万+ 人</small></div>
+    <div class="score"><b>8.1</b><small>IMDb · 19.6 万票</small></div>
+    <div class="score"><b>98%</b><small>烂番茄 · 63 评 · 均分 9.2</small></div>
+    <div class="score"><b>98</b><small>Metacritic · 18 评 · universal acclaim</small></div>
+  </div>
+  <div class="note">
+    数据于 2026-10-14 现查核实。IMDb 各源在 8.1–8.2 间浮动，本文取较低的 8.1。奖项：1951 威尼斯金狮奖 + 意大利影评人奖、1952 奥斯卡荣誉奖（当时最佳外语片尚未设竞赛单元）、1953 奥斯卡黑白片艺术指导提名。注意它的 Metacritic 是 98，和《教父》的 100 只差两分 —— 影评界对它的异议几乎为零。
+  </div>
+
+  <div class="card">
+    <h2>为什么是今天这部</h2>
+    <p>昨天推荐《飞越疯人院》，那部片里的是非再清楚不过 —— 谁在压制谁，谁在保护谁，看到最后没有一丝含糊。</p>
+    <p>所以今天反过来，挑一部<strong>看完之后你无法确定发生了什么</strong>的电影。同一桩命案，几个人各讲一遍，每一遍都自圆其说，每一遍都不一样，而且彼此无法调和。黑泽明不给你答案。</p>
+    <p>还有一层回呼：系列第 2 期推荐过《十二怒汉》。那部片相信 —— <strong>只要把证词掰开了反复追问，真相是可以逼近的</strong>。《罗生门》问的是同一个问题的反面：如果连当事人自己都分不清他记得的和他希望发生过的，追问还有用吗？两部隔了 76 年，讲的其实是同一件事的两极。</p>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（可以放心读完，无剧透）</h2>
+    <p>京都南门的罗生门下，大雨。一个砍柴人和一个行脚僧在门洞里躲雨，两个人脸上都是同一种表情 —— 那种听了什么事之后回不过神的样子。第三个男人凑过来躲雨，追问他们到底听说了什么。</p>
+    <p>于是事情被倒回去讲：山林里出了一桩命案，一个武士死了，他的妻子活着回来。涉案的几个人轮番在公堂上讲述经过 —— 强盗讲一遍，妻子讲一遍，连死去的人也通过灵媒讲了一遍。</p>
+    <p><strong>到这里为止就是全片的前提</strong>，也是海报和简介都会告诉你的部分。麻烦在于：这几份证词讲的不是同一件事。不是细节有出入那种出入，是事件的骨架都不一样 —— 谁先动手、大概是自杀还是他杀、那个女人最后是站着还是跪着。</p>
+    <p>真相只有一个。但没有一份证词长得像真相。</p>
+    <div class="ver">
+      <strong>我们的剧透红线：</strong>本次写到「多份互相矛盾的证词」为止，这是开场二十分钟就交代完的结构，不写剧透。至于每份证词具体讲了什么、谁的版本更可信、以及影片最后那十几分钟发生了什么 —— <strong>一个字都不写</strong>。尤其是结尾，它是这部片真正的分量所在，提前知道会大幅折损观看体验。请务必带着空白去看。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点在哪</h2>
+    <ul>
+      <li><strong>它发明了一种叙事方法。</strong>现在到处都在用的「同一件事从多个视角各讲一遍」—— 电影、剧集、小说里见得太多了 —— 源头就是这部 1950 年的片子。心理学和法学里甚至有个专有名词叫「罗生门效应」，用来描述目击者证词不可靠的现象。</li>
+      <li><strong>用最少的钱拍出了最多的东西。</strong>预算约 25 万美元，全片基本就是三个场景：破城门、公堂、树林。没有大场面，没有特效。它靠剪辑、靠光、靠演员的脸撑起来。今天看来依然是一场「钱不重要，想法重要」的示范。</li>
+      <li><strong>摄影教材级的用光。</strong>摄影指导宫川一夫做了件当时被同行认为莽撞的事：直接把摄影机对准太阳拍。树林里那些穿过树叶打在人脸上的光斑，既美，也在不动声色地提示「你看见的不一定完整」。</li>
+      <li><strong>三船敏郎的表演。</strong>他在片里的状态近乎失控 —— 大笑、爬行、瞪眼，放到今天可能被批评「太用力」。但在这个故事里，这种野性恰好让他的那份证词格外有说服力。看懂这一层，你对演技的评价标准可能会松动一点。</li>
+      <li><strong>88 分钟，一个晚上刚刚好。</strong>本系列推荐过的影片里多是两个小时起步的大部头，这部是罕见的短片。时间成本极低，收益极高。</li>
+      <li><strong>它是日本电影走向世界的那扇门。</strong>在此之前，西方影坛基本没正眼看过日本电影。这部片拿了威尼斯金狮之后，一切都变了。如果非要说「西方是从哪一部开始认识亚洲电影的」，答案多半是它。</li>
+    </ul>
+    <div class="quote">
+      「人只是不肯承认自己软弱罢了。」
+      <em>—— 片中人物对证词为何互相矛盾的追问（大意，非逐字）</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p>因为它把一个你每天都在面对、却很少正面想过的问题摆到了桌面上：<strong>当两个人讲的完全不一样时，你怎么判断发生了什么？</strong></p>
+    <p>不是法庭里的专家才需要回答这个问题。同事开会复盘时对进度各执一词，家人争论某件事「当初明明是这样说的」，朋友圈里同一场争执出现两个互斥版本 —— 这些都是罗生门。</p>
+    <p>黑泽明厉害的地方在于，他没有把「说谎」处理成道德缺陷。片子里的人未必是坏人，他们只是倾向于讲述一个<strong>自己能够接受的自己</strong>。这个观察比「人在撒谎」深得多，也难受得多 —— 因为它意味着我们自己也在这么干，而且浑然不觉。</p>
+    <p>更值得说的是：这部片已经 76 岁了，黑白、无特效，讲的还是平安时代的日本。但你会在现代每一条人际关系里认出它。经得起这种迁移的作品不多。</p>
+  </div>
+
+  <div class="card">
+    <h2>先说清楚门槛 —— 这几类朋友建议绕道</h2>
+    <ul>
+      <li><strong>期待确定答案的人。</strong>这片没有。看完不会告诉你「凶手是他」，也不会告诉你哪份证词是真的。如果你享受不了悬而未决，会觉得被耍。</li>
+      <li><strong>受不了黑白片和慢节奏的人。</strong>1950 年的日本电影，叙事节奏和今天差距很大，有反复、有停顿。有人看十分钟就关了，这很正常，不必勉强。</li>
+      <li><strong>题材提醒。</strong>围绕案件的核心是性暴力，虽然全程没有任何直接呈现、全部由语言交代，但仍有冒犯性。介意的请跳过。</li>
+    </ul>
+    <p>另外要说一句公道话：它在日本国内首映时评价并不好，影评界和官方甚至反对把它送去威尼斯，理由是「不够代表日本电影业」。是西方的金狮奖回头改变了它在自己国家的地位。这个事实本身就挺值得玩味。</p>
+  </div>
+
+  <div class="card">
+    <h2>怎么看效果最好</h2>
+    <ul>
+      <li><strong>别先看任何解析。</strong>这片被解读了 76 年，网上铺天盖地的分析会直接毁掉你的观看。强烈建议先看片，再看讨论。</li>
+      <li><strong>留意每份证词的「画框」。</strong>注意每段讲故事的镜头语言有什么不同 —— 谁站中间、光从哪来、镜头离多远。黑泽明把判断藏在这些地方。</li>
+      <li><strong>注意最后十分钟。</strong>很多人觉得这片只是个聪明的叙事游戏，直到结尾才发现它真正的落点在别处。<strong>到最后就别走神了</strong>，具体是什么我不说。</li>
+      <li><strong>看完隔一天再回顾。</strong>如果看完觉得「就这？」，先别急着否定。我的经验是，这部片的后劲是延迟的，往往在第二天想起某个段落时才回来。</li>
+      <li><strong>可以的话，接着看《十二怒汉》。</strong>两部对照着看，一个说真相可达，一个说真相不可得 —— 你会得到比单独看任一部多得多的东西。</li>
+    </ul>
+    <div class="ask">
+      <small>看完之后，可以顺着这三个问题往下想</small>
+      ① 如果四份证词内部都自洽、都没有明显的破绽，你手上还有什么可以用来判断谁在撒谎？<br><br>
+      ② 假设他们确实在说谎 —— <strong>动机是恶意欺骗，还是「想让自己看起来体面一点」？</strong>这两者之间的边界，你觉得画在哪里合适？<br><br>
+      ③ 《十二怒汉》里十二个人也能吵到面红耳赤，最后还是逼近了真相；这里却不行。<strong>差别究竟在证据不够，还是在人本身？</strong>如果把纽约那个陪审团放到京都这片树林里，结果会不同吗？
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 9 期（2026-10-14）<br>
+    已推荐：《天堂电影院》《十二怒汉》《千与千寻》《星际穿越》《教父》《美丽人生》《楚门的世界》《飞越疯人院》《罗生门》<br>
+    评分数据每次执行时现查，不做记忆引用。<br>
+    本系列坚持：结构可以讲清，结局一律不写。
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 霸王别姬</title>
+<style>
+  :root{
+    --bg:#0e1216; --panel:#171d24; --panel2:#1e2530; --line:#2c3542;
+    --tx:#e8eef5; --tx2:#a3b0bf; --tx3:#6f7d8d;
+    --acc:#d4835f; --acc2:#c9a227; --warn:#e0a95c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--tx3);line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">今日电影推荐 · 2026-10-17</div>
+  <h1>霸王别姬</h1>
+  <div class="en">Farewell My Concubine · 1993</div>
+
+  <div class="meta">
+    <span>导演　陈凯歌</span>
+    <span>编剧　芦苇 / 李碧华（改编自李碧华同名小说）</span>
+    <span>主演　张国荣 / 张丰毅 / 巩俐 / 葛优 / 英达 / 蒋雯丽</span>
+    <span>摄影　顾长卫（奥斯卡最佳摄影提名）</span>
+    <span>配乐　赵季平</span>
+    <span>类型　剧情 / 爱情 / 音乐（戏曲）</span>
+    <span>片长　171 分钟（完整版）</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.6</b><small>豆瓣 · 217 万+ 人 · TOP250 第 2</small></div>
+    <div class="score"><b>8.1</b><small>IMDb · 3.7 万+ 票（系列最低）</small></div>
+    <div class="score"><b>88–90%</b><small>烂番茄专业 · 观众 93%</small></div>
+    <div class="score"><b>84</b><small>Metacritic · 28 评 · 普遍好评</small></div>
+  </div>
+  <div class="note">
+    数据于 2026-10-17 现查核实。烂番茄新鲜度各源浮动较大（34 评 88%、52 评 90%，另有源记 86%、93%），本文取 88–90% 区间；观众评分 93%；Letterboxd 4.4/5（8 万+ 评分）。奖项：1993 年戛纳金棕榈奖（与《钢琴课》并列）+ 费比西国际影评人奖，<strong>迄今唯一获戛纳金棕榈的华语长片</strong>；1994 年金球奖最佳外语片；1994 年奥斯卡 2 提 0 中（最佳外语片、最佳摄影）；1994 年英国电影学院奖最佳非英语片；纽约、洛杉矶、波士顿影评人协会与国家评论协会、伦敦影评人圈最佳外语片；日本每日电影奖最佳外语片。2005 年入选《时代周刊》全球百大电影，2015 年再入选其「百大不朽电影」；BBC 2018 年百大外语片第 12 位；2014 年《Time Out》内地百大华语片第 1。
+  </div>
+
+  <div class="card">
+    <h2>为什么是今天这部</h2>
+    <p>昨天那部片的主角，穿过了整个美国三十年的动荡，<strong>毫发无伤</strong>。他不追问、不反抗、甚至不明白自己身在何处，时代从他身上碾过去，没留下痕迹。</p>
+    <p>今天这部，是它的镜像：<strong>一个被时代一寸寸改写的人。</strong></p>
+    <p>顺带说一句排序上的巧合——昨天那部在豆瓣 TOP250 排第 3，<strong>压在它上面一位的，就是今天这部</strong>。</p>
+    <p>更关键的是它填上了本系列的一格空白。第 7 期的楚门发现自己活在系统里，往外逃；第 8 期的麦克墨菲看见一个压制人的系统，往里闯；第 10 期的蝙蝠侠想改造系统，跟它做交易；第 11 期的阿甘从头到尾不与系统发生关系。这四个人差别巨大，但有一点是共通的：<strong>他们至少都还有选择。</strong></p>
+    <p>而程蝶衣只想要一件事——在台上把这出戏唱完。他没招惹任何东西。<strong>但时代每一次都主动找上门，要求他表态。</strong>这是本系列第一次出现「个体完全不关心系统，系统却不肯放过个体」的结构。</p>
+    <p>还有一个理由很朴素：这是本系列十二期以来，<strong>第一次推荐华语片</strong>。不用字幕，不用补前置知识，北京的腔调、戏班的规矩、那句「不疯魔不成活」，你一听就懂。</p>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（可以放心读完，无剧透）</h2>
+    <p>1924 年的北平。一个身份尴尬、无力抚养孩子的母亲，把年幼的儿子送进了戏班谋生。</p>
+    <p>梨园的训练严苛而粗暴。他既挨师父的好心与暴力，又被同伴孤立，唯一护着他的是大师兄。<strong>在保护与被保护里，两个孩子的关系超过了朋友，也超过了兄弟。</strong></p>
+    <p>两人长大后，一个唱生，一个唱旦，配合天衣无缝。尤其一出《霸王别姬》，誉满京城。他们约定：<strong>合演一辈子《霸王别姬》。</strong></p>
+    <p>但两个人对「戏」和「人生」的理解有本质不同——<strong>师兄深知戏非人生，而他，人戏不分。</strong></p>
+    <p>故事从这一句分歧开始，往后铺开近半个世纪：抗战、政权更迭，以及再往后那段人所共知的动荡岁月。时代一波一波压过来，每一次都要求这两个人重新回答一次那个问题：<strong>你到底是谁？</strong></p>
+    <div class="ver">
+      <strong>我们的剧透红线：</strong>写到「两人约定合演一辈子」和「对戏与人生的理解有本质不同」为止——这两句正是官方简介的原话，我也到此停笔。后来走进他们之间的那个人、每一次时代转折具体怎样改写这两人的关系、以及最后那场戏，<strong>一个字都不写</strong>。另外提醒一句：这部片被解读了三十多年，网上的解析、剪辑解说、人物分析，几乎每一篇都会直接把后半段摊开给你看。<strong>看之前别搜。</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点在哪</h2>
+    <ul>
+      <li><strong>张国荣的程蝶衣，是那种「换个人就不成立」的表演。</strong>影片外的事实可以讲：他进组前赴北京跟京剧老师学戏，剃掉眉毛、刻意消瘦，连行走坐立的姿态都改了——京剧老师回忆第一天到片场，见他满脸通红还在压腿，后来才知道他发着高烧。英国演员本·金斯利的评价是「完美的表演」。</li>
+      <li><strong>一个流传甚广但需要打折听的说法：1993 年戛纳影帝，他以一票之差落选。</strong>常见的解释有两个——一是本片已拿金棕榈，评委会希望把重要奖项分散给别的影片；二是有评委把票投去了「最佳女演员」一栏。<strong>这条说法只见于中文资料，未获戛纳官方证实，请当作传闻看待。</strong>但另一件是真的：那年担任评委的路易·马勒见到他，只用「Wonderful」一个词评价。</li>
+      <li><strong>它把「戏」和「人生」的边界当成了整部片的发动机。</strong>蝶衣的问题从来不是爱不爱谁，而是：我在台上唱了几十年的虞姬，那我下台之后是谁？这个问法放到今天一点都不过时——<strong>你把一件事做到什么程度之后，它就不再是你做的事，而变成了你是谁？</strong></li>
+      <li><strong>「戏中戏」的结构撑住了 171 分钟。</strong>台上在演霸王别姬，台下也在演。你会反复看到台上台下互相错位：有人把台上的身份带进了生活，有人把生活里的算计带上了台。看的时候只要盯住一件事——<strong>现在到底是谁在演谁</strong>——整部片就活了。</li>
+      <li><strong>摄影和配乐都值得单独听一次。</strong>顾长卫的摄影拿到奥斯卡最佳摄影提名；赵季平把京剧的唱腔、锣鼓和西方管弦乐揉在一起，既有戏班的锣鼓点，也有撑得住史诗体量的长线条。这两样东西是这部片「不闷」的技术原因。</li>
+      <li><strong>那一代演员同时在巅峰。</strong>张国荣、张丰毅、巩俐、葛优、英达、蒋雯丽——1993 年的华语影坛把最好的牌一次性打完了，之后三十多年没有再凑齐过。</li>
+    </ul>
+    <div class="quote">
+      「说的是一辈子！差一年，一个月，一天，一个时辰，都不算一辈子！」
+      <em>—— 片中台词。这句被引用了三十年，但它在完整 171 分钟里的分量，和你在短视频里听到的完全不是一回事</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p>因为它问的那个问题，是个真正的硬问题：<strong>一个人能不能不被时代改写？</strong></p>
+    <p>昨天那部片给了一个温柔的答案——能，只要你什么都不问。今天这部给的是另一个答案：<strong>不能。但你仍然可以选择，在哪一件事上不改变。</strong>我不写这两个人各自的选择（那是全片最不该被提前知道的部分），只提醒你去看：每一次时代压过来的时候，他们交出去的东西是不是同一样。</p>
+    <p>还有一个很实际的理由：<strong>这可能是你人生中最容易被「以为看过」而跳过的华语片。</strong>那句台词、那张剧照、那几段被剪了一万遍的片段，你都见过。但完整的 171 分钟是一个跨度近半个世纪的整体，后半段的力量几乎全部来自前半段那个戏班里长出来的东西。跳过了，就永远只是「知道梗」。</p>
+    <p>最后一点，它值得看的理由很私人：<strong>这是一部你不需要任何翻译就能接住的电影。</strong>京剧的唱念做打、北京话里的软硬、一个眼神里的进退，都不需要注释。前十一期里那些意大利的、美国的、日本的经典，多少隔着一层。这一部，是你自己的语言在讲你自己的地方。</p>
+  </div>
+
+  <div class="card">
+    <h2>先说清楚门槛 —— 以及它挨过的批评</h2>
+    <ul>
+      <li><strong>这是本系列十二期以来，东西方大众评分落差最大的一部。</strong>豆瓣 9.6，IMDb 8.1，差了 1.5 分。但请注意真正的落差出在哪一层：<strong>两边的专业影评人分都不低</strong>（烂番茄 88–90%、Metacritic 84），差的是普通观众这一层。我不认为这是「谁没看懂」——更像是文化距离：它要求你懂一点京剧、懂一点那段历史、懂「不疯魔不成活」这六个字在中文里的重量。这些是翻译不过去的，不是质量问题。</li>
+      <li><strong>最重的一条批评：《华盛顿邮报》的德森·豪认为，影片前半段极有冲击力，后半段却滑向「小说式的漫谈」，越接近结尾越失去重点。</strong>我倾向于认为这条批评值得认真听——171 分钟的后半段，节奏确实比前半段松，这是不少观众的共识。<strong>但我也不认为这是失误：一个人越往后越不由自己做主，叙事本身的「失焦」可能就是内容。</strong>这个判断只能你自己看完下。</li>
+      <li><strong>《纽约》杂志的大卫·丹比批评它太「奇观化」。</strong>意思大致是：它太用力地把历史做成可供观看的场面。这条和上面那条其实是同一个质疑的两面——史诗体量本身就带着这个风险。</li>
+      <li><strong>一定要看 171 分钟的完整版。</strong>米拉麦克斯买下北美发行权后剪掉了约 14 分钟（171 → 157），那才是当年美国观众在影院里看到的版本。那年戛纳评委会主席路易·马勒公开说过：「我们在戛纳喜欢的那部电影，不是这个国家上映的这一部——它短了二十分钟，但看起来更长，因为它讲不通。」<strong>这句话基本可以当作观看指南。</strong></li>
+      <li><strong>一部拿遍世界大奖的华语片，在自己的语言里几乎颗粒无收。</strong>这是规则造成的，不是质量造成的：影片当年因题材所限在内地一度未能公映，戛纳获奖后才获准上映，但按规定不能参加金鸡百花等本土评选；在台湾地区被列为大陆片，不能参评金马；在香港不算港片，不能参评金像。<strong>它拿下了戛纳、金球、英国电影学院奖，却没有任何一个华语奖项可以给它颁奖。</strong>这个事实本身就是它的一部分。</li>
+      <li><strong>情绪门槛是本系列最高的一档。</strong>171 分钟，后半段非常沉重。心情糟糕的时候请改天再看——这不是客气话。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>怎么看效果最好</h2>
+    <ul>
+      <li><strong>先确认你打开的是 171 分钟版本。</strong>157 分钟或更短的都是删减版，别看。</li>
+      <li><strong>开场四十分钟（戏班那一段）别跳。</strong>很多人觉得那部分太狠、太压抑。但它是全片的地基——蝶衣后来所有的「不分」，都是从那里长出来的。跳过了，后半段会变成无源之水。</li>
+      <li><strong>看的时候盯住「台上 / 台下」的切换。</strong>每切一次，问自己一句：现在是谁在演谁？这一层是全片最容易被忽略、也最值钱的部分。</li>
+      <li><strong>别搜解析，别看解说剪辑。</strong>这部片被解读了三十多年，任何一篇深度分析都会直接把后半段摊开给你。</li>
+      <li><strong>适合和《阿甘正传》连着看。</strong>一个穿过时代毫发无伤，一个被时代改写到底。两部片隔一天推给你，放在一起会逼你回答一个很不舒服的问题。</li>
+      <li><strong>留一整块时间。</strong>171 分钟，中途打断一次，后半段的劲儿就断了。</li>
+    </ul>
+    <div class="ask">
+      <small>看完之后，可以顺着这三个问题往下想</small>
+      ① 师兄深知「戏非人生」，蝶衣「人戏不分」。<strong>你觉得谁更清醒？</strong>——但换个角度问：活下去的那个人清醒，没活下去的那个人入戏。那么「清醒」到底是一种能力，还是一种放弃？放到你自己身上：<strong>有没有一件事，你是靠投入得太深才做得好，但也正因为投入得太深而受过伤？</strong><br><br>
+      ② 这部片在中文互联网 9.6，在英文互联网 8.1，差 1.5 分，是本系列十二期里落差最大的一次；但两边的专业影评人分都不低。<strong>差别只出在普通观众这一层。你觉得这是「他们没看懂」，还是「有些东西本来就翻译不过去」？</strong>你能举出一部你自己觉得「没法向外人解释它为什么好」的作品吗？<br><br>
+      ③ 昨天的阿甘穿过美国三十年毫发无伤，今天的程蝶衣被时代一寸寸改写。<strong>如果让阿甘走进这部片，他会怎么样？反过来，如果蝶衣去跑阿甘那三年，他会在哪里停下来？</strong>——这个问题没有标准答案。但你回答它的方式，基本就说明了你相信人的命运里，性格和时代各占多少。
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 12 期（2026-10-17）<br>
+    已推荐：《天堂电影院》《十二怒汉》《千与千寻》《星际穿越》《教父》《美丽人生》《楚门的世界》《飞越疯人院》《罗生门》《黑暗骑士》《阿甘正传》《霸王别姬》<br>
+    评分数据每次执行时现查，不做记忆引用。<br>
+    本系列坚持：结构可以讲清，结局一律不写。
+  </div>
+
+</div>
+</body>
+</html>

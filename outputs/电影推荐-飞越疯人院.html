@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 飞越疯人院</title>
+<style>
+  :root{
+    --bg:#0e1216; --panel:#171d24; --panel2:#1e2530; --line:#2c3542;
+    --tx:#e8eef5; --tx2:#a3b0bf; --tx3:#6f7d8d;
+    --acc:#5fb3d4; --acc2:#7ed0a8; --warn:#e0a95c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:34px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .score.flat b{color:var(--tx2);font-size:19px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--tx3);line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">今日电影推荐 · 2026-10-13</div>
+  <h1>飞越疯人院</h1>
+  <div class="en">One Flew Over the Cuckoo's Nest · 1975</div>
+
+  <div class="meta">
+    <span>导演　米洛斯·福尔曼</span>
+    <span>原著　肯·克西（1962 年小说）</span>
+    <span>主演　杰克·尼科尔森 / 路易丝·弗莱彻 / 布拉德·道里夫 / 威尔·萨姆森</span>
+    <span>摄影　哈斯克尔·韦克斯勒</span>
+    <span>配乐　杰克·尼切</span>
+    <span>制片　迈克尔·道格拉斯 / 索尔·扎恩兹</span>
+    <span>类型　剧情</span>
+    <span>片长　133 分钟</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.1</b><small>豆瓣 · 57 万+ 人 · TOP250</small></div>
+    <div class="score"><b>8.7</b><small>IMDb · 115 万+ 票 · TOP250 第 18</small></div>
+    <div class="score"><b>93%</b><small>烂番茄 · 83 条影评 · 均分 9.1</small></div>
+    <div class="score"><b>84</b><small>Metacritic · 专业影评</small></div>
+    <div class="score flat"><b>5 / 5</b><small>奥斯卡大满贯 · 影史第二部</small></div>
+  </div>
+  <div class="note">
+    烂番茄各家聚合站显示 92%–94%（维基与 ScreenRant 口径略差 1 个点），Metacritic 83–84，这里取 93 / 84。
+    今天这组数字里最该看的不是评分，是最后那格：<strong>它拿下了最佳影片、导演、男主、女主、改编剧本五项——
+    影史上第二部做到这件事的电影</strong>。前一部是 1934 年的《一夜风流》，后一部是 1991 年的《沉默的羔羊》，
+    中间隔了 41 年，后面至今 35 年没人做到。
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（无剧透）</h2>
+    <p>兰德尔·麦克墨菲是个小混混，因为不愿在监狱农场干苦役，<strong>装疯</strong>被送进州立精神病院。他算过账：这里不用搬石头，有饭吃，睡到自然醒——在他眼里这是笔划算的买卖。</p>
+    <p>进去之后他才发现，这个病区并不像他想的那么"松"。管事的是<strong>护士长拉切德</strong>。她不打人，不大声说话，不违反任何一条规定。日程表贴在那里，几点吃药、几点集体治疗、几点熄灯，一切按部就班。病人们准时排队，安静得像一件件被摆好的家具。</p>
+    <p>麦克墨菲受不了这个。他开始一件一件地争取那些"本来就该属于他们"的东西，也带着他们做几件明显出格的事。</p>
+    <p><strong>我就写到这里。</strong>后面发生的一切，包括结局，我一个字都不说——这部片的后半段被引用得太频繁，很多人"没看过但也知道"，那是最可惜的一种错过。你只需要知道：它会从一个近乎喜剧的开场，走到一个你未必准备好的地方。</p>
+    <p>带一个问题进去：<strong>拉切德护士长做错了什么？你先把这部片看完，再回来回答。</strong>这题比它看上去难得多。</p>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在</h2>
+    <ul>
+      <li><strong>拉切德不吼不叫，这才是她的恐怖之处。</strong>路易丝·弗莱彻试镜了整整六个月，开拍前一周才签下。她演的不是恶魔，是一个<strong>真诚相信自己在做正确的事</strong>的人。美国电影学会后来把她列为影史百大反派第 5（前三名是汉尼拔、诺曼·贝茨、达斯·维达）。她凭这个角色拿下奥斯卡影后——一部片里同时拿下影帝和影后，本身就是极罕见的事。</li>
+      <li><strong>它是在一家真精神病院里拍的。</strong>取景地是俄勒冈州立精神病院，院方给了无限通行权。<strong>片中大部分群演是真正的住院病人</strong>。福尔曼开拍前在医院里住了一个月观察，而且经常在演员不知情的情况下开机。所以那些走廊里的身形和眼神，不是演出来的。</li>
+      <li><strong>杰克·尼科尔森当时不是第一人选。</strong>马龙·白兰度、吉恩·哈克曼都推了。原著作者肯·克西坚决反对用他，气到退出剧组。结果尼科尔森演出了他生涯里最不像"尼科尔森"的一个角色：不是那个咧嘴坏笑的疯子，而是一个<strong>真心觉得自己在帮人</strong>的混混。</li>
+      <li><strong>制片人是迈克尔·道格拉斯，那年 31 岁。</strong>他父亲柯克·道格拉斯 1961 年就买下了小说版权，1963 年在百老汇演过麦克墨菲，本想自己演电影版，等到项目终于开动时他已经太老了，于是把版权交给了儿子。迈克尔靠这部片拿到<strong>最佳影片奖</strong>。</li>
+      <li><strong>"酋长"的扮演者此前从没演过戏。</strong>威尔·萨姆森本来是附近国家公园的护林员，剧组找上他，因为他是当时能找到的、身高唯一符合角色设定的美洲原住民。他在片中话极少。</li>
+      <li><strong>配角名单是后来的一整个时代。</strong>布拉德·道里夫（奥斯卡男配提名、金球最佳新人）、丹尼·德维托、克里斯托弗·洛伊德——当时都还是 nobody。安杰丽卡·休斯顿在码头那场戏里露了个脸，没署名。</li>
+      <li><strong>300 万美元成本，1.09 亿票房。</strong>36 倍回报。配乐由杰克·尼切操刀，用了大量不常规的音色，即便在最日常的段落里也让人发毛，只拿到提名。摄影哈斯克尔·韦克斯勒同样只拿到提名。</li>
+      <li><strong>原著作者一辈子不承认这部电影。</strong>肯·克西因创作分歧退出剧组：一是剧组砍掉了小说里"酋长"的第一人称叙述，二是没用他想要的吉恩·哈克曼。他后来偶然在电视上撞见这片，立刻换台，直到去世都坚称自己没完整看过。他的原话是——<strong>"这是我做过的最聪明的一件'没做的事'。"</strong></li>
+    </ul>
+    <div class="quote">
+      “至少我试过了，不是吗？妈的，我总算试过了。”
+      <em>—— At least I tried, didn't I? Goddamnit, at least I did that. 这句话的分量，只有看到最后才称得出来</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p><strong>硬通货级别的地位，四项全中。</strong>第 48 届奥斯卡 9 提 5 中，包揽最佳影片、导演、男主、女主、改编剧本；金球奖 6 项；英国电影学院奖 6 项（影片、导演、男女主、男配、剪辑）；法国凯撒奖最佳外语片。1993 年入选美国国会图书馆<strong>国家影片登记部</strong>（"在文化、历史及美学层面具有重大意义"），1998 年<strong>美国电影学会百年百大电影第 20 位</strong>。全球各类奖项累计 38 座。</p>
+    <p><strong>它和昨天的《楚门的世界》是同一道题的两种解法，值得摆在一起看。</strong>楚门是<strong>一个人从里面往外逃</strong>，麦克墨菲是<strong>一个人从外面往里闯</strong>，试图把里面的人带走。两部都在问"个体能不能对抗一个管理他的系统"。但答案完全不同：楚门推开那扇门就结束了，这里没有这么便宜的事。另外可以对照奖项——昨天那部 3 提 0 中，连影帝提名都没有；这部 9 提 5 中。<strong>同一个好莱坞，同一套评审，一年隔了 23 年，结果天差地别。</strong></p>
+    <p><strong>它不给你反派，这才是它难的（也是它好的）地方。</strong>豆瓣 9.1 / IMDb 8.7 / 烂番茄 93% / MC 84——分数很稳，但它不是一部"看着解气"的电影。它把最难受的地方留给你自己：如果一套秩序里<strong>没有一个人是坏人</strong>，每个人都在照章办事，那让你不舒服的东西到底是谁造出来的？</p>
+    <p><strong>它也被认真地批评过，这些批评值得知道。</strong>精神科医生群体当年就抗议过，认为它对电休克疗法和精神疾病机构的呈现失真，造成的偏见堪比《大白鲨》之于鲨鱼；心理健康倡导者至今批评它塑造了刻板印象。原著作者本人不认它。看的时候把这几条放在心里，你会看到一部更立体的电影——而不是一句"自由万岁"的口号。</p>
+    <div class="ask">
+      <small>留给你的一道题（有三层）</small>
+      <strong>第一层：</strong>拉切德护士长有没有做过一件"错事"？她从不越权，从不施暴，每次都有规章可依。<strong>那你恨她，恨的到底是哪一点？</strong><br><br>
+      <strong>第二层：</strong>如果每条规则单独拿出来都讲得通，每个执行者也都没出错，那"压迫"究竟藏在<strong>哪一层</strong>？是规则本身，是执行规则的方式，还是"由谁来定规则"这件事？<br><br>
+      <strong>第三层：</strong>昨天的楚门逃出去了，今天这个人没有。同样是"一个人对一整个系统"，<strong>为什么一个的答案轻快，另一个的答案沉重？</strong>是因为对手不同，还是因为——楚门要带走的只有他自己，而这个人想带走的是所有人？
+    </div>
+    <div class="ver">
+      <strong>观看建议：</strong>133 分钟，1975 年，场景几乎全在一个病区里。<strong>前三十分钟你会觉得"这片子到底要干嘛"</strong>——那是真的，它的调性要从麦克墨菲真正开始折腾才立起来，请给到四十分钟。
+      不需要任何前置知识。<br>
+      <strong>不适合：</strong>想看爽片、想看"好人干翻坏人"、或者需要一部片子给你一个痛快结局的时候。这部片不打算让你舒服，它打算让你想事情。今天心情很糟的话，改天再看。
+    </div>
+  </div>
+
+  <div class="foot">
+    本推荐不剧透关键情节 · 已记入推荐台账，后续不重复推荐<br>
+    已推荐：天堂电影院（1988） · 十二怒汉（1957） · 千与千寻（2001） · 星际穿越（2014） · 教父（1972） · 美丽人生（1997） · 楚门的世界（1998） · 飞越疯人院（1975）
+  </div>
+
+</div>
+</body>
+</html>

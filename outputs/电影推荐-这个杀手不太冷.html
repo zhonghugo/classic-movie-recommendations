@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 这个杀手不太冷</title>
+<style>
+  :root{
+    --bg:#0d1218; --panel:#161d26; --panel2:#1d2531; --line:#2b3543;
+    --tx:#e8eef5; --tx2:#a3b0bf; --tx3:#6f7d8d;
+    --acc:#6ba7d8; --acc2:#e0b95c; --warn:#d98f6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+  th{background:var(--panel2);color:var(--tx2);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td.here{color:var(--tx);background:rgba(107,167,216,.09);font-weight:600}
+  .foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--tx3);line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">今日电影推荐 · 2026-10-20</div>
+  <h1>这个杀手不太冷</h1>
+  <div class="en">Léon / The Professional · 1994</div>
+
+  <div class="meta">
+    <span>导演　吕克·贝松（兼编剧、制片）</span>
+    <span>主演　让·雷诺 / 娜塔莉·波特曼 / 加里·奥德曼 / 丹尼·爱罗</span>
+    <span>摄影　蒂埃里·阿博加斯特</span>
+    <span>配乐　艾瑞克·塞拉（片尾曲 Sting《Shape of My Heart》）</span>
+    <span>制片地区　法国 / 美国（英语对白，纽约实拍）</span>
+    <span>类型　犯罪 / 剧情 / 动作</span>
+    <span>片长　剧场版 110 分钟 · 国际版（导演剪辑版）133 分钟</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.4</b><small>豆瓣 · 258 万+ 人 · TOP250 第 8</small></div>
+    <div class="score"><b>8.5</b><small>IMDb · 约 134 万票</small></div>
+    <div class="score"><b>74–76%</b><small>烂番茄专业（观众 95%）</small></div>
+    <div class="score"><b>64</b><small>Metacritic</small></div>
+  </div>
+  <div class="note">
+    数据于 2026-10-20 现查核实。豆瓣 9.4 / 2,582,639 人 / TOP250 第 8（2026-10-16 快照，与第 11–14 期同源同口径，可直接横向对照；另见旧来源记第 5、第 6、第 7，属榜单历年浮动）。IMDb 8.5 / 约 134 万票（各源 1,344,401–1,368,735，取约数），TOP250 第 39（2024-05 来源，可能已浮动）。烂番茄专业 74%（另有源记 76%，取低值）、观众 95%；Metacritic 64。猫眼购票 9.5、淘票票 9.5。奖项：<strong>第 20 届法国凯撒奖 7 项提名、0 获奖</strong>（最佳影片、导演、男主、摄影、剪辑、音乐、音效；最佳影片输给《野芦苇》）；1996 日本电影学院奖最佳外语片提名；1996 捷克狮子奖最佳外语片；1995 美国音效剪辑工会 Golden Reel 奖；全球累计 5 奖 16 提名。票房：预算 1600 万美元，北美 1950 万，全球 2030 万美元。中国内地 2024-11-01 首次公映（4K 修复导演剪辑版，距法国首映 30 年），累计约 1744 万人民币（另有源记 1726.3 万 / 1654 万，取高值并注明）。
+  </div>
+
+  <div class="card">
+    <h2>为什么是今天这部</h2>
+    <p>昨天那部片有 171 分钟、三个室友、一群人、歌舞、热闹、彩色，主角一头扎进最热闹的地方，最后把一整所学院都改变了。</p>
+    <p>今天这部，几乎是每一项都反过来的：110 分钟、两个人的室内戏为主、纽约冬天、走廊和旅馆房间、几乎没有配角能活过一场戏。而它的主角不是要改变什么——<strong>他连「被系统记录在内」这件事都不成立。</strong></p>
+    <p>这是本系列十五期里，「个体与系统」这条线走到第八格。把前七格摆出来：</p>
+    <ul>
+      <li>第 7 期楚门：<strong>从里面往外逃</strong>。</li>
+      <li>第 8 期麦克墨菲：<strong>从外面往里闯</strong>。</li>
+      <li>第 10 期蝙蝠侠：<strong>跟系统做交易</strong>。</li>
+      <li>第 11 期阿甘：<strong>根本不发生关系</strong>。</li>
+      <li>第 12 期程蝶衣：<strong>想逃而不得</strong>。</li>
+      <li>第 13 期 1900：<strong>不入场</strong>。</li>
+      <li>第 14 期兰彻：<strong>留下来，从里面把它改动了</strong>。</li>
+    </ul>
+    <p>这七个人面对的「系统」各不相同，但都有一个共同点：<strong>系统是坏的、偏的、僵的，但系统之外还存在别的地方。</strong>楚门外头有真实世界，麦克墨菲外头有公路，观众知道精神病院外面还有正常社会。</p>
+    <p>今天这部第一次把那条退路抽掉了。灭掉玛蒂尔达全家的不是黑帮，不是疯子，<strong>是穿着警服、拿着缉毒署证件的人</strong>。没有更高一层可以申诉——因为腐烂的就是那一层本身。而里昂这边，他是意大利裔、没有身份、没有家人、没有记录，<strong>他根本不在任何一张名单上。</strong></p>
+    <p>所以第八格是这条线上最狠的一格：<strong>两个都不在系统里的人，只能互相成为对方唯一的系统。</strong></p>
+    <p>还有两个理由更直接。第一，<strong>这是本系列十五期以来第一部真正意义上的法国电影</strong>——前面十四期是意大利 2、美国 5、日本 2、美英 1、中国 1、印度 1；第 1 期《天堂电影院》虽有法国资本，但那是意大利导演的意大利故事。这部是法国人写、法国人导、法国公司出品，只是把故事搬到了纽约。第二，<strong>它补上了「1994」这块拼图的第四个角。</strong>第 11 期我们讲过那一年：当年赢的是阿甘，三十年后 IMDb 和豆瓣第一都是肖申克。今天补上第四部——而这一部，是四部里唯一一部在本国最高奖上 7 提 0 中的。</p>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（可以放心读完，无剧透）</h2>
+    <p>纽约，小意大利区。里昂住在一间没什么家具的公寓里，一个人。</p>
+    <p>他的职业是「清理工」——接单、上门、不留痕迹。他有两条例外的规矩，从不动摇。他的生活极简到近乎仪式：每天固定买两盒牛奶，养一盆从不出门的银皇后，睡觉不躺下，坐在沙发上，枪放在手边。</p>
+    <p>隔壁住着一家人。父亲替人存放东西，惹了不该惹的人。12 岁的玛蒂尔达不上学，抽烟，说话像大人，家里没人真正看她一眼。</p>
+    <p>某一天她出门买东西，回来的时候，走廊里站着几个拿证件的人，家里的人全都不在了。她没有停下，径直往前走，敲了里昂的门。<strong>门开了一条缝，这是全片最重要的一个动作——他犹豫了很久，然后让她进来了。</strong></p>
+    <p>接下来发生的事，是一份很奇怪的同居协议：她替他打扫、买东西、教他认字；他开始教她这门手艺——不是先教开枪，而是先教擦、看、等、守纪律。</p>
+    <p>而她真正的目的，从头到尾只有一个。</p>
+    <p>开头半小时里有两句对话，几乎是全片被引用最多的：</p>
+    <div class="quote">
+      「人生总是这么痛苦吗？还是只有小时候这样？」<br>「……总是如此。」
+      <em>——这段对话出现在影片开场约半小时内，属预告片级别内容，写出来不影响观看</em>
+    </div>
+    <p>还有一个你会在前二十分钟就记住的人：加里·奥德曼演的那个缉毒警。三十年来关于这部片的讨论，有相当一部分是关于他的。</p>
+    <div class="ver">
+      <strong>我们的剧透红线：</strong>写到「她的目的只有一个」为止，就此停笔。<strong>最后二十分钟我一个字都不写</strong>——包括那件事是怎么发生的、谁走出来了、谁没有、那盆植物最后的去向、以及那句被无数人当作签名档的话出现在什么时刻。另外提醒四句：第一，这部片 1994 年上映，被讨论了三十二年，<strong>「早就知道结局」和「在完整的一个多小时里走到那一步」完全是两件事</strong>；第二，中文互联网上有几个高危搜索词——<strong>那盆植物的名字、片尾曲歌名 + 「结局」、以及任何形式的「细节解析 / 你看懂了吗」长文和剪辑</strong>，看片前请一律绕开；第三，<strong>娜塔莉·波特曼后来谈这个角色的多次访谈会直接说到结尾</strong>，那是本片最隐蔽的一个剧透源，请一并避开；第四，短视频平台上大量以「三分钟看完」为标题的内容，会把后半段整段摊开。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点在哪</h2>
+    <ul>
+      <li><strong>它先教你手艺，再教你开枪。</strong>全片最有意思的设计，是里昂教玛蒂尔达的第一课完全不是暴力。擦地板、观察门口、记住退路、控制呼吸——这是把一个孩子训练成一个「专业的人」。换句话说，这部片真正写的不是复仇，是<strong>一个人是怎么被造出来的</strong>。你看着她从只会哭，变成能一个人完成一整套动作，这个转变过程本身，就是这部片最过瘾的部分。</li>
+      <li><strong>让·雷诺做了一个反直觉的选择。</strong>他把一个职业杀手演得笨拙、迟缓、有点滑稽——写字不会、玩游戏输、被小女孩牵着走。他不是那种冷酷到底的银幕杀手，他是一个<strong>在某些方面根本没长大的人</strong>。贝松自己说过，这个角色是他 1990 年《尼基塔》里让·雷诺演的那个「清洁工」的延伸，「这次他更像个人」。这句话是理解全片的钥匙。</li>
+      <li><strong>娜塔莉·波特曼，当时 11 岁。</strong>这是她的银幕处女作。你不需要任何影评人的形容，看前十分钟就知道这不是「有天赋的小孩」这个级别的事——她撑住了整部片的情绪重心，而且是在一部动作片里。三十年后回看，这是好莱坞最后一次允许一个孩子演到这个份上。</li>
+      <li><strong>连否定它的人都承认它的手艺。</strong>它在凯撒奖上 7 项提名颗粒无收，但请看清这 7 项里<strong>有 4 项是技术类</strong>：摄影（蒂埃里·阿博加斯特）、剪辑（西尔维·兰德拉）、配乐（艾瑞克·塞拉）、音效。也就是说，法国影评界集体拒绝把「最佳影片 / 导演 / 男主」给它，却一致承认它是那一年拍得最好的法国电影之一。这个分裂本身就是一件值得琢磨的事。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评（本期请务必读完）</h2>
+    <p>这是本系列十五期里，批评分量最重的一部。我不想把它藏在最后，也不打算绕开。</p>
+    <p><strong>第一，也是最重的一条：12 岁的角色被性化了。</strong>服装（颈链、露腰上衣）、镜头的看她的角度、她模仿名伶那场戏、以及台词里那些超出年龄的暗示——这些都真实存在于片中。更麻烦的是，<strong>多出来的那 23 分钟几乎全是这类内容</strong>：导演剪辑版里明确加了她要求成为他「情人」的段落，以及她以死相逼要他教她的段落。这意味着<strong>越长越完整、就越不舒服</strong>，这是本系列第一次遇到这种情况。</p>
+    <p>而最有发言权的人已经说过了。娜塔莉·波特曼在多年后的多次访谈里，把那段时期形容为自己被迫穿过的一个「漫长的洛丽塔阶段」；她提到收到的<strong>第一封影迷来信就是一封强奸幻想</strong>；她因此在此后很多年里刻意挑「无聊」「硬」的角色来保护自己。2019 年她说过一句话：</p>
+    <div class="quote">
+      「今天没有人会再拍《这个杀手不太冷》了。」
+      <em>——娜塔莉·波特曼</em>
+    </div>
+    <p>她还说过，这部片的某些东西「参与了一种我不想延续的文化」。我的判断是：<strong>这条批评站得住，而且不用打折。</strong>它不是「时代不同了所以看着别扭」这么轻——它是具体的、发生在一个人身上的后果，而那个人自己讲出来了。</p>
+    <p><strong>第二，导演本人的阴影。</strong>2018 年起，吕克·贝松面临多项性侵与性骚扰指控，其中最受关注的是演员 Sand Van Roy 的指控。按公开报道，法国最高法院在 2023 年终结了刑事层面的程序；贝松本人始终否认全部指控。另一件被广泛讨论的事，是他与演员 Maïwenn 的关系——两人相识时她 12 岁，开始交往时她 15 岁、他 32 岁。我把这些写出来，是因为它们确实改变了很多人看这部片的方式，不写出来是不诚实的。但我要明确划一条线：<strong>不能用导演的私德推定一部电影有罪，也不能用一部电影的好看去抹掉一个演员真实的处境。</strong>这两件事应该分开判断，而波特曼本人的证词是唯一不需要推导的证据。</p>
+    <p><strong>第三，它把暴力包得太好看了。</strong>冷调、慢镜、贝多芬、一杯牛奶——这套视听语言把「职业杀人」拍成了一种优雅的生活方式。有人因此认为它在美学上替暴力做了广告。这一条我的态度是<strong>半接受</strong>：它确实很美，但这部片从头到尾没有让暴力显得无痛——恰恰相反，它把每一次的代价都记在账上，只是记账的方式很安静。</p>
+    <p><strong>第四，那个反派被批评为「太酷了」。</strong>把腐败执法者演得魅力四射，会不会让观众在道德上站错边？这一条我认为<strong>站得住一半</strong>——但也要承认，如果把他演成一个无趣的恶人，这部片就不会被人记三十二年。这是类型片的固有交易。</p>
+    <p>所以，我的立场不是「它有这些缺点但仍然值得看」。我的立场是：<strong>这些缺点不是可以顺手原谅的瑕疵，它们就是这部片的一部分，你看的时候应该感觉到它们。</strong>一部让你全程舒服的经典，通常不值得信任。</p>
+  </div>
+
+  <div class="card">
+    <h2>本系列的第四种评分困境：它把这张表填满了</h2>
+    <p>前面十四期，我们一直在处理「大众评分」和「专业评分」对不上的问题，但每次都只能看到一个角。今天这部片，第一次让我们把整张表摊平：</p>
+    <table>
+      <tr>
+        <th></th><th>西方大众分高</th><th>西方大众分低</th>
+      </tr>
+      <tr>
+        <th>专业分高</th>
+        <td>第 2 期十二怒汉（IMDb 9.0 / MC 97）<br>第 5 期教父（IMDb 9.2 / MC 100）</td>
+        <td>第 12 期霸王别姬（IMDb 8.1 / MC 84）</td>
+      </tr>
+      <tr>
+        <th>专业分低</th>
+        <td class="here">本片（IMDb 8.5 / MC 64）← 第一次出现</td>
+        <td>第 13 期海上钢琴师（IMDb 8.0 / MC 58）</td>
+      </tr>
+    </table>
+    <p>看清楚本片落在哪一格：<strong>中国观众打 9.4（258 万人），欧美观众打 8.5（134 万人）——两边的大众分都很高；但专业影评人只给了 74% 和 64。</strong></p>
+    <p>这是和前面所有案例都不同的一种情况。第 12 期霸王别姬是「西方普通观众看不懂，但影评人懂」；第 13 期海上钢琴师是「观众喜欢，影评人就是不喜欢」；第 14 期三傻是「影评界根本没评过」。而本片是：<strong>中西方观众一致热爱，专业影评人一致保留。</strong></p>
+    <p>那么问题就来了——<strong>他们在保留什么？</strong>你把批评版块那四条和这两个数字放在一起看，答案几乎是直给的：74% 和 64 这些分数里，扣掉的不是摄影、不是剪辑、不是节奏，而是<strong>「这件事该不该被拍得这么动人」。</strong></p>
+    <p>这是本系列十五期以来第一次出现这种情况：<strong>评分数字本身，就是批评的证据。</strong>以前我们只能把「观众喜欢 / 影评人讨厌」摆出来让你自己判断；今天我们至少可以说出它是从哪一格扣掉的。</p>
+    <p>至于这 26 分（95% 观众 vs 74% 专业）最终该由谁来判断——这是本期留给你自己的问题，见文末。</p>
+  </div>
+
+  <div class="card">
+    <h2>观看建议</h2>
+    <ul>
+      <li><strong>先决定看哪个版本，这在本期不是小事。</strong>剧场版 110 分钟（1994 年美国公映）；国际版 / 导演剪辑版 133 分钟（1996 年）。多出的约 23 分钟，<strong>几乎全部是两人关系里最令人不适的部分</strong>——不是动作戏，不是剧情补完。我的建议是：<strong>第一次看，看 110 分钟剧场版</strong>；看完了想补全、并且能接受前面批评版块里说的那些内容，再去看 133 分钟版。中国内地 2024-11-01 上映的是 133 分钟的 4K 修复导演剪辑版，如果你是在影院看的，那你看到的是长的那个。</li>
+      <li><strong>别在心情很差的时候看。</strong>它是动作片的外壳，但不是轻松电影。这是本系列第四次给出情绪门槛提示。</li>
+      <li><strong>前二十分钟要熬一下。</strong>开场的节奏和后面的影片气质不太一样，很多人第一次看是被开头劝退的。撑过去，从那扇门开一条缝开始，才是这部片真正的样子。</li>
+      <li><strong>看完之前别去搜任何东西。</strong>包括歌词、包括台词出处、包括演员访谈。这是本系列剧透风险第三高的片子，仅次于留作收尾的那两部。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>留给你三个问题</h2>
+    <div class="ask">
+      <small>第一层</small>
+      里昂教她的第一课是擦地板、观察、守纪律——而不是开枪。为什么一个杀手要先教这些？你想想，「职业化」这三个字本质上是在训练什么能力？把一个孩子训练成「专业的人」，和把她训练成「会开枪的人」，这两件事的差别在哪里？
+    </div>
+    <div class="ask">
+      <small>第二层</small>
+      如果里昂只是收留她三天、然后送她走，这部片还成立吗？换句话说：<strong>关系的哪一步是真正不可回头的那个点？</strong>你能在片子里指认出具体的那一场戏吗？指不出来，说明你可能还没真正开始读这部片——这一点我们在第 11 期就约定过，本期继续有效。
+    </div>
+    <div class="ask">
+      <small>第三层（锚定第 6 期与第 14 期）</small>
+      第 6 期《美丽人生》里，父亲也在替一个孩子挡住整个世界的重量，他用的办法是<strong>编一个游戏，让儿子以为这不是真的</strong>。第 14 期兰彻的办法是<strong>留在系统里把它改掉</strong>。里昂用的是第三种：他把<strong>自己会的全部手艺</strong>交给了她。<br><br>
+      那么——同样是为了让一个人活下去，「替她虚构一个世界」和「把真实的手艺交给她」，哪一种更温柔？哪一种更残忍？如果玛蒂尔达可以选择，她会选哪一种？<br><br>
+      再往前推一步：一个不在任何名单上的人，能为在一张名单上的人做的最后一件事是什么？
+    </div>
+  </div>
+
+  <div class="foot">
+    本系列第 15 期。已推荐：天堂电影院 · 十二怒汉 · 千与千寻 · 星际穿越 · 教父 · 美丽人生 · 楚门的世界 · 飞越疯人院 · 罗生门 · 蝙蝠侠：黑暗骑士 · 阿甘正传 · 霸王别姬 · 海上钢琴师 · 三傻大闹宝莱坞 · 这个杀手不太冷。<br>
+    国别台账至此：意大利 2 · 美国 5 · 日本 2 · 美英 1 · 中国 1 · 印度 1 · 法国 1。仍为空白：英国、韩国、伊朗、墨西哥、新西兰、德国。<br>
+    评分数据于 2026-10-20 经检索现查；豆瓣采用 2026-10-16 榜单快照，与第 11–14 期同口径。豆瓣 TOP250 名次历年浮动，本片另见第 5、第 6、第 7 等旧记录，以最新快照为准。IMDb TOP250 名次为 2024-05 来源，可能已变动。烂番茄专业分取各源低值（74%），Metacritic 64。<br>
+    批评版块中涉及在世人物的指控部分，均按公开报道的中性表述写出，并注明法律程序结果与当事人否认立场；是否因此调整自己与这部片的关系，交由你本人判断。
+  </div>
+
+</div>
+</body>
+</html>

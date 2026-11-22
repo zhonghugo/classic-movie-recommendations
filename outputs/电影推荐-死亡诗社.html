@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 死亡诗社</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 41 期</div>
+  <h1>死亡诗社</h1>
+  <div class="en">Dead Poets Society（1989）&nbsp;·&nbsp;彼得·威尔 导演 &nbsp;·&nbsp; 汤姆·舒尔曼 编剧 &nbsp;·&nbsp; 罗宾·威廉姆斯 主演 &nbsp;·&nbsp; 莫里斯·贾尔 配乐</div>
+  <div class="meta">
+    <span>美国</span><span>剧情 / 校园</span><span>128 分钟</span><span>1989-06-09 美国公映</span>
+    <span>试金石影片 · 彩色</span><span>英语 / 拉丁语</span><span>第 62 届奥斯卡最佳原创剧本</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.1–9.2</b><small>豆瓣 · 约 58 万–75 万人 · TOP250 第 51–57 位浮动</small></div>
+    <div class="score"><b>8.1</b><small>IMDb · 约 57 万–67.6 万票 · 另有源记 8.0</small></div>
+    <div class="score"><b>84–85%</b><small>烂番茄专业 · 54–61 评 · 观众 92%（25 万+）</small></div>
+    <div class="score"><b>79</b><small>Metacritic · 仅 14 评 · 样本极小</small></div>
+    <div class="score"><b>A+</b><small>CinemaScore · 当年极罕见</small></div>
+    <div class="score"><b>约 14 倍</b><small>成本 1640 万 → 全球 2.36 亿美元</small></div>
+  </div>
+  <div class="note">
+    口径说明：本片各站快照差异较大，故一律给区间并取低值。豆瓣 9.1–9.2（58.4 万–74.9 万人，TOP250 名次 51–57 浮动，另有影视站记 9.0，取低值仍过线）；IMDb 8.1（57 万–67.6 万票，TOP250 约第 176 位）；烂番茄专业 84–85%（54–61 评，均分 7.2–7.28），观众 92%（25 万+ 认证）；Metacritic 79（<strong>只有 14 条评论</strong>，与第 14 期《三傻》同属"极小样本"，别把它当成定论）；CinemaScore A+。<br>
+    选片线：豆瓣 9.1 远超 8.8，IMDb 8.1 低于 8.3，按本系列「或」字口径靠豆瓣达标——与第 36 期《泰坦尼克号》、第 38 期《放牛班的春天》同形状（IMDb 低于线、靠豆瓣过线），本期不写成破例：分数本身没有争议，只是 IMDb 对校园剧情片一贯偏紧。<br>
+    <strong>节奏与线路说明：上期（第 40 期《生之欲》）是 143 分钟、黑白、极静、单线的日本片，台账留下"下期可回彩色或中轻档位，避免连续两期黑白／极静"的提示。本期 128 分钟彩色、明亮、群像、有少年人的吵闹，正是按这条提示执行。但刻意<em>不</em>复用第 39→40 期那次"180 度气质掉头"的框架（那个形状刚用过一次），改走"同题对读"：见下方第一件事。导演线与年代线新开（彼得·威尔首次、1989 年首次，也是首位进入本系列的澳大利亚导演）；美国国别线则已多次使用，不算新开。</strong>
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（第 4 档「防最后一场戏」＋三条本片特有的防线）</h2>
+    <p>这是一部被引用了三十多年的"励志片"，而它被引用得最多的那几处，几乎全在结尾十分钟里。所以本期要防的不只是"后来怎样"：<strong>最后一场课、某件事的后果、以及一句被当作片中称呼反复使用的诗句</strong>——我通篇不写它的名字，也请你别去搜。另有一类最不设防的包装，是以"最大遗憾是没拍续集"为标题的安利长文，它会把后半段与一份被删掉的初稿一起摊开。看之前一律绕开。</p>
+    <ul>
+      <li><strong>第一雷（第八类再犯，本片是极端案例）：中文百科与影视站的「剧情介绍」栏。</strong>本次实测，多个简介一路写到结尾画面，其中一条把那个动作写进了"影片评价"，另一条干脆写"故事讲到……而收尾"。<strong>演职员表、上映年份、片长可以读，剧情栏一行别碰。</strong></li>
+      <li><strong>第二雷（第二十一类＋第二十五类叠加）：以"影史最伟大结尾""毕业季 / 教师节必看"为题的图文、名场面盘点、金句海报。</strong>本片是这几类的重灾区，标题常常不含剧透字样，正文第一句就已经把答案交了。以科普、片单、悼念姿态出现的最不设防。</li>
+      <li><strong>第三雷（第十类「关键台词名即剧透」）：那个被当成称呼用的诗句、以及 2014 年后全网复刻的那个动作。</strong>影史盘点、歌单、毕业演讲、短视频混剪里到处都是；我连它们指向哪一场都不写。同理，"几分钟看完"类解说（第九类）、师范课程与教育论文里的逐场拆解（第十二类）也都按最严口径避开。</li>
+      <li><strong>第四雷（第 11 期「别查原著」规矩的新包装）：任何讨论"初稿 / 原著 / 续集"的文本。</strong>本片初稿与成片差别极大，所有对照文都要求先摊开成片的后半段；而且它们往往顶着"冷知识""幕后花絮"的标题出现。看之前请一律绕开。</li>
+      <li><strong>检索词雷第 16 次（一名四译）：</strong>大陆《死亡诗社》／港《暴雨骄阳》／台《春风化雨》／又译《壮志骄阳》，其中《春风化雨》还是成语、另一部电影、一部电视剧与一首剧集主题曲的共同名字。<strong>认准 1989、彼得·威尔、罗宾·威廉姆斯、128 分钟。</strong></li>
+    </ul>
+    <p><strong>剧情梗概（安全区，开场即交代完的前提）：</strong>1959 年秋，美国东北部一所百年男校开学。校训是四个词：传统、荣誉、纪律、卓越；男孩们的人生早在入学前就被排好了——考进名校，成为医生、律师、银行家。新学期来了一位新的英文老师，他本人就是这所学校毕业的，如今回来教书。他上课的方式和这所学校不太一样：第一节课就不在教室里规规矩矩地坐着，他让学生看旧照片、用一种从没被允许过的方式对待课本，教他们一个拉丁词，还让他们在院子里把自己写的东西喊出来。几个学生从校史资料里翻出一个早已停摆的旧社团，半夜溜出宿舍，在山洞里念诗。他们第一次发现，有些事原来可以自己决定。</p>
+    <div class="ver">我们停在这里。后半段那几件事的来龙去脉、每个人各自做了什么选择、老师后来怎样、最后一场课上发生了什么、以及那句称呼是什么——一个字不写。片尾字幕升起来之前，请什么都别搜。</div>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概 · 亮点所在</h2>
+    <ul>
+      <li><strong>它把"体制"拍成了空间与声音，不是台词。</strong>对称的走廊、统一的制服、点蜡烛的开学礼、四大信条被齐声背出来——开场十几分钟没有一句控诉，你已经完全明白这所学校怎么运转。更狠的是，全片几乎没有一个真正的坏人：校长、父亲、老师都自认在为孩子好。<strong>压迫不来自恶意，来自每个人都觉得自己在尽责</strong>，这是它比同类校园片高出一截的地方。</li>
+      <li><strong>罗宾·威廉姆斯收着演。</strong>他当时刚凭喜剧成名，本片是他第二次获奥斯卡影帝提名；难得的是他把那套即兴的逗趣压到极低，只留几处短促的模仿，其余全靠停顿、眼神和听学生说话时的表情。保琳·凯尔嫌整部片"中等趣味的清高"，却单独夸他"比以往任何一次都优雅"——连最不买账的人都认这一条。</li>
+      <li><strong>一群少年，不是一个英雄。</strong>导演让年轻演员住在一起、按故事顺序拍、不许在片场说现代俚语，还发给他们讲 1950 年代青少年生活的书。结果是银幕上那种关系真的长出来了：有人冲在前面，有人始终不敢开口，有人中途改了主意。<strong>它没有把"觉醒"发给所有人</strong>，这一点很重要，但要你自己去看谁拿到了、谁没拿到。</li>
+      <li><strong>诗被当作工具，而不是装饰。</strong>丁尼生、赫里克、惠特曼、梭罗、莎士比亚轮番出现，每一次都对应一件很具体的事——不是用来显得有文化，是用来给一群不许自己说话的人找一句能开口的话。<strong>这也是它最挨骂的地方</strong>（见批评版块）：诗在这里究竟被读懂了，还是被拿去当口号了？两说都有人坚持了三十多年。</li>
+      <li><strong>莫里斯·贾尔的配乐与风笛把"仪式感"一层层叠上去。</strong>它拿下第 43 届 BAFTA 最佳原创配乐；音乐从不替你下结论，只负责让那些齐声的、整齐的、被安排好的时刻，听起来格外好听——好听到你会不舒服。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看 · 三件先说清楚的事</h2>
+    <p><strong>第一件：它和昨天那部，是同一个问题的两个提问方向。</strong>第 40 期《生之欲》是 1952 年、黑白、143 分钟、极静：一个在市政厅同一张桌子上坐了三十年的老公务员，在生命的<strong>终点</strong>往回问"我这一生活过没有"。本期是 1989 年、彩色、128 分钟、吵闹明亮：一群十七岁少年在人生的<strong>起点</strong>被问"你打算怎么活"。一个把答案往回追，一个把答案往前递；一个是"一个人终于做成一件小事"，一个是"一群人先被允许不按安排活"。两部都把一座机构放在对面（市政厅 / 百年男校），都把诗与歌当作唯一能绕过机构的语言，连片名都对着：生之欲 / 死亡诗社。相隔 37 年、两个国家、黑白对彩色、一个人对一群人——<strong>本系列 41 期里第一次出现"同一道题，从两端各问一次"的对读</strong>。</p>
+    <div class="quote">「一个人到最后一刻才想起要活，和一群人还没开始就被问要怎么活——你觉得哪一问更难回答？」<em>本系列第 41 期 · 写在红线框之后</em></div>
+    <p><strong>第二件：它拿的是剧本奖，挨的也是剧本的骂，而且发生在同一年。</strong>第 62 届奥斯卡（1990-03-26）四项提名里唯一获奖的，是<strong>最佳原创剧本</strong>（汤姆·舒尔曼）；最佳影片、最佳导演、最佳男主全部落空。而当年最重的几条批评，枪口也精确对准剧本：艾伯特判它"一堆虔诚的陈词滥调假装成一次勇敢的表态"，Maltin 说它"拍得好、演得极好，但戏剧上过于直白、一边倒——尽管如此，舒尔曼的剧本拿了奥斯卡"，《大西洋月刊》的 Dettmar 说它对文学的呈现"既误导又极具诱惑"、是"反智的"。更有意思的是<strong>同一个动作收到两份相反的判决</strong>：把诗变成一句可以齐声念出来的话，被 AFI 选进"影史百大电影台词"（第 95 位），又被艾伯特当作最致命的缺点（"他们只是被掠来当口号"）。我不裁决，只把两份判决并排放在这里——沿用第 32 期《指环王3》"并排放置"的写法，不新立姿态。</p>
+    <p><strong>第三件：一部反对服从的电影，是迪士尼出钱拍的，还成了它当年最赚钱的剧情片。</strong>它由迪士尼旗下的试金石（Touchstone）出品，是<strong>该厂牌第一部拿到奥斯卡最佳影片提名的电影</strong>；成本 1640 万美元，全球 2.36 亿（约 14 倍），1989 年全球票房第 5、剧情片第 1，同年压过《小美人鱼》与《亲爱的，我把孩子缩小了》。片厂早期给过三条意见：把学生的热情从诗改成跳舞、片名改掉、把重心从学生挪到老师身上——<strong>三条全被导演驳回</strong>。这与第 39 期《低俗小说》"独立电影变成一门生意"方向相反：那期是小公司把独立片做成生意，本期是最大的厂牌自己出钱，拍了一部拆自己台的作品，还卖爆了。顺带一提，剧本原型、田纳西州那位以出格教法出名的老师塞缪尔·皮克林，事后对被写进电影只回了一句："我身上能进那个角色的部分一定很小……二十三年前的事了，能有多少是我？"——<strong>连原型本人都不肯被别人替自己定义</strong>，这大概是这部片最好的一条注脚。</p>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评（都站得住，且都指向同一处）</h2>
+    <p><strong>第一条，也是最重的一条：把诗掠成了口号。</strong>罗杰·艾伯特当年只给两星（满分四星），原话是 "a collection of pious platitudes masquerading as a courageous stand in favor of something"，并写下一句至今被引用的判词：<strong>"一门伟大的诗歌课结束时，学生会爱上诗；这位老师的学期结束时，他们真正爱上的只是老师。"</strong>他还嫌一部设定在 1959 年的片子，竟没有一个学生提过凯鲁亚克、金斯堡或垮掉的一代；在奥斯卡提名特辑里，他与 Siskel 双双不认同威廉姆斯的影帝提名，并把本片的最佳影片提名选为"当年最糟的提名"，认为它挤掉了斯派克·李的《为所应为》。<strong>这条我不打折</strong>：它指出的正是本片最有效、也最可疑的那套机制。</p>
+    <p><strong>第二条：一边倒、煽情、不够诚实。</strong>保琳·凯尔嫌它 "middlebrow highmindedness"（中等趣味的清高）；《国家评论》的 John Simon 说这是他"很久以来看过的最不诚实的电影"；影史家 Leonard Maltin 的判词最克制也最扎人："拍得好，演得极好，但戏剧上过于直白、情节剧式地一边倒。尽管如此，舒尔曼的剧本拿了奥斯卡。"<strong>同意一半</strong>：学校与家长确实被写得太整齐，但那份"整齐"正是片子要拍的东西——每个人都尽责，所以没人需要负责。</p>
+    <p><strong>第三条：它教人找到自己的声音，最流行的却是一句所有人一起念的话。</strong>这条是我自己的一票。《大西洋月刊》的 Kevin Dettmar 把片中的文学课称为"文学版的粉丝文化"、判为"反智"；一位 UCLA 文学教授还指出，片中被借来当旗号的那首十九世纪诗，本身恰恰是写得最循规蹈矩的一首——这个反讽我不展开，也不写它的名字，请你看完自己去查。<strong>把"独立思考"教成一句可以被集体复述的台词，是这部片最漂亮也最不自洽的地方；而它三十多年来被无数课堂、毕业典礼和金句海报反复引用，等于把这个不自洽又演了一遍。</strong></p>
+    <p>本期不新立「表态法」编号（沿用第 40 期的克制）。只留一句共同的：<strong>这些批评说的都是同一件事——它太想让你被点燃。而它真正好的几场，恰恰一个字都没解释。</strong>带着这两句一起看，比只带一句好。</p>
+  </div>
+
+  <div class="card">
+    <h2>一份现查的成绩单</h2>
+    <table>
+      <tr><th>口径</th><th>数值</th><th>说明</th></tr>
+      <tr><td>奥斯卡</td><td>4 提 1 中</td><td>第 62 届：最佳原创剧本（汤姆·舒尔曼）获奖；最佳影片、导演、男主提名。影帝输给《我的左脚》的丹尼尔·戴-刘易斯</td></tr>
+      <tr><td>英国电影学院奖</td><td>2 中</td><td>第 43 届最佳影片 + 最佳原创配乐（莫里斯·贾尔）；另有导演、男主、剧本、摄影、剪辑等提名</td></tr>
+      <tr><td>金球 / 其他</td><td>金球 4 提 0 中</td><td>另有法国凯撒奖、意大利大卫奖最佳外语片，NBR 1989 年度十佳，DGA 与 WGA 提名</td></tr>
+      <tr><td>影史榜单</td><td>AFI 百大励志片第 52</td><td>另有一句台词入选 AFI「百年百大电影台词」第 95 位；常年稳居豆瓣 TOP250</td></tr>
+      <tr><td>票房</td><td>全球 2.3586 亿美元</td><td>成本 1640 万，北美 9586 万；1989 年全球第 5、剧情片第 1；首部获最佳影片提名的试金石影片</td></tr>
+      <tr><td>专业 vs 观众</td><td>84–85% / 92%</td><td>烂番茄专业 54–61 评，观众 92%（25 万+）；CinemaScore A+；MC 79 但仅 14 评</td></tr>
+    </table>
+    <p style="margin-top:12px">一个反差值得留意：<strong>它是本系列里"观众给得最满、专业给得最省"的一部之一</strong>——CinemaScore A+、豆瓣 9.1 以上、烂番茄观众 92%，而专业分只有 84–85%、MC 仅 14 条评论。但我不打算把这写成又一次"影评人 vs 观众打架"（第 4、6、7、11、15、26、38 期已反复用过那个框架）；本期的形状不一样：<strong>两边吵的其实是同一件事，只是给了它相反的名字</strong>——一边叫"点燃"，一边叫"煽动"。上面那份"剧本的两份判决"才是这一期真正的新东西。</p>
+  </div>
+
+  <div class="card">
+    <h2>观看建议</h2>
+    <ul>
+      <li><strong>版本（第 18 次「无陷阱」）：128 分钟剧场版全球通行</strong>，没有删减版、另拍结局、导演剪辑版之分。另有一个约 140 分钟的电视 / 镭射影碟版，多出的是当年剪掉的素材回填，不是另一种剪法——看 128 即可。累计：删减/改判 8 · 无陷阱 18 · 更长≠更好 1。</li>
+      <li><strong>请用原速，并留出完整的两小时。</strong>它的力气全在"停顿"和"少年人互相看了一眼还没说话"的那几秒上；二倍速会把这些全抹平，只剩一位很会讲课的老师在讲台上表演。</li>
+      <li><strong>情绪门槛（正向提醒）：别把它当校园励志片随便点开。</strong>前半小时明亮、好笑、像一部青春片，后半程并不轻松；也别因为"必看片单"四个字先给自己装好一个该感动的姿势——上面第三条批评说的就是这个。挑一个能完整坐住、且不必向任何人交观后感的晚上。</li>
+      <li><strong>字幕尽量选靠谱的版本。</strong>片中诗句与拉丁文短语密度不低，译得糊会把"诗被当工具用"这条线直接抹掉；英语原声优先。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>散场以后：三个问题（按需取用）</h2>
+    <div class="ask">
+      <small>第一层 · 进场时</small>
+      <p>先回答一个再按下播放：<strong>你更希望遇到一位把你点燃的老师，还是更希望被教会自己点火？</strong>这两个愿望看起来是一回事，看完你大概会发现不是。先记下你现在的答案，别改。</p>
+    </div>
+    <div class="ask">
+      <small>第二层 · 散场时</small>
+      <p>请指认<strong>一个老师不在场的瞬间</strong>，说明哪一处让你觉得某个学生是真的自己做了决定——要求指得出具体场次，指不出来就追问一句：那份"觉醒"，到底长在学生身上，还是长在那位老师身上？这一问是把艾伯特那句判词拿回来自己验一遍。</p>
+    </div>
+    <div class="ask">
+      <small>第三层 · 对照本系列第 40 期</small>
+      <p>《生之欲》里那个人在生命终点才问"我活过没有"，本片那群少年在人生起点被问"你要怎么活"。<strong>如果让那位在办公桌前坐了三十年的科长，十七岁时坐进这间教室，你觉得他会是第一个开口的人，还是始终沉默的那个？</strong>再往自己身上落一步：你手边有没有一份"早就被安排好、而且安排你的人全都觉得自己尽责"的清单？它是什么时候开始的？</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    本系列第 41 部 · 与第 40 期《生之欲》构成"同一道题、从终点与起点各问一次"的对读 · 彼得·威尔导演线首开、1989 年线首开<br>
+    已推清单与选片口径见每日执行台账 · 后续候选：华语线 2026-12-02 解禁（花样年华第一优先）、动画线 12 月中旬后《机器人总动员》
+  </div>
+
+</div>
+</body>
+</html>

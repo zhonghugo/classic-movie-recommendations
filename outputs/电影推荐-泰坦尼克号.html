@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 泰坦尼克号</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 36 期</div>
+  <h1>泰坦尼克号</h1>
+  <div class="en">Titanic（1997）&nbsp;·&nbsp; 詹姆斯·卡梅隆 编剧 / 导演 &nbsp;·&nbsp; 二十世纪福克斯 / 派拉蒙 联合出品</div>
+  <div class="meta">
+    <span>美国</span><span>剧情 · 爱情 · 灾难史诗</span>
+    <span>194 分钟</span><span>彩色</span><span>1997-12-19 北美公映</span><span>1998-04-03 内地首映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.5</b><small>豆瓣 · TOP250 第 3</small></div>
+    <div class="score"><b>8.0</b><small>IMDb · 约 140 万票</small></div>
+    <div class="score"><b>88%</b><small>烂番茄专业 · 256 评</small></div>
+    <div class="score"><b>69%</b><small>烂番茄观众 · 25 万+</small></div>
+    <div class="score"><b>75</b><small>Metacritic · 用户 8.2</small></div>
+    <div class="score"><b>11 座</b><small>奥斯卡 · 影史并列最多</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.5（各快照约 247.5 万–251.6 万人评价，TOP250 第 3，仅次于肖申克与霸王别姬——后两部都是本系列推荐过的片）；IMDb 8.0（官方页现值 8.0、约 140 万票，部分聚合站仍记 7.9，属快照浮动）；烂番茄专业 88%（256 评）· 爆米花 69%（25 万+ 评分）；Metacritic 75 · 用户分 8.2。<br>
+    选片线：豆瓣 9.5 高出线 0.7；IMDb 8.0 低于 8.3 的线——按本系列「或」字口径仍然达标，但我不装看不见：这是第 33 期首创的「类型折算」第二次动用（灾难 / 爱情大片的 IMDb 相对天花板偏低），折算不等于打折，看的时候自己心里有数。<br>
+    分数形状：本系列第一次出现<strong>专业分大幅高于观众分</strong>——烂番茄 88 对 69，差 19 分（此前专业高于观众的最大差值只有 +5：第 7 期楚门、第 35 期雨中曲）。豆瓣 250 万人的 9.5 与烂番茄观众的 69 放在一起看，是「东高西低」大众落差的又一次出现（此前：霸王别姬 · 海上钢琴师 · 疯狂动物城 · 东京物语）。<br>
+    <strong>节奏说明：昨天（第 35 期）是全系列最吵、最亮、最轻的一部，103 分钟彩色歌舞；今天按台账提示回「中重」：194 分钟彩色灾难爱情史诗，情绪重量全押在后半段。</strong>
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（第 10 档「防年表」第三次启用，叠加一条新表述：防幸存者名单）</h2>
+    <p>先说清楚本片的特殊处境：<strong>历史已经替它剧透了结局。</strong>1912 年 4 月 15 日凌晨沉没、约 1500 人罹难——这是教科书内容，写它不算剧透，导演也没打算靠它保密。<strong>真正可泄露的东西因此换了位置：虚构人物的生死名单、最后一场戏、以及散场前那几分钟。</strong>这就是本期红线划定的「防幸存者名单」：船沉是历史，<strong>谁活下来是他的答案</strong>——而全片唯一的悬念引擎就建在这道题上。剧情梗概停在 4 月 14 日夜里。</p>
+    <ul>
+      <li><strong>第一类：中文百科的剧情栏（第八类）。</strong>本片是这一类的重灾区——「每个人都看过」的片子，剧情栏写得最全，会从启航逐场写到片尾最后一镜。<strong>看获奖记录、看幕后资料都可以，剧情栏直接跳过。</strong></li>
+      <li><strong>第二类：以科普姿态出现的「结局物理学复盘」（本系列新增第二十四类剧透源）。</strong>互联网上流传最广的一场关于结尾的全民争论——标题看起来像一节物理课（浮力、承重、空间），内容是彻头彻尾的结局复盘，而且因为姿态是「讲道理」，读者防备最低。<strong>我连它争论的是哪件道具都不写。别去搜。</strong></li>
+      <li><strong>第三类：检索词雷（第 12 次启用，本片是影史上被占用最多的片名）。</strong>搜「Titanic」会同时撞上：1953 年的同名剧情片、1958 年的《此夜永难忘》、1996 年的同题材迷你剧、上百部纪录片与打捞纪实——全部挤在同一个检索池里。<strong>建议搜「泰坦尼克号 1997 4K」或「Titanic 1997 Cameron」。</strong></li>
+      <li><strong>第四类：安利类长文（第十三类）。</strong>「必看经典」类推荐文最容易被从开场写到最后一幕（本系列已多次亲历），这篇也请只读到红线为止。</li>
+    </ul>
+    <p>安全区划给你（这些是开场半小时即交代完的前提）：<strong>1996 年，一支打捞队潜到沉船残骸里寻找一样东西，无功而返。一位 101 岁的老太太看到电视新闻后打来电话，说她就是当年船上那位少女，然后开始讲 1912 年的事：头等舱的罗丝，被母亲和一纸婚约按在一张她不想要的人生里；靠一手好牌赢来三等舱船票的穷画家杰克；一次隔着甲板的相遇。船在 4 月 10 日启航，横渡大西洋要四天。</strong></p>
+    <div class="ver">我们停在这里。第 4 天夜里发生的事，历史课本替我写了一半；另一半——这两个人的那一半——一个字不写。<br>
+    <strong>「亮点」与「批评」两节会提到「沉船段落」「阶级」「那首歌」这些词，我提前声明边界：</strong>沉船本身是历史，不算泄露；「谁在什么位置、谁做了什么选择、最后怎样」一律不写。<strong>真正该留给你自己的，是那份幸存者名单。</strong></div>
+  </div>
+
+  <div class="card">
+    <h2>三件先说清楚的事</h2>
+    <p><strong>第一件：它是「全世界都知道结局」这门生意被做到极致的唯一一次。</strong>开拍时成本 2 亿美元（当时影史最贵），全行业等着看它像那艘船一样沉第二遍——结果：首轮全球票房 18.4 亿、含重映累计 22.6 亿，<strong>连续 12 年（1998–2009）全球影史票房第一</strong>；北美首轮 6.008 亿，同样保持了 12 年。而打破这两项纪录的，是 2009 年的《阿凡达》——<strong>同一个导演。影史唯一一次，票房纪录的持有者被自己超越。</strong>今天它含重映累计 22.6 亿，现居影史第四（前面三席：阿凡达、复联 4、阿凡达 2）——注意一件事：第四名，是它自己的导演占了两个席位之后的第四名。</p>
+    <p><strong>第二件：11 座小金人，那张三足桌今天凑齐了第二条腿。</strong>第 70 届奥斯卡（1998-03-23）14 提 11 中，获奖总数与《宾虚》（1959）和《指环王 3》（2003）并列影史第一。第 32 期推《指环王 3》时写过这张桌——当时那部是 11 提 11 中、零表演提名；本片形状不同：<strong>14 项提名里有两项表演提名——女主角（凯特·温斯莱特）与女配角（87 岁的格洛丽亚·斯图尔特），同一个角色「罗丝」的两代演员同届入围，双双未中，11 座里同样一座表演奖都没有。</strong>87 岁的斯图尔特当时创下奥斯卡史上最年长表演提名者的纪录。颁奖那晚卡梅隆在台上喊的是片中那句「我是世界之王」——这个梗见批评版块。</p>
+    <p><strong>第三件：它在中国靠岸了三次。</strong>1998-04-03 内地首映，3.6 亿——创下当时内地影史票房纪录并保持了 11 年；那一年全国总票房不过十几亿量级，无数中国人第一次进影院看的「好莱坞大片」就是它。2012-04-10，3D 版重映：9.46 亿、2126 万人次、当年内地观影人次榜亚军——<strong>重映票房接近首映的三倍</strong>。2023-04-03，25 周年 4K/3D 版第三次靠岸：5915 万。同一部片、同一个市场，重映票房高于首映——这是第 13 期《海上钢琴师》「重映救活」框架的换片复用（那次的量级是两周 1.3 亿，这次大了近十倍）；而且那 2126 万人次里很大一部分，是在给当年录像厅和盗版碟上看过的一遍补票。</p>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在（不看剧情也能看懂的四个看点）</h2>
+    <ul>
+      <li><strong>一、沉船段落至今是灾难片的技术基准，而它的一整场戏是「只能拍一次」的。</strong>大阶梯灌水那场：水闸一开，布景连同家具、吊灯、摆设当真销毁，摄影机里的那一次就是绝版——没有重来的机会，全组人一次演到位。声音同样值回票价：本片拿了两座声音奖（音响 + 音效剪辑），后半段水声是「一艘船被拆开」的全程实况。<strong>看的时候留意一件事：水进来之后，声音和画面谁在先。</strong></li>
+      <li><strong>二、两个罗丝撑起的不止是一段爱情，是「记忆」这个装置本身。</strong>全片的叙事结构是一个活到 101 岁的人在替那一晚的所有人回忆——它不是灾难片套一层爱情皮，它本质上是一部关于「记住」的电影：谁的故事被讲了、谁的故事被沉在海底、由谁来决定讲哪一段。两位女演员同届提名这个罕见的巧合，恰好把「同一个人的一生两端」摆在了一起。</li>
+      <li><strong>三、阶级是拍出来的，不是念出来的。</strong>头等舱的楼梯、三等舱的走廊、甲板的层数、以及一扇扇在紧要关头被锁上或打开的铁门——空间的分配就是阶级的分配。第 17 期《寄生虫》用楼梯做空间寓言；这部早了它二十二年，用的是门与甲板的层数。<strong>看的时候数一数：两人每换一次场景，是在往船的哪一层走；往上走时谁在笑，往下走时谁在看。</strong></li>
+      <li><strong>四、那首歌是压到最后才打出的牌。</strong>席琳·迪翁的《My Heart Will Go On》拿了奥斯卡与金球最佳歌曲，1999 年再拿格莱美年度制作等四奖——但注意它在片内的用法：<strong>旋律散在全片各处做底色，完整的人声版被留到最后。</strong>一部 194 分钟的片把最大的一张牌押到片尾——这张牌也是本期红线请你保住的东西之一。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p><strong>因为它是「悬念能不能建在已知结局上」这门手艺的教科书。</strong>你知道船会沉，导演知道你知道——所以悬念整体换了方向：不是「会不会沉」，而是「这两个人里，谁下船」。历史替它剧透了结局，它就把自己拍成一部关于<strong>名单</strong>的电影。真实事件改编片后来无数次抄这一招，没有一部抄得这么彻底、这么成功。<strong>进场前你手握全部答案的一半，另一半要用 194 分钟去换——这是电影这个媒介能给的最公平的交易之一。</strong></p>
+    <p><strong>因为它是「虚构人物作为历史翻译器」的最大成功案例，也是最大争议案例。</strong>每一代新人第一次认识那场海难，几乎都是通过这两个虚构的人。这是它伟大的原因：1500 个名字进不去观众心里，两个名字进去了；这也是它被批评的地方（见下一节）。但它做成了一件纪念碑式的事情——<strong>让一亿人在三个小时里为一百年前的陌生死者流泪，靠的不是史料，是两个借来的名字。</strong></p>
+    <p><strong>因为它对你的今天仍然有用。</strong>开拍前，卡梅隆本人乘俄制「和平」号潜水器多次下潜到近 3800 米深的海底，坐在真实残骸旁边看那艘船——<strong>好莱坞历史上最贵的电影，是从导演亲手摸过它的坟墓开始的。</strong>这不是花絮，这是方法：拍任何「大事」之前先去现场、先碰实物、先把敬畏心建立在亲眼所见上。这套东西搬到今天做产品、做研究、写任何东西，都成立。</p>
+    <p>最后，把洛杉矶时报与它对骂三十年都没吵完的那个问题留在这里——<strong>「旧」到底是缺陷还是手段？</strong>这个问题的答案在批评版块，但我先剧透我自己的结论：<strong>梗会过去，基准会留下来。它最用力写的那句台词，已经被全世界戏仿了四分之一个世纪；它最不费力拍的那些段落，被全行业当作标准用了四分之一个世纪。你赌哪个活得久？</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>批评版块（三条：一条最重的、一条有真实后果的、一条关于时间的，再加我的一条）</h2>
+    <p><strong>第一条（最重）：「好莱坞黄金时代的一次无脑赝品」——并且它引发了一场影史留名的对骂。</strong>洛杉矶时报首席影评人 Kenneth Turan 当年写：观众绝望到去拥抱一部「putting the best face on it, is a witless counterfeit of Hollywood's Golden Age, a compendium of cliches, that add up to a reasonable facsimile of a film」（往好里说，是对好莱坞黄金时代的一次无脑临摹，一堆陈词滥调拼成的一部「很像电影的东西」），并称这个剧本是「史上最差剧本」。卡梅隆的回应不是改剧本，而是一封 1200 字的公开信，就登在洛杉矶时报上，结尾一句：「Forget about Clinton——how do we impeach Kenneth Turan?」（别管克林顿了——怎么弹劾肯尼斯·图兰？）他手里最硬的反证是：同年美国编剧工会把本片剧本提名为年度最佳原创剧本之一，而编剧公会说它差。Turan 到 2020 年退休没收回一个字——有人问他后悔哪篇影评吗，他答：「No, in general, what I think is what I think.」（不，我怎么想的就是怎么想的。）<strong>我的表态（沿用第 20 期「两边都留、不裁决」）：</strong>这场架没有输家认输，我也不当裁判。只补一个 Turan 没算到的数：他说观众涌向它只是「因为别的好莱坞片更差」——2012 年，2126 万中国人在它的结局被剧透得一干二净之后，第二次买票进场。「别的好莱坞片更差」解释不了这个。</p>
+    <p><strong>第二条（有真实后果的）：它给一位真实人物安了一段他很可能从未发生过的戏——这是本片唯一一桩留了案底的批评。</strong>大副威廉·默多克的家人看到成片后公开抗议：默多克的家乡、苏格兰小镇达尔贝蒂把他当英雄纪念了八十五年，片子里他成了另一副样子。1998 年 4 月 15 日——沉船 86 周年当天——二十世纪福克斯的执行副总裁 Scott Neeson 飞到达尔贝蒂当面致歉，捐出 5000 英镑给当地中学的「默多克纪念奖」，他的原话是：「It was made for entertainment. It was not meant to be a documentary at all.」（它是拍来娱乐的，完全不是要当纪录片。）校长说这个 gesture「太少、太迟」；默多克的侄子说：「I cannot completely forgive them.」（我无法完全原谅他们。）多年后卡梅隆在 DVD 评论音轨里亲口松了口：「把一个具体的真实人物拍成这样，可能是个错误。」<strong>我的表态（第 27 期「把批评还原成动作」的反向用法：把回应还原成创作者后来的动作）：</strong>这条不需要我裁决——道歉、支票、评论音轨上的让步，全是可核查的事实。<strong>卡梅隆自己的后悔，比任何影评都重。</strong>顺带一句：这个案子从此成了「真实事件改编」伦理课的第一号教材，直到今天每出一部传记片还会被拿出来量一遍。</p>
+    <p><strong>第三条（关于时间）：它最用力的台词已经变成了梗。</strong>当年没人笑的地方，今天的观众会笑；「I'm flying, Jack」被戏仿了四分之一个世纪，那句「我是世界之王」连卡梅隆自己领奖时都在喊。烂番茄观众 69% 就是这道代际裂缝的量化：高票打给场面与视听，低票集中在对白与人设。<strong>我的表态（沿用第 14 期「承认缺陷 + 重新定位」）：</strong>对白确实旧——但要补一句，它的旧是「1912 年的旧」叠上「1950 年代情节剧的旧」，是刻意搬来的两层旧模板（烂番茄的评论共识原文就是 old-fashioned melodrama，「老式情节剧」，这在 1997 年是贬是褒取决于你站在哪边）。<strong>时间把它最用力的部分变成了梗，也把它最不费力的部分供成了基准</strong>——两件事是同一枚硬币，扣掉任何一面它都不再是它。</p>
+    <p><strong>我的一条：你哭的到底是谁？</strong>这部片最聪明与最狡猾是同一件事：它把一场 1500 人的真实死亡，翻译成两个人的虚构故事——用「名单」那道题做钩子，让你把本该流给 1500 个名字的泪，通过两个名字流出去。那 1500 人中的绝大多数，在这部片里没有脸。<strong>这不是指控：不用这个办法，任何海难片都无法让一亿人哭。</strong>这是提醒：哭的时候记得分一分——你是在为那两个人哭，还是在替那 1500 个人哭？散场后做一遍第三问，你会知道自己的答案。</p>
+  </div>
+
+  <div class="card">
+    <h2>观看建议（本期是第十三次「不用挑版本」，另有四条硬提醒）</h2>
+    <ul>
+      <li><strong>版本：没有删减陷阱，194 分钟各平台一致</strong>（部分平台记 195 分钟，属四舍五入口径）。这是本系列第 13 次遇到「无需挑版本」（累计：删减 / 改判 8 · 无陷阱 13 · 「更长≠更好」1）。3D 版不必刻意追：2012 年的转制很好，但这部片的重点（脸、水、铁）2D 都给足了。</li>
+      <li><strong>音量开大，别用手机外放。</strong>两座声音奖不是安慰奖——后半段水声是这部电影真正的主角，它的层次全在音响里。</li>
+      <li><strong>请用原速看（第四次，沿用 29 / 34 / 35 期）。</strong>沉船段落的时间感是按分钟设计的，二倍速会把它变成灾难新闻混剪。</li>
+      <li><strong>情绪门槛提示（第四次正向启用，前三次：第 8 / 27 / 34 期）：</strong>灾难段落写实、拥挤、长。心情糟的日子改天再看——它值得你状态好的那一晚。</li>
+      <li><strong>一晚一部，别连看。</strong>194 分钟，只比第 32 期《指环王 3》短 7 分钟；散场后的那种空，不要再用另一部大片去填。</li>
+    </ul>
+    <div class="ver">顺手说一个观看顺序的事：如果你最近刚看过第 6 期《美丽人生》，两部请隔开几天再看——<strong>它们是同一年（1997）的两部电影，都在真实的集体死亡上放了一个虚构的人</strong>，但一个把镜头对准「父亲如何瞒住死亡」，一个把镜头对准「谁有资格被记住」。连着看会互相削弱，隔开看互相加分。</div>
+  </div>
+
+  <div class="card">
+    <h2>带走三个问题（看完再回答）</h2>
+    <div class="ask">
+      <small>第一问 · 进场之前</small>
+      <p>你已经知道船会沉——这是全部历史剧透。<strong>那请写下你的赌注：两个主角里，谁上救生艇？</strong>把答案收好，散场后对。这道题就是全片唯一的悬念引擎——<strong>历史能剧透结局，剧透不了名单。</strong></p>
+    </div>
+    <div class="ask">
+      <small>第二问 · 散场之后</small>
+      <p>片子里出现的<strong>真实人物</strong>——船长、设计师、老夫妇、乐手们——你能想起几个？影片交代了他们中谁的结局？<strong>再问自己一句更扎人的：你为虚构的人哭得久，还是看到真实人物退场时哭得久？</strong>如果第二个你答不上来，「虚构人物是历史的翻译器」这个理论就赢了——而这正是这部片的胜利，也是它的罪状。</p>
+    </div>
+    <div class="ask">
+      <small>第三问 · 跨期对照</small>
+      <p>第 6 期《美丽人生》与本片同年（1997）：一部把虚构的父子放进真实的集中营，一部把虚构的恋人放进真实的海难。<strong>哪一部「更有权利」借用真实灾难？</strong>——给你一个提示再作答：一部的背景里有明确的、可以归罪的恶；另一部的「凶手」是一座冰山，无处归罪。<strong>归罪的可能，是否改变了「借」的伦理尺度？</strong>第 27 期《辛德勒的名单》欠下的那道题（不收片酬、版税全部注入证言基金会），在这里能再量一遍。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>数据表（本期口径）</h2>
+    <table>
+      <tr><th>项目</th><th>数据</th></tr>
+      <tr><td>豆瓣</td><td>9.5（各快照约 247.5 万–251.6 万人评价）· TOP250 <strong>第 3</strong>（前两名肖申克 · 霸王别姬均已被本系列推荐过）</td></tr>
+      <tr><td>IMDb</td><td>8.0（官方页现值，约 140 万票；部分聚合站记 7.9，属快照浮动）</td></tr>
+      <tr><td>烂番茄 / MC</td><td>专业 88%（256 评）· 爆米花 69%（25 万+）——<strong>专业高于观众 19 分，本系列最大反向缺口</strong>；Metacritic 75 · 用户 8.2</td></tr>
+      <tr><td>奥斯卡</td><td>第 70 届（1998-03-23）<strong>14 提 11 中</strong>：影片 · 导演 · 摄影 · 艺术指导 · 服装 · 剪辑 · 配乐 · 歌曲 · 音响 · 音效剪辑 · 视效；未中 3 项＝女主（温斯莱特→海伦·亨特《尽善尽美》）· 女配（斯图尔特→金·贝辛格《洛城机密》）· 化妆（→《黑衣人》）；<strong>两位罗丝同届提名双双未中，87 岁的斯图尔特为当时奥斯卡史上最年长表演提名者</strong>；获奖总数与《宾虚》《指环王 3》并列影史第一</td></tr>
+      <tr><td>金球</td><td>剧情类最佳影片 · 最佳导演 · 最佳配乐 · 最佳原创歌曲 4 中</td></tr>
+      <tr><td>票房</td><td>成本 2 亿（当时影史最贵）／首轮全球 <strong>18.4 亿</strong> · 北美首轮 6.008 亿（含重映北美 6.59 亿）——<strong>全球与北美两项影史纪录均保持 12 年（1998–2009），均被《阿凡达》打破：同一导演</strong>；含重映累计 <strong>22.6 亿，现居影史第 4</strong>（前三：阿凡达 · 复联 4 · 阿凡达 2）</td></tr>
+      <tr><td>中国路径</td><td>1998-04-03 首映 <strong>3.6 亿</strong>（当时内地影史纪录，保持 11 年）／2012-04-10 3D 重映 <strong>9.46 亿 · 2126 万人次</strong>（当年内地人次榜亚军）／2023-04-03 25 周年版 5915 万——<strong>三次靠岸，重映高于首映</strong></td></tr>
+      <tr><td>音乐</td><td>《My Heart Will Go On》（席琳·迪翁）：奥斯卡 · 金球最佳歌曲，1999 年格莱美年度制作等 4 奖；<strong>完整人声版压至片尾</strong></td></tr>
+      <tr><td>幕后</td><td>卡梅隆开拍前乘俄制「和平」号潜水器多次下潜至近 3800 米深的真实残骸；大阶梯灌水一场为一次性实拍（布景整体销毁，只有一次机会）</td></tr>
+      <tr><td>版本状况</td><td><strong>无删减陷阱</strong>，194 分钟各平台一致（195 为口径差）；3D 版可选不必追</td></tr>
+    </table>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 36 期 · 2026-11-13<br>
+    评分与票房均于本次执行时现查，口径差异已逐条标注；历史替它写了一半结局，另一半——那份名单——请留给你自己。
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 用心棒</title>
+<style>
+  :root{
+    --bg:#0b1110; --panel:#151d1b; --panel2:#1c2624; --line:#2a3733;
+    --tx:#e9f1ee; --tx2:#a4b5b0; --tx3:#6f817c;
+    --acc:#6fbfa5; --acc2:#d8b56a; --warn:#d98f6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(217,143,107,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 21 期</div>
+  <h1>用心棒</h1>
+  <div class="en">用心棒 / Yōjimbō (1961) &nbsp;·&nbsp; 又译《大镖客》《保镖》，英文片名曾用 The Bodyguard</div>
+  <div class="meta">
+    <span>日本</span><span>黑泽明</span><span>剧情 · 动作 · 惊悚 · 黑色喜剧</span>
+    <span>110 分钟</span><span>黑白 · 宽银幕</span><span>日语</span>
+    <span>1961-04-25 日本首映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.0</b><small>豆瓣 · 约 6 万人</small></div>
+    <div class="score"><b>8.2</b><small>IMDb · 约 14 万票</small></div>
+    <div class="score"><b>96%</b><small>烂番茄专业 · 40–50 评</small></div>
+    <div class="score"><b>93</b><small>Metacritic · 仅 17 评</small></div>
+    <div class="score"><b>8.4</b><small>Metacritic 用户 · 80 评</small></div>
+    <div class="score"><b>第 23</b><small>电影旬报 日本影史百大</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.0（约 6 万人评价；各源快照从 5.6 万到 6.7 万不等，少数聚合站仍记 8.9）；IMDb 8.2（各源 13.5 万–14.3 万票，<strong>未进 IMDb Top 250</strong>）；烂番茄专业 95%–96%（样本 40–50 条，均分 9/10）；Metacritic 93，<strong>但只有 17 条影评</strong>——按本系列第 16 期定下的纪律，高分必须连样本量一起看，这个 93 是脆的；Letterboxd 4.3；TMDB 8.1。<br>
+    另外有个横向事实值得先摆出来：本系列推过的另外两部黑泽明，《罗生门》豆瓣 35 万+ 人评价、《七武士》23 万+ 人评价，今天这部只有约 6 万。<strong>分数一样高，人数差了三到五倍。</strong>它没有掉进"没人看"的坑，它是掉进了"大家都说好，但真正去看的人没那么多"的另一种坑。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（本期有一条此前没出现过的雷）</h2>
+    <p>这部片的乐趣<strong>不在结局，在过程</strong>——你享受的是"他下一步会怎么下套"。所以任何讲具体操作的文字都会吃掉你一半的乐趣。</p>
+    <ul>
+      <li><strong>不要点开中文百科／影视站的「剧情简介」字段。</strong>本系列第 19 期遇到过官方简介从头剧透到尾，这次更彻底——中文站给出的梗概一直写到最后，属于"你以为在读前提，其实已经读完了结局"。</li>
+      <li><strong>不要搜「用心棒 荒野大镖客 对比」。</strong>这是今天新发现的一类：<strong>原片与翻拍片的逐镜对照视频／对照长文，本身就是剧透</strong>——它要对照，就必须把整部片的情节从头走一遍。（本系列第 16 期记过"翻拍片的简介会剧透"，这次是升级版：连"对比"这个动作都不能做。）</li>
+      <li><strong>不要读任何讲"它和《荒野大镖客》有哪几场戏一模一样"的东西。</strong>同理。</li>
+      <li>侧栏会挂大量"几分钟看完"解说与"十分钟讲完黑泽明"合集，照旧绕开。</li>
+    </ul>
+    <p>安全区先划给你：<strong>一座镇、两条街、两拨人、一个路过的浪人，以及他决定让那两拨人互相打起来</strong>——这些是开场二十分钟就交代完的前提，属于预告片级别，说了丝毫不影响。<strong>至于他具体怎么做到的、中间付了什么代价、最后谁留下，我下面写到哪停，你就读到哪停。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>先把话说清楚：黑泽明这是第三次出现在本系列里</h2>
+    <p>本系列 21 期，同一个导演第三次出现是需要交代的。前两次分别问的是两件很重的事：</p>
+    <ul>
+      <li>《罗生门》（1950，第 9 期）问的是<strong>真相能不能被说出来</strong>——四个人讲同一件事，讲了四个版本，最后谁也没赢。</li>
+      <li>《七武士》（1954，第 16 期）问的是<strong>一群本来没关系的人，能不能做成一件事</strong>——七个原本互不相干、彼此也没有契约的人凑到一起做成了一件事，报酬只有白米饭，事成之后各走各的。</li>
+    </ul>
+    <p>今天这部问的是第三件事，而且和前两件是反着来的。<strong>这个主角既不打算求真，也不打算团结任何人。</strong>他不关心这座镇上到底发生过什么，也不试图把谁组织起来。<br>他只有一件事要做：让已经存在的两拨人，互相消耗掉。</p>
+    <div class="quote">
+      1954 年，七个人聚起来做成一件事。<br>
+      1961 年，一个人把一整座镇拆开。
+      <em>同一个导演，同一个主演，同一个国家的黑白胶片。一个讲「聚」，一个讲「拆」。</em>
+    </div>
+    <p>顺便补一条硬连接：《用心棒》的摄影师是<strong>宫川一夫</strong>，这是他继《罗生门》之后第二次给黑泽明掌镜；男主角当然还是<strong>三船敏郎</strong>。所以这部片在技术上可以说是<strong>「《罗生门》的眼睛 + 《七武士》的身体」</strong>合成的产物。</p>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（写到哪停，是有意为之）</h2>
+    <p>幕末，一个乡下的十字路口小镇。</p>
+    <p>三十郎走进来的时候，看上去就是个不太体面的流浪武士：衣服脏，头发乱，走路晃。他在岔路口停下来看了看，随手选了一个方向。</p>
+    <p>这座镇上有两拨人。<strong>一边经营丝绸，一边经营酒</strong>——那也是这座镇剩下的全部生意。两家为了抢地盘常年械斗，街上时不时就死人，铺子关了又开，开了又关。整条街上真正兴隆的只有一门生意：棺材。</p>
+    <p>他在一家小酒馆坐下，老板是个话多的人，把镇上的事一五一十都讲给他听。</p>
+    <p>然后他问了老板一个问题——问完之后，他做了一个决定。</p>
+    <div class="ver">
+      <strong>我们停在这里。</strong><br>
+      他决定让这两拨人打起来。<br>
+      至于他的第一句话是怎么开的口、他选了谁先下手、他用了什么办法让两边都相信他、以及中间遇上了什么让他措手不及的东西——<strong>一个字都不写。</strong><br>
+      你只需要知道：这是一个从头到尾没人命令他、也没人请他做的事，他自己决定要把它做完。为什么，是这部片最大的悬念，也是它唯一真正的深度所在。
+    </div>
+    <p style="margin-top:14px">再送一个不掉剧透的细节：有人问他叫什么，他抬头看了看眼前那片<strong>喂蚕的桑田</strong>，随口给自己编了个姓；又随口报了个年龄。这个镇的经济命脉恰好就是丝绸。<strong>他连名字都是现场借来的，而且借得非常敷衍。</strong>这点很重要——请记住它。</p>
+  </div>
+
+  <div class="card">
+    <h2>亮点：这可能是本系列 21 期里，最好玩的一部</h2>
+    <p>先给一句可能会让人意外的判断：<strong>黑泽明所有片子里，这是最不需要做心理建设的一部。</strong>没有《七武士》的 207 分钟，没有《罗生门》的哲学拷问，也不像《2001 太空漫游》那样需要你先接受一种观影态度。它就是一部 110 分钟的、极其好看的类型片。</p>
+    <ul>
+      <li><strong>它真的很搞笑。</strong>不是"含隐喻的幽默"，是字面意义上的好笑——人物的贪婪、怯懦、虚张声势被拍得像漫画。影评人迈克尔·伍德给过一个很到位的评断：它比东西方任何一部西部片都好笑。</li>
+      <li><strong>三船敏郎的抖肩膀。</strong>黑泽明形容他演的这个角色像狼或者狗，另一位主角像蛇。于是三船发展出了那个标志性的动作——不停抖肩膀，像狗试图抖掉身上的跳蚤。这是一个演员把导演的一句比喻，整个演成了身体语言。</li>
+      <li><strong>黑白宽银幕的画面几乎是二维的。</strong>摄影宫川一夫拍出了一种故意扁平化的效果：画面只有前台和后台，没有纵深幻觉。那种刻意的平面感，让画面看起来不像有纵深的布景，更像一幅会动的卷轴——人被调度成在这块平面上左右移动，而不是往前走。</li>
+      <li><strong>它是第一部给刀砍身体做专门音效的电影。</strong>在此之前，武士片里的刀砍声多半是通用的库存音效；本片第一次为它单独设计制作。</li>
+      <li><strong>道具：(剧透安全) 有一件花了 70000 日元、由两个人做了两个通宵做出来的小道具；它的灵感来自一位灯光师不小心把手套掉在地上。你看片的时候一定会注意到它。</strong></li>
+      <li><strong>幕后的认真。</strong>因为黑泽明抱怨演员迟到，此后整个拍摄期，三船每天<strong>早上六点就化好妆、穿好戏服等在片场</strong>——这件事是三船自己讲的。</li>
+      <li>还有一组硬事实收尾：《电影旬报》1962 年把它评为年度日本电影<strong>第二名</strong>，三船拿了最佳男主角；它在<strong>威尼斯拿了最佳男演员</strong>，当年还<strong>提名了金狮</strong>；奥斯卡那边只拿到一项<strong>黑白片服装设计提名</strong>（输给了《甜蜜的生活》）。这三项凑在一起，恰好定义了它的位置：演技和观赏性是满的，海外最高奖那年没给它。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>今天的主菜：同一个故事，三条完全不同的法律路径</h2>
+    <p>这是我觉得最值票价的一部分。这个故事后来被拍了很多次，但真正有意思的，是<strong>三个版本的授权状态完全不同，而它们的命运恰好排成了一个荒唐的顺序。</strong></p>
+    <table>
+      <tr>
+        <th>版本</th><th>年份 / 国别</th><th>授权状态</th><th>分数与结果</th>
+      </tr>
+      <tr>
+        <td>用心棒</td>
+        <td>1961 · 日本</td>
+        <td>原作</td>
+        <td>烂番茄 95–96%（40–50 评）· IMDb 8.2 · Metacritic 93（17 评）<br>威尼斯影帝 · 奥斯卡一项提名</td>
+      </tr>
+      <tr>
+        <td>荒野大镖客</td>
+        <td>1964 · 意大利/西德/西班牙</td>
+        <td><strong>未经授权</strong>。东宝起诉，庭外和解</td>
+        <td>烂番茄 <strong>98%</strong>（48–55 评）<br>催生意大利西部片；伊斯特伍德凭此成名（片酬 15,000 美元）</td>
+      </tr>
+      <tr>
+        <td>最后一个站着的人</td>
+        <td>1996 · 美国</td>
+        <td><strong>1988 年正式买下改编权</strong>，片头署名黑泽明与菊岛隆三</td>
+        <td>烂番茄 <strong>41–42%</strong>（33–34 评）· Metacritic 44（24 评）· 影院评分 C+<br>预算 6,700 万，全球 4,730 万美元，<strong>巨亏</strong></td>
+      </tr>
+    </table>
+    <p>请再看一遍那三行，顺序是这样的：<strong>原作 96%，偷的那个 98%，买了版权的那个 41%。</strong></p>
+    <p>中间这部是怎么来的，细节比小说还精彩：</p>
+    <ul>
+      <li>1964 年，意大利人塞尔乔·莱昂内用 20 万美元预算，在西班牙拍了《荒野大镖客》。它没有拿到任何改编授权。</li>
+      <li>黑泽明看完之后，给莱昂内写了一封信。<div class="quote">莱昂内先生，我刚刚有机会看了你的电影。这是一部非常好的电影，<strong>但它是我的电影</strong>。由于日本是《伯尔尼公约》的签约国，你应当付我钱。<em>黑泽明致塞尔乔·莱昂内的信（据多方记载，措辞略有出入）</em></div></li>
+      <li>东宝提起诉讼。莱昂内起初不予理会，最终庭外和解：<strong>全球票房的 15%，加上部分远东地区的独家发行权，再加一笔超过十万美元的款项。</strong></li>
+      <li><strong>黑泽明从这部他没有拍的电影上赚到的钱，比《用心棒》本身还多。</strong>这句话我是第一次读到时停了很久。</li>
+      <li>因为这场官司，它在意大利上映三年后才得以进入美国——而这三四年的耽搁，恰好被电影史认作是"意大利西部片诞生"的那段窗口。</li>
+    </ul>
+    <p>那么，买了版权的那部为什么最差？导演沃尔特·希尔说过一句很坦白的话：<strong>"如果黑泽明先生不赞成有人做改编，我就不会拍这部片。"</strong>他是为了致敬拍的。而 2026 年还有影评人在评价它时写了这么一句：</p>
+    <div class="quote">
+      "在《用心棒》和《荒野大镖客》里，你会觉得主角是边走边出招的。这一版是<strong>恭敬的角色扮演</strong>——好看、昂贵，但仍然只是角色扮演。"
+      <em>影评人 Nick Rogers，2026 年</em>
+    </div>
+    <p>我的假设是这样，你可以不同意：<strong>敬畏并不是一种创作状态。</strong>怕得罪原作的人，不敢让主角变成一个真正在算计的机会主义者；而莱昂内不怕，因为他从一开始就没打算客气。<br>所以同一个故事，偷它的人把它往前推了一步，买了它的人把它供了起来。</p>
+  </div>
+
+  <div class="card">
+    <h2>顺带追一下：这个故事的国籍从来就说不清</h2>
+    <p>黑泽明自己说过，他的主要来源是 1942 年的好莱坞黑色电影《玻璃钥匙》。但学术界对另一本书始终有分歧——达希尔·哈米特 1929 年的小说《红色收获》：学者 David Desser 认为那是启发，另一位学者 Donald Richie 认为只是巧合。</p>
+    <p>而莱昂内在辩护时，恰恰拿这一点做文章。他列出了自己的三个来源：黑泽明、哈米特，以及十八世纪意大利剧作家哥尔多尼的《一仆二主》。他说：</p>
+    <div class="quote">
+      "黑泽明的《用心棒》灵感来自一部美国的黑色小说，所以我其实<strong>是把这个故事带回了家</strong>。"
+      <em>塞尔乔·莱昂内</em>
+    </div>
+    <p>这句话逻辑上其实站不住——哈米特是美国人，莱昂内是意大利人，他带走的是意大利戏剧加日本电影。<strong>但这句话里有一个真的东西：这个故事的国籍从第一天起就是笔糊涂账。</strong></p>
+    <p>它大概是这样的路线：<br>
+    <strong>美国廉价小说 → ？ → 日本时代剧 → 意大利人拍的"美国西部片" → 回到好莱坞重拍 → 失败。</strong><br>
+    中间那个问号，就是那桩至今没定论的学术争议。</p>
+  </div>
+
+  <div class="card">
+    <h2>另一种经典认证：一堆干活的人自己承认在抄它</h2>
+    <p>本系列谈"为什么它是经典"，用的办法基本是榜单、票数、奖项。今天换一个：<strong>一群后世创作者的自述。</strong></p>
+    <ul>
+      <li><strong>《007 之杀人执照》（1989）</strong>编剧 Michael G. Wilson 拿它做类比：主角从不正面攻击反派，只播种猜疑，让反派自己把自己搞垮。</li>
+      <li><strong>《保镖》（1992）</strong>编剧 Lawrence Kasdan 说自己的灵感是"<strong>《用心棒》，主演换成史蒂夫·麦奎因</strong>"。</li>
+      <li><strong>剧集《巴里》（2018）</strong>的编剧写完第一季才发现"我们好像就是拍了一遍《用心棒》"，于是干脆在剧里把这个相似写进去，自我调侃了一下。</li>
+      <li><strong>《荒野大镖客：救赎 2》</strong>里亚瑟·摩根的扮演者 Roger Clark 说，这个角色的表演参考了《用心棒》。</li>
+      <li><strong>《周六夜现场》</strong>上 John Belushi 的"武士"角色，原型是三十郎。</li>
+      <li>导演 John Sayles 在《视与听》杂志上直接说，<strong>这是他最喜欢的电影</strong>，并给出过一个很好的读法：<div class="quote">"这是存在主义遭遇消费主义、利润和贪婪的故事——传统和权威消失之后，社会就往那个方向走。然后突然出现这么一个人，<strong>他还守着一套自己的准则，哪怕他已经不生活在一个传统社会里了。</strong>"<em>John Sayles</em></div></li>
+    </ul>
+    <p>我不是说这些证明了它伟大。<strong>我是说：一部 1961 年的日本黑白片，今天的位置有一部分是这么来的——不是靠评出来，是靠抄出来的。</strong>这跟"影评人投票"是两种完全不同的认证，而后者往往更容易被推翻。</p>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评：所有人都在同一个地方摇头</h2>
+    <p>有意思的是，给这部片的批评几乎没有分歧——大家承认它极好看，然后在同一个地方摇头：<strong>不够深。</strong></p>
+    <ul>
+      <li>影评人 James Berardinelli："它不像《罗生门》那样让人思考深层问题，也没有《七武士》那种史诗气魄。"<strong>（同一个人同时给这部片打了满分。）</strong></li>
+      <li>迈克尔·伍德："正如所有人说的，这部片没有《罗生门》深，也没有《七武士》那么让人过目难忘。但它比东西方任何一部西部片都好笑。"</li>
+      <li>1961 年的《纽约时报》当时给的分不高，理由是"和大多数西部片一样，对人性的挖掘不深；情节繁复，用日语看很难跟上"，结论是——<strong>"黑泽明在这里炫的是技巧，不是力量。"</strong>这句话被放进 Metacritic 的样本里，是这部片唯一一条差评。</li>
+      <li>1968 年，美国马里兰州哥伦比亚新城办了一场放映，因为太暴力引起观众不满，主办方躲进洗手间回避。</li>
+    </ul>
+    <p><strong>我的态度：这些批评全都站得住，而且我不打算反驳。</strong>把《用心棒》和《罗生门》《七武士》放在一起比"深度"，它本来就不是赢的那个。<br>但这也正是我把它放在今天的原因——本系列已经连着推了《2001 太空漫游》和《窃听风暴》这种把人压得不轻的片子。<strong>推荐它的理由和批评它的理由是同一个：它不打算深刻。</strong></p>
+    <p>如果你想从这部片开始进黑泽明，这恰恰是最好的入口；如果你想的是"大师的深沉之作"，那请回头去看第 9 期和第 16 期，今天这部不合适。</p>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看 / 怎么去看</h2>
+    <ul>
+      <li><strong>它是回本最快的 110 分钟。</strong>如果你一直知道黑泽明但一直没敢开始，从这里开始。不需要任何电影史预习，和本系列推过的前两部没有观看顺序关系。</li>
+      <li><strong>版本陷阱（本系列第三严重的一次，务必看清楚）：</strong>IMDb 明确记录，美国初版只有 <strong>75 分钟</strong>，比原版 110 分钟少了 35 分钟。<div class="ver">
+        请对照这个数字：本系列第 16 期《七武士》的美国初版是 141 分钟，原版 207 分钟，<strong>删掉 66 分钟，占 31.9%</strong>。<br>
+        本片删掉 35 分钟，占 <strong>31.8%</strong>。<br>
+        同一个导演，相隔七年，同一个国家，同一个比例。<strong>这不是"片子太长"，这是当年发行方对美国观众的一个判断：他们能接受的黑泽明，是三分之二个黑泽明。</strong>请认准 110 分钟。
+      </div></li>
+      <li><strong>找不到怎么办：</strong>认片长 110 分钟，或找标准收藏（Criterion）与 BFI 的版本。这两家给出的都是完整版。</li>
+      <li><strong>它孩适合先看《七武士》再看吗？</strong>不需要。反而我倾向于反过来：先看这部，再回去看那 207 分钟会更好进。<strong>然后用今天这套"聚 vs 拆"的框架重看一遍两个角色</strong>，你会发现同一个演员演的是两种完全不同的生存方式。</li>
+      <li>顺便：<strong>1962 年黑泽明又拍了续作《椿三十郎》，同一个人、同一个演员再次出场。</strong>看完如果想再来一部，那个也是有趣的选择——它比这部更轻松。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>留给你三道题（难度递增）</h2>
+
+    <div class="ask">
+      <small>第一题</small>
+      三十郎做的这件事，从头到尾<strong>没有任何人命令他，也没有任何报酬之外的理由</strong>。看片时请盯住一个地方：<strong>他第一次有机会直接抽身走人的时候，他没有走。</strong><br><br>
+      先别急着判断他善良还是冷酷。先回答这个：如果他当时就走了，这座镇最后会怎么样？<br><br>
+      <strong>你得先回答那个"没发生的版本"，才能回答"他到底是个什么样的人"。</strong>
+    </div>
+
+    <div class="ask">
+      <small>第二题</small>
+      请从片里<strong>指认一个具体的瞬间</strong>，作为他是"冷"还是"热"的证据。哪一场戏、他做了什么、表情是什么。<br><br>
+      如果你指不出来，说明你可能只是接受了别人对他的定性，而不是自己读完了这个人。<br><br>
+      顺便追问一句更容易被忽略的：<strong>他那些看起来"多此一举"的举动，是出于道德，还是出于他觉得不好看？</strong>这两者对他的差别可能比对我们大得多。
+    </div>
+
+    <div class="ask">
+      <small>第三题（锚定本系列第 16 期《七武士》）</small>
+      1954 年那七个人，什么都没拿到——报酬只有白米饭，还赔进几个人的命，他们做成了一件<strong>能让别人活下去的事</strong>。<br>
+      1961 年这个人，拿到了一笔钱，<strong>走掉了</strong>。<br><br>
+      现在请想清楚再回答：<strong>这两件事里，哪一件更像真正"改变了一个地方"？</strong><br><br>
+      更狠的一问：黑泽明在两部片里用的是同一个演员。你觉得他七年之后拍这部，是在<strong>回答</strong> 1954 年那个答案，还是在把那个答案<strong>推翻</strong>？
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 21 期 &nbsp;|&nbsp;《用心棒》1961，黑泽明<br>
+    评分与票房数据均为当日检索所得，各站点口径已在正文标注；未能确证的数字一律给区间，不取单一值充数。
+  </div>
+
+</div>
+</body>
+</html>

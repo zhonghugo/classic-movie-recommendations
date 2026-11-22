@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 桃色公寓</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#e8b44c; --acc2:#6fa3bd; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 25 期</div>
+  <h1>桃色公寓</h1>
+  <div class="en">The Apartment (1960) &nbsp;·&nbsp; 比利·怀尔德 / 编导 &nbsp;·&nbsp; 台译《公寓春光》</div>
+  <div class="meta">
+    <span>美国 / 联美</span><span>比利·怀尔德</span><span>喜剧 · 剧情 · 爱情</span>
+    <span>125 分钟</span><span>黑白</span><span>英语</span>
+    <span>1960-06-15 美国上映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>8.8</b><small>豆瓣 · 约 6 万人</small></div>
+    <div class="score"><b>8.3</b><small>IMDb · 约 21.3 万票</small></div>
+    <div class="score"><b>93%</b><small>烂番茄专业 · 约 105 评</small></div>
+    <div class="score"><b>94</b><small>Metacritic · 21 评</small></div>
+    <div class="score"><b>94%</b><small>烂番茄观众 · 爆米花</small></div>
+    <div class="score"><b>5 座</b><small>奥斯卡 10 提 5 中</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 8.8，评价人数各快照在 5.4 万到 6.2 万之间（取约 6 万，这一点后面还要说一句）；IMDb 8.3，约 21.3 万票；烂番茄专业 93%，各源记 103 至 107 评，均分 8.8，观众爆米花 94%；Metacritic 94 分，<strong>21 条影评——20 条正面、1 条褒贬不一、没有一条差评</strong>，那条褒贬不一的是《芝加哥读者》的乔纳森·罗森鲍姆，打了 40 分，后面会专门用它；Letterboxd 4.4，约 30 万人；时光网 8.3，939 人。<br>
+    关于选片线：<strong>本期是 25 期以来第一次两项都恰好压线</strong>——豆瓣 8.8 正好等于下限，IMDb 8.3 也正好等于下限，两项都在线内，不构成第 22 期那种破例。顺带把上一笔账说清：第 22 期破例一次后，第 23、24 期都已回到线内，本期继续在线内，破例没有被常态化。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（本期防的是「最后一句」）</h2>
+    <p>这部片和前面几期的情况都不一样：它<strong>没有反转，也没有谜底</strong>，全片唯一押着的东西，是<strong>最后那句话怎么说出来</strong>。它被引用了六十多年，几乎所有「影史最伟大的结尾台词」榜单上都有它，你只要多搜两行字就会撞见——而且撞见之后不会毁掉剧情，会毁掉<strong>那个语气</strong>。所以第 24 期的「防证据清单」在这里不适用，<strong>本期回到第 20 期《窃听风暴》那一档：防最后一句。</strong>这也是本系列第二次用这一档，对象不同（那次是一句被引用二十年的台词，这次是一句被当成日常用语的台词），风险等级相同。</p>
+    <ul>
+      <li><strong>第一类，也是我这次亲历的：中文百科的「剧情简介」字段。这是第 19 期记过的第八类，本期严重程度刷新了纪录。</strong>我第一次搜索就撞上了——某影视站的条目简介从「把公寓借给上司」这个前提开始，一页之内把全片讲完，<strong>连结局和那句台词都原封不动印在简介里</strong>。它不叫剧透，它叫「内容简介」。请一个字都别读。</li>
+      <li><strong>第二类：这部片被改成过百老汇音乐剧。</strong>1968 年的《Promises, Promises》（词曲是伯特·巴卡拉克与哈尔·戴维，剧本是尼尔·西蒙），2010 年还复排过一次。这是第 16 期「翻拍片简介会剧透」的延伸——<strong>改编成别的媒介之后，它的剧情介绍同样是全文剧透</strong>，而且因为挂着「音乐剧」三个字，你更不会防备。别去查它的曲目单和梗概。</li>
+      <li><strong>第三类：检索词雷（第 22 期固化的检查项，本期第四次用）。</strong>中文片名《桃色公寓》有三个坑：一是台译《公寓春光》，同一部片，别当成两部；二是「桃色」这两个字会把你引向 1993 年的《桃色交易》（Indecent Proposal，罗伯特·雷德福、黛米·摩尔，完全无关）；三是搜「公寓」两个字会撞上一堆同名短片和电视剧。<strong>认准 1960 年、比利·怀尔德、杰克·莱蒙。</strong></li>
+      <li><strong>第四类：短视频平台的「三分钟看完」。这是第 19 期记过的第九类，本期务必当成硬禁令。</strong>因为这部片的乐趣不在情节推进，而在对话的节奏和停顿——三分钟版本会把这些全部删掉，只剩下一串事件，然后顺手把最后一句念出来。</li>
+    </ul>
+    <p>安全区先划给你（这些是海报和预告片就交代完的前提）：<strong>纽约，一家大保险公司，几万名员工，一层楼里几百张一模一样的桌子。C. C. 巴克斯特是其中之一，级别低到他自己都懒得解释。他住在城西一间不大的公寓里，一个人，一台电视，一把钥匙。</strong>他把这把钥匙借给公司里四位中层——他们要在下班后有个地方，而他有年度考评要过。作为交换，他们替他在上面说了几句好话。<strong>这交易不写在纸上，也不需要写。他每天最像样的几分钟，是电梯里那几十秒：开电梯的姑娘叫弗兰，他们互相讲几句笑话，然后她关门，他上楼。</strong>某天他鼓起勇气约她看一场戏，在剧院门口等了一整晚，她没来。<strong>第二天他知道了原因——而那个原因里，有他自己借出去的那把钥匙。</strong></p>
+    <div class="ver">我们停在这里，大约第 40 分钟。往下的部分一个字也不写——包括那把钥匙后来又被谁要走过、包括中间那几件真正改变了两个人的事、包括收场、包括那句话。你可以先带着「我到底是在帮人，还是在共谋」这一句进场。</div>
+  </div>
+
+  <div class="card">
+    <h2>两件先说清楚的事</h2>
+    <p><strong>第一件：本系列第 25 期，才第一次出现比利·怀尔德。</strong>24 期的导演名单摊开——托纳多雷（两次）、吕美特、宫崎骏、诺兰（两次）、科波拉、贝尼尼、彼得·威尔、福尔曼、黑泽明（三次）、泽米吉斯、陈凯歌、希拉尼、贝松、奉俊昊、库布里克、马基迪、多纳斯马尔克、坎皮恩、希区柯克——这份名单里长期缺一个名字：<strong>好莱坞黄金时代最好的那个编剧兼导演</strong>，一个把「刻薄」和「温柔」焊在同一句台词里的维也纳人。今天补上，而且补的是他最不像「刻薄」的一部。</p>
+    <p><strong>第二件：上一期那句注脚，今天由这部片写完。</strong>第 24 期我写过一句：希区柯克一生五次提名奥斯卡最佳导演（《蝴蝶梦》《救生艇》《爱德华大夫》《后窗》《惊魂记》），一次都没中。<strong>那第五次提名就是 1961 年 4 月 17 日的第 33 届奥斯卡，他凭《惊魂记》入围，输给了今天这部片的导演。</strong>我在写上一期时并不知道这个巧合会以这种方式落地——刚推完一部希区柯克，紧接的这一期就撞上了他最后一次空手而归的那个夜晚的赢家。</p>
+    <div class="quote">
+      同一届、同一个奖项：一位刚拍完《惊魂记》的人被提名，奖杯发给了拍《桃色公寓》的人。前者那部片后来被当成现代恐怖片的起点之一，后者这部被后来的人当成最好的爱情喜剧之一。当晚上台领奖的那位，一个人抱走了三座。
+      <em>——这不是影史八卦，这是两部片在同一个夜晚被同一个行业当场判决的记录</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>一个等了十五年的剧本</h2>
+    <p>这部片最容易被忽略的一条事实是：<strong>它是一部「迟到」的电影，迟到了十五年。</strong>怀尔德自己讲过这个念头的来处——1940 年代他看了大卫·里恩与诺埃尔·考沃德的《相见恨晚》（Brief Encounter，1945），那部片里一对各有家庭的男女，借朋友的公寓短暂相会。<strong>散场后怀尔德想的不是这对男女，是那个朋友：「那个必须爬回那张还暖着的床的人呢？」</strong>他后来回忆，自己当时想不通的是：一个人要靠什么说服自己，才能心安理得地睡在那张床上。</p>
+    <p><strong>他在 1940 年代就想拍，拍不成——海斯法典不允许。</strong>通奸不能当成喜剧的前提；而剧本里另外那一件更重的事，当年连写进送审稿都不行。禁忌卡住的恰好是这个故事的两根柱子。于是一放就是十五年，等到 1959 年他拍完《热情似火》（那部片干脆没拿 MPAA 的许可证就上映了，还被打了个 C，意思是「谴责」），联美给他放权、让他想拍什么拍什么，他才回头把这个旧念头捡起来。</p>
+    <p>素材也不止一个来源。<strong>其一是 1951 年好莱坞的一桩真事：</strong>经纪人詹宁斯·朗与制片人沃尔特·万格的妻子、演员琼·贝内特往来，万格开枪打伤了朗——而他们幽会用的地方，正是朗手下某个底层员工的公寓。<strong>其二是编剧搭档戴蒙德一位朋友的私事：</strong>那件事也被写进了剧本，具体是什么我不说——它和片子中段直接相关（这一条各家资料都标着「待考」）。<strong>真实素材里既有枪，也有一间被人用过的卧室。怀尔德把枪拿掉了，只留下钥匙。</strong></p>
+    <table>
+      <tr><th>时间</th><th>发生了什么</th></tr>
+      <tr><td>1945</td><td>《相见恨晚》上映。怀尔德记住了那个借出公寓的人，但拍不成（海斯法典）</td></tr>
+      <tr><td>1951</td><td>万格枪击詹宁斯·朗。幽会地点是某位底层员工的公寓——这个细节进了剧本</td></tr>
+      <tr><td>1957</td><td>怀尔德与 I. A. L. 戴蒙德开始长期合作（《黄昏之恋》），此后两人共写十二部</td></tr>
+      <tr><td>1959</td><td>《热情似火》大卖。联美放权，怀尔德回头拍这个旧念头</td></tr>
+      <tr><td>1960-06-15</td><td>上映。成本 300 万美元，北美收回两倍，<strong>为 1960 年年度票房第 8 位</strong></td></tr>
+      <tr><td>1961-04-17</td><td>第 33 届奥斯卡，10 提 5 中：<strong>最佳影片、导演、原创剧本、黑白艺术指导、剪辑</strong></td></tr>
+      <tr><td>1968</td><td>改编为百老汇音乐剧《Promises, Promises》</td></tr>
+      <tr><td>1994</td><td>入选美国国家影片登记部（当年 25 部之一）</td></tr>
+    </table>
+    <p>请把「1945 想拍」和「1960 拍成」这两行连起来读：<strong>中间那十五年，不是他在打磨剧本，是这个世界还没允许这个故事存在。</strong>而当它终于上映，它又被骂了——这就要说到下一节。</p>
+  </div>
+
+  <div class="card">
+    <h2>三个法庭：它被判过三次，三次结果都不同</h2>
+    <p>过去 24 期，我做过很多次「分数打架」的题：专业分与观众分互相矛盾（第 4、6、7、11 期）、大众分东高西低（第 12、13 期）、西方影评界根本没评过（第 14 期）、同一份榜单上两个方向（第 17、24 期）、同一张 NYT 名单主榜与读者榜差 59 位（第 20 期）。<strong>那些分歧全部发生在同一部片的同一个时刻：不同的人群，同时看同一部片，给出不同答案。</strong>今天这个不一样——<strong>今天不是人群在打架，是判决的机构在换人。三个法庭，先后开庭，谁也不推翻谁，各自过期。</strong></p>
+    <p><strong>第一庭：道德与品位，1960 年，判它有罪。</strong></p>
+    <ul>
+      <li>《星期六评论》的霍利斯·阿尔珀特给了它一个后来被引用了六十多年的判词：<strong>「一部肮脏的童话」（a dirty fairy tale）</strong>。</li>
+      <li>《时尚先生》的德怀特·麦克唐纳更刻薄，说它是<strong>「土气的前卫主义的典范」（a paradigm of corny avant-gardism）</strong>——这句的狠处在于，它同时否定了这片子的道德和它的聪明。</li>
+      <li>最生动的证据来自男主角弗雷德·麦克默里本人：他一生演惯了老实人，片子上映后，<strong>他在街上被陌生的女性观众拦下来骂「你拍了一部又脏又下流的电影」，其中一位用手提包打了他。</strong></li>
+      <li>补一条我必须标注的：<strong>常被引用的说法是天主教道德协会（Legion of Decency）给了它 B 级，即「部分内容在道德上应予反对」。这条我只在二手资料里见到，没找到一手记录，标为待考，别当结论用。</strong>可确认的是：前一年（1959）那部《热情似火》被该协会直接打了 C（谴责），而它在商业上大获成功——<strong>审查的牙齿在那两年已经松了，这部片是趁那个缝隙进来的。</strong></li>
+    </ul>
+    <p><strong>第二庭：行业，1961 年 4 月 17 日，判它无罪，并且给了最高奖。</strong>10 提 5 中，最佳影片、最佳导演、原创剧本、黑白艺术指导（亚历山大·特劳纳与爱德华·博伊尔）、剪辑。<strong>怀尔德当晚一个人抱走三座</strong>——以制片人身份领最佳影片、以导演身份领导演、与戴蒙德共享原创剧本——个人累计六座奥斯卡（此前《失去的周末》导演与编剧、《日落大道》剧本）。同届它输掉的五项里，三项是表演奖：莱蒙、麦克雷恩、克鲁申分别输给《孽海痴魂》的兰卡斯特、《青楼艳妓》的泰勒、《斯巴达克斯》的乌斯蒂诺夫；<strong>另外两项是黑白摄影与录音</strong>——摄影输给《儿子与情人》（弗雷迪·弗朗西斯），录音输给《锦绣山河烈士血》（The Alamo）。</p>
+    <p>还有一个数字，值得单独拎出来：<strong>据第 33 届奥斯卡的中文维基条目，它是此后 33 年里最后一部拿下最佳影片的黑白片——下一部是 1994 年的《辛德勒的名单》。</strong>而《辛德勒的名单》至今还挂在本系列的候选池里没推。也就是说，<strong>1960 年那间黑白的公寓，是这个奖项在黑白时代关门前最后一个住进去的人。</strong></p>
+    <p><strong>第三庭：日常，今天，判它「甜」。</strong>它现在的身份是一部圣诞片、一部约会片、一部「心情不好时想重看」的片。1968 年被改成音乐剧，2010 年复排；1994 年进国家影片登记部；豆瓣 8.8。<strong>但请你看一眼那个 8.8 后面的数字：约 6 万人。</strong>系列里那些分数相近的片子，评价人数动辄百万（第 17 期《寄生虫》157 万、第 12 期《霸王别姬》217 万）。<strong>它是「公认经典」名单上的一员，却也是这批经典里真正被今天的人打开过最少的一部之一。</strong>这一点我不打算美化，它恰好说明第三个法庭的判决是「归档」，不是「重审」。</p>
+    <div class="quote">
+      1960 年它被判脏，1961 年它被判最佳，2026 年它被当成甜的。三个判决都成立过，只是各自的保质期不一样长。
+      <em>——这就是本期的主框架：不是「谁对谁错」，是「谁还有资格继续判」</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>它是怎么拍出来的（这部分不剧透，放心看）</h2>
+    <ul>
+      <li><strong>那个办公室是用小孩撑出来的。</strong>美术指导亚历山大·特劳纳要用一个镜头说服你「这家公司有几万人」。他的办法是<strong>强迫透视</strong>：从近到远，桌子一批比一批小，人一批比一批矮，<strong>最远那几排坐的是儿童</strong>。你在大银幕上看到的那条望不到头的办公桌长河，尽头是几个孩子。这个布景拿下当年奥斯卡黑白艺术指导奖。</li>
+      <li><strong>而他的公寓是故意做小的。</strong>同时代好莱坞片里的单身汉公寓都宽敞明亮，特劳纳反着做：让这间房<strong>比正常小一圈、旧一档</strong>，家具是从二手店淘的，其中一些干脆是怀尔德自己家的。理由是——这间房不是给人住的，是给人用的。</li>
+      <li><strong>开场那组镜头是致敬。</strong>镜头从一栋巨大、平直、窗子密得像格子的楼外面推进去，然后一个一个窗口地数，最后落到一个人身上。<strong>这个拍法来自金·维多 1928 年的默片《群众》（The Crowd）</strong>——怀尔德最喜欢的默片之一。他在 1960 年、彩色片已成主流的时候，用黑白重拍了一遍「人在楼里有多小」。</li>
+      <li><strong>那场意大利面是即兴的。</strong>怀尔德通常要求演员一字不改地念台词，但允许莱蒙在两处自由发挥：其一是把鼻喷雾剂横着喷过整个房间；其二是一边煮面一边唱歌，<strong>用网球拍的网眼滤面条</strong>。另有一场戏，莱蒙本该演「被一拳打中然后躲开」，他躲的时机错了，真的被打倒在地——怀尔德保留了这一条。拍公园长椅那场戏时是深秋的冷夜，他因此真的感冒了，而剧本里他本来就该感冒。</li>
+      <li><strong>男主角原本不是他。</strong>公司人事主管谢尔德雷克这个角色，怀尔德最早属意保罗·道格拉斯；<strong>道格拉斯在 1959 年 9 月突然去世</strong>，才换成以「老实人」形象著称的弗雷德·麦克默里。也正因为观众习惯了他那张无害的脸，这个角色后来的效果才那么难受。</li>
+      <li><strong>女主角的习惯被写进了角色。</strong>麦克雷恩只看了几页剧本就答应了。怀尔德给她的说法是：<strong>「这是一个年轻人，靠把自己公寓借给公司高管、供他们完成那项伟大的美国民间仪式——下午偷情——而在大公司里往上爬的故事。」</strong>（据怀尔德传记作者埃德·西科夫的记录。）她本人常和「鼠党」那帮朋友打金罗美，怀尔德知道后，把打牌写进了弗兰这个人——片中几段最安静的相处，就是两个人在打牌。</li>
+      <li><strong>主题曲不是为它写的。</strong>那支后来被叫做「《桃色公寓》主题」的旋律，原名叫《Jealous Lover》，是查尔斯·威廉姆斯为 1949 年的《The Romantic Age》写的。1960 年费兰特与泰彻的演奏版本以「Theme from The Apartment」为名发行，<strong>上了公告牌百强单曲榜第 10 位</strong>。一部关于借出房间的电影，靠一支旧曲子有了自己的声音。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评：哪些已经过期，哪些没有</h2>
+    <p>前面 24 期我用过八种表态法：承认并重新定位（14、18 期）、找出对立批评的共同前提（19 期）、两边都留不做裁决（20 期）、保留但不裁决（16 期）、全盘接受并把缺点当推荐理由（21 期）、承认且不辩护再转成观影动作（22 期）、把矛头掉转回推荐者自己（23 期）、指出赞美与指控本是同一句（24 期）。<strong>今天用第九种：给批评做时效分类——先判断这条批评今天还算不算数，只对还算数的作答。</strong>因为这部片的批评跨了六十六年，它们不在同一个层面上，混在一起谈是耍赖。</p>
+    <p><strong>已经过期的：</strong>「肮脏的童话」「土气的前卫主义」、用手提包打麦克默里的那位女士。<strong>这些批评不是说错了，是它们所依据的那套标准退场了。</strong>1960 年「通奸能不能拍成喜剧」是个真问题，今天不是。我不打算替怀尔德辩护，也没必要——那批人早就被判出局了，赢他们不算本事。</p>
+    <p><strong>没有过期的，有两条，而且方向相反。</strong></p>
+    <p>第一条来自 1960 年的英国。《视与听》的彼得·约翰·戴尔（此条转引自中文资料，未核到原文，请打折听）批评它：<strong>以商业阴谋、轻率行为和圣诞派对为代价的讽刺，被片尾一连串相当糟糕的多愁善感冲淡了。</strong>这条今天依然扎人，因为它是<strong>结构判断</strong>：前面越冷，后面越甜，甜的部分会把冷的锋利磨掉。我的判法是——<strong>部分同意。</strong>这部片前三分之二确实比后三分之一狠；但它后三分之一要的东西不是「更狠」，是「让一个一直不敢要东西的人终于开口」，这个转向是设计，不是失手。<strong>你可以自己判断它转得够不够干净：看的时候留意，从哪一分钟起，笑点开始变成暖的。</strong></p>
+    <p>第二条来自今天。<strong>Metacritic 那 21 条影评里唯一不满意的，是《芝加哥读者》的乔纳森·罗森鲍姆，他给 40 分：「我不会把这部 1960 年的片子算作怀尔德最好的喜剧之一——它沉闷、甜腻，而且 125 分钟太长了。」</strong>这条我也只部分同意，但它指出了一件事我必须承认：<strong>「沉闷」是有意的。</strong>特劳纳把公寓做小做旧，怀尔德把光打成灰的，把办公室拍成一片没有尽头的桌子——这些选择主动放弃了好看。所以「沉闷」这个指控，其实是在夸它做对了；<strong>但它也解释了为什么今天只有 6 万人看过它：它不打算讨你喜欢，只打算让你在某几分钟里认出自己。</strong>至于「甜腻」，我不同意；「125 分钟太长」，我同意一半——第三幕确实有几分钟是在等。</p>
+    <p>所以这一期的结论很短：<strong>所有关于「它脏」的批评都过期了，所有关于「它不够锋利」的批评都还有效。而后者恰恰是它今天还值得看的原因——一部 1960 年的喜剧，能让你在 2026 年仍然觉得它对你手下留情了，这说明它当年就没打算留情。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>为什么今天值得看</h2>
+    <ul>
+      <li><strong>它讲的是「边界」，而这个词当年还没被发明。</strong>巴克斯特借出去的从来不是一间房，是<strong>「你可以进入我的私人时间」这件事的许可</strong>。今天你借出去的东西更细：一个共享文档的编辑权限、一个收货地址、一个随时能找到你的微信号、一次「顺便帮我看看」。<strong>这部片问的是同一个问题：当借用变成惯例，你还记不记得自己点过头。</strong></li>
+      <li><strong>它把「好意」和「共谋」写成同一件事，而且不给你台阶。</strong>巴克斯特每一次帮人，都是在替自己攒分数；每一次体贴，都同时是一次投资。<strong>这片子最狠的地方不是让他做坏事，是让他一直做「也不算坏」的事。</strong>你看的时候会发现自己一直在替他找理由——那就是这部片真正在拍的东西。</li>
+      <li><strong>它是喜剧，但笑点全在语言上。</strong>公司黑话是它的阶级地图：所有人说话都带一个「-wise」的后缀，「保费方面」「开票方面」「十月方面」；一句「我们比去年同期领先 18%，按十月算」就能让整个会议室点头。<strong>这种「用词正确、内容空洞」的说话方式，今天每个开过周会的人都认得。</strong>这也是它比多数喜剧耐看的原因：笑话不在动作里，在句子的构造里，第二遍看还在。</li>
+      <li><strong>莱蒙把「小心翼翼」演成了身体动作。</strong>帽子挂哪儿、伞放哪儿、进门先看哪一眼、被人叫到名字时肩膀先动还是头先动——他整场都在演一个<strong>随时准备道歉的人</strong>。这是本系列 25 期里最好的「小人物」表演之一，而且是靠细节而不是靠煽情完成的。</li>
+      <li><strong>门槛不高，而且没有版本陷阱。</strong>125 分钟，黑白，但节奏快、对白密，前二十分钟就能进去。各平台通行版一律 125 分钟，<strong>不存在第 13、15、16、21 期那种删减陷阱</strong>——这是继第 22、23、24 期之后第四次「不用挑版本」。唯一要提醒的是黑白：如果你今晚只想看点亮的，改天再看，这片子的灰是它的一部分。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>留给你三道题</h2>
+    <div class="ask">
+      <small>第一题 · 看之前先回答</small>
+      如果你有一间空着的房，一个能决定你考评的同事开口借两个小时，说「方便一下」。你会借吗？<strong>如果他事后请你吃顿饭、在会上替你说了一句好话呢——你会拒绝那顿饭吗？</strong><br>先别急着回答「当然不借」。<strong>先想清楚：你会停在哪一步？</strong>然后看片的时候，注意巴克斯特停在哪一步——以及他有没有自己意识到已经过了那一步。
+    </div>
+    <div class="ask">
+      <small>第二题 · 看的时候指认一个瞬间</small>
+      找出一个<strong>他做了一件好事、但那件好事同时也在替他保住位置</strong>的确切瞬间，说清楚是哪一个、他当时的表情是什么。<br>如果你一个都找不到——<strong>那么请你把「找不到」当成一条数据</strong>：说明这部片把「好意」包得比你以为的更严实。再看一遍开头二十分钟。
+    </div>
+    <div class="ask">
+      <small>第三题 · 和上一期一起回答</small>
+      上一期那位摄影师的腿被石膏钉住，只能往外看，是他自己愿意整天坐在那个窗口的；这一期这位职员四肢健全，可以随时出门，是他自己把钥匙递出去的。<strong>一个越界去看，一个越界让人进来。</strong><br><strong>这两种越界，哪一种更难对自己承认？</strong>再往前追一层：如果「我只是借了个房间」站得住，那么「我只是看了几眼」为什么站不住？<strong>这两句话的差别，到底在行为上，还是在结果上？</strong>
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 25 期 &nbsp;|&nbsp; 1960 · 美国 · 125 分钟 · 黑白<br>
+    观看建议：任何平台 125 分钟通行版即可，无删减版本问题；优先找 4K 修复或标准收藏版，画质差别明显。<br>
+    看之前：不点预告，不查剧情简介，不看「三分钟看完」，不搜「最后一句台词」。
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 城市之光</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#e8b44c; --acc2:#6fa3bd; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 31 期</div>
+  <h1>城市之光</h1>
+  <div class="en">City Lights (1931) &nbsp;·&nbsp; 查理·卓别林 编剧／导演／主演／配乐 &nbsp;·&nbsp; 弗吉尼亚·切瑞尔 · 哈里·迈尔斯</div>
+  <div class="meta">
+    <span>美国</span><span>查理·卓别林</span><span>喜剧 · 爱情 · 剧情</span>
+    <span>87 分钟</span><span>黑白</span><span>默片（无对白）</span>
+    <span>1931-01-30 洛杉矶首映 · 1931-03-07 美国公映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.3</b><small>豆瓣 · 约 10 万人</small></div>
+    <div class="score"><b>8.5</b><small>IMDb · 约 21.7 万票</small></div>
+    <div class="score"><b>95%</b><small>烂番茄专业</small></div>
+    <div class="score"><b>90–95%</b><small>烂番茄观众（各源不一）</small></div>
+    <div class="score"><b>99</b><small>Metacritic · 15 评</small></div>
+    <div class="score"><b>第 11 位</b><small>AFI 百年百大（2007）</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.3（约 10.0 万–10.5 万人）；IMDb 8.5（21.6 万–21.9 万票）；烂番茄专业 95%（各源均分未统一，取低值口径），观众 90%（4.5/5）至 95%，各源不一——本片年代久远，样本口径差异主要来自重映与修复版页面；Metacritic 99（仅 15 评）；Letterboxd 4.31–4.33（约 20 万评）。<br>
+    选片线：豆瓣 9.3、IMDb 8.5，按「豆瓣 ≥ 8.8 或 IMDb ≥ 8.3」达标，且两项都远超线。<strong>这是本系列第 31 期，也是第一部默片、第一部 1950 年以前的作品</strong>——此前最早的是第 9 期《罗生门》（1950），这一期把时间轴一次前推 19 年。<strong>剧透风险属第 4 档（防最后一个镜头）</strong>，但它的特殊性在于：几乎所有中文资料都把那个镜头当成剧情简介的一部分，直接写出来。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（第 4 档——防最后一个镜头，难度是本系列最高的一类）</h2>
+    <p>以往的片，剧透危险集中在中段的转折（谁其实是谁、谁先背叛谁）。这一部没有转折。<strong>它全部的情感结算，压在最后一分钟的一个动作和一个表情上。</strong>而这个镜头太有名了，有名到被当成常识：影史教材用它讲课，影评人用它当标题，百科的「剧情介绍」从第一句写到最后一个画面。你不是要去挖它才会撞见——你只是正常查一下这部片，就会读到。</p>
+    <ul>
+      <li><strong>第一类：中文百科与影视站的「剧情简介」字段（第八类，本次是极端案例）。</strong>这个系列从第 19 期起就把这一类挂在台账上，但前 30 期里它们顶多剧透到中后段。<strong>本期不一样：几乎所有中文词条的简介都是从头写到尾，一句不落，包括那个最后的动作。</strong>豆瓣、百科、影库，一个都别点开正文，只看评分就走。</li>
+      <li><strong>第二类：以「影史最伟大结尾」为卖点的视频与文章（第九类）。</strong>这次尤其密——因为本片有一个现成的数字钩子（一场戏重拍了几百次），自媒体几乎全用它当标题。<strong>标题里同时出现「重拍」「多少次」「结局／结尾」这三个信号的，直接划走。</strong>我不写那个数字出现在哪一场，也不写它为什么被重拍。</li>
+      <li><strong>第三类：影史榜单与教材式的「名场面」盘点（本次新增第二十一类）。</strong>这一类最阴——它不以剧透为目的，恰恰相反，它以「经典科普」的姿态出现：百大结尾、百大镜头、影史瞬间。文章会认为这个镜头人人看过，于是毫不设防地描述它。<strong>看完本片之前，任何「影史百大结尾」「最催泪镜头」的榜单都不要点。</strong></li>
+      <li><strong>第四类：检索词雷（第 7 次启用）。</strong>搜中文片名会撞上 2017 年国产片《心理罪之城市之光》，两部片在不同平台共用同一个片名；搜英文名 City Lights 会撞上同名歌曲、诗集与商铺。<strong>请在检索词里加上年份 1931，或者加上导演名。</strong></li>
+      <li><strong>第五类：翻拍、续作与改编。</strong>本片没有续集，也没有正式翻拍（宝莱坞 2013 年的《鬼魅浮生》类改编与本片无关）。这一条这次是干净的——本系列 31 期里，难得的「没有衍生品要躲」。</li>
+    </ul>
+    <p>安全区划给你（这些是预告片与官方简介就交代完的前提）：<strong>一个流浪汉，在某个城市里醒来。他没有名字、没有住处、没有钱，全部财产是那顶圆顶礼帽、那根手杖和一身不合身的礼服。他在街角遇到一个卖花的姑娘——她看不见。她听见他的脚步和礼帽的窸窣声，误以为来的是位有钱的先生。他没有纠正她。他买了一朵花，然后走开，把花一直带着。后来他认识了另一个人：一位富翁。这位富翁喝醉的时候，把他当最好的朋友，请他吃饭、送他衣服、把车借给他；一清醒，就认不出他，把他当陌生人赶出门。同一个人，一天之内，两次被世界看作两样东西。而那个卖花姑娘的眼睛，是有可能治好的——只是需要一笔钱，一笔他这样的人拿不出的钱。于是他开始想办法。</strong></p>
+    <div class="ver">我们停在这里。他怎么凑钱、凑到没有、中间出了什么事、两个人最后有没有再见——一个字不写。<strong>最后那个镜头里发生了什么，我不会说，也请你不要去找人说。</strong>你只要记住一件事进场：<strong>这部片所有的笑，都是为了最后那一分钟在铺路。</strong></div>
+  </div>
+
+  <div class="card">
+    <h2>三件先说清楚的事</h2>
+    <p><strong>第一件：这是「声音已经赢了四年之后，一个最有权力的人选择不说话」。</strong>1927 年 10 月《爵士歌手》上映，有声片迅速取代默片，到 1930 年好莱坞各大厂的片单几乎全部转向对白片。<strong>本片 1931 年 1 月首映——距离那场革命过去了三年多。</strong>卓别林当时是全世界最卖座的电影人，也是极少数拥有自己片厂、自己发行渠道（联美）的人，所以他有一种别人没有的自由：他可以拒绝。他为这部片和片厂老板吵到翻脸，坚持拍成默片，只加音乐与环境音效。<strong>他给出的理由不是技术保守，是人物逻辑：流浪汉一旦开口，他就变成了一个具体的人（有口音、有阶层、有国籍），而他要的是「每一个人」。</strong>这个选择在当时被同行看作自杀。结果：负片成本约 160.7 万美元，全球为他赚回约 500 万美元利润——是他那个年代的天文数字。<strong>本系列第一次遇到一部「用拒绝新技术来证明新技术不是必需品」的电影</strong>，与第 4 期《星际穿越》用最贵的物理渲染讲最朴素的父女、第 29 期《盗梦空间》用 1.6 亿美元搭真实旋转走廊，是同一条轴上的两种极端：那些是用技术抵达情感，这一部是<strong>靠不用技术抵达情感</strong>。</p>
+    <p><strong>第二件：奥斯卡这一栏，本期要写的是「零提名」——不是输。</strong>把前 30 期的奖项账排一下就会发现，我们反复遇到的是三种命运：赢（第 5 期教父 11 提 3 中、第 8 期飞越疯人院 9 提 5 中大满贯）、输（第 2 期十二怒汉 3 提 0 中、第 28 期控方证人 6 提 0 中、第 24 期后窗 4 提 0 中）、以及压根没被评过（第 14 期三傻：西方主流影评界没写）。<strong>本期是第四种，也是最奇特的一种：第 4 届奥斯卡（1931）给了它零提名——不是评了没给，是它没有进入那个系统。</strong>而同年，美国国家评论协会把它列入年度十佳。也就是说：<strong>它被「当年的颁奖系统」当作不存在，被「当年的评论系统」当作年度最好的十部之一。</strong>这个反差不靠猜——五十六年后，AFI 百年百大（2007）把它排在第 11 位；再往后，《视与听》2022 影评人榜第 36、导演榜并列第 52；1991 年，美国国会图书馆把它选入国家影片登记部。<strong>第 30 期刚写过「奖项与影史名次不是同一件事」，本期是这句话最干净的一个标本：它的名次一路上升，它的提名数始终是零。</strong></p>
+    <p><strong>第三件：这是全系列「评分撕裂度」最小的一部——四个系统，没有一个跟另一个吵架。</strong>回顾一下我们见过的分歧：第 4 期星际穿越（豆瓣 9.4 / RT 73）、第 6 期美丽人生（豆瓣 9.5 / MC 58）、第 12 期霸王别姬（豆瓣 9.6 / IMDb 8.1）、第 13 期海上钢琴师（豆瓣 9.3 / RT 54 / MC 58，两个落差开关全开）、第 15 期这个杀手不太冷（RT 74 / 观众 95）。<strong>本期：豆瓣 9.3、IMDb 8.5、烂番茄专业 95%、观众 90–95%、MC 99。Metacritic 99 在本系列 31 期里排第三，前面只有第 5 期《教父》的 100 和第 24 期《后窗》的 100。</strong>更值得说的是<strong>跨时间的稳定性</strong>：《视与听》那份十年一评的榜单上，它 1952 年排第 2，1962 年第 9，1992 年第 10，2002 年第 45，2012 年第 50，2022 年回到第 36——<strong>七十年里下滑 34 位，又回升 14 位，然后停在那里。这是本系列曲线最长的一条名次线</strong>（第 16 期七武士四十年掉 17 位、第 24 期后窗十年升 15 位，都是它的片段）。<strong>一部 1931 年的默片，在 2026 年的四套打分系统里，仍然没有任何一方想把它往下压。</strong></p>
+    <div class="quote">
+      It is enough to shrivel the heart to see, and it is the greatest piece of acting and the highest moment in movies.
+      <em>——詹姆斯·艾吉（James Agee），美国影评人。美国国会图书馆的馆藏评述引用它来概括那个镜头：「光是看着，就足以让人心缩成一团；它是电影史上最伟大的一次表演，也是电影的最高时刻。」（这段评语本身不剧透内容，但我把它放在这里，是为了让你知道：那个镜头的分量不是网友吹出来的。）</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在（不看剧情也能看懂的四个看点）</h2>
+    <ul>
+      <li><strong>一、把「默」当成一种语言，而不是一种缺陷。</strong>全片 87 分钟，没有一句能听清的对白（开场确实有人在讲话——官员致辞——但那声音被处理成一团听不清的噪音，观众和流浪汉处在同一个信息位置上）。<strong>所有叙事都靠身体完成</strong>：他用手杖勾住别人的裤脚、用眉毛的抬落表示心虚、用脚尖的方向表示想逃。你会发现一个反常识的事实：信息密度并不比有声片低，只是每一条信息都长在动作上。</li>
+      <li><strong>二、喜剧与悲剧共用同一个身体。</strong>这部片的笑不是插科打诨式的「暂停剧情讲笑话」，笑点本身就是剧情推进器：他为了一笔钱去做一件远超自己体格的事（那段戏的编排被后来的动作导演反复拆解，节奏精准到像双人舞）；他在富翁前后判若两人的态度之间切换，切换本身就是全片最狠的社会观察。<strong>你会在同一个镜头里先笑，然后笑意自己塌下去。</strong></li>
+      <li><strong>三、一个人用「不被看见」来爱另一个人。</strong>这是全片的暗轴：她看不见他，所以他可以是被想象成的任何样子；而他一旦被看清，那个想象就结束了。<strong>他所有的努力，方向都是反的——不是让自己被看见，而是让自己继续不被看见。</strong>此处与第 7 期《楚门的世界》正好互为镜像：楚门用尽一生想被世界<b>真正</b>看见一次；本片这个人，用尽一切让自己<b>永远</b>不被看见。</li>
+      <li><strong>四、配乐是他自己写的，而且他是靠哼的。</strong>卓别林不识谱，他把旋律哼给编曲者（本片由亚瑟·约翰斯顿编曲），一段一段对到画面上。所以这部默片的节奏不是「画面 + 后配的音乐」，而是<strong>一个统一的节奏：走路有拍子，拳台有拍子，连她摸索花摊的手都有拍子。</strong>建议戴耳机看，声音这一层是有设计的，不是随便铺的。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p><strong>因为它是「电影」这门手艺在被声音改写之前，最后一次把纯视觉推到极限。</strong>1931 年之后，电影再也没有回到那条路上——不是不能，是不必了。所以这部片在影史里占的位置有点特别：它不是一个流派的开始，是一个时代的收尾，而且是<strong>由这个时代最好的人亲手收的</strong>。美国国会图书馆的馆藏评述写得很准：这是卓别林在他能力巅峰时，对无声电影这门纯粹手艺的<strong>一次深情回望，也是告别</strong>。</p>
+    <p><strong>因为它的「慢」是有回报的。</strong>我得诚实说：前十分钟你可能不适应——没有台词、黑白、动作节奏比今天的喜剧慢半拍。但这部片的结构是<strong>把 85 分钟的欠账，压在最后 1 分钟里一次结清</strong>。前面所有看起来松散的小事（一朵花、一次误认、一个反复无常的富翁、一件不合身的礼服），到最后一刻全都会变成同一笔账。<strong>这也是为什么它不能被分段看——你切开的不是时长，是利息。</strong></p>
+    <p><strong>因为它的社会性不是隐喻，是当时的现场。</strong>本片拍摄期跨了 1927 年底到 1931 年初，正好横穿 1929 年 10 月的华尔街股灾。片中那个「喝醉时慷慨、清醒时冷漠」的富翁不是文学设计——它是一个具体年份的富人心理：<strong>善意是一种情绪，不是一种制度。</strong>而流浪汉的尊严也不是励志口号，是一个在街上真的会被赶走的人，坚持把礼服穿整齐。<strong>第 27 期《辛德勒的名单》写的是「一个人在系统里救人」，本期写的是「一个人根本不在系统里，还是想救人」——同样的动作，一个在名单内，一个在名单外。</strong></p>
+    <p><strong>因为 95 年过去了，它没有过期。</strong>这是本系列里最老的一部，也是我最有把握说「今晚就能看、看完不会觉得在补课」的一部。它不需要你懂默片史、不需要你认识任何演员、不需要你做任何功课。<strong>它只需要你愿意给它 87 分钟，不按快进。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>批评版块（三条：一条当年的，一条今天的，一条我的）</h2>
+    <ul>
+      <li><strong>一、当年的差评，骂的是「他太认真了」。</strong>1931 年，评论家亚历山大·巴克希（Alexander Bakshy）在《国家》杂志上写：卓别林日渐增长的严肃、他想超越「只是一个喜剧演员」的渴望，已经骗得他把<strong>感伤看得比乐趣更珍贵</strong>。这一条我保留原文的锋利，因为它不是坏话——它是当年最懂他的人给出的诊断：<strong>你不再只想让我们笑了。</strong>而这部片后来被推崇的正是这一点。也就是说，它当年被批评的那个地方，正是它今天被供起来的地方。</li>
+      <li><strong>二、今天的差评，骂的是「它太像情节剧」。</strong>现在仍有一部分观众和研究者不吃这一套：盲女被写得过于纯白被动，几乎是一个等待被拯救的符号；富翁的反复无常更像一个功能性开关（需要障碍时就发作），而不是一个人；结尾的巧合密度也偏高。<strong>这些批评我认为有道理，但要说清它们的性质：它们质疑的是「这个故事是否诚实」，而不是「这个手艺是否成立」。</strong>本系列前 30 期里，第 15 期《这个杀手不太冷》挨的是「今天没人会再拍这部」的伦理质疑，性质更重；本期这三条，属于审美与观念的代际差异。</li>
+      <li><strong>三、我的一条：它把最难的部分交给了观众，而这一点今天几乎没人敢做。</strong>这部片从不解释流浪汉的过去，从不解释他为什么保持那身礼服，也从不给他一句内心独白（他也没有声音可以给）。<strong>人物的全部背景靠观众自己补。</strong>今天的商业片很少敢这么做——因为没有台词就没有安全感。所以看这部片时那种轻微的「信息不足感」，不是它没讲清，是它故意留白。<strong>如果你看完觉得「我好像很懂他，但我什么都不知道」，那正是它想要的反应。</strong></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>观看建议</h2>
+    <ul>
+      <li><strong>一次看完，不要分两次。</strong>87 分钟，比一集剧还短。但它的情感是复利结构，切开就断了。</li>
+      <li><strong>看之前什么都别搜。</strong>这部片的剧透密度是本系列最高的——不是因为它情节复杂，而是因为它太有名，所有人都默认你已知。若你已经不小心看过了那个画面的描述，也仍然值得看：<strong>知道结局的人，看的是它怎么把结局挣出来。</strong></li>
+      <li><strong>前五分钟是缓冲区。</strong>开场是一段纯闹剧（一座雕像的揭幕仪式），几乎不推进剧情，功能就是让你适应「没有台词」这件事。别在这五分钟里放弃。</li>
+      <li><strong>版本：本系列第九次「无陷阱」。</strong>各源片长一致为 87 分钟，不存在内地公映删减、也不存在双结局那类问题（累计「删减／改判陷阱」仍是 8 次，本期不加）。<strong>唯一要挑的是画质</strong>——请选修复版，老拷贝的划痕与抖动会严重削弱面部特写的作用。字幕可有可无，本片只有极少量插入字卡。</li>
+      <li><strong>音量开大一点。</strong>配乐是这部片的一半，且它是同步声轨（不是后期随便配的），很多笑点的落点卡在音乐的拍子上。</li>
+      <li><strong>看完之后，再回头看一遍最后的那个镜头。</strong>这是极少数「重看单场戏会比第一次更重」的电影。</li>
+    </ul>
+    <div class="ask">
+      <small>适合今晚看，如果——</small>
+      你想看一部能笑出声、又会突然安静下来的电影；你想知道「电影」在没有语言的时候长什么样；你最近被太多信息喂得很累，想被一个不需要字幕的 87 分钟接住。<strong>不适合</strong>：需要强情节推进、需要反转、需要高信息密度的观众——它的推进方式是情感的，不是事件的。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>数据表（本期口径）</h2>
+    <table>
+      <tr><th>项目</th><th>数据</th></tr>
+      <tr><td>豆瓣</td><td>9.3（约 10.0–10.5 万人）</td></tr>
+      <tr><td>IMDb</td><td>8.5（21.6 万–21.9 万票）</td></tr>
+      <tr><td>烂番茄</td><td>专业 95% · 观众 90%（4.5/5）–95%，各源不一</td></tr>
+      <tr><td>Metacritic</td><td>99（15 评）· 本系列第三高，仅次于教父 100、后窗 100</td></tr>
+      <tr><td>Letterboxd</td><td>4.31–4.33（约 20 万评）</td></tr>
+      <tr><td>第 4 届奥斯卡（1931）</td><td>零提名（本系列第 4 种奖项命运：不是输，是未进入评选）</td></tr>
+      <tr><td>AFI 百年百大</td><td>2007 年第 11 位；1998 年版第 76 位</td></tr>
+      <tr><td>AFI 十大类型片</td><td>2008 年「浪漫喜剧」类第 1 位</td></tr>
+      <tr><td>《视与听》影评人榜</td><td>1952 第 2 → 1962 第 9 → 1992 第 10 → 2002 第 45 → 2012 第 50 → 2022 第 36</td></tr>
+      <tr><td>《视与听》2022 导演榜</td><td>并列第 52</td></tr>
+      <tr><td>国家影片登记部</td><td>1991 年入选（美国国会图书馆；英文维基同段另处记为 1992，属源内不一致，取早值）</td></tr>
+      <tr><td>AFI 其他榜单</td><td>2000 年「百年百笑」第 38 · 2002 年「百年百大爱情片」第 10 · 2006 年「百年百大励志片」第 33</td></tr>
+      <tr><td>成本 / 利润</td><td>负片成本 1,607,351.63 美元 / 全球利润约 500 万美元（北美 200 万 + 海外 300 万）</td></tr>
+      <tr><td>片长</td><td>87 分钟（各源一致，无版本陷阱）</td></tr>
+      <tr><td>拍摄周期</td><td>1927-12-31 开机 → 1931-01-22 完成，约三年（卓别林个人最长）</td></tr>
+      <tr><td>单场重拍纪录</td><td>「初次相遇」一场重拍数百次，被记为单场重拍次数的吉尼斯世界纪录（具体数字本期不写，因为它指向哪一场即剧透）</td></tr>
+    </table>
+    <p style="margin-top:14px;font-size:13px;color:var(--tx3)">跨期位置：本系列第 31 期 · 首部默片 · 首部 1950 年以前作品 · 首部卓别林 · 时间轴上最早的一部（前推 19 年）· 与第 7 期楚门构成「想被看见 / 不愿被看见」镜像 · 与第 13 期海上钢琴师构成「拒绝」系列（一个不肯下船，一个不肯开口）· 评分撕裂度全系列最低。</p>
+  </div>
+
+  <div class="foot">
+    第 31 期 · 每日经典电影推荐<br>
+    已推荐 31 部，本期零剧透交付。看完再聊——那个镜头值不值得那几百次重拍，你自己判。
+  </div>
+
+</div>
+</body>
+</html>

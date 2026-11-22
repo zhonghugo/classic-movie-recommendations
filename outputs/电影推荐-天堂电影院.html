@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 天堂电影院</title>
+<style>
+  :root{
+    --bg:#12141a; --panel:#191c24; --panel2:#20242e; --line:#2c313d;
+    --tx:#e8eaf0; --tx2:#a3aab9; --tx3:#71798a;
+    --gold:#e8b64c; --warm:#d98b6a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:34px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--gold);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--gold);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--gold);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--warm)}
+  .quote{
+    border-left:2px solid var(--warm);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--tx3);line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">今日电影推荐 · 2026-10-06</div>
+  <h1>天堂电影院</h1>
+  <div class="en">Nuovo Cinema Paradiso · 1988</div>
+
+  <div class="meta">
+    <span>导演　朱塞佩·托纳多雷</span>
+    <span>主演　菲利普·努瓦雷 / 萨瓦特利·卡西欧</span>
+    <span>类型　剧情 / 爱情 / 怀旧</span>
+    <span>片长　124 分钟（剧场版）</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.2</b><small>豆瓣 · 50 万+人</small></div>
+    <div class="score"><b>8.5</b><small>IMDb · 31 万+人</small></div>
+    <div class="score"><b>90%</b><small>烂番茄新鲜度</small></div>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（无剧透）</h2>
+    <p>西西里岛一个不起眼的小镇，教堂旁有座叫"天堂"的电影院，是全镇唯一的出口。</p>
+    <p>小男孩多多迷上了那里的一切——胶片转动的声音、光柱里飞舞的灰尘。他缠着放映员阿尔弗雷多，一来二去，成了一对忘年交。一个教放映，一个教人生。</p>
+    <p>神父审片时剪掉的、小镇容不下的，全被塞进那只铁皮罐子里。故事横跨几十年：一个孩子怎样被电影塑造，怎样离开，以及多年后怎样回来。</p>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在</h2>
+    <ul>
+      <li><strong>莫里康内的配乐。</strong>《Love Theme》是影史辨识度最高的旋律之一。他与儿子安德烈亚合作，拿下 BAFTA 最佳电影音乐。很多观众是先记住这段旋律，再记住这部电影的。</li>
+      <li><strong>结尾的吻戏蒙太奇。</strong>被剪掉的镜头被一一接回，连成一整段沉默的告白。影史最著名的段落之一，《辛普森一家》都专门致敬过。</li>
+      <li><strong>阿尔弗雷多这个角色。</strong>菲利普·努瓦雷演的放映员，随口一句话就是一堂课。他不讲大道理，他只是把多多推出小镇。</li>
+      <li><strong>它对"电影是什么"的回答。</strong>不是逃避现实——是让人第一次被允许公开地哭、公开地渴望。</li>
+    </ul>
+    <div class="quote">
+      “人生和电影不一样，人生辛苦多了。”
+      <em>—— 阿尔弗雷多</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p><strong>口碑是硬的。</strong>第 62 届奥斯卡最佳外语片、第 42 届戛纳评审团大奖、金球奖最佳外语片、5 项 BAFTA。它被公认救活了当时低迷的意大利电影业，后面才有了《美丽人生》。</p>
+    <p><strong>几乎没有门槛。</strong>不需要任何电影史知识，不烧脑，不炫技。124 分钟，节奏温柔，适合任何一个疲惫的晚上。</p>
+    <p><strong>它会让你想起自己。</strong>不是想起某部电影，是想起小时候第一次被某个东西击中的那个瞬间——那种"原来世界上还有这个"的眩晕。这片子拍的就是这种感觉本身。</p>
+    <div class="ver">
+      <strong>版本建议：</strong>先看 124 分钟剧场版。另有 174 分钟导演剪辑版（多出中年多多回乡的恋情线）。罗杰·艾伯特给剧场版更高分，认为"更精炼"——第一次看，短的更好。
+    </div>
+  </div>
+
+  <div class="foot">
+    本推荐不剧透关键情节 · 已记入推荐台账，后续不重复推荐<br>
+    已推荐：天堂电影院（1988）
+  </div>
+
+</div>
+</body>
+</html>

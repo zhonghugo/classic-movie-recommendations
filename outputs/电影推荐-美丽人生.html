@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 美丽人生</title>
+<style>
+  :root{
+    --bg:#12100e; --panel:#1b1815; --panel2:#221e1a; --line:#312b25;
+    --tx:#ece7e0; --tx2:#a8a096; --tx3:#756e64;
+    --gold:#e6a94e; --warm:#c98a5e;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:34px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--gold);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .score.flat b{color:var(--tx2);font-size:19px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--gold);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--gold);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--warm)}
+  .quote{
+    border-left:2px solid var(--warm);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--gold);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--tx3);line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">今日电影推荐 · 2026-10-11</div>
+  <h1>美丽人生</h1>
+  <div class="en">La vita è bella / Life Is Beautiful · 1997</div>
+
+  <div class="meta">
+    <span>导演　罗伯托·贝尼尼（自编·自导·自演）</span>
+    <span>主演　贝尼尼 / 尼可莱塔·布拉斯基 / 乔治·坎塔里尼</span>
+    <span>摄影　托尼诺·德里·科利</span>
+    <span>配乐　尼古拉·皮奥瓦尼</span>
+    <span>类型　剧情 / 喜剧 / 爱情 / 战争</span>
+    <span>片长　116 分钟</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.5</b><small>豆瓣 · 约 149 万人 · TOP250 第 7</small></div>
+    <div class="score"><b>8.6</b><small>IMDb · 180 万+ 票 · 第 27</small></div>
+    <div class="score"><b>96%</b><small>烂番茄 · 观众爆米花指数</small></div>
+    <div class="score"><b>81%</b><small>烂番茄 · 94 条影评</small></div>
+    <div class="score flat"><b>58</b><small>Metacritic · 32 位影评人</small></div>
+  </div>
+  <div class="note">
+    注意最后两个数：<strong>观众 96%，专业影评人 58 分</strong>。这是本系列迄今分歧最大的一部——
+    昨天《教父》的 Metacritic 是<strong>满分 100</strong>（专业界零异议），今天这部是 58（"褒贬不一"）。
+    同一个评分网站，两个极端，只隔一天。这个落差本身就是今天最值得聊的东西，下面会展开。
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（无剧透）</h2>
+    <p>故事从 1939 年的托斯卡纳开始，阳光很足。一个叫圭多的犹太青年来到阿雷佐小镇，想开一家书店。他话多、动作大、永远在跑、永远在笑，像是从默片里直接走出来的人。</p>
+    <p>然后他遇见一位女教师。之后每一场碰面，他都跟她说同一句话。这句话在片中出现了十几次，每次的语气都不一样——从搭讪，到日常，到最后你会明白它承担了什么。<strong>前半段几乎是一部轻喜剧</strong>：鸡蛋、帽子、楼梯、被涂成绿色的马、雨里铺开的红地毯。你会笑得很轻松，轻松到后来会怀念它。</p>
+    <p>几年后，他们有了一个儿子，书店开起来了。再往后——我只能说一句：<strong>一家人被送上了火车，目的地是纳粹集中营</strong>。</p>
+    <p>从那一刻起，这部电影变成了另一部电影。剩下的部分我几乎什么都不写，因为它的全部力量来自"你不知道接下来会发生什么"。</p>
+    <p>我能说的是：这部片真正的主角不是战争，而是<strong>一个父亲要在最坏的地方，让一个五岁的孩子活下去，并且不让他知道自己身在何处</strong>。为此他想了一套办法。那套办法就是整部电影——我一个字都不会透露。</p>
+    <p>你只需要带着一个问题进去：<strong>如果明天世界就要塌了，你今天会怎么跟你的孩子解释？</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在</h2>
+    <ul>
+      <li><strong>前半段是默片喜剧传统的延续。</strong>贝尼尼的表演是肢体性的：摔跤、奔跑、 improvise 式的插科打诨，师承卓别林和巴斯特·基顿。有个细节值得留意——<strong>他在集中营穿的囚服号码，和卓别林在《大独裁者》里的号码是同一个</strong>。这不是巧合，既是致敬也是宣战：他要证明喜剧有资格碰这个题材。</li>
+      <li><strong>"早安，公主"这句台词，是编剧教科书。</strong>一句话，重复十几次，每次语境都不同，最后一句和第一句之间隔着一整段人生。很少有剧本敢把整部电影的情感弧线压在一句日常问候上——而它做到了。</li>
+      <li><strong>它把"恐怖"做了转译，而不是展示。</strong>全片<strong>没有一个直接的屠杀镜头</strong>。你看到的不是暴行本身，而是父亲在实时翻译暴行。这个选择既是它最大的成就，也是它最大的争议——后面会讲。</li>
+      <li><strong>贝尼尼凭此成为史上第二位以非英语表演获奥斯卡影帝的演员。</strong>他是喜剧演员出身，意大利媒体称他"民族英雄"。领奖时他<strong>踩着一排排座椅靠背翻上舞台</strong>，那是奥斯卡历史上被重播最多的几秒之一。</li>
+      <li><strong>皮奥瓦尼的配乐拿了奥斯卡最佳原创配乐。</strong>主旋律温和、带一点华尔兹的摇晃感，在片中反复出现，但每次出现的语境都不同——同一个旋律可以甜，也可以让人心碎。另外片中用了奥芬巴赫的歌剧《霍夫曼的故事》里的<strong>《船歌》</strong>，那段旋律被用在什么场合、做什么用，是这部电影最精妙的安排之一。我只能说到这。</li>
+      <li><strong>前半段的"亮"是叙事策略，不是美术偏好。</strong>托斯卡纳的每一场戏都打得极亮，亮到你后来会主动怀念它。导演先用一小时让你爱上这个世界的样子，再把它拿走。</li>
+      <li><strong>戏里戏外叠在一起。</strong>演妻子的布拉斯基，现实中就是贝尼尼的妻子。片名"La vita è bella"来自托洛茨基——他在墨西哥流亡、得知自己即将被暗杀的那个下午，看着花园里的妻子写下了这句话。</li>
+    </ul>
+    <div class="quote">
+      “早安，公主！”
+      <em>—— Buongiorno, principessa! 全片重复十几次，每一次都是不同的意思</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p><strong>它不是评分最高的那类经典，它是"分裂"最厉害的那类。</strong>豆瓣 9.5（约 149 万人，TOP250 第 7）、IMDb 8.6（180 万+ 票，第 27）、烂番茄观众 96%，但专业影评人只有 81%，Metacritic 更是只有 <strong>58 分</strong>。同一部片，从 58 到 100——评论界对它的分歧大到这个程度，本身就是一个值得亲自验证的信号。</p>
+    <p><strong>奖项和地位是实的。</strong>第 71 届奥斯卡 7 项提名、3 项获奖——<strong>最佳男主角、最佳外语片、最佳原创配乐</strong>（另获最佳影片、最佳导演等提名）；1998 年戛纳主竞赛<strong>评审团大奖</strong>；9 项意大利大卫奖含最佳影片；欧洲电影奖最佳影片。全球票房 2.3 亿美元，一度是北美票房最高的外语片，直到 2000 年《卧虎藏龙》才被超过。教宗若望保禄二世把它列为自己最喜爱的五部电影之一。</p>
+    <p><strong>它拍了一个很少被拍出来的问题：怎么向孩子解释世界的崩坏。</strong>大多数二战电影讲的是"成年人如何面对恶"，这部讲的是"一个父亲如何在恶面前替孩子重写现实"。它给出的答案争议极大，但问题本身是罕见的——这也是它能被一代代父母翻出来重看的原因。</p>
+    <p><strong>争议在哪里，价值就在哪里。</strong>用喜剧去碰大屠杀，有人认为轻佻，有人认为勇敢。罗杰·伊伯特给 3.5/4 星，说它"把大屠杀<strong>轻微软化</strong>了，好让幽默成为可能"，但紧接着说："这部片讲的不是纳粹和法西斯，而是人的精神。"《芝加哥论坛报》的威尔明顿给了<strong>满分 100</strong>，称它是"冷彻的恐惧与狂喜的欢笑的深度融合"。而《时代》周刊的施克尔则批评：影片提到过大规模灭绝，但"<strong>那个残酷的真实从未被鲜明呈现</strong>"。你看，同一部片，同一批专业影评人，从 58 到 100。</p>
+    <div class="ask">
+      <small>留给你的一道题</small>
+      如果一个故事让 149 万人打了 9.5 分，却让 32 位专业影评人只给 58 分——
+      <strong>你觉得是"观众不懂电影"，还是"影评人不懂观众"？</strong>
+      换个问法：<strong>判断一部电影好坏的权力，到底应该在哪一边？</strong>
+      带着这个问题看完，你自己的答案可能会比这两种都复杂一点。
+    </div>
+    <div class="ver">
+      <strong>观看建议：</strong>116 分钟，不长，但<strong>后半段请一次看完，不要中途停</strong>——它的情绪是靠连续性堆起来的，断掉就很难接回去。
+      不需要任何历史前置知识。
+      如果开片前你已经"听过那个著名的设定"，试着<strong>假装不知道</strong>再走一遍全程，体验会完全不同——这句话没有剧透任何东西，但它可能是这篇推荐里最有用的一句。
+      另外：别在自己很累、情绪很低的晚上打开它。
+    </div>
+  </div>
+
+  <div class="foot">
+    本推荐不剧透关键情节 · 已记入推荐台账，后续不重复推荐<br>
+    已推荐：天堂电影院（1988） · 十二怒汉（1957） · 千与千寻（2001） · 星际穿越（2014） · 教父（1972） · 美丽人生（1997）
+  </div>
+
+</div>
+</body>
+</html>

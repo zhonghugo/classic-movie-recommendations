@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 寻梦环游记</title>
+<style>
+  :root{
+    --bg:#100d0a; --panel:#1a1512; --panel2:#221b16; --line:#3a2c22;
+    --tx:#f5efe8; --tx2:#bdb0a4; --tx3:#84776c;
+    --acc:#f0a24b; --acc2:#7fb3c8; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 23 期</div>
+  <h1>寻梦环游记</h1>
+  <div class="en">Coco (2017) &nbsp;·&nbsp; 台译《可可夜总会》，港译《玩转极乐园》</div>
+  <div class="meta">
+    <span>美国 / 皮克斯</span><span>李·昂克里奇 · 阿德里安·莫利纳</span><span>动画 · 家庭 · 音乐</span>
+    <span>105 分钟</span><span>彩色</span><span>英语 / 西班牙语</span>
+    <span>2017-10-27 墨西哥首映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.1</b><small>豆瓣 · 187 万+ 人</small></div>
+    <div class="score"><b>8.4</b><small>IMDb · 约 71 万票</small></div>
+    <div class="score"><b>97%</b><small>烂番茄专业 · 276 评</small></div>
+    <div class="score"><b>81</b><small>Metacritic · 48 评</small></div>
+    <div class="score"><b>94%</b><small>烂番茄观众 · 爆米花</small></div>
+    <div class="score"><b>8.14 亿</b><small>全球票房（美元）</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.1（超过 187 万人打分，其中 62.6% 给了五星）；IMDb 8.4（约 71 万票）；烂番茄专业 97%（276 条影评，另有源记 226 评 96%，取样本更大的一份）、观众爆米花 94%；Metacritic 81（48 评，另有源记 46 评同为 81）；全球票房 8.14 亿美元为首轮成绩，含 2025 年重映累计约 8.22 亿。<br>
+    <strong>先收一个尾：上一期我破了一次例。</strong>第 22 期《钢琴课》豆瓣 8.1、IMDb 7.5，双双低于本系列沿用的选片线（豆瓣 ≥ 8.8 或 IMDb ≥ 8.3），我在那张卡片里认领了这件事，也写明了「不可常态化」——常态化等于取消标准。<strong>今天这部豆瓣 9.1、IMDb 8.4，两项都在线内。</strong>破例就是一次，这一次不算。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（本期防的是「那个人是谁」）</h2>
+    <p>这部片的骨架你能在前半小时猜到，它真正押上一切的是<strong>第三幕的一次身份揭示</strong>——谁是谁，谁做了什么，那首歌原本是写给谁的。所以第 20 期「防最后一句」、第 22 期「防一件东西的下落」这两种写法在这里都不够用，<strong>本期要防的是「他是谁」</strong>。猜到骨架不要紧，被提前告知这一个答案，整部片就塌了。</p>
+    <ul>
+      <li><strong>最危险的不是「解析」，是「推荐」。</strong>这是本系列<strong>新发现的第十三类剧透源</strong>：我为这张卡片查资料时，搜到的几篇「经典电影推荐」类图文长文，正文从开场一路复述到最后一个镜头，角色名字、转折、收场全部直给——它们叫「推荐」，不叫「解析」。此前第九类是「几分钟看完」的解说视频，那些至少自称让你「看完」，你点开时知道自己要被剧透；<strong>推荐类图文自称是安利，你的防备反而最低。</strong>本系列第一次遇到「同行即剧透源」，写出来提醒你。</li>
+      <li><strong>那首歌别去查。</strong>片名之外，它拿到的第二座奥斯卡是最佳原创歌曲。歌名本身不是秘密，预告片里到处都是；<strong>但「这首歌在片里出现过几次、分别是谁唱给谁听的」——这句话本身就是谜底</strong>，任何一篇歌词解析都会把它写出来。</li>
+      <li><strong>中文百科的「剧情简介」照旧不能用。</strong>第 19 期记过这一类，本片同样一路写到结局收场。</li>
+      <li><strong>译名雷（第 22 期已把这条固化为检查项，本期第二次遇到）：认准《寻梦环游记》。</strong>台译《可可夜总会》、港译《玩转极乐园》，三个名字在中文搜索里各说各话，很容易搜到无关内容。</li>
+    </ul>
+    <p>安全区先划给你：<strong>墨西哥小镇圣塞西莉亚，一个做了一百年鞋子的家族，家里有一条不容商量的铁律——不许音乐。</strong>起因是很多年前，家里的一位先祖为了唱歌抛下妻女一去不回，留下的人关上门，靠一双手和一间鞋坊把家撑了下来。<strong>十二岁的米格偏偏爱音乐</strong>，他在阁楼里偷偷练琴。亡灵节那天，他想拿回一把吉他，结果整个人变得透明——活人看不见他，他却看见满街的花瓣在发光，万寿菊铺成的桥从墓地一直通向天边。<strong>他走进了亡灵的世界，遇见一个过不了关的落魄乐手，两人各取所需，谈成一笔交易；而日出之前，他必须拿到一位已故家人的祝福，否则就回不去了。</strong>这些是开场就交代、预告片也给了的前提。<strong>至于那笔交易怎么收场、那位乐手到底是谁、以及最后谁被谁记住——我写到哪停，你就读到哪停。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>两件先说清楚的事</h2>
+    <p><strong>第一件：这是本系列第一次用「关于某国的他国片」来补国别空白。</strong>台账上「墨西哥」这一格从 10 月中旬挂到现在，连续多期被点名要补。<strong>但要诚实：今天这部在制作国别上是一部美国片</strong>——华特迪士尼与皮克斯出品，英文配音，预算约 1.75 至 2 亿美元。我把它记在墨西哥这一格，记的是它的题材、它的文化来源、它的故事发生地，以及它那个几乎全是拉丁裔的主演配音阵容。这个补法是打了折的，我不打算含糊过去。</p>
+    <p><strong>第二件：本系列隔了二十期，第一次回到「记住名字」这个命题上。</strong>第 3 期《千与千寻》（2026-10-08）里，汤婆婆夺走千寻的名字，白龙对她说<strong>一定要记住自己的名字，记不住就回不去了</strong>——那是「自己记住自己」。<strong>本片把这条规则掉了个头：在这座亡灵之城，人要靠「还有没有人记得你」才能存在。</strong>一个是自己守住自己，一个是别人守住你。同一个命题，两个相反的方向，相隔二十年，隔了本系列二十期。</p>
+    <div class="quote">
+      上一期《钢琴课》的女主角说不出话，只能用钢琴发声；<br>
+      这一家不许有音乐，连哼一句都不行。<br>
+      连续两期，核心冲突都是「声音被堵住」。
+      <em>第 22 期（2026-10-28）与本期，连续两张卡片都押在「能不能发声」上。</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（停笔位置是有意为之）</h2>
+    <p>故事的时间是一九七〇年前后的墨西哥城与一个叫圣塞西莉亚的小镇。米格生在里韦拉家，家里四代做鞋，家里有一条不容商量的铁律：<strong>不许音乐</strong>。禁令的来源是一张被撕掉了头部的老照片——那位离家去唱歌的先祖，在这个家里只剩下一个空位。</p>
+    <p>米格不认这条禁令。他在阁楼里贴满偶像的海报，对着录像带一遍遍练和弦，修好一把旧吉他藏起来。<strong>亡灵节那天，镇上的广场有才艺比赛，他决定去。</strong>事情从这里开始失控：他碰到了那把吉他，然后整个世界换了形状——他变得透明，活人看不见他，而他看得见满街发光的花瓣与铺到天边的万寿菊桥。</p>
+    <p>桥的那头是一座垂直堆起来的、比人间还亮的城市，灯火密到像一整面墙。那里有自己的规矩：<strong>亡灵要在亡灵节这天过桥回家，能不能过桥取决于活人有没有把你的照片摆上灵坛；而天亮之前，米格必须拿到一位已故家人的祝福，否则他就留在那边了。</strong></p>
+    <p>他遇到的第一个盟友，是一个连桥都过不去的落魄乐手——一个满嘴玩笑、也最想回家的人。两人谈成一笔交易：乐手帮他找到那位据说能给他祝福的「歌神」，米格回到人间后把乐手的照片供上灵坛。<strong>与此同时，家族的亡灵们正一路追上来，而他们给出的祝福带着同一个条件。</strong></p>
+    <div class="ver">
+      <strong>就停在这里。</strong>后面那座城里发生了什么、那位「歌神」是谁、那首贯穿全片的歌原本是唱给谁的、以及米格最后是怎么回到人间的——这些是这部片押上一切的东西，我一个字都不写。它被讲过太多次了，几乎所有人都是在不知道片名的情况下就已经「知道」了。<strong>你要做的是在还不知道的时候，自己看一遍。</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在</h2>
+    <ul>
+      <li><strong>把死亡拍成一条路，而不是一扇门。</strong>万寿菊、剪纸、糖骷髅、烛火。亡灵世界没有阴森，只有比人间更亮的灯。它不是恐怖片，是一场关于「回家」的庆典——墨西哥人把祭奠办成狂欢，这个反差本身就是全片最硬的一块地基。</li>
+      <li><strong>「终极死亡」这个设定。</strong>肉体的死不是终点，被遗忘才是。一句话把「记住」从一种情绪变成一份责任——这是全片最锋利的一刀，也是最温柔的一刀。<strong>它把一部动画片变成了会让人立刻想翻出一张照片、或者给某个人打个电话的那种片。</strong></li>
+      <li><strong>一首歌，几种唱法。</strong>同一段旋律在片中以完全不同的方式被唱出来：舞台上的万人合唱，床边小声哼的摇篮曲，以及一个老人跟着哼的那几句。拿奖的是这首歌，但真正让人绷不住的永远是后面那两种。</li>
+      <li><strong>它没有让人二选一。</strong>很多家庭片会让主角在「梦想」和「家人」之间选一个。这部片子最后谁都没放弃：孩子继续弹琴，家族继续做鞋，灵坛上多了一张照片。<strong>和解比反抗难拍得多，它选了难的那条路。</strong></li>
+      <li><strong>配色是教科书级别的。</strong>万寿菊的橙、亡灵城的紫、烛火的金、剪纸的粉。做设计和做内容的人该逐帧看——它证明高饱和不等于廉价。</li>
+      <li><strong>它是一部「九位数预算 + 全拉丁裔主演配音阵容」的片</strong>，这是第一次。联合导演阿德里安·莫利纳本人是墨西哥裔；主演安东尼·冈萨雷斯九岁来试音，两年后定下来，那时他十一岁。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>今天真正想聊的：它到底是为谁拍的</h2>
+    <p>本系列二十三期以来，我用过榜单、奖项、影评人票数、后世创作者的抄袭、收藏目录，也用过批评的地理分布。<strong>「票房」从来没当过主菜</strong>——前面最多顺手提一句全球卖了多少钱。今天我想把它摆到台面上，因为这部片的票房结构本身就讲了一个故事。</p>
+    <table>
+      <tr><th>市场</th><th>成绩</th><th>说明</th></tr>
+      <tr><td>全球</td><td>8.14 亿美元</td><td>其中 <strong>74.4% 来自北美以外</strong></td></tr>
+      <tr><td>北美</td><td>2.105 亿</td><td>只占全球四分之一</td></tr>
+      <tr><td>中国内地</td><td>1.892 亿（12.3 亿元）</td><td>第二大单一市场，几乎追平北美；当时的皮克斯在华纪录</td></tr>
+      <tr><td>墨西哥</td><td>5,786 万</td><td><strong>2017-11-15 超过《复仇者联盟》，成为墨西哥市场影史第一</strong></td></tr>
+      <tr><td>日本</td><td>4,634 万</td><td>亚洲第二大票仓</td></tr>
+      <tr><td>法国 / 英国</td><td>3,331 万 / 2,621 万</td><td>欧洲合计远不及中国一个市场</td></tr>
+    </table>
+    <p>这张表里有三件事值得停下来：</p>
+    <ul>
+      <li><strong>它先在墨西哥上映，比北美早了将近一个月。</strong>2017-10-27 墨西哥，11-22 北美。一部好莱坞动画把首映放在故事发生的国家、而且是赶在亡灵节前那个周末——这不是常规操作。它在墨西哥的首周末是当地原创动画影史最高开画，第二周还逆跌了 16%。</li>
+      <li><strong>它在墨西哥一路超过了《复仇者联盟》，成为那个市场影史票房第一。</strong>一部由加州公司拍的、关于墨西哥的电影，被墨西哥人自己买成了第一。</li>
+      <li><strong>它的第二大票仓是中国。</strong>一个在地理、语言、宗教信仰上都离亡灵节最远的市场，贡献了几乎与北美相等的票房。<strong>「最墨西哥的一部片是迪士尼拍的，而最爱它的市场之一在地球另一边」——这句话怎么读都不太对劲，但它就是数字。</strong></li>
+    </ul>
+    <div class="quote">
+      全球票房里只有四分之一来自北美。<br>
+      对一家美国公司出品的好莱坞动画来说，这个比例本身就说明了它是为谁拍的。
+      <em>数据来自 Box Office Mojo 首轮成绩，北美 2.105 亿 / 海外 6.12 亿。</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>第二个新东西：这部片被外部抗议改写过</h2>
+    <p>本系列此前只写过一部片<strong>影响了别人</strong>（第 19 期的影响链条、第 21 期的三条法律路径）。这次反过来：<strong>是别人改了这部片。</strong>时间线是这样的。</p>
+    <ul>
+      <li><strong>2012-04-25</strong>：皮克斯宣布正在做一部以亡灵节为灵感的电影。</li>
+      <li><strong>2013-05-11</strong>：迪士尼向美国专利商标局申请注册「Día de los Muertos（亡灵节）」商标，用于各类衍生商品。墨西哥裔社群立刻炸了。漫画家拉罗·阿尔卡拉斯画了一张海报：一只骷髅版的巨型米老鼠，配文是<strong>「它要来给你的文化注册商标了」</strong>。Change.org 上的请愿书超过 <strong>21,000 人</strong>签名，措辞是「最恶劣的文化侵占与剥削」。</li>
+      <li><strong>一周后</strong>：迪士尼撤回申请，声明说「该商标申请旨在保护影片片名及相关活动，现已确定片名将会更改，故撤回」。</li>
+      <li><strong>2015 年</strong>：皮克斯聘请了三位文化顾问——其中包括<strong>当初带头抗议的那位漫画家阿尔卡拉斯本人</strong>，另有剧作家奥克塔维奥·索利斯、墨西哥遗产基金会前负责人马塞拉·戴维森·阿维莱斯。团队此后多次赴墨西哥采风。</li>
+    </ul>
+    <p>最能说明问题的是故事主管杰森·卡茨的回忆。他说在皮克斯工作「有点像在气泡里，我们在一定程度上是远离那台机器的」，看到抗议时<strong>「我们所有人都很失望、很难过」</strong>，然后意识到一件事：<strong>「我们需要用不同于以往任何一部片的方式来做这部片，也许不该再把牌攥得那么紧。」</strong></p>
+    <p>还有一次更彻底的掉头，发生在主题层面。导演最初的构思是：<strong>一个孩子学会处理悲伤、学会与过去告别。</strong>做着做着，团队发现他们走偏了——「学会告别」是美式、西式对死亡的理解，<strong>与亡灵节的内核相去甚远</strong>。这个节日真正的意思是：不要忘记。<strong>一部商业动画在做到一半时，为了贴近另一种文化的内核，把主题整个推翻重来——这种事不常发生。</strong></p>
+    <div class="quote">
+      带头骂它的那个人，后来进了它的顾问名单。<br>
+      这件事到底是「从善如流」还是「收编批评者」，我下面不打算替它裁决。
+      <em>阿尔卡拉斯自己的说法是：「皮克斯本来就在往文化真实的方向走，我们在中间相遇了。」</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>它不是没有批评，而且有一条批评指向我</h2>
+    <p>比较重的几条：一是<strong>「迪士尼式真实」</strong>——有评论指出，这部片把墨西哥做成了一个「重亲情、想实现美国梦」的普适故事，让每个观众都在里面看到自己，而这种「让你觉得真实」本身就是高度成熟的工业能力；二是<strong>简化</strong>，民俗学者的说法很客气：「亡灵节文化是一件复杂的事情，从简化的角度说，《寻梦环游记》已经做得不错了」；三是<strong>套路</strong>——中文评论里最狠的一句是「寻梦就是一碗似曾相识的鸡汤，很浓郁，但没有惊喜」，连主题曲都被说成「旋律平坦，传唱度难超《Let It Go》」。反方向的证据也有，《纽约时报》说它的文化氛围是「包容的，而不是奇观化的」。</p>
+    <p><strong>这些批评我都接受，但今天我想把矛头掉转一下，指向我自己。</strong></p>
+    <p>我是一个中国读者，正在向另一位中国读者推荐一部墨西哥故事的电影——<strong>而中国正是它全球第二大票仓。</strong>换句话说，「它把别人的文化做成了供全球消费的普适情感」这个指控，在我身上不但成立，而且我就是那个被计算在内的格子。<strong>我没法用「我只是被感动了」来脱身，因为「被感动」恰恰是这个产品设计出来的目标。</strong></p>
+    <p>所以我的表态是这样的：<strong>我不反驳那条批评，也不假装自己站在批评之外；我仍然是那个被说服的人，只是我知道自己是被说服的。</strong></p>
+    <div class="ask">
+      <small>给你一个具体的观影动作</small>
+      看的时候留意这一件事——<strong>它在哪些段落是让你理解一种别人的死亡观，又在哪些段落是把那种死亡观改造成你自己的？</strong>这两种动作在片中是共存的，而且切换得非常顺滑。你能分辨出哪一段是哪一种，这场观看就不算白看，你也不至于在最后二十分钟被按着头哭完还以为是自己主动的。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <ul>
+      <li><strong>因为它把「死亡」拍成了一个每年走一趟的节日。</strong>不吓人，不说教，也不把死亡拍成一道门。它拍成一条路——每年一次，铺满花瓣，走回来看看。能做到这件事的动画片不多。</li>
+      <li><strong>因为「终极死亡」这四个字。</strong>看完你会立刻想给某个人打个电话，或者翻出一张很久没看的照片。一部动画片能做到这个，已经很够了。</li>
+      <li><strong>因为它中途推翻过自己。</strong>从「学会告别」掉头成「不要忘记」，而且掉头的方向是向当地文化让步。你在片中看到的每一处克制，背后都有人先认了一次错。</li>
+      <li><strong>因为它在故事发生的国家先上映，并且被那个国家买成了影史第一。</strong>这件事本身就是个事件，不管你喜不喜欢这部片。</li>
+      <li><strong>因为它的进入成本几乎为零。</strong>105 分钟，彩色，无需任何电影史背景，中文配音与字幕都齐全。<strong>上一期《钢琴课》是本系列门槛较高的一部，这一期是刻意的回调——连续两期都很难进，等于劝退。</strong></li>
+    </ul>
+    <div class="ver">
+      <strong>版本陷阱检查（第 21 期起固定为每期必查项）：这次不用挑。</strong>通行版即 105 分钟，各平台一致，无删减争议。另有两个不影响选择的信息：2023 年迪士尼百年纪念时曾在北美与拉美重映，2025 年亚太地区重映约 778 万美元。<strong>另外顺带一提，续集已官宣 2029 年上映，原班导演回归——那是看完这部的很多年之后的事了。</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>适合谁，不适合谁</h2>
+    <p><strong>适合：</strong>想和家人一起看一部片的人；需要哭一场的人；做内容、做设计、需要一点颜色灵感的人；以及所有还记得某个已经不在的人。</p>
+    <p><strong>不适合：</strong>想要「意外」的人——它的骨架你能在前半小时猜到，意外不在骨架上；<strong>对「催泪」两个字反感的人——它最后二十分钟就是要让你哭，而且它不会为此道歉</strong>，这条批评我认，也不打算替它辩护。</p>
+    <div class="ask">
+      <small>今晚就能做的一件事</small>
+      关灯，找个屏幕大一点的地方。<strong>亡灵城的垂直结构、上万盏灯、花瓣与烛火的粒子——这些在手机上看是浪费。</strong>看完如果脑子里冒出一个人，就真的去联系他。这部片的全部道理最后就落在这一步上。
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 23 期 · 2026-10-29<br>
+    评分与票房数据均于今日现查核实，未沿用旧数字
+  </div>
+
+</div>
+</body>
+</html>

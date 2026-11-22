@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 控方证人</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#e8b44c; --acc2:#6fa3bd; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 28 期</div>
+  <h1>控方证人</h1>
+  <div class="en">Witness for the Prosecution (1957) &nbsp;·&nbsp; 比利·怀尔德 &nbsp;·&nbsp; 改编自阿加莎·克里斯蒂同名剧本</div>
+  <div class="meta">
+    <span>美国 / 联美</span><span>比利·怀尔德</span><span>剧情 · 悬疑 · 犯罪</span>
+    <span>116 分钟</span><span>黑白</span><span>英语</span>
+    <span>1957-12-21 美国上映 · 2025-12-05 中国内地首次公映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.6</b><small>豆瓣 · 约 69 万人</small></div>
+    <div class="score"><b>8.4</b><small>IMDb · 约 16 万票</small></div>
+    <div class="score"><b>100%</b><small>烂番茄专业 · 42 评</small></div>
+    <div class="score"><b>76</b><small>Metacritic · 12 评</small></div>
+    <div class="score"><b>95%</b><small>烂番茄观众</small></div>
+    <div class="score"><b>0 座</b><small>奥斯卡 · 6 提 0 中</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.6（约 69 万人，TOP250 第 19 位，与本系列最高分——第 12 期《霸王别姬》的 9.6 持平，评价人数约为其三分之一）；IMDb 8.4（约 16 万票，2026-02 快照，TOP250 第 64 位）；烂番茄专业 100%（42 评，均分 8.7/10，均为几十年间的追认评论），观众 95%（5000+ 评分）；Metacritic 76（仅 12 条影评）；Letterboxd 4.4（约 11.6 万评分，LB250 第 173 位）。<br>
+    选片线：豆瓣 9.6、IMDb 8.4 双达标。<strong>按第 16 期纪律，烂番茄 ≥95% 必须同时写出条数：这次是 42 条</strong>——是本系列第二个烂番茄满分（第一个是第 16 期《七武士》的 104 条）；且须注意 100% 与 MC76 落在同一个小样本专业层上，两边方向一致、幅度不一，数字照原样摆出。<strong>又是黑白？没关系——第 27 期的黑白是纪念碑，今天的黑白是舞台灯光。</strong>接在系列最重的一期（195 分钟黑白历史）后面，今天按台账设计回轻：116 分钟，好笑，聪明，零门槛，第 8 期立的「情绪门槛提示」本期不适用。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（台账第 2 高危——但这次防剧透的祖师爷，就是它自己）</h2>
+    <p>台账上挂着两期账：《搏击俱乐部》第 1 高（留作收尾），今天这部<strong>第 2 高</strong>。它的价值几乎全押在最后十分钟上——而这一点不需要我保密，因为<strong>连电影自己都在 1957 年就为此建立了保密制度</strong>：片尾字幕向观众发出正式请求（原文见下方引文），导演怀尔德把剧本<strong>最后十页扣在自己手里</strong>，主演们直到拍摄当天才被允许读到。今天真正要防的东西，和它当年防的一模一样：<strong>最后十分钟，以及通向它的每一步</strong>。</p>
+    <ul>
+      <li><strong>第一类：中文百科与影视站的「剧情简介」字段（第八类）。</strong>一个有趣的对证：2025 年它首次登陆中国银幕时的官方新闻稿，自己都只敢说「最后十分钟的终极真相」七个字，然后立刻请求观众保密——<strong>连宣传文案都在做剧透管理</strong>。但百科词条的「剧情」栏通常一路写到字幕。别点开任何「剧情介绍」。</li>
+      <li><strong>第二类：「几分钟看完」与解说视频（第九类）。</strong>对这一部等于直接判死刑：全片的价值就压在解说视频只保留的那十分钟里。</li>
+      <li><strong>第三类：原著与版本的「结局差异」类文章。</strong>它脱胎自克里斯蒂 1925 年的短篇，1953 年又被她自己改成剧本，电影又动了剧本——<strong>三代文本的结局彼此不同</strong>，任何「电影和原著差在哪」的对比文，写法本身就要求先摊开电影的结局。第 11、14 期立过的规矩今天加倍适用：看完之前，别碰原著。</li>
+      <li><strong>第四类：轶事里的暗雷（第 20 期纪律再次启用）。</strong>关于某位主演，流传着一条「保密制度让她付出了一座奥斯卡提名代价」的著名轶事——但解释这条轶事需要用到她片中的一个关键设定，<strong>轶事本身即剧透，此处按下不表</strong>。查资料时遇任何以「幕后故事」开头的段落，先停。</li>
+      <li><strong>第五类：短视频混剪与「影史十大反转」类盘点（第一类并入第九类统一管理）。</strong>它常年占据此类榜单前排——榜单标题就是剧透浓度表。</li>
+    </ul>
+    <p>安全区划给你（这些全是官方简介与预告就交代完的前提）：<strong>伦敦。一位刚心肌梗死出院的传奇刑案律师，被护士没收了雪茄和白兰地，闲得发慌。一桩凶杀案上门：死者是一位富婆，案发前刚修改遗嘱，把全部财产留给一个相识不久的年轻人——于是他成了头号嫌疑犯。年轻人坚称清白，唯一的证人是他的妻子。妻子登门时，冷静得不像妻子。开庭。</strong></p>
+    <div class="ver">我们停在这里。法庭里接下来发生的一切、每一份证词的真假、以及最后十分钟，一个字不写。你可以只带一句话进场：<strong>谁都别信。</strong></div>
+  </div>
+
+  <div class="card">
+    <h2>两件先说清楚的事</h2>
+    <p><strong>第一件：这是第 2 期《十二怒汉》的 1957 年姊妹篇——同一年的两部黑白法庭片，同一个晚上的两份空答卷。</strong>两部都在 1957 年问世：一部几乎全片关在评议室里，一部把主要戏份放在法庭——1958 年第 30 届奥斯卡上，《十二怒汉》3 提 0 中，今天这部 6 提 0 中（含最佳影片、最佳导演、最佳男主角），<strong>最佳影片与最佳导演双双归了《桂河大桥》</strong>。同一年、同一晚、同样空手——但两部片对「证词」的世界观完全相反：《十二怒汉》相信耐心盘问可以把真相一寸寸逼近出来；今天这部告诉你，<strong>你听到的一切都可能是一场精确的表演</strong>。相隔 26 期，本系列终于凑齐了处理「证词」的第三种立场。</p>
+    <p><strong>第二件：电影史上最早系统性做「防剧透管理」的片子之一，今天终于轮到它出场。</strong>本系列画了 27 期红线、建了十几类剧透源台账、发明了「防最后一句」「防过程」「防代读」——今天推荐的这部，在 68 年前就把同一套工程做完了：片尾字幕正式请求观众保密，剧本最后十页对演员密封。<strong>我们防它剧透的方式，是它教给整个行业的。</strong>台账第 2 高危的片，恰恰是高危这件事的发明者之一——这个反转，比片子里任何一个都安全。</p>
+    <p><strong>顺带一笔导演线（第 25 期之后怀尔德第二次出场，间隔 3 期，类型与切入完全掉头）：</strong>第 25 期《桃色公寓》写过他 1961 年一夜三座的顶点；今天这部是他的 6 提 0 中。同一个人、同一座学院、<strong>相隔三年的两种判卷</strong>——三年前一部不给他，三年后一夜给他三座。他的奥斯卡生涯就在这两张成绩单之间摆动。</p>
+    <div class="quote">
+      The management of this theatre suggests that for the greatest entertainment and education, you will not divulge, to any person, the secret of the ending of Witness for the Prosecution.
+      <em>——本影院管理层建议：为了最大的娱乐与教育效果，请勿向任何人透露《控方证人》结局的秘密。这是印在这部电影片尾的请求，1957 年</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <ul>
+      <li><strong>一部「反转片」的原型机。</strong>它被此后七十年的法庭悬疑片反复拆解、模仿、致敬——批评者说这正是问题（见批评版块），但换个方向读：你此生看过的每一次「法庭大逆转」，源头多半在这里。<strong>看原型机的好处是能看到每一颗螺丝是怎么拧到位的</strong>：悬念不是靠藏，是靠节奏、表演、和一层比一层高的台阶，一步步把你抬上去再抽掉。</li>
+      <li><strong>查尔斯·劳顿，加上他的真实妻子。</strong>律师威尔弗里德爵士的扮演者劳顿是奥斯卡影帝（1933《亨利八世的私生活》），本片为他挣得又一次奥斯卡男主角提名——距他上一次入围已相隔二十二年（1935《叛舰喋血记》）。更好玩的是：银幕上寸步不让没收他雪茄的护士，扮演者埃尔莎·兰切斯特<strong>是他 1929 年就结婚的真实妻子</strong>——真夫妻演欢喜冤家，同届奥斯卡双双提名（她拿下了金球最佳女配角）。全片最好笑、最松的部分全在这对身上，而这份喜剧是怀尔德给这桩冷案的解压阀。</li>
+      <li><strong>三位主演的「谢幕与巅峰」叠在同一部片上。</strong>泰隆·鲍华 1958 年去世，本片成为他演艺生涯的谢幕之作；玛琳·黛德丽出演时 56 岁，冷得像一把没开刃的刀；劳顿则奉献了他生涯最受赞誉的表演之一——据 TV Guide 的说法，<strong>阿加莎·克里斯蒂本人认为这是改编自她作品的最好的一部电影</strong>：推理女王亲手盖章，这个认证没法更硬。</li>
+      <li><strong>口碑与生意的双确认。</strong>AFI「十大类型十佳」法庭片第 6 位；1958 年 2—3 月美国票房连续两周冠军，预算约 200 万美元、首年北美租金 375 万。艺术口碑与当年卖座同时成立——<strong>它是「好看」这个词的本义</strong>，不需要任何观影前的预习。</li>
+      <li><strong>迟到 68 年的中国首映，刚刚发生。</strong>2025-12-05，它才第一次登上中国大银幕，配的是上海电影译制厂的新译制版（配音阵容里能数出几代中国观众的童年）。一部 1957 年的片，在中国的第一个冬天是 2025 年——<strong>对它来说，你我都算新观众</strong>。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>批评版块（两条都站得住，我都不打算反驳）</h2>
+    <p><strong>第一条：「反转被七十年的模仿者稀释了。」</strong>烂番茄观众区一位给了高分的评论者写得诚实：机关依旧精密，但「被模仿了太多次，如今的初次观看者可能提前闻到味道」；他同时嫌结尾「略显情节剧」。两条都成立——第一条甚至没法反驳，因为它描述的不是这部片的缺陷，而是<strong>它子孙满堂的代价</strong>。回应方式沿用第 14 期「承认缺陷 + 重新定位它给的东西」的表态：模仿者偷得走「第一次的惊讶」，偷不走「执行的精度」——被抄袭七十年仍然满分的，从来不是那个反转本身，而是把它送到位的每一分钟手艺。<strong>如果注定要带着熟悉感进场，那就换个目标看：不看「翻的是什么牌」，看「它怎么翻」。</strong></p>
+    <p><strong>第二条：机关大于人物。</strong>这是对克里斯蒂改编的一类常见批评——人物是给诡计上发条的人偶，婚姻、感情、动机都只在需要承重时才出现。这条也站得住一半；站不住的另一半，恰恰是劳顿与黛德丽把人偶演成了人的那部分——护士与律师的每场戏都在机关之外自成一体，是电影的呼吸孔。折算下来：把它当精密钟表看，满级；把它当人物研究看，也够本，但别期待第二层像第一层那么满。</p>
+  </div>
+
+  <div class="card">
+    <h2>观看建议</h2>
+    <ul>
+      <li><strong>版本（第七次「无陷阱」，累计 7:4）：</strong>各平台 114–116 分钟口径一致，不存在删减版或加长版的选择题。2025 年的中国公映为译制版，流媒体与碟片通行原声版；<strong>第一次看请选原声</strong>——劳顿的嗓音本身就是表演。</li>
+      <li><strong>节奏：一口气看完。</strong>116 分钟，无幕间设计，节奏是怀尔德最快的档位。第 27 期那 195 分钟之后，今晚这部是给「沉重完之后想变聪明地放松一下的你」的。</li>
+      <li><strong>二刷请直接看正片，别看解说。</strong>Deep Focus Review 的说法可查：「史上最耐重看的法庭片之一」——因为第一遍你看的是「翻哪张牌」，第二遍看的是「它如何让你心甘情愿押错」。二刷的价值比多数悬疑片高一整个档位，但解说视频会替你把二刷做完，等于花一份时间丢掉两次乐趣。</li>
+      <li><strong>看完之后，忍一晚再搜任何东西。</strong>包括幕后轶事、原著对比、演员生平——这部片的周边文本比正片更容易踩雷（红线框第四类）。</li>
+    </ul>
+  </div>
+
+  <div class="ask">
+    <small>散场之后 · 三层思考题</small>
+    <p><strong>第一层（进场前就问自己）：</strong>开庭之前，你准备相信谁？被告的无辜感、律师的名声、证人的冷漠——你第一次分配信任时，依据的是证据，还是气场？带着你的答案进场，<strong>留意它被翻转的具体时刻</strong>。</p>
+    <p><strong>第二层（散场后）：</strong>指认一个瞬间——你在哪一刻改变了对某个人的判断？让你改的是新证据的出现，还是某个人的一段表演？如果你一次都没改过，或每次都改对，那更要追问：<strong>是谁牵着你走的？</strong>指认不出，说明你的判断从头到尾是被安排的——而这可能正是这部电影想让你体验的事。</p>
+    <p><strong>第三层（锚定第 2 期与第 9 期）：</strong>这个系列用 28 期凑齐了「证词」的三种命运——1957 年的评议室相信耐心能把真相逼出来；1950 年的破败城门下，当事人自己都分不清记得的与希望发生过的；今天这间法庭里，有人在<strong>精确地表演</strong>。三间屋子：十二个陌生人、一个说谎成性的流浪汉、一个刚出院的老律师——<strong>如果裁决权必须交给其中一间，你交给谁？</strong></p>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 28 期 · 2026-11-05<br>
+    下一期预告：候选池剩余 · 低俗小说 / 疯狂动物城 / 机器人总动员 / 盗梦空间 / 东京物语 / 搏击俱乐部（收尾）……
+  </div>
+
+</div>
+</body>
+</html>

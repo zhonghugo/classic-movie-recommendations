@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 钢琴课</title>
+<style>
+  :root{
+    --bg:#0b1110; --panel:#151d1b; --panel2:#1c2624; --line:#2a3733;
+    --tx:#e9f1ee; --tx2:#a4b5b0; --tx3:#6f817c;
+    --acc:#6fbfa5; --acc2:#d8b56a; --warn:#d98f6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(217,143,107,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 22 期</div>
+  <h1>钢琴课</h1>
+  <div class="en">The Piano (1993) &nbsp;·&nbsp; 港译《钢琴别恋》，台译《钢琴师和她的情人》</div>
+  <div class="meta">
+    <span>新西兰 / 澳大利亚 / 法国</span><span>简·坎皮恩</span><span>剧情 · 爱情 · 音乐</span>
+    <span>121 分钟</span><span>彩色</span><span>英语 / 毛利语 / 手语</span>
+    <span>1993-05-19 法国首映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>8.1</b><small>豆瓣 · 约 10.1 万人</small></div>
+    <div class="score"><b>7.5</b><small>IMDb · 约 10.1 万票</small></div>
+    <div class="score"><b>90%</b><small>烂番茄专业 · 73 评</small></div>
+    <div class="score"><b>89</b><small>Metacritic</small></div>
+    <div class="score"><b>86%</b><small>烂番茄观众 · 2.5 万+</small></div>
+    <div class="score"><b>第 1</b><small>BBC 女性导演电影百大</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 8.1（约 10.1 万人；各源快照 8.0–8.1，另有聚合站记 8.5，取低值）；IMDb 7.5（约 10.1 万票）；烂番茄专业 90%（73 条影评）、观众 86%；Metacritic 89；另有影迷站评分在 3.6–3.9/5 之间浮动。<br>
+    <strong>先认一件事：这两个数双双刷新了本系列 22 期的最低纪录。</strong>此前 IMDb 最低是第 13 期《海上钢琴师》的 8.0，豆瓣最低是第 9 期《罗生门》的 8.8。按本系列一直沿用的选片线（豆瓣 ≥ 8.8 或 IMDb ≥ 8.3），<strong>今天这部根本不该出现在这里。</strong>我为什么还是选了它，以及这条选片线是不是本来就有问题——那是今天这张卡片真正想聊的事，写在下面第三节。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（本期两条雷，第二条是本系列第一次遇到）</h2>
+    <p>这部片的落点压在<strong>一件东西的下落</strong>上，而那件东西就是片名本身。所以第 20 期那种「防最后一句台词」的写法在这里不够用——本期要防的是<strong>那架钢琴最后怎么样了</strong>。</p>
+    <ul>
+      <li><strong>不要点开中文百科／影视站的「剧情简介」。</strong>本系列第 19 期遇到过官方简介从头剧透到最后一个镜头，这次更彻底：中文站的梗概一路写到「她重新选择生活」为止，等于把全片讲完。</li>
+      <li><strong>不要读任何学术论文、课程资料、女性主义电影研究的专题文章。</strong>这是本系列<strong>新发现的第十二类剧透源</strong>——它们不叫「解析」，叫「研究」，但同样从头讲到尾。我为这张卡片查资料时亲身撞上：一篇正经期刊论文按照场次顺序，从开场一路复述到最后一个镜头，而且用的是学术语言，读起来比影评更没有防备。</li>
+      <li><strong>片尾旁白与那张最有名的画面，都别提前看。</strong>它的剧照被各类「女性电影」「影史最美镜头」榜单用了三十年，你很可能早就见过而不知道片名。</li>
+      <li><strong>译名是一颗独立的雷：请认准《钢琴课》，别搜成《钢琴家》。</strong>《钢琴家》是 2002 年波兰斯基那部，全无关系，中文搜索结果大量混在一起。</li>
+    </ul>
+    <p>安全区先划给你：<strong>一个从六岁起不再说话的女人，带着女儿和一架钢琴，被送到新西兰海岸完成一场包办婚姻；丈夫嫌钢琴太重，把它留在了海滩上；另一个男人出现了，对那架钢琴提出了他自己的价码。</strong>这些是开场半小时就交代完的前提，属于预告片级别。<strong>至于那笔交易的真实内容、中间发生了什么、以及那架钢琴最后怎样了——我下面写到哪停，你就读到哪停。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>先把话说清楚：这是本系列 22 期以来第一部女性导演的作品</h2>
+    <p>我把前 21 期的导演名单过了一遍：托纳多雷、吕美特、宫崎骏、诺兰、科波拉、贝尼尼、威尔、福尔曼、黑泽明、陈凯歌、希拉尼、贝松、泽米吉斯、奉俊昊、库布里克、马基迪、多纳斯马尔克。<strong>二十一部，没有一个女性。</strong></p>
+    <p>这不是我刻意安排的，而是顺着「高评分 + 公认经典」这条线一路选下来自然形成的结果——这条线本身就是被筛过的。<strong>把这件事写出来，比假装它不存在要诚实一点。</strong></p>
+    <p>顺便说，简·坎皮恩是<strong>戛纳史上第一位拿到金棕榈的女性导演</strong>，而且这个「第一位」一直保持了 28 年，到 2021 年《钛》的朱利亚·迪库诺才出现第二位——<strong>并且迪库诺是独享的，坎皮恩当年不是。</strong></p>
+    <div class="quote">
+      她拿到的那座金棕榈，是和另一部电影<strong>并列</strong>的。<br>
+      另一部是陈凯歌的《霸王别姬》——本系列第 12 期（2026-10-17）推的那部。
+      <em>1993 年戛纳，评审团主席是路易·马勒。第 12 期那张卡片里出现过他的名字。</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（写到哪停，是有意为之）</h2>
+    <p>十九世纪中叶。一个叫艾达的苏格兰女人，从六岁起就不再开口说话——片子从头到尾没有解释原因。她用手语表达日常意思，由女儿弗洛拉替她转述；她真正说话的方式，是弹琴。</p>
+    <p>父亲把她许配给一个从未见过面的人，目的地是新西兰。她带着女儿，和那架钢琴一起上船。船到了，人来接，行李被搬走，<strong>那架钢琴被留在了海滩上</strong>——丈夫说人手不够，搬不动。</p>
+    <p>她不接受。她去找了邻居，一个和当地毛利人往来密切、身上带着刺青的男人，请他带她回海滩。他带她去了，她坐下弹琴，他在一边看着。</p>
+    <p>后来，这个男人用一块土地，从丈夫手里换走了那架钢琴。条件是她去他家里教他弹琴。上课的时候他并不真的学，他只是听。再后来，他提出另一笔交易：<strong>每上一次课，她可以赎回一个琴键。</strong></p>
+    <div class="ver">
+      我们的剧透红线就画在这里。<br>
+      从这一笔交易往后发生的一切——那笔交易到底变成什么、丈夫做了什么、艾达最后做了什么决定、以及<strong>那架钢琴最终怎么样了</strong>——我一个字都不写。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点：本系列第一次出现「主角一句台词都没有」</h2>
+    <ul>
+      <li><strong>沉默不是设定，是角色唯一的语言。</strong>本系列第 18 期《2001 太空漫游》量化过一件事——全片两小时十九分钟，有台词的不到四十分钟。那次是「整部片台词少」；这次是<strong>整部片台词不少，唯独主角一个字都没有</strong>。她所有的意思都得靠手指、眼神、钢琴，和一个替她开口的小孩传达出去。<em>顺带说一句：本系列第 8 期《飞越疯人院》里那个装聋作哑的酋长，装了整整一部片；这部片里这个人是真的不说话，而且不说话的她拿了影后。</em></li>
+      <li><strong>霍利·亨特自己弹的琴，手语也是她自己发明的。</strong>片中那些独奏段落是亨特本人弹奏，不是替身、不是后期配音；艾达使用的那套手语同样由亨特自己设计，她还负责教给扮演女儿的安娜·帕奎因。澳大利亚国家影片与声音档案馆的条目明确记录了这两件事。</li>
+      <li><strong>一座奖给两个人，一个 36 岁一个 11 岁。</strong>第 66 届奥斯卡，亨特拿影后；安娜·帕奎因拿最佳女配角——<strong>拍摄时她 9 岁，领奖时 11 岁，是奥斯卡史上第二年幼的获奖者</strong>，仅次于 1973 年《纸月亮》的塔图姆·奥尼尔（10 岁）。</li>
+      <li><strong>钢琴是被刻意选中的道具，理由相当锋利。</strong>坎皮恩说过，她需要一个「客体」来赋予故事特殊性，最后选了钢琴：<strong>因为它不只是文明的象征，而且在视觉上，它与新西兰原住民的生活构成鲜明对照。</strong>这句话既是创作说明，也是后来那条最重批评的伏笔——下面第五节会回到这里。</li>
+      <li><strong>迈克尔·尼曼的配乐是片中的第二个声音。</strong>主角不能说话，音乐就成了她的嗓音。原声带长年被评为影史百佳电影配乐之一。</li>
+      <li><strong>选角差点完全改写这部片。</strong>坎皮恩的第一人选是西格妮·韦弗，被经纪人挡掉了；接着找詹妮弗·杰森·李，档期不合；最后是亨特。伊莎贝尔·于佩尔曾为此面谈过角色，后来公开表示过遗憾。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>今天的主菜：当评分网站失灵时，你用什么判断一部片是不是经典</h2>
+    <p>本系列 22 期，一直在靠两样东西确认「这是经典」：<strong>评分网站上的大众分</strong>，和<strong>奖项／榜单</strong>。今天这两样第一次彻底打架，而且是往两个极端打架。</p>
+    <table>
+      <tr><th>来源</th><th>结果</th><th>它靠什么说话</th></tr>
+      <tr><td>豆瓣 / IMDb</td><td>8.1 / 7.5，双刷本系列最低</td><td>十万人各自按一下按钮</td></tr>
+      <tr><td>烂番茄专业 / Metacritic</td><td>90% / 89</td><td>几十位职业影评人打分</td></tr>
+      <tr><td>戛纳 / 奥斯卡 / 凯撒</td><td>金棕榈（并列）+ 奥斯卡 8 提 3 中 + 凯撒最佳外国影片</td><td>评审团与学院投票</td></tr>
+      <tr><td>BBC 2019 女性导演百大</td><td><strong>第 1</strong></td><td>84 个国家、368 位影评人票选</td></tr>
+      <tr><td>《视与听》2022 影史百大</td><td>影评人榜第 50、导演榜第 53</td><td>每十年一次的影史总投票</td></tr>
+      <tr><td>标准收藏（Criterion）</td><td>收录，编号 #1110</td><td>一家机构决定把它永久留在目录里</td></tr>
+      <tr><td>TSPDT 影史千佳</td><td>第 116</td><td>把几十种榜单加权合并</td></tr>
+    </table>
+    <p>看清楚这张表的形状：<strong>越往上越是人多、越匿名、越随手，分数越低；越往下越是专业、越慢、越需要有人为此负责，名次越高。</strong>本系列第 18 期《2001 太空漫游》用过一次类似的序列（导演榜第 1 → 影评人榜第 6 → IMDb 大众榜 93 → 影迷榜 245），但那次差距是「名次的落差」；这次不一样——<strong>这次是「它到底算不算经典」这件事本身，两套系统给出了相反的答案。</strong></p>
+    <p>所以今天要补上本系列的<strong>第三种经典认证</strong>：不是票数，也不是奖项，而是<strong>收藏与专项榜</strong>。Criterion 把一部片收进目录、编号排在那里，和 BBC 请 368 位影评人在一个限定范围里投票，都属于「有人用自己的招牌为它背书」。<br>本片恰好是第一种认证失灵、第三种认证顶格的极端样本。</p>
+    <div class="quote">
+      一部电影可以同时是「十万人打 7.5」和「84 个国家的 368 位影评人投出来的第一」。<br>
+      这两句话都是真的，它们之间没有谁更真。
+      <em>真正该问的是：这两拨人，看的真的是同一部电影吗？</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>一个硬事实：1994 年她输给了斯皮尔伯格，2022 年她赢了他</h2>
+    <p>第 66 届奥斯卡（1994 年 3 月），《钢琴课》八项提名，最后拿到三项：最佳女主角、最佳女配角、最佳原创剧本。<strong>最佳导演输给了《辛德勒的名单》的斯皮尔伯格，最佳影片同样输给它。</strong></p>
+    <p>二十八年后的第 94 届（2022 年 3 月），简·坎皮恩凭《犬之力》拿下最佳导演——<strong>她在同一个奖项上第二次遇到斯皮尔伯格（那年他带着《西区故事》），这次赢了。</strong></p>
+    <ul>
+      <li>这两次提名之间隔了 <strong>29 年</strong>。她由此成为<strong>奥斯卡史上第一位两度获最佳导演提名的女性</strong>（1994 年首次提名时，她只是史上第二位获提名的女性导演，第一位是 1977 年《七美人》的里娜·韦特缪勒）。</li>
+      <li>她也是史上第三位拿到奥斯卡最佳导演的女性——前面是 2010 年的凯瑟琳·毕格罗、2021 年的赵婷。2022 年那次是<strong>该奖项史上第一次连续两年由女性获得</strong>。</li>
+      <li>同一年她还拿下金棕榈之后的第一座金球奖最佳导演、英国电影学院奖最佳导演、以及威尼斯银狮最佳导演。而三十年前《钢琴课》那年，她的导演奖被美国的三大影评人协会（纽约、洛杉矶、国家影评人协会）全部给了她，奥斯卡仍然没有给她。</li>
+    </ul>
+    <p>本系列第 11 期《阿甘正传》讲过一个话题：「当年赢的」和「后来赢的」常常不是同一部。今天这个例子是另一个版本：<strong>「当年赢的」和「二十九年后赢的」是同一个人，中间隔了整整一个职业生涯。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评：这次的分歧不在分数上，在地理上</h2>
+    <p>前 21 期的批评，争的是「好不好」「够不够真实」「立场对不对」。今天这部不一样——<strong>当年海外的影评人几乎一边倒地赞美它，而新西兰本地与毛利学者的批评是另一个方向，两边谈的根本不是同一件事。</strong></p>
+    <p>海外在谈：女性凝视、浪漫的女主角、性别政治、情欲的解放。<strong>新西兰在谈：这部片里的毛利人在哪里。</strong></p>
+    <ul>
+      <li><strong>毛利学者利奥妮·皮哈马</strong>在 1994 年的文章《乌木与象牙》里直指片中那种「内在于故事本身、并且一直在进行的殖民主义」，以及那种「快乐的深色人种」式刻画。</li>
+      <li><strong>斯蒂芬·特纳</strong>（1999）承认这部片把新西兰放上了世界地图，但指出它推出的那个形象充满争议——那是一段<strong>被漂白的历史，毛利人被当作背景</strong>，甚至被塞进了「自然」里。批评者称这是把原住民同化进风景。</li>
+      <li><strong>琳达·戴森</strong>：影片忙着维持艾达的中产阶级女性气质、忙着安排她的命运，于是<strong>抹掉了毛利人抵抗的历史</strong>。<strong>安娜·尼尔</strong>：毛利人被冻结在殖民之前的「神圣时间」里，不被允许存在于历史之中。</li>
+      <li><strong>最关键的一条来自片中演员本人。</strong>扮演毛利角色马纳的克利夫·柯蒂斯，2018 年回看自己的角色时这样说：<div class="quote">我亲切地管我们叫「黑人背景板」——因为真正的戏在「那边」，在主人那边演。<br>我们就是一群天真、懒洋洋的棕色皮肤的人，抬着一架钢琴，讨烟草抽。挺怪的。<em>克利夫·柯蒂斯，2018 年访谈</em></div></li>
+      <li><strong>贝尔·胡克斯</strong>是当年极少数在国际层面提出这个问题的声音。她在 1994 年的长文里直接写：<strong>白人对新西兰的入侵在这部片里被彻底浪漫化</strong>，毛利人的经验被降格为异域布景；同时她也批评片中男女主角关系里那种<strong>被浪漫化的胁迫</strong>。</li>
+      <li>补充一条反向材料：坎皮恩确实请了毛利顾问<strong>瓦伊霍罗伊·肖特兰</strong>参与制作。他 1993 年接受采访时说，毛利人需要先在白人的片子里积累经验，才有底气讲自己的故事——<strong>「真正的大事，也就是讲毛利人自己的故事，还在未来等着我们去做。」</strong></li>
+    </ul>
+    <p><strong>我的态度：这条批评站得住，而且我不打算用「时代局限」替它开脱——1993 年不是 1954 年。</strong>本系列第 16 期《七武士》遇到过同一个形状的批评（视点权重单向压在武士身上，农民被扁平化）；这次更重，因为这次开口的人是片子里的人，他说的不是「你们把我写得不好」，而是「我们只是背景板」。</p>
+    <p>我能给的补救不是辩护，是一条<strong>观影动作</strong>：看的时候，留意毛利角色每一次出现——他们在画面的什么位置、在干什么活、说了什么、有没有人在看他们、镜头有没有停下来等他们。你不需要提前得出结论，你只需要真的去看他们。<strong>那不是背景，那是这部片对这块土地的真实态度，而它自己没有意识到。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看 / 怎么去看</h2>
+    <ul>
+      <li><strong>它问的问题比爱情大得多。</strong>一个人能不能完全不说话，却把话说得比谁都清楚？如果可以，那我们平时那些说出口的话，有多少是真正在传达，有多少只是在填满安静？</li>
+      <li><strong>它把「沉默」拍成了一种主动的行为，而不是一种缺陷。</strong>这一点在当年是罕见的，今天仍然罕见。</li>
+      <li><strong>121 分钟，而且没有版本陷阱。</strong>本系列第 13、15、16、21 期都遇到过删减版／多版本的坑（125 分钟对 165 分钟、110 对 133、141 对 207、75 对 110），今天这部通行版本就是 121 分钟，你在任何平台看到的都是它。<strong>这是本系列少见的一次「不用挑版本」。</strong></li>
+      <li><strong>它三十三年后还在影院里。</strong>北美票房数据显示，1993 年 11 月上映后它在北美拿到约 4016 万美元（通胀调整后约 1.1 亿美元），而 2026 年 7 月它仍在北美做有限规模重映——上映三十三年后还在排片，这件事本身就说明它靠的不是首映周的口碑。</li>
+      <li><strong>一个代价要提前说清：</strong>本片在美国的评级是 R，官方给的理由是「有极端直露的性爱场面」；片中也存在胁迫性的亲密关系。如果你今天不想看这个，改天再看，不用勉强。</li>
+      <li><strong>译名再提醒一次：</strong>大陆《钢琴课》／香港《钢琴别恋》／台湾《钢琴师和她的情人》。<strong>请不要搜成《钢琴家》，那是 2002 年波兰斯基的电影，完全不是一回事。</strong></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>留给你三道题（难度递增）</h2>
+    <div class="ask">
+      <small>第一题 · 看之前先答</small>
+      艾达从六岁起不再说话，片子从头到尾不解释原因。看之前先给一个答案：<strong>这是她失去了什么，还是她选择了什么？</strong>看完再看你刚才的答案有没有变——如果变了，是哪一个瞬间把它变的？那个瞬间比你读到的任何介绍都重要。
+    </div>
+    <div class="ask">
+      <small>第二题 · 要指认证据</small>
+      全片看下来，你最清楚地知道艾达在想什么的那一场，是哪一场？她用的是什么方式让你知道的——手指、眼神、琴声，还是沉默本身？<strong>如果你指不出具体一场，说明你可能还没真正开始看她。</strong><br>
+      接着追问：<strong>如果把艾达换成一个会说话的人，这部片还剩下什么？</strong>想清楚这个问题，你就知道它值不值那座金棕榈了。
+    </div>
+    <div class="ask">
+      <small>第三题 · 双锚定，回到本系列</small>
+      1993 年戛纳把最高奖同时给了两部电影：一部是<strong>第 12 期《霸王别姬》</strong>——程蝶衣把一生押在一件事上，「不疯魔不成活」；一部是今天这部——艾达把声音押在一件东西上，一句都不肯给。<br>
+      <strong>一个是说了太多却没人听见，一个是一句不说却听得最清楚。你认为哪一个更难？</strong>如果那座奖只能给一部，你会给哪一部——以及，你的理由来自电影本身，还是来自你的生活？
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 22 期 · 2026-10-28<br>
+    评分数据于本次执行时现查核实，各源存在浮动时一律取低值并注明口径。<br>
+    本卡片通篇未写结局、未写那架钢琴的下落、未写片尾旁白。
+  </div>
+
+</div>
+</body>
+</html>

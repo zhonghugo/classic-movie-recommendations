@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 后窗</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#e8b44c; --acc2:#6fa3bd; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 24 期</div>
+  <h1>后窗</h1>
+  <div class="en">Rear Window (1954) &nbsp;·&nbsp; 改编自康奈尔·伍尔里奇 1942 年短篇小说《It Had to Be Murder》</div>
+  <div class="meta">
+    <span>美国 / 派拉蒙</span><span>阿尔弗雷德·希区柯克</span><span>悬疑 · 惊悚 · 黑色喜剧</span>
+    <span>112 分钟</span><span>彩色</span><span>英语</span>
+    <span>1954-08-01 美国上映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>8.7</b><small>豆瓣 · 约 23.7 万人</small></div>
+    <div class="score"><b>8.4</b><small>IMDb · 约 57.6 万票</small></div>
+    <div class="score"><b>99%</b><small>烂番茄专业 · 134 评</small></div>
+    <div class="score"><b>100</b><small>Metacritic · 仅 18 评</small></div>
+    <div class="score"><b>90%</b><small>烂番茄观众 · 爆米花</small></div>
+    <div class="score"><b>3704 万</b><small>全球票房（美元）</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 8.7，评价人数各快照从 10.3 万到 23.8 万不等（近年数据约 23.7 万，五星占 46.8%，好于 98% 悬疑片）；IMDb 8.4，约 57.6 万票（中文资料常见的 8.5 为旧快照，取低值）；烂番茄专业 99%，134 条影评，均分 9.30，观众爆米花 90%（另有源记 95%）；Metacritic 满分 100，但<strong>只有 18 条影评</strong>，用户分 8.7；Letterboxd 4.36，约 90.6 万人。<br>
+    关于选片线：<strong>本期两项在线内。</strong>本系列沿用「豆瓣 ≥ 8.8 或 IMDb ≥ 8.3」，上一期第 22 期《钢琴课》曾破例一次并写明不可常态化，第 23 期已用《寻梦环游记》回到线内；今天这部 IMDb 8.4 达标，豆瓣 8.7 略低一档，属满足「或」的正常情形，不是破例。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（本期防的是「他到底看出了哪几条」）</h2>
+    <p>这部片没有反转，也不藏底牌。它的发动机是另一回事：<strong>你被安排在同一个信息量上，和他看到的一样多，不多不少，然后自己判断到底发生了什么。</strong>所以第 19 期「防结局画面」、第 20 期「防最后一句」、第 21 期「防过程」、第 23 期「防身份揭示」这四种写法在这里都用不上——<strong>本期新增第九档：</strong>防<strong>证据清单</strong>。任何一篇把「他先后发现了哪几个疑点」列出来的文章，都会把你的推理空间提前填满，剩下的两小时你只是在核对别人的答案。</p>
+    <ul>
+      <li><strong>中文影视站的「剧情简介」字段，照例整段不能用。</strong>第 19 期记过这一类。本片尤其严重：中文条目的「剧情简介」通常从前提出发，一路写到最后的收场，把整部片重述一遍。请只认 IMDb 那种二十秒的官方提要。</li>
+      <li><strong>本系列新发现的第十四类剧透源：片方自己。</strong>1983 年重映时那支宣传片由詹姆斯·斯图尔特本人配音——据当时的观影者记述，片子直接把结局说了出来。此条只有一个来源，请打折听；但它的启示我完全接受：<strong>连版权方的官方物料都可能剧透自己的电影，别觉得「官方」两个字等于安全。</strong>现代流媒体片库里自动播放的预告同理，建议关掉。</li>
+      <li><strong>第十五类：内容农场站。</strong>这是我为这张卡片查资料时的真实遭遇——搜到的三个英文站，域名是健康养生类的，标题就是「The Ending of Rear Window: A Full Analysis」，结局直接写进网址里。它们不是影评，是靠「某电影结局是什么」这种搜索词吃饭的页面，且排在很前。</li>
+      <li><strong>同名雷（第 22 期固化的检查项，第三次用）：认准 1954 年、詹姆斯·斯图尔特。</strong>另有 1998 年克里斯托弗·里夫主演的同名电视电影（讲一个瘫痪的建筑师）与 2007 年翻拍版《恐怖社区》，这两部的剧情介绍里写的就是同一套情节——读到它们等于读到本片的全部。</li>
+    </ul>
+    <p>安全区先划给你（这些是开场二十分钟就交代完、预告片也给了的前提）：<strong>纽约格林威治村，一个热得不正常的夏天。新闻摄影师杰夫在一次拍摄中摔断了一条腿，整条腿打上石膏，被钉在轮椅上七个星期，动不了。保险公司派的护士斯泰拉每天来，做时尚工作的女友丽莎每天晚上来，他的主编打来电话催他回去。</strong>他只能做一件事：<strong>看。</strong>对面那栋楼围着一个院子，住着一群人——一个整天练舞的姑娘、一个卡在旋律里的作曲家、一个总是独自摆餐具的女人、一对刚结婚的夫妻、一对带着狗睡在防火梯上的夫妇。杰夫给他们每个人都起了外号，像看连续剧一样消磨时间。<strong>直到某个雨夜之后，他开始盯得更仔细了。</strong>这些是前提。<strong>至于他怀疑了什么、斯泰拉和丽莎分别怎么看、他是否说服了任何人、以及后面发生的一切——我写到哪停，你就读到哪停。</strong></p>
+    <div class="ver">我们停在这里。往下的部分一个字也不写——包括他怀疑了什么、包括后面任何人做的任何事、包括收场。你可以先带着「这三种看，哪一种最不好替自己辩解」这句话进场。</div>
+  </div>
+
+  <div class="card">
+    <h2>两件先说清楚的事</h2>
+    <p><strong>第一件：本系列第 24 期，才第一次出现希区柯克。</strong>这不是偶然，也不是我忘了。前面 23 期的导演名单摊开——托纳多雷（两次）、吕美特、宫崎骏、诺兰（两次）、科波拉、贝尼尼、彼得·威尔、福尔曼、黑泽明（三次）、泽米吉斯、陈凯歌、希拉尼、贝松、奉俊昊、库布里克、马基迪、多纳斯马尔克、坎皮恩——名单不算短，但「悬疑」这两个字几乎一次都没站上台面。今天补上，而且补的是他最不像悬疑片的一部。</p>
+    <p><strong>第二件：本系列终于把「看」这道题做完了。</strong>第 7 期《楚门的世界》问的是<strong>被看的人</strong>——一整个世界强加于一个人，上亿人看他，是娱乐，观众爱他，结局是逃出去。第 20 期《窃听风暴》问的是<strong>看的人</strong>——被一个人听着，那是一份工作，有值班表、有上司、有报告要交，而坐在阁楼上的人自己也只是机器上的零件。<strong>今天这部是第三种：看的人知道自己不该看，但停不下来——而且没有人安排他去看，是他自己挪到窗口的。</strong>前两种都有外部结构（一个导演，一个国家）；第三种没有。<strong>没有制度，没有任务，只有无聊、一个长焦镜头，和一个越来越长的夜。</strong></p>
+    <div class="quote">
+      三种「看」，最日常的那种最不好替自己辩解。楚门不知道自己在被看，魏斯勒是被雇来看的，杰夫是自己走过去的。
+      <em>——把它记在心里，看到最后二十分钟你会想起这句话</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>主线：一部讲偷窥的电影，自己曾有近三十年你根本没地方看它</h2>
+    <p>这是本系列第一次遇到这种情况：前面 23 部片子，我们默认一件事——只要你想看，它就找得到。今天这部不是。</p>
+    <p><strong>希区柯克当年和派拉蒙签的合同里，这五部片的权利在八年后回到他自己手上</strong>：《夺魂索》《后窗》《擒凶记》（The Man Who Knew Too Much，1956）、《哈里的麻烦》（The Trouble with Harry），加上《迷魂记》。他把五部全部从流通里撤走，几乎不再签发第二轮放映许可，业内管它们叫「失踪的希区柯克」或「被禁的五部」。<strong>「多久」这件事各源不一致</strong>：通行的说法是近二十年，《时代》1984 年写的是「二十年的发行悬空」，也有资料坚称至少十年。<strong>可以确定的是这个日期：1983 年 9 月 30 日，它在纽约电影节「重新首映」——对一整代人来说，那是它的首映。</strong>此前一年，希区柯克已经去世；1983 年 4 月，环球从他的遗产那里买下这批权利，传说代价约 600 万美元。</p>
+    <p>然后，故事才真正开始：</p>
+    <table>
+      <tr><th>时间</th><th>发生了什么</th></tr>
+      <tr><td>1954-08-01</td><td>上映。第 27 届奥斯卡四项提名——最佳导演、改编剧本、彩色摄影、录音——<strong>一座没中</strong>，且<strong>连最佳影片提名都没有</strong></td></tr>
+      <tr><td>约 1960s–1983</td><td>被导演本人从影院里撤走。在它成为「经典」的那几十年里，你基本看不到它</td></tr>
+      <tr><td>1983-09-30</td><td>纽约电影节重新首映，纽约四家影院开画，十月铺到十五个城市；纽约首周 12 万美元，11 月底全国 210 万，年底 380 万（另有《时代》口径：五个月 680 万）</td></tr>
+      <tr><td>1984–1990</td><td>短篇小说版权持有人谢尔顿·阿本德连年起诉；1988 年联邦地区法院判被告赢，第九巡回上诉法院在年底翻案判他赢</td></tr>
+      <tr><td>1990-05</td><td><strong>美国最高法院 6 比 3 判被告这一方败诉</strong>，多数意见由奥康纳大法官撰写：<strong>未经短篇小说现在的版权持有人许可，这部电影不许放映。</strong>判决当时，它的累计票房已超过 1200 万美元</td></tr>
+      <tr><td>1997</td><td>入选美国国家影片登记部，理由是「在文化、历史或美学上具有重要性」</td></tr>
+      <tr><td>1999 / 2000</td><td>哈里斯与卡茨逐帧修复版重新上映并用染料转印法重印拷贝（年份各源记 1999 与 2000 不一）</td></tr>
+    </table>
+    <p><strong>请把最后那两条放在一起读：1990 年 5 月，美国最高法院判它不能上映；1997 年，它被美国国会图书馆收进国家影片登记部。</strong>同一个国家的两套系统在七年内给了两个方向完全相反的决定。而拍摄它的导演——<strong>希区柯克一生五次提名奥斯卡最佳导演（《蝴蝶梦》《救生艇》《爱德华大夫》《后窗》《惊魂记》），一次都没中；他唯一一座像样的奥斯卡是 1968 年的荣誉性质的欧文·撒尔伯格纪念奖。</strong></p>
+    <p class="ver">一句话记它：<strong>Metacritic 那 18 条满分评价里，没有一条是 1954 年的人写的。这个 100 分不是当年的结论，是一代人隔着几十年陆陆续续补上的票。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>反过来看：它是怎么爬上去的</h2>
+    <p><strong>Metacritic 满分，本系列第 24 期只出现过两次——第一次是第 5 期《教父》。</strong>但两处的性质不同：教父是「专业影评界零异议」，本片是「追认」。上面那张表已经说明了原因：它 1954 年拿到的当场评价远不如今天——四项提名零座、连最佳影片都没提名，<strong>而今天所有平台都把它放在几乎最高处。中间隔着的不是分数变化，是几十年里人们翻回头去看了它。</strong></p>
+    <p>更妙的是，在这个缓慢上行的过程里，两份权威名单走的方向相反：<strong>美国电影学会百年百大，1998 年版第 42 位，2007 年十周年版第 48 位（九年掉六位）；而英国《视与听》影评人榜，2012 年第 53 位，2022 年第 38 位（十年升十五位）。</strong>同一部片，同一批人，两份名单各走一边。</p>
+    <p><strong>这里有一条跨期对照，我很想让你看见：</strong>本系列第 16 期推荐的《七武士》，出品年份和今天这部完全一样——<strong>都是 1954 年</strong>。而在同一份《视与听》榜单上，黑泽明那部从 1982 年第 3 位，一路退到 1992 年第 9 位、2022 年第 20 位，四十年掉十七位；<strong>希区柯克这部在最后那十年里反向涨了十五位。</strong>同年出生，同一份名单，一个往下坠一个往上爬。第 16 期我用的是「同一部片在时间轴上漂移」；今天把它反过来用——<strong>时间轴上有两列方向相反的脚印，起点是同一年。</strong></p>
+    <p>补一条待考的材料：有豆瓣用户长期记录 Top250 名单的变动，据其记载，本片<strong>曾在 2009 至 2010 年之间掉出过豆瓣 Top250</strong>（现存快照 8.7 分、约 23.7 万人评价）。<strong>这条我没能力核实，标为待考，别当结论用。</strong>如果属实，它恰好说明同一件事：在中文互联网，它的地位是靠二十多年慢慢累积出来的，而不是上映那天就有的。</p>
+  </div>
+
+  <div class="card">
+    <h2>它是怎么拍出来的（这部分不剧透，放心看）</h2>
+    <ul>
+      <li><strong>一个房间，一部电影。</strong>除了极少数几个镜头，全片几乎都从杰夫那把椅子上出发。这是希区柯克第三次做「限制空间」（前两次是《救生艇》和《夺魂索》），但这次他把自己锁得更死：<strong>摄影机基本不越过院子的中线，观众的信息量从头到尾等于主角的信息量。</strong></li>
+      <li><strong>那栋楼是假的，而且贵得离谱。</strong>他先派四位摄影师去格林威治村，从各个角度、各种天气、从早到晚拍了个遍，然后在派拉蒙 18 号棚照着建。建成时长 185 英尺（约 56 米）、高 40 英尺，宽度各源记 38 至 98 英尺不等（这一项我一直没能查到一致的说法）；<strong>31 套公寓，其中 12 套家具齐全、通水通电，真的能住</strong>——演跳舞姑娘的乔金·达西说，拍摄期间她基本就住在自己的那间里，没出过棚。造价：设计约 9000 美元、建造约 7.2 万至 10 万美元不等的说法都有。</li>
+      <li><strong>光比造价更贵。</strong>为了模拟不同的时辰和天气，棚里用掉了超过一千盏灯（另有计数为一千盏大弧光灯加两千盏小灯）。有一次灯烤得太热，消防喷淋自己启动了，整个棚一片漆黑。希区柯克的反应是叫助手给他拿把伞来，「雨」停了再叫他。</li>
+      <li><strong>隔着院子导戏。</strong>因为他本人几乎不离开杰夫的那间屋子，演员在院子对面表演，他用无线电对着他们的肉色耳机说话。他还拿这套设备搞了个恶作剧：先让防火梯那对夫妇中的一个关掉耳机、给另一个一套指令，然后反过来给先关掉的那位一套相反的指令——于是开演时两人往完全不同的方向跑，最后丈夫一头栽进窗子里。那场戏里手忙脚乱的劲儿是真的。</li>
+      <li><strong>几乎只有画内声。</strong>开场字幕之后，你听到的绝大部分声音都不来自配乐，而来自院子里某个房间正在放的钢琴、唱片、收音机。配乐只出现在片头与片尾字幕。<em>（也有影评把院子里那些声音一概称为配乐，两套说法并存。）</em>这在 1954 年不是常规做法。</li>
+      <li><strong>导演把自己烦的人画在了男配角脸上。</strong>希区柯克把演对面那位推销员的雷蒙德·布尔特意化成一头白色卷发、戴眼镜、穿白衬衫、烟不离手的样子——<strong>那是照着他早年在美国的第一位制片人、合作得很不开心的塞尔兹尼克做的。</strong>这种报复其实只在剪辑室里流传，观众看不出来。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评，以及为什么这次我不需要表态</h2>
+    <p>过去 23 期，批评版块我都是「有人这么说，我这么判」的结构。今天换个写法，因为这次最准的那条批评，<strong>是从最热情的赞美里自己长出来的。</strong></p>
+    <p>先把正面一句话摆出来。1983 年重映时《纽约时报》的坎比写道，他无论如何也无法想象有哪一部希区柯克能压过《后窗》带给他的那种兴奋。而正是同一个人所在的传统里，最著名的一句《后窗》赞词是这样的：「<strong>因为希区柯克让我们成了杰夫偷窥的同伙……我们也一起看了，所以我们分担那份罪责。</strong>」<em>（后半句涉及第三幕，我把它截掉了。）</em></p>
+    <p><strong>这句话既是推荐语，也是起诉书，而且是同一句。</strong>《卫报》2012 年的评论也一样：「希区柯克这一辈子都在纵容我们的窥视癖，而他从没有比在《后窗》里更老练、也更得意地自知地挑动过它。」——「老练」是夸他，「纵容我们的窥视癖」是把罪名钉在你身上，两个分句中间没有一个连词。</p>
+    <p>学术这一路的说法更硬。莫德莱斯基那篇著名的《大师的娃娃屋》指出：<strong>即便丽莎在叙事里极有能动性，她依然处在男主角和观众的双重凝视之下，始终拿不到「回看」的权力——全片绝大部分视点镜头都属于杰夫，摄影机几乎没有站到丽莎的位置上看世界一次。</strong>罗宾·伍德把它概括成一句话：<strong>病态好奇的沉溺，以及这种沉溺的后果。</strong></p>
+    <p><strong>所以这是我系列里的第八种表态法：不裁决，也不替它辩护，我只是把这拆开摆给你。</strong>因为事实上我无处可站——反驳「这部电影让你成为共犯」的最好证据就是「我看得很过瘾」，而这句话恰恰是它指控的东西。今天我用不着判：最好的影评已经把赞美和指控写在同一句里了，我做的只是把它们分开，让你看清楚它们原来是一回事。</p>
+    <p>最后留一个你自己去验的动作：<strong>关于影片最后几十秒里一个很小的动作，学界读出了两种截然相反的意思——一派说那是她终于卸下伪装，一派说那是她达成的是停战，谁也没输。</strong>我故意不写那个动作是什么。你看到那一下时，先自己判断它在说哪一种，再去看别人的长篇分析。</p>
+  </div>
+
+  <div class="card">
+    <h2>为什么今天值得看</h2>
+    <ul>
+      <li><strong>它比你想的近。</strong>邻居群里谁家在装修、外卖备注里的门牌、家人的位置共享、同事头像旁边的那个绿点、朋友圈改来改去的可见范围——《后窗》不是预言，它是把所有这些一次性摊在银幕上，然后问你一句：<strong>你在关心，还是在消费？</strong>分辨不了的那种感觉，1954 年就被拍下来了。</li>
+      <li><strong>但它给了一个比「监控社会」更狠的角度。</strong>杰夫是被石膏钉在椅子上的——<strong>他是被迫成为观察者的。</strong>而我们大多数人不是被石膏困住，是自己走到窗口去的。这里没有制度，没有上级，没有任务。<strong>只是无聊，一个长焦镜头，和一个越来越长的夜。</strong></li>
+      <li><strong>它的乐趣是让你自己当侦探，而且给你的是同一份材料。</strong>你看不到他看不到的东西，也看不到更多。这就是为什么任何「他先后发现了哪几条」的清单都会毁掉它——<strong>它把你的推理空间提前填满了。</strong>看片前什么都别查，连预告都别点。</li>
+      <li><strong>它好笑。</strong>前三分之一几乎是喜剧：那些邻居像一档档小节目，有些段落的笑点来自纯粹的肢体笨拙。这常常被「悬疑片」三个字盖住了。</li>
+      <li><strong>它是本系列 24 期里门槛最低的老片之一。</strong>112 分钟，彩色，故事极其简单，不需要任何电影史知识。<strong>也顺带解决版本问题：不存在删减陷阱，各平台通行版就是 112 分钟。</strong>本系列第 13、15、16、21 期都遇过版本陷阱（其中两次是发行方砍掉整整三分之一），第 22、23 期与本期属于「不用挑」的少数。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>留给你三道题</h2>
+    <div class="ask">
+      <small>第一题 · 看之前先回答</small>
+      如果你半夜看到对门那个推销员提着箱子出去了好几趟，你的第一反应是什么？敲开门问一句、拍张照片发到业主群里、还是告诉自己这不关我的事？<br><strong>先别急着回答「哪种对」。先想想：你的第一反应里，有多少是真的为他担心，有多少是想知道接下来会发生什么？</strong>
+    </div>
+    <div class="ask">
+      <small>第二题 · 看的时候指认一个瞬间</small>
+      找出一个你心里冒出过「杰夫，别再看了」的确切瞬间，说清楚是哪一个。如果你从头到尾都没冒出过这句话——<strong>那么请你把「没有」本身当成一条有效信息</strong>，留在心里，看看它说明什么。
+    </div>
+    <div class="ask">
+      <small>第三题 · 和本系列前两期一起回答</small>
+      楚门不知道自己在被看，而且有一亿观众爱他；魏斯勒是「看」这个岗位的雇员，有值班表、有上司、有要交的报告；杰夫是自己走到窗口去的，没人安排他，他可以随时不看。<br><strong>三种「看」，哪一种最难替自己辩解？</strong>再往前追一层：<strong>如果第三种比前两种更难，那么「没人逼我」这句话，到底是一个借口，还是恰恰是最重的一句供词？</strong>
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 24 期 &nbsp;|&nbsp; 1954 · 美国 · 112 分钟<br>
+    观看建议：任何平台的 112 分钟通行版即可，无版本陷阱；若能找到 1999/2000 年逐帧修复版（染料转印重印拷贝），画质明显更好。<br>
+    看之前：不点预告，不查剧情简介，不看「××分钟看完」。
+  </div>
+
+</div>
+</body>
+</html>

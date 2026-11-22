@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 阿甘正传</title>
+<style>
+  :root{
+    --bg:#0e1216; --panel:#171d24; --panel2:#1e2530; --line:#2c3542;
+    --tx:#e8eef5; --tx2:#a3b0bf; --tx3:#6f7d8d;
+    --acc:#5fb3d4; --acc2:#7ed0a8; --warn:#e0a95c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--tx3);line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">今日电影推荐 · 2026-10-16</div>
+  <h1>阿甘正传</h1>
+  <div class="en">Forrest Gump · 1994</div>
+
+  <div class="meta">
+    <span>导演　罗伯特·泽米吉斯</span>
+    <span>编剧　艾瑞克·罗斯（改编自温斯顿·格鲁姆 1986 年同名小说）</span>
+    <span>主演　汤姆·汉克斯 / 罗宾·怀特 / 加里·西尼斯 / 莎莉·菲尔德</span>
+    <span>配乐　亚伦·史维斯查</span>
+    <span>摄影　唐·伯吉斯</span>
+    <span>类型　剧情 / 爱情 / 喜剧</span>
+    <span>片长　142 分钟</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.5</b><small>豆瓣 · 200 万+ 人 · TOP250 第 3</small></div>
+    <div class="score"><b>8.8</b><small>IMDb · 247 万+ 票 · TOP250 第 14</small></div>
+    <div class="score"><b>71%</b><small>烂番茄专业 · 79 评（观众 95%）</small></div>
+    <div class="score"><b>82</b><small>Metacritic · 19 评 · 普遍好评</small></div>
+  </div>
+  <div class="note">
+    数据于 2026-10-16 现查核实。烂番茄新鲜度各聚合源在 71%–75% 之间浮动（维基百科记 79 评 71%，另有源记 75%），本文取较保守的 71%；观众爆米花指数 95%–96%，CinemaScore 为罕见的 A+。奖项：第 67 届奥斯卡 13 提 6 中（最佳影片、导演、男主、改编剧本、剪辑、视觉效果）、金球奖 7 提 3 中、英国电影学院奖 8 提 1 中（视觉效果）、美国演员工会奖最佳男主、美国导演工会奖最佳导演；2011 年 12 月入选美国国会图书馆国家影片登记部。成本 5500 万美元，全球票房 6.78 亿美元（1994 年北美年度票房第一，全球第二，仅次于《狮子王》），原声带销量超 1200 万张。
+  </div>
+
+  <div class="card">
+    <h2>为什么是今天这部</h2>
+    <p>昨天那部片，主角在最后做了一个极其艰难的决定：为了守住一座城市，他选择背负一个谎言。整部电影的重量，压在「他算过这笔账」上面。</p>
+    <p>今天这部，主角<strong>从来没算过任何一笔账。</strong></p>
+    <p>更准确地说，是这个系列的一个反向实验：第 7 期的楚门，发现自己活在系统里，于是往外逃；第 8 期的麦克墨菲，看见一个压制人的系统，于是往里闯；第 10 期的蝙蝠侠，想改造一个系统，于是跟它做交易。三个人的共同点是——<strong>他们都跟系统发生了正面关系。</strong></p>
+    <p>而阿甘，从头到尾<strong>没有跟任何东西发生过正面关系</strong>。他从不追问，从不反抗，从不解释，甚至不太明白自己身在何处。别人给他一个指令，他就把这件事做完，然后再等下一个。可三十年后回头看，他出现在了所有重要的地方。</p>
+    <p>这就把问题推到了你面前：<strong>到底是他运气好，还是「一次只做一件事并且做完」本身就是一种被低估的能力？</strong>这部片没有替你回答——它只是把两种人生并排放了 142 分钟。</p>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（可以放心读完，无剧透）</h2>
+    <p>阿拉巴马州的一个小镇。有个男孩叫福雷斯特·甘，智商 75，腿上戴着矫正支架，被同龄人叫作傻子。他的母亲反复告诉他一句话：<strong>你和其他人没有什么不同。</strong></p>
+    <p>他上学的第一天，在校车上没人愿意给他让座。只有一个女孩喊他过去坐下。他后来一辈子都记得这个名字。</p>
+    <p>然后是跑。小时候为了躲开追他的孩子，他跑；跑着跑着，跑进了大学球场；再跑着跑着，跑进了军队，跑到了很远的地方。<strong>他做每一件事的动机都简单到近乎可笑</strong>——有人对他好，他就想对人家好；答应了的事，他就去做；想去一个地方，他就一直走过去。</p>
+    <p>影片的讲法是这样的：一个中年男人坐在萨凡纳的公交车站长椅上，跟旁边等车的陌生人讲自己的一生。听众换了一茬又一茬，有人信，有人走，有人听完整个下午。</p>
+    <p>这一生横跨了美国三十年的大事件。他参与过其中的很多件，但<strong>他几乎从不知道自己参与的是什么</strong>。这正是这部片子最核心的设计。</p>
+    <div class="ver">
+      <strong>我们的剧透红线：</strong>写到「校车上的女孩」和「他开始跑」为止。他后来具体去了哪些地方、以什么身份出现在哪些场合、那些重要的人分别去了哪里、以及那盒巧克力最后递给了谁——<strong>一个字都不写</strong>。这片子你多半以为自己看过，因为那句台词和几个镜头被引用了三十年。但「知道梗」和「坐在长椅上听完他讲完这一生」，是完全不同的两件事。另外提醒一句：<strong>别去搜原著小说讲了什么</strong>，那会直接把后半段的情感走向漏给你。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点在哪</h2>
+    <ul>
+      <li><strong>汤姆·汉克斯「连庄」的那两次奥斯卡影帝。</strong>他在第 66 届凭《费城故事》拿影帝，紧接着第 67 届凭本片再拿一次——<strong>他是到目前为止最后一位连续两年拿到奥斯卡最佳男主角的演员</strong>，这个纪录至今没人追平。这是真实事件，不算剧透，但值得你在看片前知道：你看到的是一个人处在职业巅峰最顶点时的表演，而且他演的是一个「什么都不懂」的人。技巧上最难的地方在于，他必须让每一句台词听起来像真的没经过大脑。</li>
+      <li><strong>它解决了一个当时几乎无解的技术问题。</strong>本片把汉克斯「嵌进」了真实的历史档案影像里，让他和已故的历史人物同框出现在同一个镜头中。这个技术拿到了奥斯卡最佳视觉效果。三十年后再看，合成痕迹肉眼可辨，但它在 1994 年制造的那种「他真的去过那儿」的错觉，本身就是主题的一部分。2011 年入选国家影片登记部，官方给出的理由第一条就是这项技术创新。</li>
+      <li><strong>一个极其聪明的叙事装置。</strong>整部片不是「一个人的一生」，是「一个人坐在长椅上，向陌生人复述自己的一生」。这个框架把史诗压进了闲聊的体量里——他讲得越轻，事情越重。你会注意到听众在换，而他的语气始终不变。</li>
+      <li><strong>它是用流行歌曲当年代路标的。</strong>亚伦·史维斯查的原创配乐反而只拿到提名（没中），真正承担叙事功能的是那一整张几乎全是老歌的原声带，卖了 1200 万张以上。这些歌不煽情，它们是时间刻度——你靠它们知道现在是哪一年。</li>
+      <li><strong>它敢让主角真的不懂。</strong>大多数「小人物闯入大时代」的叙事，会在关键时刻让主角突然明白过来、说一句有分量的话。这部片一次都没有。他从头到尾不知道那些事件意味着什么，而讽刺恰恰长在这个空隙里。</li>
+      <li><strong>142 分钟非常好进。</strong>节奏轻，段落短，不需要你绷着。这是本系列十期以来，唯一一部可以真的「放松看」的片子。</li>
+    </ul>
+    <div class="quote">
+      「妈妈常说，人生就像一盒巧克力，你永远不知道下一颗是什么味道。」
+      <em>—— 片中台词，AFI 百年百大电影台词第 40 位。注意：这句台词在原著小说里根本不存在</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p>因为它问的那个问题，你在生活里其实天天遇到，只是没人明说过：<strong>算计到底值多少钱？</strong></p>
+    <p>想想你每天消耗精力的地方——反复权衡值不值得、这件事对我有没有好处、现在投入将来能不能收回来。这部片里有个对照组：<strong>那些最聪明、最有主见、最能看清时代的人，和这个什么都不算的人。</strong>我不写他们的结局（那是本片最不该被提前知道的部分），只提醒你去看这两组人的时间是怎么被花掉的。</p>
+    <p>值得强调的一点：<strong>这不是一部简单的励志片。</strong>它当然会被当成励志片来卖，但它真正锋利的地方是反讽——一个不问世事的人安然穿过了三十年的动荡，这个安排本身就是在评价那三十年。你越往后看，越会意识到叙事者的「不明白」不是缺陷，是视角。</p>
+    <p>还有一个很实际的理由：<strong>它可能是你人生中最容易被「以为看过」而跳过的那部经典。</strong>那句台词、那根羽毛、那个长椅，你都见过。但完整的 142 分钟是一个时间跨度三十年的整体，它的后半段力量几乎全部来自前面看似轻飘的铺垫。跳过了，就永远只是「知道梗」。</p>
+  </div>
+
+  <div class="card">
+    <h2>先说清楚门槛 —— 以及它挨过的批评</h2>
+    <ul>
+      <li><strong>这是本系列专业分与观众分落差最大的一部之一。</strong>烂番茄专业 71%、观众 95%，Metacritic 82 但只基于 19 条影评。自第 6 期《美丽人生》之后又一次偏差，但性质不同：那次是影评人嫌它太煽情，这次是影评人嫌它<strong>太方便</strong>。</li>
+      <li><strong>最重的一条批评：它把美国三十年的创伤拍成了背景板。</strong>越战、民权运动、嬉皮士的幻灭——这些真实的、至今仍在流血的历史事件，在本片里被处理成阿甘穿行而过的布景，而安然穿过它们的是一个不问世事的白人男性。批评者认为这不是无心，而是一种立场。《娱乐周刊》2004 年的总结很准：「一半的人认为它是一部生造的流行情节剧，另一半人认为它甜得像一盒巧克力。」</li>
+      <li><strong>《卫报》影评人彼得·布拉德肖的说法值得一读。</strong>他说这是好莱坞「最玉米喂养、最高糖高热量」的一次拍片，并提醒你：看这片需要一个嗜甜的舌头。<strong>我倾向于认为这个提醒是善意的——本片确实需要你先接受它的温度，否则全程都会觉得被敷衍。</strong></li>
+      <li><strong>原著小说和这部电影几乎是两个东西。</strong>温斯顿·格鲁姆 1986 年的小说是一部讽刺小说，全书 26 章：书里的阿甘满嘴脏话、吸毒、当过职业摔跤手、上过太空、被食人族绑架过、还救过一位领导人；珍妮没有死，她带着孩子嫁给了别人；丹中尉没有参与虾船生意。电影大体只取了前 11 章，并把整部书的讽刺腔调清洗成了温情。格鲁姆起初很不满（「为什么不用我写的台词？……我走到哪儿都有人送我巧克力，我恨巧克力！」），后来态度软化，说「他们基本保留了我想要的那个角色——这是个关于人的尊严的故事，你不必聪明或富有，也能在周遭一切都很不堪的时候守住尊严」。<strong>知道原著长什么样，是理解这部电影在做什么选择的关键。</strong></li>
+      <li><strong>它的政治立场至今两极，两头都在认领。</strong>保守派把它当传统价值的胜利，自由派把它当对那个时代的反讽。这种两边都能读的情况，通常说明影片本身没有把话说死——但也可能说明它回避了。</li>
+      <li><strong>还有一个绕不开的事实：它赢了，而别人没有。</strong>1994 年是影史著名的「奇迹之年」，《肖申克的救赎》《低俗小说》《这个杀手不太冷》《狮子王》都出自那一年。第 67 届奥斯卡上，《肖申克的救赎》7 提 0 中，《低俗小说》只拿到最佳原创剧本，最佳影片给了《阿甘正传》。这件事至今仍被列为「奥斯卡最大冤案」之一。<strong>而且时间给出了一个反向判决</strong>：三十年后，IMDb 上《肖申克的救赎》长期第一，豆瓣上它也是第一，而《阿甘正传》在两边都排到十几或第三。<strong>「当时赢的人」和「后来赢的人」不是同一部——这本身就是个值得想的问题。</strong></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>怎么看效果最好</h2>
+    <ul>
+      <li><strong>别带着「我知道这片讲什么」的心态开看。</strong>这是本片最大的敌人。三十年来的引用量毁掉了很多人的第一次观看体验。</li>
+      <li><strong>看之前别去查原著情节</strong>，也别查任何角色的结局。电影后半段的情感力量几乎全靠你不知道。</li>
+      <li><strong>留意长椅上的听众。</strong>他们换了很多次，每个人对这段讲述的反应都不一样，而且反应本身是有信息量的。这是全片最容易被忽略的一层。</li>
+      <li><strong>看的时候留意「他知道什么」。</strong>每到一个历史场景，问自己一句：主角明白眼前正在发生什么吗？这个问题的答案，就是导演想说的东西。</li>
+      <li><strong>适合和《飞越疯人院》连着看。</strong>一个用尽全力反抗系统，一个从不反抗任何东西。隔 19 年的两部片，放在一起会逼你回答一个很不舒服的问题。</li>
+      <li><strong>情绪门槛很低，可以随时看。</strong>不需要挑心情，不需要大屏幕，142 分钟很友好。</li>
+    </ul>
+    <div class="ask">
+      <small>看完之后，可以顺着这三个问题往下想</small>
+      ① 阿甘做每一件事的动机都极其简单——答应了、想跑、想你。<strong>而影片让他一路得到了很多人拼命争取的东西。你觉得这是「运气」，还是影片在讲某种因果？</strong>如果是因果，那个「因」到底是什么——是善良，是专注，还是「不算账」本身？<br><br>
+      ② 片子里有一整组人：上过大学的、有理想的、看透了时代的、知道自己在反抗什么的。<strong>你会觉得影片是在赞美无知，还是在讽刺那些聪明人？</strong>请指出是哪一场戏让你做出这个判断的——如果指不出来，说明你可能还没真正开始读这部片。<br><br>
+      ③ 第 8 期那个麦克墨菲，用尽全部力气去撞一堵墙，代价惨重；这一期的阿甘，从头到尾没有撞过任何东西，却把日子过成了别人眼里的传奇。<strong>如果阿甘走进了那家精神病院，他会怎么样？</strong>——这个问题没有标准答案。但你回答它的方式，基本上就说明了你相信人活着该靠什么。
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 11 期（2026-10-16）<br>
+    已推荐：《天堂电影院》《十二怒汉》《千与千寻》《星际穿越》《教父》《美丽人生》《楚门的世界》《飞越疯人院》《罗生门》《黑暗骑士》《阿甘正传》<br>
+    评分数据每次执行时现查，不做记忆引用。<br>
+    本系列坚持：结构可以讲清，结局一律不写。
+  </div>
+
+</div>
+</body>
+</html>

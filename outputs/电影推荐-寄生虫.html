@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 寄生虫</title>
+<style>
+  :root{
+    --bg:#0b1110; --panel:#151d1b; --panel2:#1c2624; --line:#2a3733;
+    --tx:#e9f1ee; --tx2:#a4b5b0; --tx3:#6f817c;
+    --acc:#6fbfa5; --acc2:#d8b56a; --warn:#d98f6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(217,143,107,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 17 期</div>
+  <h1>寄生虫</h1>
+  <div class="en">기생충 / Gisaengchung · Parasite (2019)</div>
+  <div class="meta">
+    <span>韩国</span><span>奉俊昊</span><span>剧情 · 惊悚 · 黑色喜剧</span>
+    <span>132 分钟</span><span>彩色</span><span>韩语</span><span>R 级</span><span>2019-05-30 韩国上映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>8.8</b><small>豆瓣 · 约 157 万人</small></div>
+    <div class="score"><b>8.5</b><small>IMDb · 约 120 万票</small></div>
+    <div class="score"><b>99%</b><small>烂番茄专业 · 484 评</small></div>
+    <div class="score"><b>97</b><small>Metacritic · 56 评</small></div>
+    <div class="score"><b>90%</b><small>烂番茄观众 · 5 千+ 认证</small></div>
+    <div class="score"><b>4.52</b><small>Letterboxd · 515 万+</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 8.8、约 157 万人（2026-09 快照）；IMDb 8.5，各源记 115 万–120 万票；烂番茄专业 484 评、99%、均分 9.37–9.4，观众区 90%（5,000+ 认证评分）；Metacritic 97 分、56 评且 56 条全为正面；Letterboxd 4.52–4.53，515 万–590 万次评分。<br>
+    <strong>这一期有一个前 16 期没有过的情况：所有平台的样本都在六位数以上。</strong>第 16 期那个 98 分只有 7 条评论，第 14 期那个 67 分只有 4 条——这一期不需要给任何数字打折。
+  </div>
+
+  <div class="card">
+    <h2>先把话放在最前面</h2>
+    <p>这是 17 期里<strong>最年轻的一部</strong>。前面 16 部，最年轻的《星际穿越》也已经 12 岁了；这一部 2019 年才上映，到今天 7 年。</p>
+    <p>所以先别急着接受我推荐它。你想问的那个问题很合理：<strong>一部 7 年前的片子，凭什么跟 1954 年的《七武士》放在同一张单子上？</strong>"经典"通常需要时间，而它还没有那么多时间。</p>
+    <p>我本来也打算把它再压几年。但有三件事让我改了主意。</p>
+    <ul>
+      <li><strong>《视与听》2022 年的影史百大，它第 90 位。</strong>那份榜单十年才评一次，评委是各国影评人和导演。一部 3 年前才上映的电影挤进去，是不常见的事。而更有意思的是——<strong>昨天那部《七武士》在同一张榜上是第 20 位，它曾经是第 3 位。</strong>一张榜上，一部在下行，一部刚进场。</li>
+      <li><strong>2025 年《纽约时报》做了一次"21 世纪最佳电影"评选</strong>，投票的是 500 位导演、演员、影评人，外加读者。第一名是它。</li>
+      <li><strong>它拿到的东西，92 年里没人拿到过。</strong>奥斯卡最高奖第一次给了一部非英语片。上一部同时拿下戛纳金棕榈和奥斯卡最佳影片的电影是 1955 年的《君子好逑》，中间隔了 64 年。</li>
+    </ul>
+    <p>这三条加起来，够不够把它提前放进单子？我还是不确定。但至少它不是我一时兴起的偏爱——<strong>是这一整套体系在七年里共同给出的判断</strong>。你可以不接受这个判断，但你得先知道它存在。</p>
+    <p>另外，这是本系列<strong>第一部韩国电影</strong>。前 16 期的国别是：美国 5、意大利 2、日本 3、中国 1、印度 1、法国 1、美英合制 1。韩国一直在空白里，而它是绕不过去的那一部。</p>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（不含剧透）</h2>
+    <p>首尔。金家四口住在一间<strong>半地下室</strong>里——窗户跟街面齐平，从屋里往外看，看到的是行人的脚踝。全家没有一个人有正式工作，收入靠给披萨店折纸盒，以及举着手机满屋子找邻居家没设密码的 WiFi。街上喷消毒药的时候，父亲会让窗户开着，说顺便把家里的虫也熏一熏。</p>
+    <p>转机来得很偶然。儿子的朋友要出国留学，把一份家教工作让给他——给一户有钱人家的女儿补英语。他没有大学学历，妹妹替他做了一份以假乱真的在校证明。他给自己取了个英文名叫"凯文"，上了坡，走上一段很长的台阶，进到那栋房子里。</p>
+    <p>第一堂课结束，女主人就决定用他。</p>
+    <p>然后他开始"推荐人"。先是一位美术老师——其实是他妹妹；接着是司机——其实是父亲；再接着是管家——其实是母亲。<strong>四个人，四个假身份，进同一栋房子，彼此假装不认识。</strong>他们聪明、配合默契、演得很好，好到连自己都开始相信。</p>
+    <p>到这里为止，它是一部节奏极好的骗术喜剧。你看着这一家人一次次化险为夷，会替他们高兴——甚至有点希望他们别被拆穿。</p>
+    <div class="ver">
+      我们停在这里。四个人的身份、这栋房子的结构、那天夜里发生了什么、最后那场戏——本卡片一个字都不写。<br><br>
+      只给你一个不含内容的提醒：<strong>大约在影片一小时左右，它会变成另一部电影。</strong>不是换个语气，是换一种片子。所以如果你看到中途觉得"这跟简介说的不一样"，那是对的，别以为点错了。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点在哪里</h2>
+    <ul>
+      <li><strong>那栋房子是真的盖出来的，而它就是这部电影的论点。</strong>美术指导李夏俊（Lee Ha-jun）没有去找现成的豪宅，而是在片场空地上把整栋房子从零建了起来——因为奉俊昊要的空间关系，现实里找不到。客厅那面落地玻璃被专门做成 2.35:1 的比例，让花园看上去"像一幅画"，而这个比例正好是电影的宽银幕比例：<strong>住在里面的人，是隔着一块银幕在看世界</strong>。第一层客厅里没有电视，因为那位虚构的建筑师认为，客厅是用来看花园的。</li>
+      <li><strong>全片是被一道楼梯串起来的。</strong>金家住在下坡的半地下室，朴家在上坡的院子里；金家人每次去上班都在往上爬，每次回家都在往下走。李夏俊说，朴家人出场时通常是往上走的，而其他人总是在反复上下。他原话是：<strong>"在《寄生虫》里，空间呈现的悲剧比死亡更可怕。"</strong>你看的时候可以留意一下——这部片里几乎每一场戏，人物都在纵向移动，很少有例外。</li>
+      <li><strong>它在一部片里换了三次类型，而且每次都不是靠反转炫技。</strong>前四十分钟是家庭喜剧，中段变成密闭空间的惊悚，最后二十分钟是别的东西（我不说是什么）。难得的地方在于：你会觉得每一次转向都是<strong>空间把人逼出来的结果</strong>，而不是编剧想让观众吓一跳。奉俊昊自己说，这片子从构思起就是"垂直的"。</li>
+      <li><strong>群戏拿到了一个从没有外语片拿过的奖。</strong>宋康昊是奉俊昊二十年的老搭档（《杀人回忆》《汉江怪物》《雪国列车》都是他），这次演父亲；李善均演男主人，赵汝贞演女主人，崔宇植、朴素丹演儿女，张慧珍演母亲。<strong>美国演员工会奖的最佳群演，此前从未颁给过一部外语片</strong>——这是第一次。</li>
+      <li><strong>成本约 1100 万美元，全球票房 2.66 亿。</strong>二十四倍。它先在戛纳拿了金棕榈（韩国第一部，也是 2013 年《阿黛尔的生活》之后第一部<strong>全票通过</strong>的金棕榈），然后北美由 Neon 发行，用"小规模上映、一周一周扩"的方式慢慢做，一路做到颁奖季。这不是一部靠营销砸出来的片，是一部靠口碑一层层加上去的片。</li>
+      <li><strong>它已经进了太多"影史最佳"名单。</strong>除了前面说的《视与听》第 90 位和《纽约时报》21 世纪第一，还有：美国编剧工会"21 世纪最佳剧本"第 4、〈滚石〉"21 世纪百大电影"第 4、烂番茄 2025 年"影史 300 佳"第 5。《纽约时报》的 A.O. 斯科特当年写它"彻底抹掉了艺术电影和爆米花电影之间那道过时的界线"——这句评价现在回看，比 2019 年时更准。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评</h2>
+    <p>99% 和 97 分听起来像没有异议，其实不是。这部电影挨的批评很集中，而且几乎全部打在<strong>它想说的那件事</strong>上，不是手艺上。</p>
+    <ul>
+      <li><strong>《好莱坞报道者》的 Stephen Dalton 在戛纳就说了两条</strong>：<em>"cumbersomely plotted"</em>（情节堆得太满、太绕）、<em>"heavy-handed in its social commentary"</em>（社会评论用力过猛）。这两句后来被引用得非常多，因为它们说中了很多人不太敢说的感觉。</li>
+      <li><strong>影评人 Chris Knipp 更直接</strong>：他认为这片子<strong>太长、设计过度</strong>，"一个多余的尾声接一个多余的尾声"；并且认为把它当社会评论是抬举——它本质上是一部<strong>设计精密的犯罪惊悚片</strong>，只是穿了一件阶级的外套。他还说，全片最经不起推敲的是那个"穷人 vs 富人"的对照到底成不成立。</li>
+      <li><strong>最重的一条来自中文影评界</strong>。中国电影编剧研究院的一篇文章（《表达与呈现：〈寄生虫〉一部失衡之作》）提出了一个很刺人的判断：因为片中的穷人被写得<strong>如此一致地卑下、雷同、毫无悔意</strong>，所以"<em>《寄生虫》是一部为富人说好话的影片</em>"。它还批评剧本"写得太满、太直白、太有控制欲"，人物像被按着脚印走；结论是"精彩有余，但经不起看第二遍"。</li>
+      <li><strong>一个绕不过去的对照：《小偷家族》。</strong>是枝裕和 2018 年拿金棕榈，拍的也是"一群穷人凑成一个假家庭"。很多评论认为那一部更含蓄、更有人味；而奉俊昊拿的是<strong>下一年</strong>的金棕榈。<strong>同一个奖、连续两年、同一个题材的两种写法</strong>——这个对照本身就在问：观众到底更愿意接受哪一种底层？</li>
+      <li><strong>"只有诊断，没有处方。"</strong>一位影评人在长篇分析里用这句话概括它：全片把这座结构写成一座逃不出去的房子，到最后只给出个体的暴力，没有给出任何出路；而且中产阶级在片中是<strong>结构性缺席</strong>的——世界里只剩下"拥有生产资料的"和"提供劳力的"两类人。</li>
+      <li>最极端的反对声音不在主流媒体里。有评论者半开玩笑地说，要找一个真正唱反调的美国影评人，得去《国家评论》找 Armond White——他的否定是政治性的，不是审美性的。这条我只作记录，不展开。</li>
+    </ul>
+    <div class="ask">
+      <small>我的判断</small>
+      "穷人被写得一致地卑下"——这条我<strong>部分同意</strong>，但我想把它挪个位置。金家四口确实没有一个人被给过"清白"的时刻：他们每得手一次，就有一个人失业（司机、管家，都是被他们设计走的）。这不是编剧疏忽，这恰恰是它的论点——<strong>朴太太那句"因为有钱，所以可以善良"，是全片的钥匙</strong>。在这部片里，善意不是道德问题，是余裕问题。你不喜欢这个结论，可以；但说它没想到这一层，我认为不成立。<br><br>
+      "为富人说好话"这条我<strong>不同意</strong>，但我承认它有根据：朴家确实没有被写成恶人。他们不虐待人、不刻薄、不缺德，他们只是——<strong>闻到了味道</strong>。而我认为这恰恰是全片最狠的一笔：如果朴家是坏人，这就只是一部复仇片，你会看得很爽，然后什么也不会带走。<strong>正因为朴家不坏，你才没法把自己摘出去。</strong><br><br>
+      "太满、太直白"我<strong>同意一半</strong>。它确实不留白，每一帧都在说话：那道楼梯、那块石头、那股味道、那面 2.35:1 的玻璃。但"经不起看第二遍"我完全不同意——它是极少数<strong>第二遍比第一遍更好看</strong>的片子。第一遍你在跟着骗术跑，紧张得没空想；第二遍你已经知道结局，才看得见每个人是在<strong>哪一句台词之后</strong>就开始知道自己在做什么的。<br><br>
+      "没有处方"这条我<strong>全同意</strong>，并且认为这是它的诚实。一部电影能做的到此为止：它负责让你看清那道楼梯有多长，不负责把楼梯拆掉。把这两件事混为一谈，是观众的期待出了问题，不是电影的问题。
+    </div>
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线 · 请务必先读这一段</h2>
+    <p>本卡片写到"四个人都进了那栋房子"为止。之后的一切我都不写。</p>
+    <p>这部片是<strong>剧透重灾区</strong>，而且危险的不是结尾，是<strong>中段</strong>——它的转折发生在一小时左右，一旦知道，后面八十分钟的紧张感会掉一大半。五个高危源，请绕开：</p>
+    <ul>
+      <li><strong>所有"剧情详解 / 结局解析"的中文长文与短视频。</strong>这是最凶的一条。它太有名了，几乎每个影视号都做过，十分钟讲完全片的那种尤其多。在你没看完之前，不要在任何一个视频平台上搜片名。</li>
+      <li><strong>被当成封面的那张"楼梯 / 暴雨"剧照。</strong>很多解读文章拿它做头图，因为它视觉冲击最强——但它出自转折之后。看到这张图，你会先知道"有事发生"，然后一直在等它。</li>
+      <li><strong>影评里那个反复出现的空间比喻。</strong>几乎所有深度影评都会用"这栋房子分几层"来解释它的阶级寓意。<strong>那个比喻本身就是中段的谜底。</strong>看到有人在用"地上 / 地下"讲这部片，先关掉。</li>
+      <li><strong>奥斯卡的颁奖片段和当年"最佳影片"的报道。</strong>颁奖礼播放的片段里有关键场景，而"第一部非英语片拿最佳影片"这个新闻当年铺天盖地，配图基本都是后半段的。</li>
+      <li><strong>任何关于"那块石头"的解读。</strong>石头在开场就出现了，看起来只是个道具，但它在后面有作用。别去搜它的寓意。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <ul>
+      <li><strong>因为它把"阶级"这件抽象的事，变成了你可以用身体感觉到的东西。</strong>不是靠台词讲道理，是靠爬坡、靠台阶、靠一扇只能看见脚踝的窗、靠一段从高处一路走到低处的路。你看完不会有"我懂了一个道理"的感觉，你会有<strong>"我好像走过那条路"</strong>的感觉。这是电影能干、而文章干不了的事。</li>
+      <li><strong>因为它是这个时代最普及的一部"作者电影"。</strong>2.66 亿美元票房，绝大多数观众不是影迷。它证明了一件事：<strong>难看的不是深刻的电影，是不好看的深刻电影</strong>。它把艺术片的密度装进了一部类型片的壳里，而且没在任何一个环节上让步。</li>
+      <li><strong>因为它会在你看完之后继续长。</strong>第一次看完你记住的是一个故事；过几天你想起的是那股味道、那道楼梯、那句"因为有钱所以善良"。它是那种会<strong>在你生活里重新出现</strong>的电影——你下次走进一栋很亮的写字楼、或者挤进一部很挤的地铁，会想起来。</li>
+      <li><strong>因为它是这一系列的一个横向座标。</strong>昨天那部是 1954 年、黑白、207 分钟、七个武士守住一个村子；今天是 2019 年、彩色、132 分钟、一家人钻进一栋房子。<strong>同一道题，隔了 65 年，答案从"守"变成了"进"。</strong></li>
+    </ul>
+    <div class="quote">
+      1954 年，农民在村口筑起栅栏，等着外面的人来。2019 年，一家人在门口脱掉鞋，等着里面的人请他们进去。<br>
+      前者的敌人从外面来。后者的敌人，就是那栋房子本身。
+      <em>——第 16 期《七武士》 / 第 17 期《寄生虫》</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>观看建议</h2>
+    <table>
+      <tr><th>项目</th><th>说明</th></tr>
+      <tr><td>片长</td><td>132 分钟，全长版本唯一</td></tr>
+      <tr><td>版本</td><td>内地从未公映，<strong>不存在删减版问题</strong>；你在任何平台看到的都是完整的 132 分钟</td></tr>
+      <tr><td>分级</td><td>R 级。中后段有暴力与血腥场面，比简介给人的印象重</td></tr>
+      <tr><td>字幕</td><td>韩语片，请找靠谱字幕。这部片有大量<strong>靠语气和停顿传递的信息</strong>，机翻字幕会漏掉一半</td></tr>
+      <tr><td>时机</td><td>不要深夜疲惫时看。它需要你一直跟着算，一走神就接不上</td></tr>
+    </table>
+    <div class="ver">
+      <strong>一条实用提醒：</strong>如果你在一小时左右感到"这片子怎么突然变了"，那是设计好的。<strong>不要暂停去搜"寄生虫 剧情"，不要问看过的人。</strong>把剩下的八十分钟连续看完，它需要你处在不知道的状态里。<br><br>
+      <strong>门槛：</strong>没有。这是 17 期里<strong>最好进入</strong>的一部——不黑不白、不老、不长、不慢、不需要电影史知识。如果你是从第 1 期一路看下来觉得有点累的那位，这一期可以当休息。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>留给你三道题</h2>
+    <div class="ask">
+      <small>第一层</small>
+      金家每成功一次，就有另一个人失去工作。你看的时候，有没有为他们每一次得手感到高兴？<strong>如果有——那份高兴是从哪来的？</strong>是编剧让你高兴的，还是你自己本来就想看他们赢？先别急着辩解，把你当时的反应记住。
+    </div>
+    <div class="ask">
+      <small>第二层</small>
+      朴家的人，有没有做过一件真正意义上的"坏事"？请指认<strong>具体的一场戏</strong>。如果指不出来——那这部片让你不适的到底是什么？<br><br>
+      接着问：一部让你恨不起反派的电影，为什么反而更难受？
+    </div>
+    <div class="ask">
+      <small>第三层</small>
+      第 16 期《七武士》里，农民拿出白米饭雇武士，守住自己的村子；这一期里，一家人伪装身份，钻进别人的房子。<strong>同样是底层和一栋房子，一个要守，一个要进。为什么前者让你敬，后者让你不舒服？</strong><br><br>
+      再往前一步：第 8 期《飞越疯人院》里，麦克墨菲想带<strong>所有人</strong>一起出去；这一部里，金家只想让<strong>自己一家</strong>进去。这两种"反抗"，哪一种更接近你身边真实发生的事——而哪一种，你更愿意承认自己做过？
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 17 期 · 2026-10-22<br>
+    评分数据为本次实时检索所得，各平台口径不同，已标注取值范围
+  </div>
+
+</div>
+</body>
+</html>

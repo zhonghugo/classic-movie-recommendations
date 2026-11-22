@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 低俗小说</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 39 期</div>
+  <h1>低俗小说</h1>
+  <div class="en">Pulp Fiction（1994）&nbsp;·&nbsp;昆汀·塔伦蒂诺 编导 &nbsp;·&nbsp; 罗杰·阿瓦瑞 联合编剧 &nbsp;·&nbsp; 萨莉·门克 剪辑</div>
+  <div class="meta">
+    <span>美国</span><span>剧情 · 喜剧 · 犯罪</span><span>154 分钟</span><span>1994-05-23 戛纳封金</span>
+    <span>1994-10-14 美国公映</span><span>预算 850 万美元</span><span>R 级</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>8.9</b><small>豆瓣 · TOP250 第 73–86 · 约 67万–70万人</small></div>
+    <div class="score"><b>8.9</b><small>IMDb · 约 185 万票 · TOP250 第 8</small></div>
+    <div class="score"><b>92%</b><small>烂番茄专业 · 186 评 · 均分 9.3–9.5</small></div>
+    <div class="score"><b>95</b><small>Metacritic · 25 评 · 一致好评</small></div>
+    <div class="score"><b>2.13 亿</b><small>全球票房 · 约预算 25 倍</small></div>
+    <div class="score"><b>7 提 1 中</b><small>第 67 届奥斯卡 · 金棕榈</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 8.9（各快照 67 万–70 万人，TOP250 第 73–86 位浮动）；IMDb 8.9（1,854,434 票，TOP250 第 8，另有 #7/#10 旧快照）；烂番茄 92%（186 评，均分 9.3–9.5）；Metacritic 95（25 评，「一致好评」，为系列第 7 高位）；票房 2.12–2.14 亿美元各源取中。奖项逐条核自第 47 届戛纳与第 67 届奥斯卡资料。<br>
+    选片线：豆瓣 8.9、IMDb 8.9 双高线通过，本系列「或」字口径下最省事的一部。<br>
+    <strong>节奏与线路说明：上期回暖、本期档位自由，取 154 分钟中档黑色幽默。昆汀·塔伦蒂诺导演线 39 期首次开线；1994 年线第三次启用（第 11 期阿甘、第 15 期这个杀手不太冷）——但按台账要求，本期不以「1994」也不以「非线性结构」作主框架，另起炉灶。</strong>
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（新类型：防「拼图顺序」——防线不在结局，在结构本身）</h2>
+    <p>本系列红线的防线此前设在三种地方：防结局（大多数期）、防代读（第 18 期《2001》）、防过程（第 21 期《用心棒》）。<strong>本期是第四种：这部片的可泄露物，一半在情节，一半在「先后顺序」本身。</strong>它的故事被拆开、按非时间顺序重新排列——知道「哪件事其实发生在哪件事之前」，等于拿到半张底牌；等你自己拼到那一格时，那声惊雷就没收了。查资料请绕开下面几处。</p>
+    <ul>
+      <li><strong>第一雷（结构解析即谜底，第 29 期同型）：「非线性结构解读」「时间线梳理」类文章与视频。</strong>它们会直接把打乱的时间线画回原位——一张图看懂，电影损一半。看之前别搜「低俗小说 结构 / 时间线 / 章节」，这些词等于自剧透。</li>
+      <li><strong>第二雷（第八类惯犯）：中文百科的「剧情」栏。</strong>我这次实测，百科简介会把每条故事线的走向与收场写全，还额外交代公文包的来历设定。<strong>演职人员表可以读，剧情栏一行别碰。</strong></li>
+      <li><strong>第三雷（第二十一类「名场面盘点」）：金表独白、餐厅扭扭舞、以及其他被剪成段子的段落。</strong>单独剪出的「名场面」各自带着前后语境，点开就顺走答案；带评论区的平台先关弹幕热评——「结尾党」常年住在里面。</li>
+      <li><strong>第四雷（第九类）：「X 分钟看完」解说视频。</strong>这部片的价值大半长在「怎么讲」，缩略版等于只留尸首、抽走脉搏。</li>
+      <li><strong>检索词提示：</strong>港译《危险人物》、台译《黑色追缉令》与正片是同一部；「低俗小说」本身是出版术语，纯中文检索容易撞进书单类目，建议加「Pulp Fiction 1994」限定。另有大量「公文包里到底装了什么」的解读文——这条<strong>低危</strong>：它本来就没有官方答案。</li>
+    </ul>
+    <p>安全区划给你（开场二十分钟即交代完的前提）：<strong>洛杉矶。两个穿黑西装的杀手文森特与朱尔斯，在早饭桌上认真讨论巴黎的汉堡叫什么名字、以及给老板的妻子做足部按摩算不算越界，聊完起身去上班——老板马沙·华莱士要他们取回一只公文包。包里是什么，全片自始至终没有一个字；拍摄时里面装的是灯泡和电池，多年后有人当面问塔伦蒂诺，他的回答是：观众想让它是什么，它就是什么。与此同时：马沙安排文森特陪自己的妻子米娅出门一晚；一个过了气的拳击手布奇让马沙的钱打了水漂；一对在餐厅吃早饭的小情侣突然拔枪。五路人马，一包到底。</strong>故事从这里开始打乱。</p>
+    <div class="ver">我们停在这里。取包那趟差事里发生了什么、哪件事其实发生在别的事之前、拳击手后来撞见了谁、以及餐厅里那对劫匪的下场——一个字不写。片尾字幕升起来之前，请什么都别搜。</div>
+  </div>
+
+  <div class="card">
+    <h2>三件先说清楚的事</h2>
+    <p><strong>第一件：金棕榈之夜，评审团全票，观众席倒彩——同一栋楼里的两个房间，同一晚给出相反的判决。</strong>1994 年 5 月 23 日，第 47 届戛纳。当年的大热门是宣布退休的基耶斯洛夫斯基的《三色：红》，几乎所有人都以为金棕榈会为他送行。评委会主席克林特·伊斯特伍德宣布的结果是《低俗小说》——按事后披露，评委会的表决<strong>一致通过</strong>；而会场里响起的是欢呼混着响亮的嘘声与倒彩，一位女士在楼座高喊基耶斯洛夫斯基的名字，加上一句对本片的脏话诅咒。31 岁的塔伦蒂诺上台领奖，朝嘘声的方向竖了中指，然后说了下面这段被引用三十年的话：</p>
+    <div class="quote">「我从没指望过评委会把奖给我——因为我拍的不是把人们聚到一起的电影。我拍的，是把人们分开的电影。」<em>昆汀·塔伦蒂诺，1994-05-23，戛纳领奖台</em></div>
+    <p>法国报纸质疑金棕榈「被偷走了」或「被巧妙运作了」；东木的回应只有一句「这是一个民主的决定，大家觉得它有原创性」。往大了看：这是六年内第四部拿金棕榈的美国片——而前一年的金棕榈正是《钢琴课》与《霸王别姬》并列（本系列第 22 期与第 12 期）。<strong>本系列记过五种奖项命运：赢、输、没被评过、未进入评选、全中。本期补上第六种形状——评委内部零分歧，现场一半喝倒彩。分歧不在评委之间，在评委与观众席之间。而这部电影的主题，恰恰就是它自己的获奖之夜：把人分成两边的，不一定是坏事。</strong></p>
+    <p><strong>第二件：850 万美元的成本，2.13 亿的全球票房——它是「独立电影变成一门生意」的第一张凭证。</strong>剧本先被三星影业弃掉，当时的厂牌主管称它「写得最烂的东西……太长、太暴力、没法拍」（阿瓦瑞转述）；接盘的是刚被迪士尼收购的独立厂牌米拉美（其掌门人后来的另一页历史，与 1994 年无关，此处只记发行事实），预算 850 万——当年好莱坞平均成本约五千万。发行上用了后来被写进教科书的一套打法：全城只安排一场媒体放映吊足胃口，再把好评复印稿塞进评委下榻酒店的房门下；掌门人晚年自己承认，这套策略「比真实情况更像传说」。结果：北美年度票房前十——以远少于同榜任何一部的银幕数做到的；英国出版它的剧本书，成了英国出版史上最畅销的电影剧本、进入全国畅销榜前十；主演片酬从 14 万美元涨到四年后《法网边缘》的 2000 万。<strong>它之前，「独立电影」约等于亏钱的同义词；它之后，每个独立厂牌和每个影展都开始做同一个梦。</strong></p>
+    <p><strong>第三件：片名是自白书——「纸浆」（pulp）的本义，就是把废纸打碎了重新造纸。</strong>1935 年英国企鹅出版社出的那种廉价通俗读物就叫 pulp：内容猎奇、纸是回收纸浆。剧本本身也真是「搅和」出来的：1992 年，塔伦蒂诺揣着泽西影业一百万美元的下一部片约，躲进阿姆斯特丹一间没有电话的单间公寓，把三个故事手写在笔记本上；替他把手稿打进电脑的打字员形容那份满是语法错误、字迹难辨的稿子像「疯子的日记」。连全片被引用最多的那段《以西结书 25:17》独白——绝大部分根本不在《圣经》里，主体抄自 1973 年千叶真一主演的日本片《保镖》，再由他与杰克逊补写完成。<strong>所以「它是不是抄袭」这场架打了三十年，而片名早把答案写在了门口：它自我承认是回收纸浆重新成型的东西——剩下的争的其实是：打碎重造，算手艺，还是算偷窃。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在</h2>
+    <ul>
+      <li><strong>对白即动作。</strong>两个杀手用五分钟聊汉堡与足部按摩的职业道德，聊完才去干杀人的活——类型片里被剪掉的「废话」，在这部片里是主体。罗杰·伊伯特给它的定性是「一部关于血腥、暴力、怪异性事、毒品、假拳、毁尸、皮衣癖和一块家传手表的喜剧」，并说塔伦蒂诺是「电影界的杰瑞·李·刘易斯——弹钢琴不在乎琴会不会散架，只要全场都在摇」。</li>
+      <li><strong>时间的重排不是为了炫技，是重新分配「谁知道什么」。</strong>观众比角色多知道一些事、又少知道一些事，于是凶险的人可以显得松弛、松弛的人可以突然凶险——配角的命运在下一章换了个位置，你在中途见过的事会以另一个意义回来。它在 IMDb 与豆瓣常年被顶进各榜前十，靠的从来不是题材，是这手「讲故事的位置学」。（与第 29 期《盗梦空间》的嵌套层级不是一回事：那部片的结构是纵深，这部是顺序。）</li>
+      <li><strong>影史级的翻身仗。</strong>选角时制作人直问：「全世界随便挑，你为什么要约翰·特拉沃尔塔？」——彼时他正在一连串幼儿喜剧里，给一个会说话的婴儿当二番位。塔伦蒂诺放话「不用他，我就不拍」，还专门为他写了一场舞：扭扭舞配恰克·贝里，一个过气巨星在片中演一个过气杀手，两种过气互相成全。特拉沃尔塔后来每提到这部片都说同一句话：「昆汀永远是我的守护天使。」</li>
+      <li><strong>配乐不作曲，只「点歌」。</strong>冲浪吉他、灵魂乐、老流行曲——全是既有歌曲，没有一首为电影而写，却张张长在戏上；此后三十年「电影原声带=一份有品的歌单」这个概念，是它带起来的风潮。</li>
+      <li><strong>经得起逐帧找细节。</strong>布奇拳赛的场刊写着两位美国总统的名字；网上流传「全片所有钟表都停在 4:20」，实情是只有某一处当铺的钟表全是 4:20——传说和实情都留着，像这部片本身：一半真实，一半纸浆。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评（三十年没打完的三场架）</h2>
+    <p><strong>第一场：它是不是只有冒犯、没有别的东西。</strong>上映首周末，大报里少数的负评来自《洛杉矶时报》肯尼思·图兰：「编剧兼导演似乎在硬挤效果……像一个怕丢掉名声的人，慌不择路地找一切能冒犯观众感官的办法。」（原文后半句因提及即剧透，已按本系列纪律整句删去。）《国家评论》的约翰·西蒙更短：「挑逗治不好空洞，也治不好浅薄。」《新共和》的考夫曼嫌它「滋养、纵容了文化上的自甘下流」。<strong>这三条全都站得住，而且不用打折</strong>——它与它得到的最高赞美（「令人陶醉」「这些年最兴奋的一次观影」）发生在同一周、同一批媒体之间。一边倒的盛赞和真实的生理不适，可以同时为真。</p>
+    <p><strong>第二场：那个词。全片使用那个种族蔑称约 20 次（Deadline 口径），这场架从 1994 吵到 2026 年 3 月还没停。</strong>1997 年，斯派克·李公开说：「我不反对那个词，我自己也用，但不滥用。有人就是那么说话的，这我承认——可昆汀对那个词是痴迷。我想让他知道，不是所有非裔美国人都觉得那个词时髦、俏皮。」2026 年 3 月，本片出演者罗珊娜·阿奎特接受采访：「它很多层面都是伟大电影。但那个词，我个人看够了——这不是艺术，就是种族主义，令人不适。」塔伦蒂诺隔日公开回信，原话是「你收了钱……缺的是格局」；而合作了六部片的塞缪尔·杰克逊 2022 年的辩护是：「每次有人要找滥用那个词的例子，都拿昆汀开刀——不公平。史蒂夫·麦昆用就是艺术，昆汀用就只是爆米花。」<strong>三个当事人的立场原话并排放在这里，不裁决——只提醒一件事：读这三段话时留意各自的位置（同行、本片演员、导演、主演），这场架没有局外人。</strong></p>
+    <p><strong>第三场：全是二手货。</strong>《芝加哥读者报》的罗森鲍姆说过一句最刻薄的：「《低俗小说》拿到比《精疲力尽》更铺天盖地的赞美——这件事本身就告诉你，哪一类文化引用被认为更有养分：我们已有的那类，不打算扩张的那类。」结合上面第三件事实（独白抄自千叶真一、剧本是纸浆重造），这条批评同样站得住。我的立场只有一个词的不同：<strong>「纸浆」不是它被抓住的把柄，是它自己贴在门上的名字——问题从来不是它是不是纸浆做的，是你觉得回收重造算不算创作。这个问题，你散场时自己会有答案，而且很可能和你进场前预想的不一样。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>观看建议</h2>
+    <ul>
+      <li><strong>版本（第 16 次「无陷阱」）：全球通行 154 分钟，无删减版、加长版之分。</strong>它从未在中国内地公映，也因此不存在「公映删减版」这个坑——你在任何渠道遇到的都应是 154 分钟版（个别站点标 155，为四舍五入口径）。</li>
+      <li><strong>请用原速。</strong>它的快感全长在对白的节奏里：停顿、抢话、绕远路再绕回来——二倍速会把这层完全抹平，等于看一部只剩枪响的电影。</li>
+      <li><strong>情绪门槛（正向提醒）：</strong>暴力直接、突然、不铺垫，但几乎每次都有黑色幽默接着托底，它不想让你疼太久，只想让你错愕。全片粗口约 265 次，介意语言密度者请先校准预期。</li>
+      <li><strong>字幕尽量挑好的。</strong>俚语、典故、章节标题的密度是影史顶级，字幕差一档，笑点丢一半。有能力建议原声直接看。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>散场以后：三个问题（按需取用）</h2>
+    <div class="ask">
+      <small>第一层 · 进场时</small>
+      <p>开场两个人聊了五分钟汉堡，才起身去干活。看到哪一刻，你意识到「这不是一部普通黑帮片」？——记住那个信号，它比任何「结构分析」都更早告诉你这部电影打算怎么跟你玩游戏。</p>
+    </div>
+    <div class="ask">
+      <small>第二层 · 散场时</small>
+      <p>金棕榈那晚：评委全票，观众席一半倒彩。同一个房间号，两种判决。<strong>你更相信哪个房间的判断？更重要的是——你说得出自己的理由吗，还是只说得出「跟哪边」？</strong></p>
+    </div>
+    <div class="ask">
+      <small>第三层 · 对照本系列第 11 期</small>
+      <p>同一届奥斯卡（第 67 届）：最佳影片、导演、剪辑归了《阿甘正传》，影帝那一座——汉克斯连庄——压下去的第二名正是本片的特拉沃尔塔。三十年后的 IMDb TOP250：阿甘第 14，本片第 8，第一是《肖申克的救赎》——那部片与本片<strong>同一天</strong>（1994-10-14）在北美扩映。<strong>「当晚赢的」「后来排前的」「影迷心中的」三个座位，各坐着谁？你自己的名单，把谁放在第一？</strong></p>
+    </div>
+  </div>
+
+  <div class="foot">
+    本系列第 39 部 · 1994 年线第 3 次 · 昆汀·塔伦蒂诺导演线首次开线（下一部建议间隔 ≥5 期且换年代换类型）<br>
+    已推清单与选片口径见每日执行台账 · 下期起候选：华语线 2026-12-02 解禁（花样年华第一优先）
+  </div>
+
+</div>
+</body>
+</html>

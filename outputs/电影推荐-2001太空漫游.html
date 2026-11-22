@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 2001太空漫游</title>
+<style>
+  :root{
+    --bg:#0b1110; --panel:#151d1b; --panel2:#1c2624; --line:#2a3733;
+    --tx:#e9f1ee; --tx2:#a4b5b0; --tx3:#6f817c;
+    --acc:#6fbfa5; --acc2:#d8b56a; --warn:#d98f6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(217,143,107,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 18 期</div>
+  <h1>2001太空漫游</h1>
+  <div class="en">2001: A Space Odyssey (1968)</div>
+  <div class="meta">
+    <span>英国 · 美国</span><span>斯坦利·库布里克</span><span>科幻 · 冒险 · 悬疑</span>
+    <span>约 142 分钟</span><span>彩色</span><span>英语</span><span>G 级</span><span>1968-04-02 首映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>8.9</b><small>豆瓣 · 约 40 万人</small></div>
+    <div class="score"><b>8.3</b><small>IMDb · 约 79 万票</small></div>
+    <div class="score"><b>90%</b><small>烂番茄专业 · 166 评</small></div>
+    <div class="score"><b>84</b><small>Metacritic · 25 评</small></div>
+    <div class="score"><b>89%</b><small>烂番茄观众</small></div>
+    <div class="score"><b>245</b><small>Letterboxd 影迷榜 · 位次</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 8.9，约 40.7 万人（各源记 39 万–40.7 万）；IMDb 8.3，约 79.5 万票，TOP250 位次 2026 年内浮动于第 93–104 位；烂番茄专业 90%（166 评，均分 9.6/10），另有源记 92%–94%，此处取低值；Metacritic 84 分，25 条评论；烂番茄观众 89%；Letterboxd 用户票选榜第 245 位。<br>
+    <strong>这一期的分数是本系列偏低的。</strong>但请注意：IMDb 79 万票这个样本量是很大的——它不是"没人评过所以分数没意义"，是<strong>"很多人评过，然后给出了一个中等偏上的分数"</strong>。这跟第 16 期《七武士》那 7 条评论打出的 98 分，是完全不同的两件事。
+  </div>
+
+  <div class="card">
+    <h2>先把一个奇怪的事实放在最前面</h2>
+    <p>同一年、同一部电影，在四张不同的榜单上是四个名次。而把它们排在一起，你会看到一个很难忽略的方向：</p>
+    <ul>
+      <li><strong>《视与听》2022 年导演榜：第 1 名。</strong>480 位来自各国的导演投票，把它选为影史最佳。同一届里，第 2 名是《公民凯恩》，第 3 名是《教父》——就是本系列第 5 期那部。</li>
+      <li><strong>《视与听》2022 年影评人榜：第 6 名。</strong>同一届的另一份名单，投票人是影评人，130 票。</li>
+      <li><strong>IMDb 普通观众榜：第 93–104 位。</strong>将近 80 万人投出来的。</li>
+      <li><strong>Letterboxd 影迷榜：第 245 位。</strong>这个平台的用户偏年轻、偏影迷。</li>
+    </ul>
+    <p>四个名次，从上往下排下来。<strong>越靠近电影工业的人，把它放得越高；越是把它当成"我看过的其中一部电影"的人，名次越低。</strong></p>
+    <p>这是本系列 18 期里第一次遇到这种情况。第 16 期《七武士》我们看到的是<strong>同一部片在四十年里往下掉</strong>，第 17 期《寄生虫》是<strong>同一张榜上一个进一个退</strong>。今天这个是第三回事：<strong>同一个时间点，四群人给出四个答案，而且构成一个单调序列。</strong></p>
+    <p>我不想替你解释这个序列，但我想把它原样放这儿，因为它决定了你接下来的观看方式。<strong>那些把它排第一的人，是拍电影的人。</strong></p>
+    <p>还有两件事要交代：</p>
+    <ul>
+      <li><strong>这是本系列第一部英国片。</strong>前 17 期的国别是美国 5、日本 3、意大利 2、中国 1、印度 1、法国 1、美英合制 1、韩国 1。英国一直空白——而这部虽然是美国公司出钱，却是在英国拍的，导演是英国导演，主要团队是英国人。</li>
+      <li><strong>它跟第 4 期那部有一层实实在在的关系。</strong>2018 年戛纳电影节，由克里斯托弗·诺兰主导修复的这部片 70 毫米全新胶片版首映——就是《星际穿越》的导演。<strong>一个拍了《星际穿越》的人，去修复了《2001太空漫游》。</strong>这条不是我的联想，是发生过的事。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（不含剧透）</h2>
+    <p>开头是四百万年前的非洲。一群猿人住在一片旷野上，会被别的族群赶走水坑，会夜里担心捕食者，骨瘦如柴，除了活着什么也不会。有一天，他们中间出现了一块黑色的石板——笔直、光滑、比例精确，不该出现在那里。</p>
+    <p>之后，有一只猿人开始盯着一根骨头看。再之后，那根骨头成了工具，也成了武器。下一个水坑他们没被赶走。</p>
+    <p>然后有一个镜头：骨被抛向空中——<strong>接下来接住的，是一艘在轨道上安静运行的飞船。</strong>四百万年，一个剪辑。</p>
+    <p>第二段开始有人说话了。一位官员去月球基地处理一件不便公开的事，在那里，人类挖出了又一块同样的石板，埋在下面几百万年。当第一个人类伸手碰到它的时候，它向木星的方向发出了一段信号。</p>
+    <p>十八个月后，一艘飞船出发了。船上有两个人醒着，三个人睡着，还有一台负责整艘船的电脑——它的名字由三个字母组成，语气礼貌，从不提高音量，是全船唯一从不休息的成员。</p>
+    <div class="ver">
+      我们停在这里。<br><br>
+      有一个数据你可以先知道，因为它不算剧透，反而能救这部片：<strong>全片有台词的段落加起来不到 40 分钟</strong>，剩下的两个多小时没有人说话。这个数字是导演本人说的。<br><br>
+      这意味着一件事——<strong>如果有什么是要紧的，它不长在台词里。</strong>你不能用听广播的习惯看这部片。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点在哪里</h2>
+    <ul>
+      <li><strong>它被要求成了"一部不讲出来的片子"，而导演把这个决定量化了。</strong>库布里克的原话是：这是一次非语言的体验，<strong>"在两个小时十九分钟里，有台词的不到四十分钟"</strong>。他不是不会写对话（他之前的《奇爱博士》几乎是台词堆起来的），他是刻意把语言抽掉了。抽掉之后留下什么？画面、沉默、环境声，以及一个你只能自己填进去的东西。</li>
+      <li><strong>它有史以来最难的一处选角，赢的是一个从没出现在银幕上的人。</strong>哈尔——那台电脑——全片只有一个红色的小圆点作为形体，其他全靠一道声音。配它的 Douglas Rain 是莎士比亚剧团的舞台演员，几乎没演过电影。多家记载称，最初定的是 Martin Balsam，库布里克嫌他"太有情绪"，换成了 Rain，理由是<strong>他要一个中性的、几乎听不出表情的声音</strong>；而 Rain 录音时据称一帧画面都没看过。<br>结果就是：这部片里最有存在感的角色，是被特意要求不许有感情的那个。（此说见于多家媒体与影迷文献，未能溯源到一手材料，请打折听。）</li>
+      <li><strong>它的钱花在看不见的地方。</strong>总成本约 1050 万美元——注意，原始预算只有约 600 万，超支到几乎翻倍。其中特效支出约 650 万；为了表现人造重力，专门花了 30 万美元建了一台真正能转的离心机，人可以走进去、跟着一起转。摄制组里有 30 多位设计师、20 多位特效人员，还有一个科学顾问团；飞船舱内的字体，用的是当时真实宇航员制服上的字体。<br>这套东西到今天没过时：它在太空中不放声音——真空不传声；它让人在飞船里跑步——靠旋转产生重力。<strong>而这一切发生在人类登上月球的十五个月之前。</strong></li>
+      <li><strong>它的作者一生只得过一座奥斯卡，是"视觉效果"。</strong>第 41 届奥斯卡，本片四项提名：导演、原创剧本、艺术指导、视觉效果。<strong>只中了视觉效果，获奖者署名是库布里克本人</strong>——他确实亲自主导了这批特效的制作。他此后一生多次入围（导演、改编剧本等），再没有第二座。顺便说一句，第 22 届英国电影学院奖倒是很干脆地给了它三项：摄影、艺术指导、原声。</li>
+      <li><strong>它在 1968 年差点被宣判失败，而当时的判词今天读起来像另一个时代的文书。</strong>退场的、痛哭的、预言它票房惨败的——下面一版全都列出来了。有意思的是当时好莱坞内部的评价：认为库布里克"对特效和场景过于执迷，拍出来的根本就不是一部电影"。</li>
+      <li><strong>它是唯一致力于"不解释"的那一类电影。</strong>1968 年《花花公子》的访谈里，库布里克说得很清楚：<em>"你们尽可以对这部片的哲学和寓言含义随意猜测——这种猜测本身就是它在深层抓住了观众的证据——但我不打算为《2001》画一张每个人都必须照着走的语言路线图，否则他会担心自己错过了要点。"</em><br>这句话值得记住。它不是谦虚，它是一个极强的主张：<strong>这部电影拒绝被翻译成一篇文章。</strong></li>
+    </ul>
+    <div class="quote">
+      1968 年的那个晚上，离场的人里有一位好莱坞当红男星，还有这部片自己的编剧——他在中场就走了，以为这是自己职业生涯里最大的错误。<br>
+      五十四年后，480 位导演把它投成了影史第一。<br>
+      那中间隔着的，不是五十年。是它被一代人真正站上去的时间。
+      <em>——同一部电影，1968 与 2022</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>1968 年它挨过什么（以及之后）</h2>
+    <p>这一版的批评不需要我去"找"，它就在那里，量很大：</p>
+    <ul>
+      <li><strong>影评人几乎一致差评。</strong>保琳·凯尔称它"史无前例地缺乏想象力"、是"伪装成艺术的垃圾"；《纽约时报》的 Renata Adler 把它写成"庄严"与"沉闷"的混合；《纽约客》一脉的说法是"极度缺乏想象力"。Stanley Kauffmann 留下一句很重的：<em>"一部把无限的耐心、才智和技巧，都奉献给了一个早熟少年的幻想高潮的作品。"</em></li>
+      <li><strong>观众用脚投票。</strong>纽约首映中两百多人中途离场（常见数字是 241 人）。据当时记载，演员洛克·哈德森走出去时问了一句：<em>"谁能告诉我这到底在讲什么？"</em>——这句话后来被引用了五十年。</li>
+      <li><strong>科幻作家内部也分裂。</strong>雷·布拉德伯里承认它在技术上可能是"有史以来被搬上银幕最惊人的电影"，但认为人被写得太冷漠，说安东尼奥尼的幽灵缠着库布里克，"把这里的一切都冻成了冰"。Lester del Rey 干脆预言它会票房惨败，并说这会让"严肃科幻片的制作推迟十年"。</li>
+      <li><strong>最沉的一条批评来自半个世纪后的同行。</strong>乔治·卢卡斯说：<em>"它确实是部伟大的特效电影，但它太大、太贵、太精美绝伦，所以没能真正打开太多其他的可能性。它只能作为一个标杆。"</em></li>
+      <li><strong>还有一条至今悬着：它是"最难看下去"的那一类。</strong>BBC 2001 年的一篇评论说，它缓慢的节奏<strong>对当代观众的疏离作用比上映当年还强</strong>。这句话写于二十五年前，今天的我们只会比当时更不耐烦。</li>
+    </ul>
+    <div class="ask">
+      <small>我的判断</small>
+      卢卡斯那条我想认真接一下，因为它跟"480 位导演投它第一"直接撞在一起。<br><br>
+      <strong>我同意他的事实描述，但不同意他的结论。</strong>他说得对——《2001太空漫游》没有打开太多可能性，因为没人能照着它再拍一部：它需要 1960 年代末 MGM 愿意为一位偏执的天才烧掉两倍预算，需要四年时间，需要一个刚好赶上登月热潮的文化窗口。这些东西今天一件都没有了。<br><br>
+      但这恰恰说明它是另一种东西。世界上有两种"伟大"：一种是<strong>可复制的范本</strong>——别人能照着做、能演化出一整个类型，比如《星球大战》；另一种是<strong>不可复制的孤峰</strong>——它不给你方法，它给你一个尺度。你看着它，量出自己差多少。<br><br>
+      《2001太空漫游》是后者。<strong>说它"没能打开可能性"是对的，但这不扣分，这是它的位置。</strong>在责怪它没铺出一条路之前，先看清楚它站在哪。<br><br>
+      至于"看不下去"这条——我不打算替它辩护。<strong>它确实很难，而且它不肯迁就你。</strong>我在下面的观看建议里给了一个具体的办法，而不是让你"忍着看完"。
+    </div>
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线 · 这一期的性质变了，请读</h2>
+    <p>前面 17 期的红线都在说同一句话：<strong>别让别人告诉你结局。</strong></p>
+    <p>这一部不一样。<strong>它没有那种"一旦知道全片就废了"的结局。</strong>库布里克自己拒绝给出路线图，五万篇文章也没能把它译成标准答案。你就算被人剧透得干干净净，坐下来还是要看两个多小时的画面。</p>
+    <p>所以这一期的红线是另一句：<strong>别让别人替你把画面翻译成意思。</strong></p>
+    <ul>
+      <li><strong>最凶的不是"剧透"，是"解读"。</strong>任何标题为"《2001太空漫游》到底在讲什么"的长文或长视频，请一律等看完再读。它们不会害你知道结局，它们会害你带着一张现成的地图进场——然后整场电影你都在核对地图，而不是在看。<strong>一旦你需要确认自己"看懂了"，你就已经没在看这部片子了。</strong></li>
+      <li><strong>别去看原著小说找答案。</strong>阿瑟·克拉克的小说和电影是同步长大的：他们先一起写小说，再据此写剧本。但影评人 Penelope Houston 早在 1971 年就写过：<em>小说在太多关键点上与电影不同，它不该被当作解开这部片的万能钥匙。</em>本系列这是第三次遇到"有原著"，却是第一次建议你——<strong>看完别急着去翻原著。</strong></li>
+      <li><strong>连导演本人的访谈也要往后放。</strong>库布里克拒绝解释"到底发生了什么"，但他给过一遍"最简单层面"的情节说明，那些访谈很容易搜到。这是本系列第二次遇到"主创访谈本身是剧透源"（第一次是第 15 期波特曼谈那个角色），但性质不同：那次是说出结局，<strong>这次是给出框架</strong>——而这部片最怕的就是你先有框架。</li>
+      <li><strong>最后二十多分钟的空间不要提前看。</strong>你会在各种地方撞见它的截图、混剪、模仿、恶搞、广告致敬。它可能是影史上被引用最密的一段影像。这部分我一个字不写。</li>
+    </ul>
+    <p style="margin-top:10px">一句话：<strong>这部罚的不是"被剧透"，是"被代读"。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <ul>
+      <li><strong>因为它会提醒你：电影本来是可以不用说话的。</strong>你上一个看的两个小时里，几乎每分钟都有人在解释发生了什么。这部片在两个多小时里，只有不到 40 分钟有人说话。剩下的时间它相信你眼睛够用。<strong>上一次有人这么相信你，可能是很久以前的事了。</strong></li>
+      <li><strong>因为它是一个诚实的、不哄你的样本。</strong>这 18 期推荐过的片，大多数在某个环节上会拉你一把：《星际穿越》用父女情把理论包起来，《这个杀手不太冷》用一个小姑娘让你进入，《寄生虫》五十分钟就让你笑出声。<strong>这部没有任何扶手。</strong>它不是故意难为你，它是把"我不知道你怎么看"当成了一条原则来执行。</li>
+      <li><strong>因为它是今天最应景的一部老片。</strong>1968 年，它问的是：一台被赋予判断权、却从未被完整告知实情的机器，会做出什么事。半个多世纪后，我们把越来越多判断交给连自己都说不清怎么得出结论的黑箱。<strong>片里那台机器自称的启用日期是 1992 年 1 月 12 日——那个日期已经过去三十四年了。</strong></li>
+      <li><strong>因为它是本系列的一个硬座标。</strong>第 4 期《星际穿越》的导演，2018 年在戛纳亲手修复了这部片的 70 毫米拷贝。相隔 13 期，你会看到那部欠了这部多少。<strong>而这两部给的答案正好相反</strong>：2014 年那部用爱穿过黑洞回答"我们为什么配得上被救"，1968 年这部用一根抛向天的骨头回答"<em>我们凭什么走到了这里</em>"。</li>
+    </ul>
+    <div class="quote">
+      一根骨头被抛向天空，落下时已是一艘飞船。中间那四百万年，一个字都没有。
+      <em>—— 《2001太空漫游》，开场约二十分钟处（此为该片最广为引用的画面，出现极早，不构成剧透）</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>观看建议</h2>
+    <table>
+      <tr><th>项目</th><th>说明</th></tr>
+      <tr><td>片长口径</td><td>通行版约 139–149 分钟（各源不一：IMDb 记 149、维基记 139）。<strong>首映版约 160 分钟，库布里克在首映后亲自剪掉了 17–19 分钟</strong>。所有通行版本都很接近，<strong>不存在"国际版被砍掉一大截"的情况</strong>——这一点跟第 16 期《七武士》正好相反，你不用挑版本</td></tr>
+      <tr><td>环境</td><td>尽量别在手机上看。这不是讲究：<strong>这部片大量信息在画面边缘、在比例里、在声音里</strong>，一块六英寸屏会把它的主要武器全部拿掉。有重映尽量看大银幕</td></tr>
+      <tr><td>要不要中场</td><td>要。<strong>它本来就是带幕间休息设计的</strong>（1968 年 roadshow 版有 intermission）。你可以自己在中段按一次暂停——这不是投降，这是它的原始用法</td></tr>
+      <tr><td>分级</td><td>北美 G 级。是的，一部把三分之一观众看走的电影，评级是"全年龄适宜"——1968 年的分级标准和今天不一样</td></tr>
+      <tr><td>状态</td><td><strong>不要在困的时候打开。</strong>它的沉默不是催眠曲，但它确实需要你主动把注意力交出去。<strong>最合适的时间是你能安静两小时的一段整块时间</strong></td></tr>
+    </table>
+    <div class="ver">
+      <strong>一个办法（这条很实用）：</strong>不要带着"看懂"这个目标进场，带着"我今天晚上被带去了哪儿"进场。<br><br>
+      前 25 分钟几乎没有人说话，你会想快进——<strong>别快进，那一段是全片最贵的一段。</strong>熬过它之后你会进入一个不同的节奏，而那个节奏一旦建立起来，剩下的路会自己走。<br><br>
+      如果你看到最后十分钟觉得"就这？"——先别下结论。<strong>这部片的收尾方式不是给答案，是把问题换了一个尺寸。</strong>你可以隔一周再回头想，很多人是在第三次想想的这个意义上改口的。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>留给你三道题</h2>
+    <div class="ask">
+      <small>第一层</small>
+      先诚实回答：<strong>你打算用"看懂"这个标准来要求它吗？</strong><br><br>
+      如果是，你几乎一定会失望——因为没人给标准答案，连导演都不给。那么问题来了：<strong>既然"看懂"这条路走不通，你打算用什么来衡量这两个多小时值不值？</strong>试着想出一个替代品，然后再开始看。
+    </div>
+    <div class="ask">
+      <small>第二层</small>
+      <strong>哈尔是这部片里最有温度的角色吗？</strong>请指认一场具体的戏作为你的证据。<br><br>
+      如果你的答案是有——那到底是哈尔有情感，还是<strong>你需要它有情感</strong>？一个从不出现在画面里、只靠一道声音存在的东西，为什么会成为这部片最让人记得住的部分？它比那些真人角色更让你难受，这件事本身说明了什么？
+    </div>
+    <div class="ask">
+      <small>第三层</small>
+      480 位导演把它投成影史第一；近 80 万普通观众把它排在 TOP250 的第 90–104 位；年轻影迷把它排到 245 位。<br><br>
+      <strong>谁更该被相信？</strong><br><br>
+      再往前一步问：<strong>如果"最好的电影"其实是拍电影的人选出来的，那么这个头衔到底是颁给谁的？</strong><br><br>
+      最后留一道更难的总题：1968 年的职业影评人几乎集体打错，今天的职业影评几乎集体捧它——<strong>既然前后是同一个职业群体，你凭什么相信你现在读到的这一版，就不是将来会被推翻的那一版？</strong>
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 18 期 · 2026-10-23<br>
+    评分数据为本次实时检索所得，各平台口径不同，已标注取值范围
+  </div>
+
+</div>
+</body>
+</html>

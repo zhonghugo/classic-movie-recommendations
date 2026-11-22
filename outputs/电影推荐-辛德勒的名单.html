@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 辛德勒的名单</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#e8b44c; --acc2:#6fa3bd; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 27 期</div>
+  <h1>辛德勒的名单</h1>
+  <div class="en">Schindler's List (1993) &nbsp;·&nbsp; 史蒂文·斯皮尔伯格 &nbsp;·&nbsp; 港译《舒特拉的名单》</div>
+  <div class="meta">
+    <span>美国 / 环球</span><span>斯皮尔伯格</span><span>剧情 · 历史 · 战争</span>
+    <span>195 分钟</span><span>黑白（局部色彩）</span><span>英语 / 德语 / 波兰语 / 希伯来语</span>
+    <span>1993-11-30 华盛顿首映 · 1994-02-04 美国公映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.5</b><small>豆瓣 · 约 125–126 万人</small></div>
+    <div class="score"><b>9.0</b><small>IMDb · 约 154–159 万票</small></div>
+    <div class="score"><b>98%</b><small>烂番茄专业 · 128–137 评</small></div>
+    <div class="score"><b>94–95</b><small>Metacritic · 26–30 评</small></div>
+    <div class="score"><b>97%</b><small>烂番茄观众</small></div>
+    <div class="score"><b>7 座</b><small>奥斯卡 · 12 提 7 中</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.5（2026-10-16 快照 1,263,643 人，另有源记 1,250,866 人，TOP250 第 11 位）；IMDb 9.0（各源 1,541,224–1,590,130 票，长期稳居 TOP250 前十）；烂番茄专业 98%（各源 128–137 评，均分 9.2/10），观众 97%；Metacritic 94–95（各快照 26–30 条影评）；CinemaScore A+（该量表最高档）。<br>
+    选片线：豆瓣 9.5、IMDb 9.0 <strong>双达标</strong>，且是高得毫无悬念的那种——IMDb 9.0 与第 2 期《十二怒汉》、第 10 期《黑暗骑士》并列本系列最高；豆瓣 9.5 与第 6 期《美丽人生》、第 11 期《阿甘正传》持平，仅低于第 12 期《霸王别姬》的 9.6。<strong>按第 16 期的纪律，烂番茄 ≥95% 必须同时写出 Metacritic 的条数：98% 的专业分背后只有 26–30 条影评——大样本的观众分、小样本的专业分，这次两边方向一致。</strong>再按第 24 期固化的检查项问一句「这个分数是当场的还是追认的」：那二十几条影评几乎全部写于 1993–94 年，是<strong>当场结论</strong>，与《后窗》的几十年追认正好反向；而豆瓣那一百二十五万人，是三十年里陆续补的票。两个时间方向的分数终于不吵架了——所以今天篇幅不浪费在分数上。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（这一次防的是「年表」和「过程」）</h2>
+    <p>先说清楚一件别的片没有的事：<strong>这部片的「结局」在历史课本里，你早就知道了</strong>——战争会结束，1945 年。所以它防不住、也不用防结局。它真正不可替代、也真正怕被拿走的东西有两样：<strong>一是「过程」</strong>——具体的人怎么一寸一寸穿过那几年，这是任何简介、任何解说、任何百科词条都替你看完就扔掉的部分；<strong>二是「年表」</strong>——它是真人真事，而那几个真人的生平是公开的，搜一句「原型后来怎么样了」，出来的东西会替你把后半程讲完，还附赠影片没拍的后记。这是第 26 期记下的第 10 档「防年表」的第二次启用，今天与「防过程」叠在同一部片上。</p>
+    <ul>
+      <li><strong>第一类：检索词雷（第 6 次启用，而且第 22 期就提前预警过）。</strong>「辛德勒的名单」与《钢琴家》（2002，波兰斯基）、第 22 期推过的《钢琴课》在中文语境里极易混搜——更巧的是，<strong>拒拍过今天这部的那位导演，后来自己拍的就是《钢琴家》</strong>（细节在批评版块）。认准四件事：<strong>1993 年、黑白、连姆·尼森 + 拉尔夫·费因斯 + 本·金斯利、195 分钟。</strong></li>
+      <li><strong>第二类：中文百科与影视站的「剧情简介」字段（第八类，剧透浓度本系列罕见地高）。</strong>官方简介的习惯写法是一路写到片名那件东西出现之后的所有事——从「他做了什么」一直写到「代价是什么」，那已经是全片的脊柱，不是前提。<strong>按本系列纪律，只说它到哪停，不复述它写了什么。</strong>别点开任何「剧情介绍」。</li>
+      <li><strong>第三类：「推荐 / 安利类」长文（第十三类，本次查资料再次亲历）。</strong>一篇打着「经典推荐」旗号的图文，把全片最著名的那两笔直接印了出来，一笔是画面、一笔是台词——都在后半程。<strong>按本系列纪律，我只说它写到哪，不复述它写了什么。</strong>凡是标题里带「解析」「感动」「深度」的，一律绕开。</li>
+      <li><strong>第四类：原型人物的年表与历史照片（第 17 类「先于影片存在的纪实文本」的加强版）。</strong>片中主要角色几乎全部实有其人，他们的战后、审判、葬礼都有公开资料。<strong>搜任何一个真实人名，都等于把影片没拍的部分先看完。</strong></li>
+      <li><strong>第五类：红衣女孩。</strong>海报上就有她——「黑白中的一抹红」是这部片公开的视觉签名，知道她存在是安全的。但<strong>她另一次出现在哪里、意味着什么，是全片被引用最多的一笔</strong>，别拿她当检索词。</li>
+      <li><strong>第六类：「几分钟看完」与解说视频（第九类）。</strong>对这一部尤其致命：三小时的过程被压成十分钟的结果，恰恰只留下红线要防的那部分。</li>
+    </ul>
+    <p>安全区划给你（这些全是海报、预告与官方简介前两行就交代完的前提）：<strong>1939 年，德占波兰，克拉科夫。一个德国商人来到这座城市，他来是为了发战争财的：酒、女人、关系网、军队订单，他样样在行。犹太劳工是全城最便宜的劳力，他的搪瓷厂因此开了起来；替他管账的，是一个话不多、看得远的会计。他八面玲珑、进退得体，是标准的机会主义者——不是英雄，也没打算当英雄。直到有一天，他骑马站在山坡上，看着山下的城市。</strong></p>
+    <div class="ver">我们停在这里。往下的部分一个字不写：他在山坡上看见了什么、之后做了哪些决定、那份名单是怎么来的、代价是什么、最后一场戏、片尾字幕前的那几分钟。你可以只带一个词进场：<strong>过程。</strong></div>
+  </div>
+
+  <div class="card">
+    <h2>两件先说清楚的事</h2>
+    <p><strong>第一件：1993 年的一桌牌，今天凑齐了。</strong>第 12 期《霸王别姬》（10-17）、第 22 期《钢琴课》（10-28）、今天这一部——<strong>同一年出品的三部片，前两部是同届戛纳并列金棕榈</strong>（第 22 期专门写过那次「并列」），而今天这部，是 1994 年 3 月 21 日第 66 届奥斯卡上把两部都压过去的那一部。本系列用 27 期、跨三个推荐日，才把 1993 年这一桌牌发完——这大概不是设计出来的，但桌上的牌确实齐了。</p>
+    <p><strong>第二件：台账里埋过的伏笔，今天一口气兑现了四句。</strong>① 第 20 期《窃听风暴》批评版块里，克纳贝那句反驳举的例子正是今天这部；② 第 22 期写过「坎皮恩的最佳导演输给了《辛德勒的名单》的斯皮尔伯格」；③ 第 25 期黑白最佳影片谱系里，「33 年后才等到的下一部」就是它；④ 第 22 期检索词雷预警里点名的那部《钢琴家》，源头也在这部片身上。<strong>这是本系列 27 期里被引用最多、却从未出场的一部——被引用了四次的东西，今天终于自己出场。</strong></p>
+    <div class="quote">
+      世上曾有辛德勒，但从未有过维瑟勒。（There was a Schindler. There was no Wiesler.）
+      <em>——第 20 期那位拒绝借场地的纪念馆馆长，用来反驳《窃听风暴》的那句话；他举的「有原型的善」，等了七期才在这个系列里出场</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>1994 年 3 月 21 日晚上的节目单</h2>
+    <p>第 25 期做过「三个法庭先后开庭」，第 26 期做过「同一年四套系统同时判卷」——今天的框架跟两者都不一样：<strong>同一晚、同一套系统、同一年出品的三部片互为对手，命运在同一张节目单上被一次写完。</strong>这不是时间差，也不是不同系统，是同一场考试里的同届考生。</p>
+    <table>
+      <tr><th>影片（均为 1993）</th><th>本系列</th><th>第 66 届奥斯卡</th><th>结果</th></tr>
+      <tr><td>辛德勒的名单</td><td>第 27 期</td><td><strong>12 提 7 中</strong></td><td>影片 · 导演 · 改编剧本 · 摄影 · 剪辑 · 艺术指导 · 配乐</td></tr>
+      <tr><td>钢琴课</td><td>第 22 期</td><td>8 提 3 中</td><td>影后 · 女配 · 原创剧本带回；<strong>最佳影片与最佳导演输给本片</strong></td></tr>
+      <tr><td>霸王别姬</td><td>第 12 期</td><td>2 提 0 中</td><td>外语片输给《四千金情人》；<strong>摄影（顾长卫）输给本片</strong></td></tr>
+      <tr><td>侏罗纪公园</td><td>——</td><td>3 座</td><td>视效 · 音效剪辑 · 音响——<strong>音响那一座，正是从本片手里拿走的</strong></td></tr>
+    </table>
+    <p>这张表有两行值得单独盯住。<strong>第一行：最佳摄影的五部提名里，「辛德勒的名单」「霸王别姬」「钢琴课」三部同榜</strong>——本系列前后推过的三部 1993 片，在同一张技术提名单上并排坐着，拿走奖的是卡明斯基。<strong>第二行：音响那一座，是斯皮尔伯格用《侏罗纪公园》从斯皮尔伯格的《辛德勒的名单》手里拿走的</strong>——同一个导演、同一个晚上、十座小金人，两部风格处在两个星球上的电影。顺带一个跨期注脚：那一晚的最佳男主角是汤姆·汉克斯（《费城故事》）——第 11 期写过他至今是最后一位连庄影帝，<strong>那两座的第一座，踩的正是本片男主的提名。</strong></p>
+    <p>还有一层是第 25 期留下的话头：<strong>黑白最佳影片的谱系里，《桃色公寓》（1960）之后等了 33 年的那一部，就是它</strong>——而《钢琴课》的摄影当年在洛杉矶影评人协会与它并列夺魁。1993 年的这三部片彼此之间，几乎每一根奖项线都互相咬着。同一桌牌，发牌的却只是 1994 年 3 月 21 日晚上的学院——<strong>三部片的影史地位，从那一晚起就互为对方的注脚，谁也没法单独成立。</strong></p>
+    <div class="quote">
+      12 提 7 中、8 提 3 中、2 提 0 中——同一晚、同一批选民、同一年出品的三部片。三十年后，豆瓣把最高的分给了第 12 期那部，IMDb 把前十的位置给了今天这部。
+      <em>——「谁赢」从来是那一晚的事；「谁是经典」是之后三十年的事，两张答案不一样</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点在哪（这部分不剧透，放心看）</h2>
+    <ul>
+      <li><strong>黑白不是怀旧，是立场。</strong>斯皮尔伯格起初想用波兰语和德语拍、配英文字幕，后来作罢；黑白加手持摄影的决定保留了下来，为的是<strong>「纪录片的即视感」</strong>。全片成本约 2200 万美元——只有他同年《侏罗纪公园》的三分之一左右，而他在波兰拍这部的同时、还在用卫星电话跟加州的剪辑团队过《侏罗纪公园》的粗剪。<strong>两部电影背靠背，一个人的 1993 年。</strong></li>
+      <li><strong>实景与克制的两条硬规矩。</strong>克拉科夫实景拍摄；他拿到了进奥斯维辛内部拍摄的许可，但<strong>拒绝了，出于对逝者的尊重</strong>——相关场景在营地大门外按镜像搭景完成。全片没有一个为奇观服务的镜头，这在一位以奇观起家的导演手里，本身就是一个值得注意的事实。</li>
+      <li><strong>一抹红。</strong>整部黑白里唯一的颜色元素，出现在海报上，也在片子里。它的作用无法用一句话转述——转述本身就是剧透。只能说：看完你会明白为什么它成了电影史上被引用最频繁的一笔之一。</li>
+      <li><strong>表演是三个方向的角力。</strong>尼森的投机者、金斯利的会计、费因斯的指挥官——最后那位获得了奥斯卡与 BAFTA 的男配角提名（BAFTA 获奖）。有一个影片外的事实比任何影评都重：幸存者米拉·普费弗伯格在片场被介绍给费因斯时，<strong>浑身发抖——他让她想起了那个真人</strong>。制片人布兰科·卢斯蒂格本人就是集中营幸存者，他领奥斯卡那晚，<strong>在台上背出了自己的编号 A3317</strong>。</li>
+      <li><strong>转变没有开关。</strong>同类故事最省力的写法是给主角一个「顿悟瞬间」，本片拒绝这么做——它的转变是缓慢的、可争论的、没有一个镜头宣布「就是这里」。这不是缺点，是设计：<strong>它把「人为什么会变好」这个问题的答案，从台词里挪到了你的观看里。</strong>（这正是下面第二道题的由来。）</li>
+      <li><strong>配乐知道自己站在哪里。</strong>约翰·威廉姆斯作曲，伊扎克·帕尔曼拉那段小提琴主题。威廉姆斯初剪时对斯皮尔伯格说，这片子太重了，<strong>他不配给它配乐——配得上的人都已经不在了</strong>。最后他配了，拿了那座奥斯卡。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评：这一次，把批评者的下一步也摆上桌</h2>
+    <p>前 26 期用过十种表态法。今天用第十一种，也是第一次用：<strong>不替任何一方裁决，而是把每条批评还原成「说这话的人，接下来自己做了什么」——让行为作证。</strong>这部片的批评名单，恰好是本系列里最豪华的一桌，而且每个人批评完，都用行动补了一句。</p>
+    <ul>
+      <li><strong>克洛德·朗兹曼</strong>，九个半小时纪录片《浩劫》的导演，说它是<strong>「庸俗的情节剧」、对历史真相的「变形」</strong>；他说<strong>「虚构是一种僭越，我深信对大屠杀存在一道再现的禁令」</strong>，还嫌它<strong>「以德国人的视角看这一切——世界整个颠倒了过来」</strong>，并留下一句重话：「我以为《浩劫》之后，有些事不会再有人做了。斯皮尔伯格做了。」<strong>他的下一步：拍《浩劫》本身——九小时，不用一帧档案影像，不做任何再现，只有证人的脸和声音。</strong>他与今天这部，是同一个问题——「大屠杀能不能被虚构拍出来」——的恰好相反的两个都成立的答案。</li>
+      <li><strong>斯坦利·库布里克</strong>（第 18 期那位）的话经编剧拉法埃尔转述：<strong>「你觉得那是关于大屠杀？那是关于成功。大屠杀是六百万人被杀，《辛德勒的名单》是六百个人没死。」</strong><strong>他的下一步：放弃了自己筹备多年的大屠杀题材项目《雅利安文件》</strong>——普遍的报道都认为，是因为这个题材「已经被拍掉了」。挖苦归挖苦，行动是最诚实的评价。</li>
+      <li><strong>迈克尔·哈内克</strong>批评片中一处「不确定性」的悬念设计，说这种手法<strong>「只有对美国那样天真的观众才行得通……斯皮尔伯格是好意，但很蠢」</strong>。这条批评指向的具体场景我不写——写了就是剧透，按第 20 期定下的规矩，宁可整条模糊化，也不把内容带出来。</li>
+      <li><strong>罗曼·波兰斯基</strong>拒绝过执导本片，理由是<strong>「太私人了」</strong>——他八岁前就住在克拉科夫隔都，清场那天逃了出去，母亲后来死在奥斯维辛。他后来说：「我不可能像斯皮尔伯格那样客观。」<strong>他的下一步：2002 年自己拍了《钢琴家》。</strong>——也就是你在搜索框里最容易把今天这部搜错成的那一部。</li>
+      <li><strong>另一端站着比利·怀尔德</strong>（上上期的那位）。他给斯皮尔伯格写了一封信：<strong>「他们不可能找到更合适的人。这部电影是绝对的完美。」</strong>同一个行业、同一年份里，「绝对的完美」与「存在一道禁令」同时成立——这就是 1993–94 年好莱坞批评光谱的真实宽度。另有一位幸存者出身的诺奖作家，嫌它最后收得太温柔、漏掉了幸存者真正的后半生；还有波兰斯基之外第二个被问过要不要执导、看完又还回来的斯科塞斯。</li>
+    </ul>
+    <p>我的表态只有一条，而且不是反驳，是并排放着的一个事实：<strong>斯皮尔伯格没有拿这部片的一分钱片酬</strong>——他说那会是「血钱」——版权收益全部注入他随后创立的基金会，<strong>至今录下超过五万份幸存者的影像证言</strong>。朗兹曼说虚构是僭越，针对的是形式本身；而这五万份证言，是这个星球上最不虚构的东西——<strong>它是用一部虚构电影换来的。</strong>禁令与完美可以同席而坐，僭越与档案也可以。我不裁决；我把这一桌的座位表抄给你。</p>
+    <div class="quote">
+      「大屠杀是六百万人被杀，《辛德勒的名单》是六百个人没死。」——说这话的人，随后放弃了自己那部大屠杀电影；说「存在一道再现禁令」的人，用九年拍出九小时不再现的证言；说「绝对的完美」的人，自己就是从那场战争的欧洲走出来的。
+      <em>——同一个问题，四个导演，四种活出来的答案；今天这部是问题本身</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>为什么今天值得看</h2>
+    <ul>
+      <li><strong>门槛与上一期正面掉头，这个系列需要这样的一期。</strong>上期是 112 分钟的彩色现代喜剧、全系列最好进入的档位；今天是 195 分钟的黑白历史片，进入成本回到第 18 期那一档。<strong>沿用第 8 期立下的情绪门槛提示：状态不好的日子，改天再看——这部片不会跑，它已经等了三十三年。</strong>但请别因为重就永远排不上：它的三小时几乎不浪费，好莱坞最会讲故事的人，把他最克制的一部留给了最难讲的一件事。</li>
+      <li><strong>你知道结局，但不知道过程——这正是看它的唯一理由。</strong>历史课本替你防了剧透，也替太多人省掉了观看。这部片的所有价值都在红线框里那个词里：<strong>具体的人怎么一寸一寸穿过那几年。</strong>结局属于历史，过程只属于坐满那三小时的观众。</li>
+      <li><strong>它是「虚构与纪实」之争的正中心。</strong>朗兹曼的禁令、库布里克的挖苦、波兰斯基的回避、斯皮尔伯格的黑白加手持——看完这一部，你会对这场三十年的争论产生自己的、谁也没法替你持有的立场。这个问题在今天比在 1993 年更值得想：当亲历者越来越少，替后人保管这段记忆的，该是档案还是故事？</li>
+      <li><strong>与第 6 期《美丽人生》是同题的两种解法。</strong>同一段历史、同样面对「该不该这么拍」的指控：意大利那位父亲用喜剧护住一个孩子，美国这位导演用伪纪录片护住一千两百个名字。两部都被骂过「消费苦难」，两部都留了下来。隔了 21 期对读，两边都更清楚了。</li>
+      <li><strong>三个可以带着进场的观影任务。</strong>① 找出「他变了」的那个确切瞬间——找不到也算数，想想找不到是因为拍漏了还是故意不给；② 留意钱在哪些人之间流动——全片几乎每个关键动作背后都是一笔交易，这是它写「投机者如何救人」的语法；③ 注意片名那件东西真正出现之前，你已经跟着等了多久。</li>
+      <li><strong>版本上不用挑。</strong>各平台通行版一律 195 分钟，2018 年 25 周年 4K 修复重映也是同一切，<strong>没有删减版、没有导演剪辑版之争</strong>——这是继第 22、23、24、25、26 期之后第六次「无陷阱」，与四次删减陷阱的比分变成 6:4。唯一要避开的不是版本，是任何时长的「看完版」。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>留给你三道题</h2>
+    <div class="ask">
+      <small>第一题 · 看之前先回答</small>
+      一个发战争财的人，后来救了一千两百个人。你觉得<strong>「动机不纯的善」算不算善？</strong>先别急着答，再往下想一层：<strong>如果他的动机从头到尾就没有「变纯」过呢？</strong>——这部片没给他安排忏悔，没给他安排顿悟。带着你的答案进场，看它撑不撑得住三个小时。
+    </div>
+    <div class="ask">
+      <small>第二题 · 看的时候指认一个瞬间</small>
+      找出让你确定<strong>「这个人变了」</strong>的确切瞬间——说清楚是哪一场、他做了什么。<br>如果指认不出来：<strong>把「指认不出来」当成一条数据，别当成没看懂。</strong>然后回答第二层：一部拒绝给出开关的电影，是在为难你，还是在拒绝骗你？——对照第 26 期那道「护工为自己做了什么」的题：那一次要你找一个动作，这一次要你找一个转变，<strong>两道题都找不到答案的时候，哪一次的「找不到」更接近导演的本意？</strong>
+    </div>
+    <div class="ask">
+      <small>第三题 · 和前面四期一起回答</small>
+      同一道题，四个导演用一生给了四个答案：朗兹曼拍九小时不再现的证言；波兰斯基拒拍、九年后拍了自己的那一部；库布里克干脆放弃；斯皮尔伯格拍了今天这部，分文未取。<br>现在轮到你：<strong>你愿意让虚构替你保管这段历史吗？</strong>——先别答「愿意」或「不愿意」，先回答前置的那半题：<strong>如果答案是「不让」，那五万份证言之外的部分，交给谁？</strong>这个问题没有标准答案，但它值得你用三小时换一次独立作答的机会。
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 27 期 &nbsp;|&nbsp; 1993 · 美国 · 195 分钟 · 黑白（局部色彩）· 英语 / 德语 / 波兰语 / 希伯来语<br>
+    观看建议：任何平台 195 分钟通行版即可，无删减版本问题；认准 1993 年黑白版（尼森 + 费因斯 + 金斯利），不要误搜成 2002 年《钢琴家》或第 22 期的《钢琴课》。情绪门槛：状态不好的日子改天看。<br>
+    看之前：不点预告，不查剧情简介，不看「几分钟看完」，不搜原型人物生平与年表，不搜红衣女孩，不读任何「解析」——这一部的敌人不是结局，是被跳过的过程。
+  </div>
+
+</div>
+</body>
+</html>

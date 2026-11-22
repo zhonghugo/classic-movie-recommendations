@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 东京物语</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 34 期</div>
+  <h1>东京物语</h1>
+  <div class="en">東京物語 / Tokyo Story（1953）&nbsp;·&nbsp; 小津安二郎 导演 &nbsp;·&nbsp; 松竹大船制片厂 · 小津第 46 部导演作品</div>
+  <div class="meta">
+    <span>日本</span><span>松竹</span><span>剧情 · 家庭</span>
+    <span>136 分钟</span><span>黑白</span><span>1953-11-03 日本上映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.1</b><small>豆瓣 · 约 15 万人</small></div>
+    <div class="score"><b>8.1</b><small>IMDb · 约 7.9 万票</small></div>
+    <div class="score"><b>100%</b><small>烂番茄专业 · 49 评</small></div>
+    <div class="score"><b>100</b><small>Metacritic</small></div>
+    <div class="score"><b>第 1</b><small>视与听 2012 导演榜</small></div>
+    <div class="score"><b>第 1</b><small>电影旬报影史百佳 · 两次</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.1（约 15 万人，豆瓣「评分最高家庭片」第 2 位，2026-11 快照）；IMDb 8.1（约 7.9 万票，IMDb Top 250 名列第 221 位左右）；烂番茄专业 100%（49 评）；Metacritic 100（老片回溯性评分，样本较少）。<br>
+    选片线：豆瓣 9.1 达标（线为「豆瓣 ≥ 8.8 或 IMDb ≥ 8.3」），IMDb 8.1 偏低但属于 1953 年黑白日语片的正常水位，且 7.9 万票的样本量在同年代片里已属罕见。<strong>专业侧则是一边倒的满贯：Metacritic 100 是本系列第三次（前两次＝第 5 期教父、第 24 期后窗），烂番茄 100% 也是系列第三个专业满分（前两次＝第 16 期七武士、第 28 期控方证人）。</strong>豆瓣比 IMDb 高 1.0，是本系列「东高西低」第 4 次——但对这部片，西方影评界恰恰是它最铁的支持者，所以这次的落差不在专业层，只在大众层。<br>
+    <strong>昨天（第 33 期）是全系列最热闹、节奏最快、最好进入的一部；今天是全系列最静、最慢、事件最少的一部。</strong>台账在第 33 期后写明「第 34 期可重新加重或换气质」——本期两个都做了：从 108 分钟的彩色喜剧动画，换到 136 分钟的黑白家庭剧。日本片第五次进入本系列，但前四次的角度（罗生门的真相、七武士的集体、用心棒的策略、千与千寻的奇幻）都用过了，<strong>本期是第五个角度：日常。</strong>顺带一提，11 月 3 日它刚过 73 周岁生日。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（第 12 档「防『那件事』＋防最后一场戏」）</h2>
+    <p>这部片没有反转、没有谜底、没有凶手，它的可泄露物只有两样：<strong>老夫妇回家之后发生的那件事</strong>，以及<strong>最后一场戏与最后一句台词</strong>。全片 136 分钟里，前八十分钟是「一次探望」，后五十分钟是另一部电影——分界线就是回家。<strong>所有的简介、解析、盘点，几乎都会越过这条线。</strong></p>
+    <ul>
+      <li><strong>第一类：中文百科的「剧情简介」（第八类，又是极端案例）。</strong>实测多个中文百科条目的梗概一路写到结尾画面为止，比本片真正的悬念坦白得多。<strong>看演职人员表可以，剧情栏一个字别点。</strong></li>
+      <li><strong>第二类：照搬式翻拍片的简介（第五类，第 2 次启用）。</strong>2013 年山田洋次（《寅次郎的故事》导演）拍了翻拍版《东京家族》，故事结构与本片一一对位——<strong>读它的任何一条简介，等于把本片后半段的结构提前拆开</strong>。这是本期最危险的一个搜索词，红线框最后一条会再讲。</li>
+      <li><strong>第三类：名场面与台词盘点（第九、二十一类）。</strong>本片最后一场戏被截成「日系美学」素材传播了很多年，配乐版、摄影版、混剪版都有。<strong>那场戏的一个镜头就能泄露它的落点。</strong></li>
+      <li><strong>第四类：影史榜单安利文（第十三类）。</strong>「影史第一梯队」的每一篇安利长文，为了证明它伟大，几乎都要举例说明它如何收尾——这篇推荐不会。</li>
+      <li><strong>第五类：检索词雷（第 10 次启用）。</strong>本片又名《东京故事》；小津自己还有《东京之宿》（1935）、《东京暮色》（1957）；山田洋次的翻拍版叫《东京家族》（2013）——<strong>四个片名只差两个字，其中《东京家族》的简介就是本片的剧透</strong>。搜索请用「东京物语 1953」或「Tokyo Story Ozu」。</li>
+    </ul>
+    <p>安全区划给你（这些是开场二十分钟和各类前提级信息就交代完的）：<strong>一对住在尾道海边的老夫妇，儿女都已成家：大儿子在东京开业当医生，二女儿在东京开美容院，三儿子在大阪，身边只有未出嫁的小女儿和守寡的二儿媳纪子。老两口坐上一整天的火车去东京看孩子。到了才发现，儿女们都很忙——忙到孙辈对爷爷奶奶几乎陌生，忙到女儿想出一个两全的办法：送他们去热海泡温泉。整座东京，只有纪子——和他们没有血缘关系的年轻寡妇——请了假，抽出一个下午陪他们。前后不到十天，老两口踏上了回家的火车。</strong></p>
+    <div class="ver">我们停在这里。回家之后发生了什么、每个人后来怎么样、最后一场戏演了什么、那句台词说了什么——一个字不写。<strong>这部片的观看契约是：它用八十分钟教会你它的节奏，是为了让后面五十分钟在同样的节奏里落下完全不同的重量。提前知道落点的人，会损失大半。</strong></div>
+  </div>
+
+  <div class="card">
+    <h2>三件先说清楚的事</h2>
+    <p><strong>第一件：它可能是影史上地位最高的「无事电影」，而这份地位几乎全是死后给的。</strong>英国《视与听》十年一度的影史百大，它 1992 年影评人榜第 3、2002 年第 5、2012 年第 3、2022 年第 4——四十年纹丝不动地钉在第一梯队；更狠的是 <strong>2012 年的导演榜上它是第 1 名：358 位各国导演把它选为影史第一</strong>（2022 年导演榜第 4）。日本《电影旬报》这边的故事更刺眼：<strong>1953 年它只排在年度十佳第 2 位；到了 1995 年电影诞生百年评选、2009 年影史百佳评选，它两次被选为日本影史第一。</strong>而它在自己的时代几乎没被世界看见——美国直到 1964 年才正式发行此片，那时小津已经去世；它拿到第一个重要海外奖（伦敦电影节萨瑟兰奖）是在 1958 年，离上映已过去五年。<strong>一句话：它的一切名次，都是后来的人一遍一遍看出来的。</strong></p>
+    <p>顺手把一张表摆给你——<strong>《视与听》2022 年影评人榜前 20 名里，有四部是本系列推荐过的</strong>：</p>
+    <table>
+      <tr><th>名次</th><th>影片</th><th>本系列期次</th></tr>
+      <tr><td>第 4</td><td>东京物语</td><td><strong>本期（第 34 期）</strong></td></tr>
+      <tr><td>第 6</td><td>2001 太空漫游</td><td>第 18 期</td></tr>
+      <tr><td>第 12</td><td>教父</td><td>第 5 期</td></tr>
+      <tr><td>第 20</td><td>七武士</td><td>第 16 期</td></tr>
+    </table>
+    <p>再补一条：BBC 2018 年邀请 43 国 209 位影评人选「百大非英语电影」，第一名是第 16 期的七武士，<strong>第三名就是本片</strong>。这个系列推着推着，正在和这份名单慢慢重合——顺带说一句，那份《视与听》榜单的第 5 名是《花样年华》，华语线 12 月解禁，先记在这。</p>
+
+    <p><strong>第二件：它的「静」不是气质，是一整套语法——而且是为这部片的内容量身定制的。</strong>小津把摄影机放在榻榻米上跪坐的人的眼睛那么高（约一米上下），全片几乎不移动、不推拉；为了这个机位，松竹的布景必须连天花板一起搭出来。他和老搭档野田高梧在茅崎的一家乡村旅馆里住了 103 天写完剧本，然后只用四个月就拍完全片；摄影是厚田雄春，合作了整整一生的老搭档。剪辑上他大量使用「空镜」——晾衣绳、烟囱、码头、驶过的火车——让这些没有人的镜头替观众呼吸。所有这些安排指向同一件事：<strong>这部片的主角不是任何一个人，是时间本身。机器不动，因为时间不动；机器不催，因为小津不打算替你流泪。</strong>还有一个片外的注脚，放在这里正合适：小津安二郎生于 1903 年 12 月 12 日，死于 1963 年 12 月 12 日——整整六十年，同一天。他葬在镰仓圆觉寺，墓碑上只有一个字：<strong>「無」</strong>。一个把「无事」拍成一生事业的人，给自己刻了这样一个句号。</p>
+
+    <p><strong>第三件：这是一个走了三个年代、三种解法的故事——而它的最佳人选，把它永远留在了 1962 年。</strong>故事的源头是一部好莱坞片：1937 年利奥·麦卡雷（《鸭汤》《爱情无计》的导演）拍了《为明天让路》，讲一对老父母被子女们推来推去——大萧条年代的美国没人想看，票房惨败。小津本人没有看过这部片，<strong>看过并转述给他的是编剧野田高梧</strong>；小津拿走了这个骨架，把美国的煽情全部拆掉，换上日本的尾道、东京和一列一列的火车。2013 年，山田洋次又把它翻回日本现代，就是上文红线里那位《东京家族》。但这个链条里最动人的不是电影，是人：<strong>片中那个全东京唯一请假陪老人的纪子，由原节子扮演。</strong>她和小津合作了六部片，被称作「纪子三部曲」的《晚春》《麦秋》《东京物语》是她的巅峰。1962 年，42 岁、演完第 100 多部电影的她在巅峰期息影，从此拒绝一切采访与露面；1963 年小津去世，她在守夜时签下的是本名「会田昌江」——那是她最后一次出现在公众视野。此后她在镰仓隐居了半个多世纪，据说每年小津忌日都去墓前放一支玫瑰；2015 年 9 月 5 日去世，享年 95 岁，消息在近三个月后才由家人公布。<strong>关于她，小津说过一句话，本期当引语用：</strong></p>
+    <div class="quote">
+      我拍了二十多年的电影，像原节子那样能够深入理解角色并展现精湛演技的女演员非常罕见。我认为她是日本最好的电影女星。
+      <em>——小津安二郎</em>
+    </div>
+    <p><strong>所以「纪子」成了一个被封存的银幕形象：从 1962 年起，世界上再没有出现过一个新的纪子，也再没有人见过老去的原节子。</strong>这大概是电影史对「留在最好的一刻」最彻底的一次执行。</p>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在（不看剧情也能看懂的四个看点）</h2>
+    <ul>
+      <li><strong>一、摄影机的位置就是这部片的立场。</strong>它放在坐着的老人眼睛的高度——于是站着进来的儿女，在这间屋子里是「俯视」构图的；机器整场不动，人物在框里进出。这不是炫技，是<strong>让「等级」和「耐心」直接长在机位里</strong>。你看的时候留意一件事就够了：<strong>当有人离开房间，小津常常让空房间多停一秒——那一秒，就是他的台词。</strong></li>
+      <li><strong>二、三个层次的表演教科书。</strong>笠智众（演父亲，与小津合作过 54 部片）的「忍」——那种日本老派男性的、把一切都咽下去的笑；东山千荣子（演母亲）把「高兴」演得毫无表演痕迹，你信她真的是第一次进东京；原节子则是「明亮的悲伤」——她笑着的时候你反而心里一沉。<strong>小津的片场以严格著称：一个说「对不起」的镜头可以重来十次。但这套严格的目标是「不要演」。</strong></li>
+      <li><strong>三、剧本的密度。</strong>103 天磨出来的剧本，全片没有一句「解释情绪」的台词——没有人说「我很难过」，难过全部由动作承担：谁多倒了一杯茶、谁在饭桌上多看了一眼、谁说「我送你们去车站」而谁没有。<strong>第 34 期对比第 33 期最有意思的地方就在这：疯狂动物城每一场闲聊都在埋线索（它是侦探片）；这部片每一句寒暄都在干活（它是家庭解剖）。</strong></li>
+      <li><strong>四、时间的形状。</strong>136 分钟里没有一个事件性场面，但你散场时会确切地感到「十天过去了」「一个夏天过去了」「有些事来不及了」。它证明了电影里最贵的东西不是大场面，是<strong>让时间本身显影</strong>的能力——这个能力后来在是枝裕和、侯孝贤、维姆·文德斯那里各自长成了大树，但源头在这里。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p><strong>因为它是关于「来不及」的最诚实的一部。</strong>注意这个设计：全片没有一个坏人。儿女不是不孝，是真的忙；他们的敷衍全是礼貌的、可以理解的、人人都在犯的。正因为它不控诉任何人，<strong>你看的时候才无处可躲——你替那些子女找到的每一个借口，都是你自己未来的样子。</strong>大部分家庭片靠矛盾推进（争吵、决裂、和解），这部片靠的是更吓人的东西：<strong>日常本身。</strong></p>
+    <p><strong>因为它中段有一段对话，四个字就能立住整部片。</strong>婆婆和纪子坐在一起，说起各自的日子，一个说：人生啊，净是些不如意的事。另一个答：</p>
+    <div class="quote">
+      是啊，净是些不如意的事。
+      <em>——片中段对白（约一小时处，婆婆富与纪子）。注意：这不是结局台词，结尾那句比它重得多，我不引。</em>
+    </div>
+    <p><strong>因为它不安慰人。</strong>今天绝大多数电影的功能是安慰：给冲突、给反派、给和解。这部片什么都不给——它只是把十天的事摆在你面前，然后问你打算怎么办。维姆·文德斯（《柏林苍穹下》导演）说过它对自己的意义，本期当核心引语：</p>
+    <div class="quote">
+      That was the first film by Ozu that I saw. It drastically changed my perception of what films could be: not just a description of the physical world but a transcendence of everyday life.
+      <em>——维姆·文德斯。译：那是我看的第一部小津。它彻底改变了我对「电影可以是什么」的理解：电影不只是对物理世界的描述，而是对日常生活的超越。他 2023 年的《完美的日子》里，男主角的名字就叫平山——正是笠智众在本片中的姓。</em>
+    </div>
+    <p><strong>最后一个理由很朴素：它离我们太近了。</strong>1953 年的日本：儿女进东京讨生活，父母留在老家，一年见一次，见面也忙。把这个结构平移到任何一个今天的中国家庭，不改动一个字。<strong>影史第一梯队里没有第二部片，能让你看完当晚就想拿起手机。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>批评版块（三条：一条最常见的、一条最重的、一条最釜底抽薪的，再加我的一条）</h2>
+    <p><strong>第一条（最常见）：它太慢、几乎没有事件。</strong>这是它从 1953 年挨到今天的批评，西方最初接触它时的观感记录里「boring」「too slow」是高频词；今天的一倍速观众重看率也确实不高。<strong>我的表态（沿用本系列第一种：承认＋重新定位）：完全成立，而且这正是它的论点。</strong>这部片拍的就是「被儿女的时间表切碎的十天」——小津把机器放得和坐着的老人一样低，也把节奏放得和他们一样慢。<strong>你嫌它慢的那个感受，就是片中两位主角在儿女家的感受。它不是慢，是把「慢」从缺陷变成了内容。</strong></p>
+    <p><strong>第二条（最重）：纪子被拍成了圣女——女性的忍耐被美学化了。</strong>这条批评在女性主义影评里由来已久：全片唯一无保留的好人是笑着自我牺牲的年轻寡妇，忍耐被拍成美德，而镜头爱她的方式恰是老派的男性凝视。小津研究者佐藤忠男也说过，原节子那种「一本正经的生硬」是被小津当作教养、当作气质加工出来的。<strong>我的表态（沿用第 20 期「两边都留，不做裁决」）：这条站得住，我不辩护。</strong>只补一个观影动作：看的时候留意纪子每次笑的时机，判断那到底是这个角色的幸福，还是这个时代的规训——这个问题影片自己没有回答，留给了你。</p>
+    <p><strong>第三条（最釜底抽薪）：小津一辈子拍的是同一部电影。</strong>嫁女儿、家庭解体、火车站、茶泡饭、酒馆里的老男人——从《晚春》到《秋刀鱼之味》，主题与场面高度重复，这常被当作局限。<strong>我的表态（沿用第 21 期「全盘接受，把缺点当推荐理由」）：完全同意，而且我推荐你就这么看。</strong>把小津六部片当成同一首曲子的六次变奏，你会发现每次变奏都在同一个位置加重半拍——家庭这件乐器上，他是唯一一个摸了一辈子同一个琴键的人。</p>
+    <p><strong>我的一条：它把「来不及」拍成了天气。</strong>这部片最厉害的地方，同时也是最该警惕的地方：<strong>它不指认任何人的责任。</strong>时间到了，人就散了，季节就换了——「无常」被呈现得像自然规律，于是每个观众都能在其中体面地赦免自己。可是那十天里每一次「改天再说」，明明都是一次选择。<strong>它教会你凝视遗憾，却不追问遗憾是被谁一天一天批下来的——这份温柔，看的时候要留一半清醒给它。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>观看建议（本期是第十一次「不用挑版本」，但修复版是刚性要求）</h2>
+    <ul>
+      <li><strong>版本：没有删减陷阱，但请一定选修复版。</strong>片长各源记 135–137 分钟（松竹官方 135 分，IMDb 2 小时 17 分），属口径差异而非删减。<strong>重点在画质：本片原始底片在完成不久后毁于横滨洗印厂的库房大火，当年上映用的就是翻底</strong>——这意味着流通拷贝的代际损耗天然偏大。请选 Criterion（编号 217）或 BFI 的修复版，以及 2018 年戛纳首映的 4K 修复来源。这是本系列第二次提出「修复版刚性建议」（第一次是第 31 期《城市之光》）。</li>
+      <li><strong>请用原速看（第二次，沿用第 29 期）。</strong>台词稀疏、停顿即表演，二倍速会把榻榻米机位抽掉一半的灵魂。</li>
+      <li><strong>情绪门槛提示：第三次正向启用（第 8 期、第 27 期之后）。</strong>这不是可以随手点开的片。如果你最近失去过亲人、或已经很久没回家，挑一个状态好的晚上；<strong>看完想给父母打电话，就当场打——这是这部片预设的使用方式。</strong></li>
+      <li><strong>一个人看，晚上看，别当中饭背景音。</strong>它的音量很低：茶水声、电车声、风声。有旁人在场，你会漏掉一半的信息。</li>
+      <li><strong>字幕：日语原声。</strong>笠智众的表演一半在脸上，配音会抹平他那层「忍」。</li>
+    </ul>
+    <div class="ver">补一句关于灵感的：如果你看完想知道源头，1937 年那部《为明天让路》如今被重新认定为好莱坞被低估的杰作（奥逊·威尔斯说它「能让石头哭出来」）——但请一定先看 1953 年这部，再看 1937 年那部：顺序反了，你会一直在比对，两头都吃亏。</div>
+  </div>
+
+  <div class="card">
+    <h2>带走三个问题（看完再回答）</h2>
+    <div class="ask">
+      <small>第一问 · 进场之前</small>
+      <p>先数一下：<strong>你上一次和父母（或孩子）同桌吃饭、超过一小时、两个人都没看手机，是多久以前？</strong>——不必回答我，把数字记住，再看这部片。它的一半力量，来自你的答案。</p>
+    </div>
+    <div class="ask">
+      <small>第二问 · 散场之后</small>
+      <p>找出最让你想哭的那一场，回去看那台摄影机：<strong>它动了吗？推近了吗？音乐起来了吗？</strong>——大概率没有。那么眼泪是谁安排的？<strong>想明白这一层，你就懂了为什么 358 位导演把它选为影史第一：不是它做了什么，是它忍住没做什么。</strong></p>
+    </div>
+    <div class="ask">
+      <small>第三问 · 跨期对照</small>
+      <p>本系列第 1 期《天堂电影院》，老人把年轻人推出小镇，说「别回来」；第 13 期《海上钢琴师》，1900 站在舷梯上不肯上岸；本期，是被留在尾道的两个老人。<strong>同一列开往大城市的火车，三个座位——父母、留下的、离开的。如果人生只能选一个座位，你选哪个？</strong>这一问没有标准答案，但小津在片子里给过一个：他让你看见每个座位上的人，各自错过了什么。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>数据表（本期口径）</h2>
+    <table>
+      <tr><th>项目</th><th>数据</th></tr>
+      <tr><td>豆瓣</td><td>9.1（约 15 万人，评分最高家庭片第 2 位，2026-11 快照）</td></tr>
+      <tr><td>IMDb</td><td>8.1（约 7.9 万票，Top 250 第 221 位左右）</td></tr>
+      <tr><td>烂番茄 / MC</td><td>专业 100%（49 评）／Metacritic 100（回溯性评分，样本少）</td></tr>
+      <tr><td>视与听影史百大</td><td>影评人榜：1992 第 3 → 2002 第 5 → 2012 第 3 → 2022 第 4；<strong>导演榜 2012 第 1（358 位导演、48 票）</strong>、2022 第 4</td></tr>
+      <tr><td>电影旬报</td><td>1953 年度十佳第 2 位；<strong>1995（百年）与 2009 影史百佳两次第 1</strong></td></tr>
+      <tr><td>BBC 2018</td><td>百大非英语电影第 3 位（209 位影评人投票；第 1 位为七武士）</td></tr>
+      <tr><td>片长 / 制式</td><td>136 分钟（各源 135–137，口径差异）；黑白；松竹大船；小津第 46 部导演作品</td></tr>
+      <tr><td>制作</td><td>剧本：小津安二郎、野田高梧（茅崎旅馆闭关 103 天）；摄影：厚田雄春；拍摄加剪辑共约 4 个月</td></tr>
+      <tr><td>上映与发行</td><td>1953-11-03 日本上映；1958 年获伦敦电影节萨瑟兰奖；美国 1964 年才正式发行（小津 1963-12-12 已逝）</td></tr>
+      <tr><td>版本状况</td><td><strong>原始底片毁于横滨洗印厂库房大火</strong>，上映即用翻底；请选 Criterion（#217）/ BFI / 2018 戛纳 4K 修复版</td></tr>
+      <tr><td>衍生</td><td>灵感源头《为明天让路》（1937，麦卡雷，小津未看过、野田高梧看过并转述）；山田洋次翻拍《东京家族》（2013）</td></tr>
+      <tr><td>主要演员后话</td><td>原节子 1962 年 42 岁息影，1963 年小津葬礼后彻底隐居镰仓，2015-09-05 去世（95 岁，消息近三个月后公布）；笠智众与小津合作 54 部</td></tr>
+    </table>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 34 期 · 2026-11-11<br>
+    评分与榜单均于本次执行时现查，口径差异已逐条标注；本期剧透红线写在中段分界线上——回家之后的一切，不写。
+  </div>
+
+</div>
+</body>
+</html>

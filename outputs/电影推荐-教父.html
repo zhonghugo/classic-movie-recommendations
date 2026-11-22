@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 教父</title>
+<style>
+  :root{
+    --bg:#0f1218; --panel:#171b23; --panel2:#1e232d; --line:#2b313d;
+    --tx:#e8eaf0; --tx2:#a3aab9; --tx3:#71798a;
+    --gold:#e8b64c; --warm:#6fbf9f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:34px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--gold);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--gold);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--gold);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--warm)}
+  .quote{
+    border-left:2px solid var(--warm);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--tx3);line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">今日电影推荐 · 2026-10-10</div>
+  <h1>教父</h1>
+  <div class="en">The Godfather · 1972</div>
+
+  <div class="meta">
+    <span>导演　弗朗西斯·福特·科波拉</span>
+    <span>主演　马龙·白兰度 / 阿尔·帕西诺 / 詹姆斯·凯恩 / 罗伯特·杜瓦尔</span>
+    <span>摄影　戈登·威利斯</span>
+    <span>配乐　尼诺·罗塔</span>
+    <span>类型　剧情 / 犯罪</span>
+    <span>片长　175 分钟</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.3</b><small>豆瓣 · 稳居 TOP250 前列</small></div>
+    <div class="score"><b>9.2</b><small>IMDb · 200 万+ 票 · 第 2 名</small></div>
+    <div class="score"><b>97%</b><small>烂番茄 · 77 位影评人全好评</small></div>
+    <div class="score"><b>100</b><small>Metacritic · 满分</small></div>
+  </div>
+  <div class="note">
+    注：Metacritic 的<strong> 100 分是满分</strong>，专业影评网站给出满分的影片屈指可数；烂番茄 97% 且是 77 条影评「零差评」。
+    这部片和昨天那部恰好相反——<strong>影评人与观众意见高度一致</strong>，几乎没有分歧。
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（无剧透）</h2>
+    <p>故事从一场婚礼开始。阳光、葡萄园、手风琴、跳舞的人群——柯里昂家族嫁女儿，整个纽约一半的人来道贺。</p>
+    <p>就在这片喧闹里，书房门一关，是另一个世界。家族的大家长维托·柯里昂坐在阴影里，一个接一个地接见来客：有人求他摆平麻烦，有人求他一句话。他不谈钱，或者说他不先谈钱。他要的是<strong>尊重和友谊</strong>——往后他需要你的时候，你不能拒绝。这就是他的世界运转的方式，也是这部片子的第一堂启蒙课。</p>
+    <p>时代变了。一桩新生意找上门来，牵涉的数额大到没人能假装看不见。维托拒绝了。拒绝的代价随之而来——而整个家族的秩序，从那一刻开始松动。</p>
+    <p>真正处在故事中心的是<strong>小儿子迈克尔</strong>。他是家里最"干净"的那个：上过大学，打过仗，穿军装出现在婚礼上，带着一个完全不属于这个家庭的女朋友。他反复跟她说同一句话——那不是我的家族的生意，那是<strong>我父亲</strong>的。</p>
+    <p>然后一件事发生了，把他从"局外人"推成了"局内人"。至于是什么事、他是怎么一步步走过去的——这正是这部电影真正要讲的两小时五十分钟，我一个字都不会说。</p>
+    <p>你只需要知道：<strong>这是一部关于"一个人如何变成另一个人"的电影</strong>，而那个变化过程被拍得极其缓慢、极其具体，具体到你每一步都理解他为什么那么做。</p>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在</h2>
+    <ul>
+      <li><strong>开场五分钟，就够写进教科书。</strong>先是一分多钟的纯黑屏，只有配乐。接着镜头推近一个<strong>根本不是主角</strong>的人——一个殡仪馆老板，对着镜头低声讲他女儿的事。当时几乎没有电影敢用配角的特写开场，这是科波拉的主意。这一段定下了全片的调子：权力不是靠喊出来的，是靠别人低声下气求出来的。</li>
+      <li><strong>戈登·威利斯发明了一种"看不清"。 </strong>这位摄影师有个外号叫"黑暗王子"。他给这部片打的是<strong>顶光</strong>——光从头顶压下来，人物的眼窝始终陷在阴影里。你想读懂一个人，本能会去看他的眼睛；而这里你永远看不清他的眼睛。于是你会觉得这个人深不可测。这不是风格炫技，这是<strong>用打光直接写人物</strong>。整部片还铺着一层"奶油黄"的基调，后来无数讲四十年代的电影都在模仿它。</li>
+      <li><strong>马龙·白兰度重新定义了"威严"。</strong>他试镜时往两腮塞了东西、压低嗓音，塑造出那种鼓着腮帮、说话像含着石子的老派教父——低沉、迟缓、从不提高音量。他凭这个角色拿了奥斯卡最佳男主角，然后<strong>拒领</strong>：他派了一位美国原住民女性代表到场，抗议好莱坞对原住民的刻画，本人没有出席。这件事本身就是影史的一部分。</li>
+      <li><strong>阿尔·帕西诺的表演是一条完整的弧线。</strong>派拉蒙当初根本不想要他——太矮、太没名气，差点被换掉。而他在片中完成的是影史上最著名的"渐变"之一：从眼神清澈的年轻人，到最后你几乎认不出是同一个人。<strong>他没在任何一场戏里"表演转变"，他是让转变一节一节地发生</strong>，等你回过神来，已经走完了。这是演员教科书级别的东西。</li>
+      <li><strong>剧本是把小说砍掉一半换来的精度。</strong>科波拉和原著作者马里奥·普佐一起改剧本，砍掉了大量支线。结果是全片几乎没有一句闲话——开场婚礼那场戏里出现的每一个名字、每一句闲聊，后面都会回来。看第二遍时你会发现，这部电影<strong>没有多余的零件</strong>。</li>
+      <li><strong>尼诺·罗塔的配乐，三个音符就能唤起整个柯里昂世界。</strong>那段单簧管主旋律忧郁、迟缓、带一点旧欧洲的味道。它好到什么程度？它同时也成了这部电影最大的争议之一——有人觉得它太旋律化、太煽情。（顺带一提：罗塔当年被提名奥斯卡最佳原创配乐，最后因"部分旋律借用了旧作"被取消资格，那年的提名后来被撤换。）</li>
+      <li><strong>它把黑帮片从"类型片"抬成了"严肃艺术"。</strong>在它之前，黑帮电影基本是枪战和狠话的堆砌。科波拉往里灌进了莎士比亚式的家族悲剧、移民史、美国梦的背面。它不美化暴力——它让你<strong>理解暴力背后的逻辑与代价</strong>，这比单纯的暴力展示要难受得多。</li>
+    </ul>
+    <div class="quote">
+      “我会给他一个无法拒绝的条件。”
+      <em>—— 这句台词后来成了英语世界的常用语。AFI 百年百大电影台词榜第 2 名</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p><strong>四个评分体系，四个都在顶格。</strong>豆瓣 9.3；IMDb 9.2（200 万+ 票，TOP250 第 2）；烂番茄 97% 且 77 条影评零差评；Metacritic <strong>100 分满分</strong>。注意最后这个——Metacritic 给满分的电影一只手数得过来，这意味着<strong>专业影评界对它是"零异议"的</strong>。这和昨天《星际穿越》的情况正好相反：那部是观众爱、影评人保留；这部是<strong>两边都服</strong>。</p>
+    <p><strong>奖项与地位。</strong>第 45 届奥斯卡 11 提 3 中——<strong>最佳影片、最佳男主角、最佳改编剧本</strong>；金球奖拿下最佳剧情片、最佳导演、最佳男主、最佳编剧、最佳配乐五项；英国电影学院奖最佳原创音乐。1990 年入选美国"国家影片登记部"（永久保存，属国家级文化遗产认定）。美国电影学会 AFI 百年百大电影榜<strong>第 2 位</strong>。库布里克说过，它"可能是影史上最伟大的电影，而且毫无疑问拥有最好的卡司"。</p>
+    <p><strong>它是那种"被引太多，反而该亲自看一遍"的电影。</strong>你可能没看过它，但你一定见过别人模仿它——婚礼开场、书房里的交易、那句"无法拒绝的条件"、那段单簧管旋律，全被后来的影视剧抄了五十多年。<strong>看原片最大的乐趣，是发现"原来这些梗在这儿才是完整的"</strong>。这是一种很特别的观影体验：一边看，一边认出几百个出处。</p>
+    <p><strong>它真正讲的不是黑帮，是"继承"。</strong>这是它五十多年不过时的原因。一个父亲想把最好的留给儿子，一个儿子最不想成为的就是父亲——这件事跟西西里、跟枪、跟橄榄油生意都没关系。你完全可以把片中的"家族生意"换成任何一家公司、任何一个家庭、任何一种你会被迫接手的命运，故事依然成立。</p>
+    <p><strong>也说说它的门槛和争议，不粉饰。</strong>① 175 分钟，节奏是<strong>1970 年代的节奏</strong>——大量静止的长镜头、缓慢的对话，习惯了短视频节奏的人前 30 分钟可能会走神，给它一点时间。② 一个长期存在的批评是：它把黑帮<strong>拍得太有尊严、太优雅</strong>了，会让人忘了这些人本质上是罪犯。有意思的是，真实的黑帮成员看完反而深受震撼，觉得"这就是我们的生活"——这恰恰说明它拍得有多说服人。<strong>看的时候不妨带着这个问题：你是在被故事打动，还是在被它说服？</strong></p>
+    <div class="ver">
+      <strong>观看建议：</strong>留出完整的三小时，找个不会被打断的时段。它是<strong>靠细节堆叠</strong>的电影，一旦一边刷手机一边看，那些铺垫就全白费了。
+      不需要任何前置知识，但知道"柯里昂是纽约五大黑帮家族之一"会让你更快进入状态。
+      如果看完觉得意犹未尽——<strong>先停一停，让第一部在脑子里待几天</strong>；它还有续作，同样拿了奥斯卡最佳影片，这在影史上几乎是孤例。
+    </div>
+  </div>
+
+  <div class="foot">
+    本推荐不剧透关键情节 · 已记入推荐台账，后续不重复推荐<br>
+    已推荐：天堂电影院（1988） · 十二怒汉（1957） · 千与千寻（2001） · 星际穿越（2014） · 教父（1972）
+  </div>
+
+</div>
+</body>
+</html>

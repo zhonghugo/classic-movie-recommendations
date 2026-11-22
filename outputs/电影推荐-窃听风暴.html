@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 窃听风暴</title>
+<style>
+  :root{
+    --bg:#0b1110; --panel:#151d1b; --panel2:#1c2624; --line:#2a3733;
+    --tx:#e9f1ee; --tx2:#a4b5b0; --tx3:#6f817c;
+    --acc:#6fbfa5; --acc2:#d8b56a; --warn:#d98f6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(217,143,107,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 20 期</div>
+  <h1>窃听风暴</h1>
+  <div class="en">Das Leben der Anderen &nbsp;·&nbsp; The Lives of Others (2006) &nbsp;·&nbsp; 又译《他人的生活》，港译《窃听者》</div>
+  <div class="meta">
+    <span>德国</span><span>弗洛里安·亨克尔·冯·多纳斯马尔克</span><span>剧情 · 悬疑 · 政治心理剧</span>
+    <span>137 分钟</span><span>彩色</span><span>德语</span>
+    <span>2006-03-23 德国首映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.2</b><small>豆瓣 · 约 64 万人</small></div>
+    <div class="score"><b>8.4</b><small>IMDb · 约 44 万票</small></div>
+    <div class="score"><b>92%</b><small>烂番茄专业 · 163 评</small></div>
+    <div class="score"><b>89</b><small>Metacritic · 39 评</small></div>
+    <div class="score"><b>90%+</b><small>烂番茄观众 · 口径不一</small></div>
+    <div class="score"><b>第 48</b><small>纽约时报 21 世纪百佳</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.2（约 63.9 万人，豆瓣电影 Top250 第 70 位上下；旧快照曾记 9.1 与 33 万／36.4 万票，属历年浮动）；IMDb 8.4（各源 40.9 万–44.1 万票）；烂番茄专业 92%（163 评，均分 8.31/10，认证新鲜）· 观众分各源从 89% 到 96% 不等，<strong>我没找到一个可确证的单一数字，所以这里只给区间</strong>；Metacritic 89（39 条评论，评级为 universal acclaim）。<br>
+    注意这一期和前几期不一样：<strong>分数上没有分歧</strong>——豆瓣、IMDb、专业榜、观众榜全在高位，MC 39 评也是本系列少见的中等样本。所以今天这张卡片不打算讨论"分数靠不靠谱"，那套框架在它身上用不上。往下看，今天真正的裂缝在别处。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（本期请务必先读这一段）</h2>
+    <p>这部片没有"反转"，它的重量压在<strong>最后一句话</strong>上。那一句被引用了将近二十年，你很可能在完全不知道片名的情况下已经读到过它。</p>
+    <ul>
+      <li><strong>不要搜索片中那首钢琴曲的名字。</strong>它的名字本身就是剧情的一部分，搜到名字几乎等于读到它做了什么。我在下面也故意不写。</li>
+      <li><strong>不要点开任何中文百科／影视站的"剧情简介"字段。</strong>本系列第 19 期遇到过一次官方简介从头剧透到尾，这次更严重——中文维基的梗概一直写到很远，属于"你以为在看前提，其实已经看完了"。</li>
+      <li><strong>不要搜那句结尾台词。</strong>它是全片的落点，被做成金句图、短视频配文、影评标题用了无数遍。</li>
+      <li>侧栏会挂载大量"几分钟看完"解说视频，以及"人性寓言""好人与体制"类深度解析长文——后者给的不是结局而是<strong>框架</strong>，比剧透更隐蔽。</li>
+    </ul>
+    <p>安全区我可以先划给你：<strong>谁被派去监听谁、监听是怎么装起来的</strong>，这些开场二十分钟内全部交代完毕，属于预告片级别，说了不影响你。<strong>余下的，下面写到哪停，你就读到哪停。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>先把镜头掉个头：本系列第 7 期留下的那道题</h2>
+    <p>1998 年那部《楚门的世界》，问的是<strong>被看的人</strong>。一整个世界未经本人同意搭在他身上，上亿人每天看他吃饭、上班、睡觉，而他毫不知情。那是一部喜剧，结局是他推开那扇门走出去。</p>
+    <p>今天这部把镜头整个转了 180 度，问的是<strong>看的人</strong>。</p>
+    <div class="quote">
+      楚门：被上亿人看着，那是一种娱乐——观众爱他，为他鼓掌。<br>
+      本片：被一个人听着，那是一份工作——冷、安静、有值班表。
+      <em>1998 年问"你被看"，2006 年问"你在看"。同一个动作，两个方向。</em>
+    </div>
+    <p>差别还不止于此。楚门世界里那个设计一切的人，是站在摄影棚顶端、带着创作者自觉的"导演"；而本片里坐在阁楼上戴耳机的人，<strong>自己也只是机器上的一个零件</strong>——他有上司，有报告要交，有职业前途要算。他不是设计者，他是执行者。</p>
+    <p>所以第 7 期那道题（"你的愤怒来自被骗，还是来自被剥夺选择权"）今天要换一问：<strong>当看的人自己也在被计算，他还是自由的吗？</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（写到哪停，是有意为之）</h2>
+    <p>1984 年 11 月的东柏林，柏林墙还有五年才倒。</p>
+    <p>国家安全部——人人叫它"斯塔西"——是当时世界上最庞大的一套监视系统：约十万专职人员，外加十几万到二十万不等的民间线人，铺成一张覆盖全社会的网。它的目标写在内部文件里：<strong>知晓一切</strong>。</p>
+    <p>维斯勒上尉是这台机器上最标准的一枚齿轮。他教审讯课，话不多，生活里几乎是空的——没有家人，没有朋友，回到公寓是一个人。上面交给他一项任务：一位在国际上有声望、立场亲近当局的剧作家德莱曼，怀疑有问题，但苦无证据。</p>
+    <p>趁德莱曼出门，他们在他的公寓里装满了窃听器，线路一路牵到阁楼。维斯勒和一名同事在那里轮班，头顶是耳机，手边是打字机，逐字记录楼下的每一句话。</p>
+    <p>任务很普通，是那种每周都有人接的差事。然后——</p>
+    <div class="ver">
+      <strong>我们停在这里。</strong><br>
+      楼下那两个人的日子，会一点一点渗进阁楼上这个人的生活里。这个过程怎么发生、发生到哪一步、最后变成了什么，我一个字都不写。<br>
+      你只需要知道：从这一刻起，"看的人"和"被看的人"之间的那条线，开始不干净了。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在</h2>
+    <ul>
+      <li><strong>乌尔里希·穆埃的那张脸。</strong>他几乎全程没有表情，台词极少，全片最剧烈的内心活动都发生在面部一两块肌肉上。这是本系列讲过的最节省的表演——第 13 期《海上钢琴师》靠的是钢琴和海，这里靠的是一个人坐在椅子上听。</li>
+      <li><strong>一部处女作。</strong>导演拍这部片时 33 岁，这是他<strong>第一部长片</strong>，剧本也是他自己写的。他先用约一年半做调研，然后把自己关进叔叔当院长的那座隐修院里写了初稿（各源记一个月到六周不等），全片从写到完成历时三到四年。本系列 20 期，第一次推一部处女作。</li>
+      <li><strong>它拍在自己不敢拍的地方。</strong>部分场景在斯塔西前总部原址实景拍摄。声音用模拟设备录制，导演的理由是"这样有 1984 年的质感"。色调是灰的、绿的——摄影师的说明是："那时的东柏林街道很暗，所有事情都发生在室内，发生在私底下。"</li>
+      <li><strong>200 万美元，换回 7700 多万美元。</strong>约 38 倍。本系列讲过成本的极端（《2001太空漫游》超支近一倍、《小鞋子》18 万美元），这一部是另一种：小预算、正经工业、全球卖座。</li>
+      <li><strong>它击败了当年的头号热门。</strong>第 79 届奥斯卡最佳外语片，赛前博彩公司最看好的是《潘神的迷宫》，赢的是这部。</li>
+    </ul>
+
+    <table>
+      <tr><th>奖项</th><th>结果</th></tr>
+      <tr><td>第 79 届奥斯卡</td><td>最佳外语片 · <strong>获奖</strong></td></tr>
+      <tr><td>第 61 届英国电影学院奖</td><td>最佳非英语片 · 获奖（另有最佳影片·导演·原创剧本·男主提名未中）</td></tr>
+      <tr><td>第 33 届法国凯撒奖</td><td>最佳外国电影 · 获奖</td></tr>
+      <tr><td>第 51 届意大利大卫奖</td><td>最佳欧洲电影 · 获奖</td></tr>
+      <tr><td>第 19 届欧洲电影奖</td><td>最佳影片 · 最佳男演员 · 最佳编剧 · 三项获奖</td></tr>
+      <tr><td>第 56 届德国电影奖</td><td>11 项提名（当时该奖提名数纪录）· 7 项获奖</td></tr>
+      <tr><td>第 59 届洛迦诺电影节</td><td>观众奖 · 获奖</td></tr>
+      <tr><td>第 64 届金球奖</td><td>最佳外语片 · 提名（该届输给伊斯特伍德的作品）</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>一个新问题：同一年，同一家报纸，两张榜，同一部片差了 59 位</h2>
+    <p>2025 年，《纽约时报》做了一次 21 世纪百佳电影评选，同时出了两个版本：</p>
+    <ul>
+      <li><strong>主榜</strong>（约 500 位导演、演员、影评人投票）：这部片<strong>第 48 位</strong>。</li>
+      <li><strong>读者选择版</strong>（读者投票）：这部片<strong>第 107 位</strong>。</li>
+    </ul>
+    <p>同一家媒体，同一年，同一部片，<strong>差 59 位</strong>。</p>
+    <p>这个差别和本系列以前讲过的不一样。第 4 期《星际穿越》、第 6 期《美丽人生》、第 11 期《阿甘正传》讲的是"专业分和观众分打架"——那是两套评分系统给出不同的百分比，争的是<strong>好不好</strong>。今天是同一个机构、同一年、同一批流程做出来的两张名单，争的不是好不好，是<strong>排第几</strong>。</p>
+    <p>换句话说：<strong>业内把它放进前 50，普通读者把它放在 100 名开外。两边都没说它不好。</strong>这种分歧最难被看见，因为它藏在"都挺好"的后面。</p>
+    <p>顺带补两张别的榜：2016 年 BBC 邀请影评人投票的"21 世纪百佳"，它第 32 位；2021 年美国编剧工会评"21 世纪最伟大剧本"，它第 52 位。<strong>三张榜，三种投票人群，名次从 32 到 107。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评：本系列第一次遇到"你有没有权利这么拍"</h2>
+    <p>前 19 期的批评，指向的都是片子本身——太煽情、太长、物化、简化、不真实。<strong>这一部不一样。</strong>最重的那条不否认它拍得好，恰恰相反：<strong>它正因为太好看、太让人想相信，才危险。</strong></p>
+    <p>说这话的人不是影评人。</p>
+    <p>影片开场设定在那座著名的斯塔西监狱，如今是受难者纪念馆。导演申请在那里拍摄，<strong>纪念馆馆长胡贝图斯·克纳贝拒绝了</strong>，理由是：不能把斯塔西的人拍成英雄。他试图说服导演改剧本。</p>
+    <p>导演举了个例子——《辛德勒的名单》里也有这样的情节走向。</p>
+    <div class="quote">
+      "但这正是区别所在。有过一个辛德勒。<strong>没有过维斯勒。</strong>"
+      <em>"But that is exactly the difference. There was a Schindler. There was no Wiesler." —— 胡贝图斯·克纳贝，霍恩舍恩豪森纪念馆馆长</em>
+    </div>
+    <p>第二个提出同样质疑的是安娜·方德，《斯塔西国度》的作者。她在《卫报》撰文，称这是一部"极出色的电影"，但紧接着说它是一个<strong>"幻想叙事"</strong>：像德莱曼这样的案子，现场可能有十几个特工，所有材料都被反复交叉核对，一个人无从藏起什么。她给出了一个可以核查的断言——<strong>在总计 185 公里长的斯塔西档案里，找不到任何一个为了保护监视对象而隐匿证据的军官。</strong></p>
+    <p>更麻烦的是，<strong>这部片自己的历史顾问也拿不出案例</strong>。曼弗雷德·维尔克在配套书中为影片的许多细节一一找到了史实对应，唯独找不到一个有据可查的、做出过类似举动的官员；他能举出的，是两名"不满"的军官——1979 年一名上校，1981 年一名上尉——两人<strong>都被判处死刑并处决。</strong></p>
+    <p>导演自己的答复是一个德语词：<strong>verdichtet</strong>——凝缩、压实。他的意思是：把本质压出来，比罗列孤立的事实更接近真实。</p>
+    <p>也有重量级的人站在他这边。历史学家蒂莫西·加顿·阿什在《纽约书评》上说，这些反对"在一种重要意义上是不得要领的"——它用好莱坞的语法和惯例，把一部分真相送给了尽可能广的观众。长期主管斯塔西档案的约阿希姆·高克则为影片的细节准确性辩护，并且反过来指出：那些"不准确"的指控背后，藏着一种"这是反共猎巫"的看法，只是批评者不方便直说。</p>
+    <p>我最想让你记住的，是当时一位东德异见歌手沃尔夫·比尔曼的反应。他 1965 年被全面禁演，1976 年被取消国籍。他看完写道：政治调子是真实的，情节打动了我。<strong>但为什么呢？</strong>——"也许我只是被感情征服了，因为那诱人的大量细节，看起来像是从我自己的过去里搬出来的。"</p>
+    <p style="margin-top:16px"><strong>我的表态：</strong>克纳贝那句话我无法反驳，而且我认为它<strong>不需要被反驳</strong>——它问的不是"你拍得对不对"，而是"你有没有权利这么拍"。这两个问题不在同一层，用"这是艺术创作"去回答它，等于没回答。</p>
+    <p>同时我也认为加顿·阿什说得对：一部电影不是档案。但"不得要领"不等于"无关紧要"。<strong>当一部电影让人相信了一个档案里从未发生过的好，这件事既是它最有力的地方，也是它最危险的地方——两件事不能互相抵消。</strong>请带着这两句一起看，别只带一句。</p>
+    <p>（另有几条技术性质疑：部分审讯手段在 1970 年代后已被淘汰，斯塔西制服与监听小组的部署位置与档案记录不符，以及导演作为在西德长大的人、被批评是以外部视角写东德、人物偏刻板。这几条一并留在这里，不展开。）</p>
+  </div>
+
+  <div class="card">
+    <h2>还有一件事，发生在影片之外</h2>
+    <p>演维斯勒的那个人，<strong>自己就是被监控过的对象</strong>——至少他自己是这么说的。</p>
+    <p>乌尔里希·穆埃，1953 年生于东德。他曾公开表示，前妻、演员燕妮·格罗尔曼在 1979 至 1989 年间以代号为斯塔西充当线人，监视他和他们身边的演员。<strong>格罗尔曼始终否认。</strong>2006 年，在她去世前一个月，法院发出禁令，禁止穆埃就此出版书籍；据《纽约时报》报道，这场广受关注的官司穆埃败诉了。她本人也在 2006 年因癌症去世，59 岁——<strong>这件事最终没有得到司法定论。</strong></p>
+    <p>穆埃说过一句："我自己的生活就像这部电影——<strong>只是我是受害者，不是那个全知的侵犯者。</strong>"</p>
+    <p>然后是时间上的那个巧合：2007 年 2 月，他随剧组去洛杉矶领奥斯卡，<strong>那时他已经知道自己得病了</strong>，没有告诉同事。颁奖后他做了手术，4 月还说想去度假。同年 7 月 22 日，胃癌，54 岁。</p>
+    <p>本系列讲过"影片外的事实不算剧透"这条判定，这次再沿用一次。上面这些没有一条会告诉你电影讲了什么。</p>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <ul>
+      <li><strong>它把"看"这个动作本身变成了主角。</strong>我们今天每天都在被记录、被计算、被推荐。这部片最狠的地方不是展示监控有多可怕，而是展示<strong>长期观看如何反过来改变观看者</strong>——这条命题在 1984 年成立，在算法时代更成立，而且方向没变过。</li>
+      <li><strong>它是一部悬疑片，但悬的是人心。</strong>137 分钟里几乎没有追逐、没有枪战，最紧张的时刻可以是"一个人坐在椅子上决定要不要在多打一行字"。如果你以为政治题材会闷，它是最好的反例。</li>
+      <li><strong>它没有把任何人写成恶魔。</strong>这一点既是它最被称赞的地方，也是它最被攻击的地方（见上一段）。我倾向于认为，这种"两边都不讨好"恰恰说明它做对了某种难度很高的事。</li>
+      <li><strong>它是本系列第一部德国片。</strong>此前是美国 5、日本 3、意大利 2、中国 1、印度 1、法国 1、美英合制 1、韩国 1、英国 1、伊朗 1，德国一直空着。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>观看建议</h2>
+    <ul>
+      <li><strong>片长 137 分钟，各源一致</strong>，不存在被大幅删减的国际版——本系列第 13 期《海上钢琴师》（公映版少约 40 分钟）和第 16 期《七武士》（六个版本）那两次版本陷阱，这一次没有。</li>
+      <li><strong>给前二十分钟一点耐心。</strong>它不急着讨好你，但一旦进去了，后面会自己加速。</li>
+      <li><strong>建议看德语原声。</strong>穆埃的声音本身就是表演的一部分。</li>
+      <li>情绪上不算需要特别避让的那一类——它没有集中营、没有战场。但后段压抑，<strong>不建议在很疲惫的深夜硬看</strong>，那会浪费它。</li>
+      <li>看完之后，如果能忍住别马上去搜那句台词，你会多留住一点东西。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>三道题（看完再回来看）</h2>
+    <div class="ask">
+      <small>第一层 · 换掉"好人坏人"这个尺子</small>
+      先别急着判断维斯勒。假设你就是他——一份稳定工作、一套写得很清楚的规章、上司只要一份报告。你觉得<strong>自己在哪一个瞬间</strong>会第一次犹豫？<br>
+      （如果你答不出那个瞬间，说明你还在用"他是好人还是坏人"来读这部片。它真正写的是那个瞬间本身。）
+    </div>
+    <div class="ask">
+      <small>第二层 · 这一层是它真正的题眼</small>
+      安娜·方德说：185 公里的档案里，没有一个这样的军官。<strong>如果这是真的</strong>，那么这部片打动你的，究竟是"人是可以被改变的"，还是"<strong>我希望</strong>人是可以被改变的"？<br>
+      想一想：这两种感动，哪一种更真实？哪一种更需要？——它们不是同一件事，而这部片从头到尾都站在这两者的缝上。
+    </div>
+    <div class="ask">
+      <small>第三层 · 锚定第 7 期</small>
+      楚门被上亿人看着，他最后推开那扇门走了出去。德莱曼被一个人听着，<strong>从头到尾不知道</strong>。<br>
+      哪一种更让你难受？为什么？<br>
+      再往前一步：今天我们每天留下痕迹、每天也被别人留下的痕迹喂养。这里面，<strong>谁更像楚门，谁更像阁楼上那个人？</strong>
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 20 期 &nbsp;|&nbsp; 2026-10-25<br>
+    评分与奖项均为本次现查，未沿用旧数据。片中那首钢琴曲的名字，我通篇没有写——请你也别去搜。<br>
+    <span style="color:#5a6b67">冷知识两则：影片中一段广播里的声音来自导演本人；导演身高 2 米 05。</span>
+  </div>
+
+</div>
+</body>
+</html>

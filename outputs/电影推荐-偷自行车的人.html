@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 偷自行车的人</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 37 期</div>
+  <h1>偷自行车的人</h1>
+  <div class="en">Ladri di biciclette（1948）&nbsp;·&nbsp;维托里奥·德西卡 导演 &nbsp;·&nbsp; 切萨雷·扎瓦蒂尼 编剧</div>
+  <div class="meta">
+    <span>意大利</span><span>剧情</span><span>89 分钟</span><span>黑白 · 实景</span>
+    <span>1948-11-24 意大利公映</span><span>预算约 13.3 万美元</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.1</b><small>豆瓣 · 约 12 万人</small></div>
+    <div class="score"><b>8.2–8.3</b><small>IMDb · 约 17.5–19 万票</small></div>
+    <div class="score"><b>99%</b><small>烂番茄专业 · 70 评 · 均分 9.2</small></div>
+    <div class="score"><b>第 1</b><small>视与听 1952 首届影史榜</small></div>
+    <div class="score"><b>最佳影片</b><small>BAFTA 第 3 届 · 任何来源</small></div>
+    <div class="score"><b>荣誉奖</b><small>第 22 届奥斯卡 · 外语片</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.1（各快照 11.9 万–12.4 万人，另有旧源记 9.0 / 5.7 万）；IMDb 各源 8.2–8.3 浮动（17.5 万–19.2 万票）；烂番茄 99%（70 评，均分 9.2，2022 年口径）；Metacritic 未查到有效的老片回溯分数。奖项均逐条核自 IMDB 获奖页与台港机构资料。<br>
+    选片线：豆瓣 9.1 高线通过，IMDb 8.2–8.3 恰在 8.3 线上浮动——按「或」字口径达标。<br>
+    <strong>节奏说明：上一期（第 36 期）是 194 分钟的彩色灾难爱情史诗，本期按台账提示回中档：89 分钟、黑白、一行字就能讲完的故事。</strong>意大利线第 3 次启用（第 1 期《天堂电影院》、第 13 期《海上钢琴师》，距今 24 期），<strong>意大利新现实主义线 37 期来首次开线。</strong>
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（第 4 档「防最后一场戏」＋三个本期新增的雷）</h2>
+    <p>这部片的可泄露物非常集中：<strong>最后一场戏是影史被讨论最多的结尾之一，全片的重量都压在最后几分钟上。</strong>我查资料时亲历了三种危险姿态，一并列在下面。</p>
+    <ul>
+      <li><strong>第一雷（本期实测，第八类极端案例再犯）：中文百科的剧情简介。</strong>我这次查资料，多个中文百科与影视站的「剧情介绍」一路写到了最后十分钟——「以牙还牙」「被逮个正着」这样的句子就明晃晃挂在简介栏里。<strong>看演职人员表可以，剧情栏一行都别读。</strong></li>
+      <li><strong>第二雷（新增第二十五类剧透源：节日/亲情片单）。</strong>父亲节前后流传的「伟大父爱电影片单」，会以最温柔的姿态复述最后一场戏——我实测到一篇 2015 年人民网的父亲节片单，整段复述了结局。它比任何解析文都危险，因为<strong>它的包装是温情，你的防备是零。</strong></li>
+      <li><strong>第三雷（第二十一类第 3 次启用）：「影史最伟大结局」盘点文，以及四个字——「开放式结局」。</strong>连金马影展的官方介绍都写着「伟大动人的开放式结局」。<strong>这个词本身就是剧透：它告诉你最后没有答案，而这恰恰是结尾的形状。</strong>看到这四个字请立刻划走。</li>
+      <li><strong>第四雷（片名本身，官方提供的暗示）：</strong>意大利原名是<strong>复数</strong>——「偷自行车的人们」；美国发行时改成了单数。为什么是复数？看完你会明白，我不解释。也不要提前去搜。</li>
+      <li><strong>检索词提示：</strong>台译《单车失窃记》与吴明益的同名小说在同一检索池，中文旧译还有《偷自行车的贼》，建议直接搜「德西卡 1948」或「Ladri di biciclette」。</li>
+    </ul>
+    <p>安全区划给你（开场二十分钟即交代完的前提）：<strong>二战后的罗马，失业的人比岗位多得多。失业两年的里奇终于排到一份贴海报的工作——条件是自备自行车。家里那辆车早当掉了，妻子把嫁妆的床单抱去当铺，赎回了它。上班第一天，他正贴着丽塔·海华兹的海报，车被偷了。警察说他管不了。于是里奇带着八岁的儿子布鲁诺，从当铺到旧车市场，走街串巷去找那辆车。</strong></p>
+    <div class="ver">我们停在这里。这一天剩下的路怎么走、他们遇到过什么人、最后一场戏是什么——一个字不写。<br>
+    另按第 20 期确立的规矩：宝琳·凯尔有一句被引用几十年的著名评语，<strong>因为提及即剧透，本期整条弃用，连内容都不复述。</strong></div>
+  </div>
+
+  <div class="card">
+    <h2>三件先说清楚的事</h2>
+    <p><strong>第一件：影史「影评人总榜」的第一位状元，是它。</strong>1952 年，英国《视与听》杂志第一次组织影评人投票评选影史十佳——邀请 85 位影评人、63 位应约参加，这部上映才四年的意大利片以 25 票拿下第一，把并列第二的两部卓别林（《城市之光》《淘金记》，各 19 票）甩在身后。罗杰·伊伯特后来这样评价这张榜单的地位：「无数个『伟大电影』评选里，这一个最受尊重——唯一一个被大多数认真对待电影的人当真的。」<strong>也就是说：这套今天被当作电影「正典」的投票传统，第一页的第一行，写着一部没有制片厂肯投资、靠导演向朋友凑钱拍成的黑白意大利片。</strong></p>
+    <p>第 31 期《城市之光》的卡片里，它只作为那届榜眼身边的一个名字被顺带提过；今天它自己出场。它此后的名次轨迹也值得摆出来：</p>
+    <table>
+      <tr><th>年份</th><th>名次</th></tr>
+      <tr><td>1952</td><td>第 1（25 票 / 63 位影评人）</td></tr>
+      <tr><td>1962</td><td>第 7</td></tr>
+      <tr><td>1972–1992</td><td>跌出前十</td></tr>
+      <tr><td>2002</td><td>导演榜第 6（影评人榜未进前十）</td></tr>
+      <tr><td>2022</td><td>第 41（并列；1639 位投票人）</td></tr>
+    </table>
+    <p>这条曲线有两种读法。浅的一层：状元一路下行。深的一层：<strong>不是它掉了，是考场变大了。</strong>给它投票的人从 63 位变成 1639 位，评委从欧美扩到全世界——一个七十多年前只靠欧美影评人撑起来的第一，在二十六倍的人群里还排第 41。这恰恰说明 1952 年那批人不是看走了眼，而是<strong>看得太早。</strong></p>
+    <p><strong>第二件：「非职业演员」不是一条美学原则，是一份有真实代价的人事安排。</strong>演父亲的兰贝托·马乔拉尼是罗马一家工厂的车工，片酬 60 万里拉（约合 1000 美元）——他拿去买了新家具、带全家度了一次假。然后他回工厂上班，<strong>被解雇了</strong>：厂里业务萎缩要裁人，管理层觉得他「拍电影挣了百万」，裁他比裁别的穷同事「更公平」。此后他打砖匠零工、跑龙套，连德西卡本人也只在后来的片子里让他当无名群演；1983 年，他死在罗马的圣乔瓦尼医院，再没回到过第一次的成功。1950 年 1 月的《生活》杂志为他做过一篇报道，标题是——「名声戏弄了一个电影明星」。而电影里的故事是：一个失业者得到了工作，然后失去它。<strong>银幕内外两份失业名单，主演在两张上都签了名。</strong></p>
+    <p>演儿子的恩佐·斯泰奥拉那年八岁，是剧组在街上发现的——他帮父亲卖花，站在人群里看拍戏，就这样被选中。片里有一场他过马路向前小跑的戏，跑了两次，不在排练计划里：因为实拍时恰好有两辆汽车经过。片方原本的故事是另一副模样：好莱坞制片人塞尔兹尼克属意加里·格兰特主演，德西卡心仪亨利·方达——最后两个人都没用。<strong>这部片最重要的选角决定，是把两位明星都请出局，让真的失业者来演失业。</strong></p>
+    <p><strong>第三件：1949–1950 年的那个冬天，三套英语世界的系统用三种姿势承认了同一部意大利片。</strong>奥斯卡：当时外语片还没有竞赛单元，学院沿用了前两年为德西卡自己的《擦鞋童》设过的先例，为它发了一座荣誉奖（「1949 年在美国发行的最杰出的外语片」）；更罕见的是，它的意大利语剧本还入围了<strong>最佳剧本</strong>提名，最终输给曼凯维奇的《三妻一封信》。<strong>第 9 期《罗生门》拿的那座 1952 年荣誉奖，与它是同一队列——这条「先用荣誉奖安置、1956 年才设正式竞赛单元」的路上，它是第二棒，《擦鞋童》第一，《罗生门》第三。</strong>BAFTA：第 3 届「任何来源最佳影片」直接给了它——前两届的得主都是英语片（《黄金时代》《哈姆雷特》），<strong>它是 BAFTA 史上第一部非英语最佳影片。</strong>美国国家评论协会（NBR）：1949 年度最佳影片与最佳导演——美国影评人把「年度第一」给了一部意大利语片。再加上金球最佳外语片、纽约影评人协会最佳外语片、洛迦诺评审团特别奖、意大利银缎带六项，以及 1951 年日本《电影旬报》最佳外语片。<strong>一套沿用旧例、一套改写规则、一套直接给第一。</strong>顺带一个注脚：德西卡一生共有四部作品拿过奥斯卡外语片（含两座荣誉奖年代的），这份履历里今天这部排第二。</p>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在</h2>
+    <ul>
+      <li><strong>一行字的故事，撑住八十九分钟。</strong>没有闪回、没有副线悬念、没有反转结构——「工作需要车，车被偷了，去找车」，然后就是罗马的街。它的紧张感不是制造出来的，是跟着父子俩一步一步走出来的。这是它能被三代教科书反复引用的第一原因：<strong>它示范了「简单」和「单薄」之间的距离有多远。</strong></li>
+      <li><strong>它把摄影机扔到了街上，也把好莱坞请出了片场。</strong>实景、自然光、群众里抓来的脸、真失业的人演失业——这套后来被称为「新现实主义」的做法，在当时不是风格选择，也是物资现实：没有大制片厂肯出钱，钱是德西卡向朋友凑的（预算约 13.3 万美元，全球票房约 45 万美元）。但结果成了一种美学：战后欧洲的废墟和失业潮，第一次不是布景，而是街道本身。后来肯·洛奇、罗伯特·奥特曼等人都把这部片列为创作的圭臬。<strong>你今天看的一切「街头电影」，源头大多能追到这里。</strong></li>
+      <li><strong>孩子的眼睛做了这部电影一半的工作。</strong>布鲁诺看父亲的方式，是全片的度量衡——大人世界里每一次微小的体面崩塌，都先在他脸上量出尺寸。而这位「演员」此前的人生经验是：帮爸爸卖花。</li>
+      <li><strong>黑泽明把它列为自己最爱的电影之一。</strong>这件事值得单独说：影史最会拍「多」的导演之一（88 分钟三场景的《罗生门》、207 分钟群像的《七武士》——都是本系列第 9、16 期），最爱的是这部把「少」做到极致的片子。</li>
+    </ul>
+    <div class="quote">「《偷自行车的人》是纯电影的最初几部典范之一。不再有演员，不再有故事，不再有场面调度。就是说，最终，在具有审美价值的完美的现实景象中，不再有电影。」
+      <em>—— 安德烈·巴赞，《电影是什么》</em>
+    </div>
+    <p>批评巴赞的人认为这段话夸张；但写下这段话的人后来成了这套理论的一代宗师，而它正是那段理论最常被引用的例证。<strong>一部电影能同时成为创作方法的源头和理论宣言的证据，这在影史上并不多。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评（三条，外加编剧自己下的判决）</h2>
+    <p><strong>第一条：它的「真实」里有一处裂缝——父亲的声音是配的。</strong>马乔拉尼的非职业表演是真的，但他的台词由职业演员配音完成。这件事当年就被维斯孔蒂拿来做文章，并一直被当作「新现实主义也不过是被制作出来的真实」的证据。我的态度是承认，而且认为<strong>这条批评站得住——但它伤不到这部片，只伤到对「真实」的天真想象：纪实从来是一种手艺，而不是一种运气。</strong>连巴赞那句「不再有演员」，严格照办也成立不了：这个男人的声音，就是演员的。</p>
+    <p><strong>第二条：影评人大卫·汤普森——看得越多，越觉得这个男人迟钝，而德西卡镜头里的城市影像越有诗意、越成熟。</strong>换句话说：主角配不上他的城市。这条批评的妙处在于它骂人和夸人用的是同一句话——<strong>而「让城市当主角」恰恰是这整个流派的宣言。</strong>所以我不反驳它，我只指出它其实是半个赞美：那个「迟钝」的父亲，本来就是被当作罗马的一条街道、一面墙来拍摄的，他的沉默和墙皮一样，是这座城市的材质。</p>
+    <p><strong>第三条，也是最重的一条：编剧扎瓦蒂尼自己下的判决。</strong>他清楚马乔拉尼后来的全部处境——失业、砖匠、龙套、无人问津——于是专门写了一个关于他的剧本，题目就叫《你，马乔拉尼》，意图明确到残忍：<strong>证明新现实主义电影改变世界的能力是有极限的。</strong>我两边都留：一边是这部片确实没能改变它的主演的人生，另一边是——一个流派敢于把自己的失败写成剧本，这种诚实本身就在证明它当年不是口号。它的政治失败与它的美学成功，是同一件事的两面，不能互相抵消。</p>
+    <p><strong>我的一条：</strong>你的眼泪会落在一个真实的失业者身上——这部片从「演穷人」到「是穷人」只有一步，它迈过去了；可迈过去之后，谁来负责？扎瓦蒂尼用那个剧本名回答了：没有谁。这也是它今天仍然锋利的原因：<strong>它不但不解决贫穷，它连主演的贫穷都不曾解决——一部关于找不到的电影，自己也没找到。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p><strong>第一，它是进入「影史正典」门槛最低的一扇门。</strong>89 分钟、黑白但零电影史知识要求、故事一行字讲完、没有任何需要预习的背景——想第一次接触 1950 年前的顶级经典又怕被劝退，从它开始最稳。时光网的评价说得到位：「影片中没有眼泪，却比后世大卖苦情的作品更令人痛彻心扉。」</p>
+    <p><strong>第二，它是「影评人最爱」这个身份被发明时的第一名。</strong>今天我们习惯用榜单谈论电影，而 1952 年那次投票就是这套习惯的起点。看它，等于站在正典的第一块基石上往回看——你会看到影评人这个职业刚拿起投票权时，第一个推上去的是什么：不是奇观、不是明星、不是规模，是一个失业者和他的儿子走过的一天。这个起点本身值得被亲眼核对一次。</p>
+    <p><strong>第三，它的「找不到」在今天比在 1948 年更真。</strong>一个系统告诉一个人「这份工作能救你，但要先自备工具」，工具被偷走后系统说「这归别的部门管」——把自行车换成任何一样今天的必需品，这部电影立刻变成新闻。它没给你出口，它只负责让你看清门在哪里、锁在哪里。<strong>七十年过去，锁没换过。</strong></p>
+    <p><strong>观看路径的注脚：</strong>它从未在中国内地公映（香港 1954 年 1 月 7 日曾正式上映）；内地约 12 万人打出的 9.1，又是靠影碟与互联网一层层抬起来的——第 14 期《三傻》用过的「被互联网救活的经典」框架，这次换片复用。</p>
+  </div>
+
+  <div class="card">
+    <h2>观看建议</h2>
+    <ul>
+      <li><strong>版本：</strong>通行版本 89 分钟；另有 80 分钟 DVD 的口径记载，属老片放映速度与版本差异，不是成体系的商业删减——选主流修复版（Criterion / Rialto 口径）即可，<strong>没有版本陷阱。</strong></li>
+      <li><strong>请用原声。</strong>它是实景拍摄、后期配音的电影，人物与环境声的关系是它质感的一半；能看意大利语原声加字幕，就别看配音版。</li>
+      <li><strong>节奏：</strong>不要倍速。它的紧张感长在「走路」里——父子俩的每一段路程都在积累重量，倍速会把度量衡弄坏。</li>
+      <li><strong>情绪门槛（正向提醒）：</strong>心情糟的日子，它可以看——它沉重，但它的沉重不剥削你；它全程没有一滴眼泪，也没有一段配乐在命令你哭。这一点上，它比后世大多数「苦情经典」体面得多。</li>
+    </ul>
+  </div>
+
+  <div class="ask">
+    <small>进场前后，三道题（本系列固定栏目）</small>
+    <p><strong>第一题（进场前）：</strong>这部电影的主角，从头到尾没有成功过任何一件事。先诚实地回答：你能接受一部「没有结果」的 89 分钟吗？把答案写下来再按播放——散场后你会知道自己的答案有没有变。</p>
+    <p><strong>第二题（散场后）：</strong>指认你开始「盼」的具体时刻——哪一个镜头让你以为快找到了？然后追问自己一层：导演真的给过你「快找到了」的希望吗，还是那份希望本来就是你自带的？如果希望是你带进影院的，这部电影对你的指控就比它对里奇的更狠。</p>
+    <p><strong>第三题（跨期，锚定第 9 期）：</strong>《罗生门》用四份互相矛盾的证词逼近真实，结论是「真相不可得」；今天这部从头到尾只有一天、一条街、一件事，没有任何人说谎，同样没有答案。<strong>一个用「多」接近真实，一个用「少」。</strong>哪一种更接近你自己生活里的真实？——顺带一个注脚：黑泽明把这部「少」的电影列为他最爱的电影之一。一个把「多」拍到极致的人，最懂得它好在哪。你呢，你被哪一边说服？</p>
+  </div>
+
+  <div class="foot">
+    第 37 期 · 2026-11-15 · 每日经典电影推荐<br>
+    下期选题提示：本期回中档完成（89 分钟），下期可自由选择档位；华语线 2026-12-02 解禁（花样年华第一优先，钩子已预埋两次，勿再预埋）
+  </div>
+
+</div>
+</body>
+</html>

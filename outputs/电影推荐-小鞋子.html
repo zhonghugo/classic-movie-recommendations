@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 小鞋子</title>
+<style>
+  :root{
+    --bg:#0b1110; --panel:#151d1b; --panel2:#1c2624; --line:#2a3733;
+    --tx:#e9f1ee; --tx2:#a4b5b0; --tx3:#6f817c;
+    --acc:#6fbfa5; --acc2:#d8b56a; --warn:#d98f6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(217,143,107,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 19 期</div>
+  <h1>小鞋子</h1>
+  <div class="en">بچه‌های آسمان &nbsp;·&nbsp; Children of Heaven (1997) &nbsp;·&nbsp; 又译《天堂的孩子》</div>
+  <div class="meta">
+    <span>伊朗</span><span>马基德·马基迪</span><span>剧情 · 家庭 · 儿童</span>
+    <span>89 分钟</span><span>彩色</span><span>波斯语</span>
+    <span>1997-02-01 伊朗首映</span><span>1999-04-15 中国内地上映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.2</b><small>豆瓣 · 约 46 万人</small></div>
+    <div class="score"><b>8.2</b><small>IMDb · 约 9 万票</small></div>
+    <div class="score"><b>83%</b><small>烂番茄专业 · 30 评</small></div>
+    <div class="score"><b>77</b><small>Metacritic · 14 评</small></div>
+    <div class="score"><b>95%</b><small>烂番茄观众 · 1 万+</small></div>
+    <div class="score"><b>4.2</b><small>Letterboxd · 满分 5</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.2（463,107 人，2026-03 快照；另有影视站记 30.9 万票，豆瓣页面人数口径各源不一）；IMDb 8.2（各源 8.9 万–9.2 万票）；烂番茄专业 83%（30 评）· 观众 95%（1 万+ 认证）；Metacritic 77（<strong>仅 14 条评论</strong>）；Letterboxd 4.2；时光网 8.8（3,131 人）。<br>
+    <strong>IMDb 8.2 是本系列第三低</strong>（最低为第 13 期《海上钢琴师》8.0，其次第 12 期《霸王别姬》8.1）。但今天真正要看的不是这个数——而是下面那张表里，专业评价内部裂开的那道口子。
+  </div>
+
+  <div class="card">
+    <h2>先把一件本系列从没发生过的事放在最前面</h2>
+    <p>今天这部片，<strong>输给了本系列推荐过的另一部片。</strong></p>
+    <p>1999 年 3 月 21 日，第 71 届奥斯卡最佳外语片，五部提名：</p>
+    <ul>
+      <li><strong>《美丽人生》</strong>（意大利）—— 获奖。本系列<strong>第 6 期</strong>推荐的那部。</li>
+      <li><strong>《小鞋子》</strong>（伊朗）—— 提名。</li>
+      <li>《中央车站》（巴西）· 《祖父》（西班牙）· 《探戈》（阿根廷）。</li>
+    </ul>
+    <p>这是本系列 19 期里第一次：今天要讲的这部，和之前讲过的那部，站在同一个奖的同一个格子里，而且输的是今天这部。</p>
+    <p>更巧的是，这两部讲的是同一件事的两个方向。</p>
+    <div class="quote">
+      在《美丽人生》里，是父亲替儿子守住一个虚构的世界，好让他活下去。<br>
+      在《小鞋子》里，是两个孩子替父母守住一件已经发生的事，好让他们别更难。<br>
+      <em>同一届奥斯卡，同一个奖项。一个大人瞒孩子，一个孩子瞒大人。</em>
+    </div>
+    <p>当年评委把票投给了大人那一个。二十多年过去，豆瓣上《美丽人生》9.5、《小鞋子》9.2——<strong>赢的还是那一个</strong>。我今天把它翻出来，不是要翻案，而是想让你看看那个输掉的是什么样的。</p>
+  </div>
+
+  <div class="card">
+    <h2>第二件事：它是一张门票，但门票不是给它的</h2>
+    <p>它是<strong>伊朗电影史上第一部获得奥斯卡最佳外语片提名的电影</strong>，马基迪也因此成为第一位获此提名的伊朗导演。然后——</p>
+    <ul>
+      <li><strong>15 年后</strong>，2012 年第 84 届奥斯卡，阿斯哈·法哈蒂的《一次别离》拿下伊朗<strong>第一座</strong>最佳外语片小金人（同一部片 2011 年已在柏林拿下伊朗首座金熊）。</li>
+      <li><strong>18 年后</strong>，2017 年第 89 届，法哈蒂凭《推销员》<strong>第二次</strong>拿了同一个奖。那一年他因美国的入境限制令拒绝出席，由代表上台代读声明。</li>
+    </ul>
+    <p>再往上追一层：1987 年，阿巴斯的《何处是我朋友的家》在洛迦诺获奖，是伊朗伊斯兰革命之后第一部被国际影坛承认的伊朗电影。<strong>十年后是这部，再十五年后是那座小金人。</strong></p>
+    <p>本系列讲过"时间轴上的位次漂移"（第 16 期《七武士》），讲过"同一张榜上一个进一个退"（第 17 期《寄生虫》）。今天是第三回事——<strong>一部只拿到提名的片子，把一整个国家的电影送进了后面的名单里。</strong>这条不是我的联想，中间每一步都有日期。</p>
+    <p>顺带补上一句：这是本系列<strong>第一部伊朗片</strong>。此前的国别是美国 5、日本 3、意大利 2、中国 1、印度 1、法国 1、美英合制 1、韩国 1、英国 1，伊朗一直空白。</p>
+  </div>
+
+  <div class="card">
+    <h2>第三件事：这是本系列最好进去的一部</h2>
+    <p>昨天那部（《2001太空漫游》，第 18 期）142 分钟，光特效就花掉 650 万美元，本系列有史以来进入成本最高的一部。</p>
+    <p>今天这部<strong>全片成本 18 万美元</strong>。也就是说，<strong>昨天那部的特效一项，是今天这部整部片的 36 倍。</strong></p>
+    <p>片长 89 分钟。不黑白、不老到需要背景知识、不慢、不烧脑、不需要你先读任何东西。<strong>你唯一要做的只是坐下。</strong></p>
+    <p>我把它排在昨天那部之后，是故意的。连续两期劝退没有意义，这一期你可以当作一次回稳——它比本系列第 17 期《寄生虫》还好进。</p>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（不含剧透）</h2>
+    <p>九岁的阿里住在德黑兰南城。家里欠着五个月的房租，杂货铺的账也赊了一阵子，母亲身体不好。</p>
+    <p>影片开头的第一个长镜头，是一双手在补一双粉色的小鞋——那是妹妹莎拉唯一的一双鞋。修好之后，阿里去取，顺便帮家里买土豆。</p>
+    <p>他把装鞋的袋子放在菜摊外面。回来时，袋子不见了。</p>
+    <p>就这么一件事。<strong>整部片的事，从头到尾就这一件。</strong></p>
+    <p>阿里不敢说。不是怕挨打那么简单——他知道家里补不起这双鞋，而说出来只会多两个人一起发愁。于是他和妹妹商量出一个办法：<strong>两个人轮流穿他那双旧的帆布鞋上学。</strong>妹妹早上穿去，中午跑回来塞给他，他再穿着赶下午的课。</p>
+    <p>这个办法撑不了多久。他开始迟到。</p>
+    <div class="ver">
+      我们停在这里。<br><br>
+      后面他们想过别的办法，那些办法一个接一个落空；最后他们只剩一个机会，而那个机会长什么样、他们有没有抓住、片子以什么画面收尾——<strong>我一个字都不写。</strong>
+    </div>
+  </div>
+
+  <div class="redline">
+    <h2>我们的剧透红线（这一期请认真读）</h2>
+    <p>这部片的全部张力，押在"一双鞋最后到底怎么解决"上。知道答案，整部片就塌了。而它的答案，是中文互联网上被漏得最干净的答案之一。</p>
+    <ul>
+      <li><strong>本系列第一次遇到这种情况：中文百科和影视站的「剧情介绍」字段，本身就是完整剧透。</strong>我查资料时，某百科页面的"剧情介绍"一栏，从丢鞋那一段一路写到最后一个镜头，包括结局画面是什么。此前 18 期里，官方简介大多只写前提——这一期不是。<strong>请不要点开任何"剧情介绍"。</strong></li>
+      <li><strong>同一个页面的侧栏，一口气挂着十几个「几分钟看完一部电影」的解说视频</strong>，时长从 1 分 36 秒到 18 分 57 秒不等，其中几个的标题本身就写着结局。本系列此前收录过"短视频混剪"这一类剧透源，今天是第一次看到它多到这种密度——因为它太好哭了，是解说号最爱的素材。</li>
+      <li><strong>结局的那个画面</strong>被截图、动图、封面图用了二十多年。你大概率已经在不知道片名的情况下见过它。见到也别去确认它来自哪里。</li>
+      <li><strong>讲"伊朗电影"的综述文章，几乎都以这部片的结局举例。</strong>想了解伊朗电影很好，但请看完之后再去看。</li>
+    </ul>
+    <p style="margin-top:12px">一句话：这部片<strong>不需要预习，只需要别被剧透</strong>。它 89 分钟，你自己看完比什么解析都快。</p>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在</h2>
+    <ul>
+      <li><strong>它把"穷"拍成了这周要解决的一个具体问题，而不是一种情绪。</strong>没有哭诉，没有控诉，没有谁仰头问老天。房租欠了五个月，糖用完了，鞋丢了——都是要处理的事。这是我见过最不消费贫穷的一种拍法。</li>
+      <li><strong>全片找不到一个坏人。</strong>催租的房东、赶他走的杂货铺老板、把鞋捡走的拾荒者、让他迟到的校长——每一个人都在做自己位置上说得通的事。你会发现自己一路紧张，却指不出这紧张来自谁。<strong>这是它最厉害的地方：冲突不来自任何人，来自处境。</strong></li>
+      <li><strong>两个主演是剧组分成三组、跑遍德黑兰的小学找来的。</strong>饰演妹妹的女孩要母亲全程在片场陪着才肯演；饰演阿里的男孩，据说在片场跟导演顽皮地周旋。他们不是被训练出来的小演员，这也解释了为什么你在他们脸上看不到"表演"这两个字。</li>
+      <li><strong>为拍到真实的德黑兰，剧组尽量不声张地拍。</strong>镜头里那些巷子、坡道、树荫下的街道，不是搭出来的。</li>
+      <li><strong>它是"反着写"的。</strong>马基迪自己说过，他刻意让主角去争一个不该被争的名次——不是第一名，是第三名。光是这个设定，就把整部片从"励志片"里拽了出来。</li>
+      <li><strong>开场的修鞋长镜头。</strong>一双粗糙的手，一针一线，鞋面、鞋底、锥子。全片最重要的东西，在第一个镜头里就被你盯着看了两分钟。</li>
+      <li><strong>1997 年第 21 届蒙特利尔国际电影节：最佳影片、最佳导演、观众票选最佳影片，三项全拿。</strong>注意第三个——那是观众一票一票投出来的，不是评审团关起门定的。同年伊朗本土的法杰尔电影节也给了最佳影片、最佳导演、最佳编剧。</li>
+      <li><strong>罗杰·伊伯特给了满分四星</strong>，说它"几乎是一部完美的儿童电影，而这当然意味着大人也会喜欢"，还说它<strong>缺少美国儿童片里那种愤世嫉俗和耍嘴皮子的态度</strong>——这句我特别想留给你，因为那正是它现在最稀缺的东西。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>评分：这一期要看的不是分数，是裂缝</h2>
+    <table>
+      <tr><th>人群</th><th>分数</th><th>样本</th></tr>
+      <tr><td>豆瓣（中文观众）</td><td>9.2</td><td>约 46.3 万人</td></tr>
+      <tr><td>烂番茄观众</td><td>95%</td><td>1 万+</td></tr>
+      <tr><td>IMDb（英语观众）</td><td>8.2</td><td>约 9 万票</td></tr>
+      <tr><td>烂番茄专业</td><td>83%</td><td>30 条评论</td></tr>
+      <tr><td>Metacritic</td><td>77</td><td>仅 14 条评论</td></tr>
+    </table>
+    <p>大众分和专业分有落差，本系列已经见过很多次了（第 12、13 期那两部最典型）。今天不重复讲这个。</p>
+    <p>今天要看的是另一件事：<strong>专业评价内部，裂开了。</strong></p>
+    <p>同一部片，在同一年里，职业影评人给出的分数是这样分布的——</p>
+    <ul>
+      <li>《芝加哥太阳时报》罗杰·伊伯特：<strong>100</strong></li>
+      <li>《芝加哥论坛报》Michael Wilmington：<strong>100</strong></li>
+      <li>《基督教科学箴言报》David Sterritt：<strong>100</strong></li>
+      <li>《卫报》Peter Bradshaw：<strong>100</strong></li>
+      <li>《纽约时报》Janet Maslin：<strong>50</strong></li>
+      <li>《村声》Michael Atkinson：<strong>30</strong></li>
+    </ul>
+    <p><strong>从 30 到 100。</strong></p>
+    <p>请注意这和第 16 期《七武士》的区别：那部是 RT 100%、MC 98，但<strong>评了的人全部给满分</strong>——那是一致。今天这部是评了的人<strong>分成两半，而且两半都不客气</strong>。83% 这个数字看着温和，它是被平均出来的；真实的样子是一段从 30 到 100 的跨度。</p>
+    <p>本系列 19 期，第一次遇到"专业分不是高或低的问题，而是根本没形成共识"。</p>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评</h2>
+    <p>这一期的批评分量不轻，而且两条最重的来自同一年、同一批职业影评人，方向却几乎相反。</p>
+    <p><strong>第一条：Janet Maslin，《纽约时报》，50 分。</strong>她写道：片子里"生活尽管有数不清的艰难，依然是甜的，除了经济之外没有任何现实闯入这个童话氛围"；而那场关于鞋的追寻，"只有通过相当笨重的强调，才被赋予了更多意义"。</p>
+    <p><strong>第二条：Michael Atkinson，《村声》，30 分。</strong>他说这片"场面调度笨拙，打光像肥皂剧，演得像花生酱广告里被收买的热情"，并给出定性——它"不过是每一个急于获得大众关注的民族电影工业，都在做的那种简单化的投标"。最后半句最狠：<strong>"令人恼火的是，它可能还真成功了。"</strong></p>
+    <p>还有一条长期存在的质疑：<strong>它把贫困拍得太干净、太暖了</strong>，是在把苦难度假成一种可供消费的美。</p>
+    <p>我的态度，一条一条说：</p>
+    <ul>
+      <li><strong>Maslin 那条，我同意一半。"no reality beyond the economic"（经济之外没有任何现实）是个准确的观察</strong>——这部片确实几乎不触碰经济之外的任何层面，你看不到它之外的那个社会是怎么运转的。这是选择，也是处境，我不打算替它辩护。<strong>但"童话氛围"这个定性我不接受。</strong>童话会给你一个结局，会让你相信好人会有好报。这部片没有——它没有贵人，没有奇迹，没有谁突然心软，那双鞋到最后也没因为任何人的善良而出现。<strong>它干净，但不虚假。这两件事差得很远。</strong></li>
+      <li><strong>Atkinson 那条，前半段我读到了一个我无法反驳的观感，后半段我不同意。</strong>"它可能还真成功了"——这句难反驳，因为它描述的其实是事实：这部片确实成了伊朗电影的国际名片，我上面那整段"15 年后"就是证据。<strong>但把它归因于"民族工业急于讨好大众"，是一个太省事的解释。</strong>它省掉了你必须回答的那个问题：为什么偏偏是这双鞋，为什么是这两个孩子，为什么 46 万人在一部波斯语片底下打出 9.2。把共鸣解释成营销，是最省力也最没用的一种解释。</li>
+      <li><strong>关于"演得像花生酱广告里被收买的热情"——这条我可以用事实回应。</strong>那两个孩子是剧组跑遍德黑兰小学找来的非职业演员，妹妹的扮演者要妈妈全程陪着才肯拍。观感是主观的，我不跟你争观感；<strong>但"被收买的热情"这个归因，跟拍摄现场发生过的事对不上。</strong></li>
+      <li><strong>"美化贫穷"这条，是本系列到现在为止最该被认真对待的一条。</strong>它真正的指向是：这部片拍了穷人，但没拍贫穷是怎么来的。这个批评站得住。我想补一句的是它做对的部分——<strong>它没有让穷变成美德，也没有让穷变成景观</strong>，它只是让穷成为"这周必须处理掉的一件事"。这不解决问题，但它至少没有拿贫困去换眼泪。</li>
+    </ul>
+    <p>把这些放在一起你会发现：<strong>两条最狠的批评，其实是在向同一部电影要两样相反的东西</strong>——一个嫌它不够现实，一个嫌它太像投标。而它们共同的假设是：一部来自伊朗的、关于穷孩子的、被奥斯卡提名的电影，<strong>必须先替它的国家负责，然后才被允许好看。</strong></p>
+    <p>这个假设本身，才是值得你带进观影里的东西。</p>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <ul>
+      <li><strong>因为它 89 分钟，而你不需要准备任何东西。</strong>本系列 19 期，这是门槛最低的一部——比第 17 期《寄生虫》还低。不黑白、不烧脑、不需要电影史知识、不需要挑心情。</li>
+      <li><strong>因为它问的问题不需要翻译。</strong>一双鞋。你可能在任何一个国家、任何一个年代、任何一个收入水平上，都经历过"家里补不起那样东西，而你不敢说"的那种下午。</li>
+      <li><strong>因为它是输掉的那部。</strong>1999 年那一届，赢的是《美丽人生》。我不打算翻案——那部确实好。但输掉的那部，往往没有人替它说话。它拿到提名之后被放进"伊朗电影"的抽屉里，被当成一张名片、一个代表、一次投标，唯独很少被当成一部 89 分钟的、关于两个孩子的电影来看。</li>
+      <li><strong>因为看懂它，等于看懂后面那十五年。</strong>《一次别离》为什么会被世界看见，《推销员》为什么会第二次拿奖——追到源头，是 1997 年这双鞋先被人看见了。</li>
+      <li><strong>因为它是本系列少有的"全程没有一个坏人"的片。</strong>你会在 89 分钟里持续紧张，却指不出紧张来自谁。这种体验不常有，而且它给你的不是愤怒，是别的什么——看完你自己说。</li>
+      <li><strong>因为它不消费贫穷，也不消费善良。</strong>这两样在今天的影视里，都是最容易被拿去换眼泪的东西。它两样都没换。</li>
+    </ul>
+    <div class="ask">
+      <small>想完了再看，看完再想</small>
+      <strong>第一层。</strong>阿里和莎拉决定瞒着父母。你的第一反应是"懂事"还是"不对"？先别急着下判断——往下想一步：<strong>如果他们说了，会发生什么？</strong>你想出来的那个后果，是什么让你觉得他们非瞒不可？<br><br>
+      <strong>第二层（这一层必须指认具体场次）。</strong>请你在看的时候，试着指出一个"坏人"。房东、杂货铺老板、校长、捡走袋子的人，随便哪个。<strong>如果你一个都指不出来——那这 89 分钟的紧张感是从哪来的？</strong>如果冲突不来自任何人，它来自什么？指不出来没关系，但你要知道自己指不出来。<br><br>
+      <strong>第三层（锚定第 6 期）。</strong>《美丽人生》里，父亲替儿子虚构了一个集中营；《小鞋子》里，孩子替父母守住了一双鞋。<strong>同样是瞒，方向正好相反。</strong>先回答这个：<strong>哪一种更难？</strong>——然后再回答这个：1999 年那一届奥斯卡的评委，把票投给了大人那一个。<strong>你会投给哪一个？</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>观看建议</h2>
+    <ul>
+      <li><strong>没有版本陷阱。</strong>89 分钟就是 89 分钟（英文资料另有 88 分钟记法，差一分钟内），没有删减版、导演剪辑版之争。你在任何平台看到的都是完整的一部。</li>
+      <li><strong>它在中国内地公映过</strong>——1999 年 4 月 15 日，比很多后来靠互联网才被知道的经典要"正规"得多。</li>
+      <li><strong>适合：</strong>任何时间、任何心情；也适合和孩子一起看（英文分级 PG）。</li>
+      <li><strong>不适合：</strong>期待"发生点什么"的人。整部片的事只有一件——一双鞋。它没有反转，没有高潮戏，没有大情绪，<strong>它的戏剧性全部来自"这件事还没解决"。</strong></li>
+      <li><strong>一个提醒：</strong>它是"流泪片"榜单上的常客，但我不建议你带着"我要被感动"进场。它是先让你着急，然后才让你难受的——顺序反了，观感会差很多。</li>
+      <li><strong>再一次：</strong>别点开任何"剧情介绍"，别点任何"几分钟看完"。89 分钟，你自己走完比什么都强。</li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 19 期 · 2026-10-24<br>
+    评分与事实均于本次现查核实；票房数字各源不一（Box Office Mojo 记 933,933 美元，英文维基记约 160 万美元，取决于是否计入各地区后续发行），故正文未采用单一数字。成本 18 万美元一项各源一致。
+  </div>
+
+</div>
+</body>
+</html>

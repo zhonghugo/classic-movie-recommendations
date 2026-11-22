@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 雨中曲</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 35 期</div>
+  <h1>雨中曲</h1>
+  <div class="en">Singin' in the Rain（1952）&nbsp;·&nbsp; 斯坦利·多南 / 吉恩·凯利 联合导演 &nbsp;·&nbsp; 米高梅 · 阿瑟·弗里德制片</div>
+  <div class="meta">
+    <span>美国</span><span>米高梅</span><span>歌舞 · 喜剧 · 爱情</span>
+    <span>103 分钟</span><span>特艺七彩</span><span>1952-04-11 美国公映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.1</b><small>豆瓣</small></div>
+    <div class="score"><b>8.3</b><small>IMDb · 约 26 万票</small></div>
+    <div class="score"><b>100%</b><small>烂番茄专业 · 78 评</small></div>
+    <div class="score"><b>99</b><small>Metacritic · 17 评</small></div>
+    <div class="score"><b>第 1</b><small>AFI 最伟大歌舞片</small></div>
+    <div class="score"><b>第 10</b><small>视与听 2022 影评人榜</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.1（2024-09 快照 245,861 人评价，此后仍在增长）；IMDb 8.3（约 26 万–27 万票，各源快照 260,346–277,000）；烂番茄专业 100%（78 评，均分 9.3）· 爆米花 95%（10 万+ 评分）；Metacritic 99（17 评，属老片回溯性评分，样本小、但是「普遍赞誉」档）。<br>
+    选片线：豆瓣 9.1 高出线 0.3，IMDb 8.3 <strong>恰好压线</strong>——两条线同时达标。歌舞片在本系列前 34 期里一次都没开过线，本期补上。<br>
+    <strong>节奏说明：昨天（第 34 期）是全系列最静、最慢、最轻手轻脚的一部，136 分钟黑白日本家庭剧；今天是全系列最吵、最亮、最爱动的一部，103 分钟彩色歌舞喜剧。</strong>两部片的院线上映时间只隔约一年半（1952-04-11 / 1953-11-03）——同一时代的两个极端：一部把声音压到只剩茶水声和电车声，一部把声音开到整条街都在唱。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（第 13 档「防期待」——本系列第一次把红线划在期待值上）</h2>
+    <p>前 34 期的 12 档红线，防的全是「有人把内容说给你听」：结局、最后一句台词、作案过程、代读地图、物件下落、身份揭示、年表、证据清单。这部片是另一种情况——<strong>它没有反转、没有谜底、没有凶手，甚至没有真正意义上的悬念。</strong>它的风险在反方向：<strong>在你进场之前，全世界已经把「影史最伟大的歌舞片」「人类快乐的六分钟」贴在了它脸上。</strong>于是你走进去不是去看，而是去验收；不是被逗乐，而是在心里打分。</p>
+    <p><strong>这也是一种剧透——它剧透的是你的反应。</strong>所以本期的红线写在这里：<strong>在按下播放之前，不要先看那支舞的片段。</strong></p>
+    <ul>
+      <li><strong>第一类：安利类长文（第十三、二十三类，本期亲历极端案例）。</strong>查资料时撞到一篇同题材的公众号推荐长文，三千多字，从开场红毯写到最后一幕的具体动作，一步不落、连人物关系都替你理完了。<strong>这条规律本系列已经反复验证过：自称「安利」的文本，防备心最低，泄得最全。</strong></li>
+      <li><strong>第二类：被单独剪出来的那一段（第九类）。</strong>那六分钟被剪成片段传播了七十多年，短视频平台、音乐歌单、舞蹈教学、广告片头里到处都是。<strong>它一旦离开影片的位置，就只剩一段好看的舞蹈</strong>——而它在片子里之所以是那六分钟，是因为前面七十分钟一直在给它攒情绪。</li>
+      <li><strong>第三类：检索词雷（第 11 次启用）。</strong>搜「雨中曲」三个字，会直接撞上三样东西：那支舞的片段、1929 年《好莱坞歌舞大会》里同名歌曲的原版演唱、以及港台译名《万花嬉春》下的混剪。<strong>建议搜「雨中曲 1952 4K 修复」或「Singin' in the Rain 1952」。</strong></li>
+      <li><strong>第四类：中文百科的剧情栏（第八类）。</strong>这一栏通常会把<strong>他们最终采用的那个办法</strong>直接写出来——那是本片第二幕的引擎，也是最好笑的一段铺垫的落点。<strong>看演职人员表、看获奖记录都可以，剧情栏跳过。</strong></li>
+    </ul>
+    <p>安全区划给你（这些是开场二十分钟就交代完的前提）：<strong>1927 年的好莱坞，唐·洛克伍德是默片时代最红的男星，琳娜·拉蒙特是他的银幕搭档——宣传稿把他们写成一对，实际上他连听她开口都不想听。有声片来了，影院装上音响，观众忽然要求明星说话，他们正在拍的那部片被迫改成有声片；而琳娜的声音，是个灾难。同一天晚上，唐在首映礼后跳上一辆陌生人的车，撞见一个不肯把他当大人物的合唱队女孩凯西。三个人——唐、他的琴师兼好友科斯莫、凯西——必须在下一部片开拍前想出一个办法。</strong></p>
+    <div class="ver">我们停在这里。他们想出了什么办法、那个办法怎么在观众面前收场、最后一幕谁站在灯下——一个字不写。<br>
+    <strong>下面「亮点」与「批评」两节会提到「代唱」这个词，我提前声明边界：</strong>它是这部片每一张海报简介里的前提级信息（就像第 33 期提前告诉你「那是一部侦探片，谜底是一个身份」），不是它的结局。<strong>真正该留给你自己的，是「他们怎么想到的」和「那晚怎么翻的盘」。</strong></div>
+  </div>
+
+  <div class="card">
+    <h2>三件先说清楚的事</h2>
+    <p><strong>第一件：它当年输得很惨，而它输掉的那个晚上，比它本身更好看。</strong>1953 年 3 月 19 日，第 25 届奥斯卡——<strong>那是史上第一次电视直播的奥斯卡</strong>，NBC 从好莱坞和纽约两地同时播出，全美约 3400 万人看，是当时电视史上最大的单场观众。就是这一晚，本片只有两项提名（简·哈根的最佳女配角、伦尼·海顿的歌舞片配乐），<strong>颗粒无收</strong>：女配输给格洛丽亚·格雷厄姆《玉女奇男》，配乐输给阿尔弗雷德·纽曼《情泪心声》；最佳影片给了塞西尔·B·德米尔的《戏王之王》——而那部片今天在烂番茄「95 部最佳影片」的倒数榜上排第 94，只赢过 1929 年那部《百老汇旋律》。同一晚，被看好的《正午》丢掉了最佳影片（它拿走了男主、剪辑、配乐与原创歌曲四座），《玉女奇男》拿了五座却连最佳影片候选都没进。</p>
+    <p>这里我要打住一个诱惑：<strong>「奥斯卡又瞎了眼」这个笑话，本系列已经讲过两次</strong>（第 11 期「当年赢的是阿甘，三十年后第一是肖申克」、第 31 期「它根本没进考场」），再讲一遍就是复读。这一晚真正有意思的地方在别处：<strong>一场关于「旧媒介遇到新媒介」的电影，在电影工业第一次向另一个新媒介（电视）低头的那天晚上，输给了一个马戏团。</strong>那晚整个行业正在做两件事——向电视学习怎么被看见，以及在颁奖台上展示它希望自己成为的样子。而《戏王之王》恰恰就是「它希望自己成为的样子」：大、亮、明星云集、史诗、无害。本片拍的是「它真实的样子」：手忙脚乱、靠宣传稿编绯闻、靠替别人发声活着。<strong>奖项记录的从来是「当时想成为什么」，不是「后来成了什么」。这句判词，用一部关于「想成为什么」的电影来收，最合适。</strong></p>
+    <p><strong>第二件：它不是一部「原创」杰作，它是一次极其高明的再利用——而这件事本身就是它的主题。</strong>制片人阿瑟·弗里德手里有一批旧歌：他和纳西奥·赫布·布朗在 1929 到 1939 年间写的一堆曲子，堆在米高梅的曲库里。他给编剧贝蒂·康登与阿道夫·格林的任务很直白：<strong>写一个能把这些歌串起来的故事。</strong>两位编剧翻着歌单发现一件事——这些歌全都写在默片正被有声片顶掉的那几年。<strong>于是才有了这个故事：不是先有故事再配歌，是先有歌单，再倒推出一段历史。</strong>罗杰·艾伯特在 1999 年那篇里写得更狠：全片只有一支歌是为这部电影新写的，其余全部来自旧曲库，布景道具也是从米高梅仓库里翻出来的。</p>
+    <p>顺着这条线还有一桩业内公案：片里最杂技的那首《Make 'Em Laugh》，旋律与结构和科尔·波特 1948 年写给《海盗》的《Be a Clown》几乎一模一样，当年没人起诉，今天仍是音乐剧课上必讲的案例。<strong>换句话说：这部被供为「好莱坞最快乐」的片，是拿旧料拼的、拿旧布景搭的、拿一段近乎照抄的旋律顶上去的。</strong>我不认为这是污点——恰恰相反，它是这部片最诚实的地方：<strong>它讲的就是一个「不发明，只重组」的行业。</strong></p>
+    <p><strong>第三件：它看起来毫不费力，是因为所有费力都被留在了镜头之外。</strong>吉恩·凯利是联合导演之一，也是全片编舞，他有一条铁律：<strong>舞要全身入画、镜头不许切碎、一支舞尽量一个镜头跳完</strong>——七十多年后看去仍然不像人能跳出来的东西，是因为它真的没被剪过。唐纳德·奥康纳拍完《Make 'Em Laugh》里那段跑上墙、翻跟头、和假人跳舞的活儿，按他自己的说法在床上躺了整整一周；更糟的是那段的原始底片后来意外损毁，他答应重拍了一遍。黛比·雷诺斯接戏时 19 岁，体操运动员出身、没受过正规舞蹈训练，被凯利当众训到躲在钢琴底下哭——<strong>发现她的是弗雷德·阿斯泰尔</strong>，这件事她写进了 2013 年的回忆录。这些都不是花边，它们解释了这部片为什么能「轻」：<strong>重量全部由拍摄期承担了，正片才可以一点重量都没有。</strong></p>
+    <p>再补一句会让整部片变得更复杂的事实，学术上早有专论（Stephan Prock 的论文）：<strong>这部片的女主角，两段唱是别人配的。</strong>一部关于「谁的声音算数」的电影，在制作层面撞上了它自己。<strong>这不是我要拿来讥讽它的把柄</strong>——我只是觉得，你在看的时候如果知道了这一层，那句台词会突然重很多。</p>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在（不看剧情也能看懂的四个看点）</h2>
+    <ul>
+      <li><strong>一、那六分钟的语法，值得当成技术课看。</strong>一个人、一把伞、一条搭出来的街、一场造出来的雨。<strong>整段几乎没有台词、没有对手戏、没有剧情推进，也不需要理由</strong>：歌舞片通常要替角色找一个「为什么要唱」的借口，这里连借口都省了，高兴本身就是理由。留意两件事：<strong>摄影机跟不跟得上他的身体？以及这场雨是怎么被灯打亮的（雨丝要在逆光里才看得见）。</strong>第 34 期我写过小津把机器钉在榻榻米上一动不动；这一期正好相反——机器跟着身体跑。但两者的纪律是同一条：<strong>不让剪辑替演员干活。</strong></li>
+      <li><strong>二、它其实是一部关于「假」的电影。</strong>假绯闻、假出身、假掌声、假声音——全片所有关系都建立在「替别人说话」上：宣传部门替明星说话，幕布后面的人替台上的人说话，记者替观众写好观感。<strong>而它自己用了最人工的手段：棚里搭街、水管造雨、绘景板当天空、灯从背后打。</strong>它没有一处「真实」，却做出了电影史上最可信的一种快乐。<strong>这是这部片最迷人的悖论：假到极致，反而诚实。</strong></li>
+      <li><strong>三、被「最伟大歌舞片」这个称号盖住的一件事：它是一部很好的喜剧。</strong>发音课那场（一群人反复念一句绕口令，越念越荒唐）、试映会那场（观众笑到停不下来，而放映厅里的人脸色越来越白）、以及那段把男主角的发迹史当场拆穿的蒙太奇——<strong>旁白在吹牛，画面在打脸，两种叙述同时进行</strong>。烂番茄的评论共识第一条就是「clever, incisive, and funny」，反倒是「歌舞」排在后面。</li>
+      <li><strong>四、颜色。</strong>特艺七彩（Technicolor）的三色工艺，米高梅当时最好的美术与服装班组；2022 年 70 周年做了 4K 修复，并在戛纳电影节放映。<strong>这部片的红、黄、绿是「设计过的鲜艳」，不是「旧胶片发黄」。</strong>看的时候留意一件事：三个人并排走的时候，衣服颜色从来不撞——那不是巧合，那是分镜表上算好的。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p><strong>因为它是「技术换代」这件事被拍成喜剧的唯一一次。</strong>注意这个位置关系：本系列第 31 期《城市之光》写过，有声片赢了三年之后，全世界最有权力的人选择不说话（1927 年 10 月《爵士歌手》→ 1931 年 1 月卓别林那部）。<strong>本期是同一场革命、另外两个位置：</strong>一屋子人被迫学着开口、而且学不会；以及那个真正会说话的女孩，被藏在幕布后面。<strong>三个位置——拒绝说话、学说说话、说不出口——第 34 期《东京物语》正好是第三个。</strong>同一场技术革命，二十二年，三个座位。这不是我硬凑的：那一代人真的都在处理同一件事。</p>
+    <p><strong>因为它对你今天有用，而且不用翻译。</strong>1927 年，有声片一来，一批默片明星一夜之间失去工作——不是因为他们不美、不努力、不受欢迎，而是因为<strong>新的门槛落在了一个他们从没练过的地方</strong>：嗓音、口音、念台词的节奏。这部片把这个过程拍得极好笑，但它没有告诉你一个更冷的结论：<strong>片中被淘汰的人，不是坏人，也不是懒人，她只是不会说话。</strong>今天任何一个做内容、做技术、正被一次换代推着走的人，看这一段都会有点坐不住。</p>
+    <p><strong>因为它证明了「好看」本身就是一种需要手艺的价值。</strong>103 分钟，没有反派、没有真正的危机、没有一句说教，却几乎每分钟都在给你东西看：一段舞、一个笑点、一次变调、一场雨。<strong>它不打算深刻，但它的野心在「准」——把一件极难的事（让人连续 103 分钟愉快）做得看起来毫不费力。</strong>这件事比深刻稀有得多：深刻可以靠题材，愉快只能靠手艺。</p>
+    <p>最后，把艾伯特那句放在这里收尾。他 1999 年把这部片收进「伟大电影」系列，开头就是这段：</p>
+    <div class="quote">
+      There is no movie musical more fun than "Singin' in the Rain," and few that remain as fresh over the years. Its originality is all the more startling if you reflect that only one of its songs was written new for the film... The verdict of the years knows better than Oscar: "Singin' in the Rain" is a transcendent experience, and no one who loves movies can afford to miss it.
+      <em>——罗杰·艾伯特，1999-02-14。译：没有哪部歌舞片比《雨中曲》更好玩，也很少有几部经年之后还这么新鲜。更让人吃惊的是它的「原创性」：全片只有一支歌是为它新写的……时间的判决比奥斯卡更懂行：《雨中曲》是一次超越性的体验，爱电影的人不能错过它。</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>批评版块（三条：一条最重的、一条最锋利的、一条关于门槛的，再加我的一条）</h2>
+    <p><strong>第一条（最重）：它把一个正在清洗自己的行业，拍成了一场幼儿园派对。</strong>1952 年的好莱坞不是片子里这个样子。那几年正是众议院非美活动调查委员会（HUAC）与黑名单最凶的时候，一批编剧、导演、演员因为政治立场失去工作、改名、流亡；工会内斗、酒精与药丸、明星被制片厂当资产管着。<strong>本片里的好莱坞没有政治、没有失业、没有一个人因为说过什么话而被赶走。</strong>这条批评站得住，而且它比「太甜」那种说法重得多。<strong>我的表态（本系列第十种：承认自己缺裁决所需的信息，并把缺的那条明写出来）：</strong>我不会用「它只是歌舞喜剧」来开脱——因为一部片拍成什么样是它的自由，<strong>但它被当成整个行业的名片用了七十年，这就不是它自己的事了</strong>。我能诚实说的是：我不知道 1952 年坐在影院里的那些人，是更需要看这个，还是更需要看别的。<strong>这条我不裁决，只把它摆在你进场之前。</strong></p>
+    <p><strong>第二条（最锋利）：它一边讽刺「替别人发声」，一边让女主角替别人发声。</strong>两个层次。第一层是故事层：凯西最好的东西（嗓子）被借给了琳娜，她自己站在幕布后面；她的奖赏是「被看见」，而拉开幕布的手是一个男人的。第二层是制作层：<strong>雷诺斯的两段唱由 Betty Noyes 配唱，凯西全片没有一支独立的完整唱段</strong>——这是 Prock 那篇论文的核心论点，也是这部片最不舒服的一处回声。至于琳娜：她不是恶人，她只是不会说话，<strong>而她被淘汰的方式是当众出丑、全场哄笑。</strong><strong>我的表态（沿用第 22 期「承认且不辩护，然后转成一条观影动作」）：</strong>这条我不打折。观影动作给你——<strong>看的时候留意：每一次全场大笑，笑的是谁？那个人刚刚失去了什么？</strong></p>
+    <p><strong>第三条（关于门槛）：有人一听人突然唱起来就出戏。</strong>这是歌舞片类型本身的墙，跟片子好坏无关，我完全理解。<strong>我的表态（沿用第 21 期「全盘接受，把缺点当推荐理由」）：</strong>承认，但这部片大概是唯一能治好这种不适的一部——它的歌几乎都长在场景里：排练房里、试音间、深夜的片场、走在回家的路上。<strong>没有一次是「剧情停下来，大家开始唱」；每一次都是「事情正做到一半，只能唱了」。</strong>如果连这部都看不进去，那这条线你就别碰了，去看第 25 期《桃色公寓》，同样 1950 年代、同样好笑、一句不唱。</p>
+    <p><strong>我的一条：它把「被替代」拍成了喜剧，而对绝大多数人来说，「被替代」不是喜剧。</strong>琳娜失去工作的那一刻，放映厅里所有人都在笑——包括我，包括七十多年来每一场的观众。<strong>这部片最不温柔的地方就在这里：它让你在最该不适的地方笑了，而且笑得毫无恶意。</strong>这不是它的失误，是它的立场——它站在有才华的那一边，而才华这东西，从来是事后才被确认的。<strong>所以我推荐它，同时提醒你：看的时候爽的那一下，别太快过去。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>观看建议（本期是第十二次「不用挑版本」，但有三条硬提醒）</h2>
+    <ul>
+      <li><strong>版本：没有删减陷阱，103 分钟各平台一致。</strong>这是本系列第 12 次遇到「无需挑版本」（累计：删减/改判 8 · 无陷阱 12 · 「更长≠更好」1）。<strong>但要挑画质：请选 2022 年 70 周年 4K 修复版（华纳）</strong>——这部片的全部卖点是颜色与舞蹈，老拷贝会把特艺七彩洗成橘黄色。这是本系列第三次提出「修复版刚性建议」（前两次＝第 31 期《城市之光》、第 34 期《东京物语》）。</li>
+      <li><strong>千万别看配音版，这一条比什么都重要。</strong>这部片的笑点几乎全部长在「声音与脸对不上」这件事上——<strong>你一旦把它配成中文，那个笑点就被整个抹平了</strong>，剩下的只是一部「歌挺好听的老片子」。请用原声 + 中文字幕。</li>
+      <li><strong>音量开大一点，别用手机外放。</strong>这是一部关于声音的电影：脚步踩在水里的声音、伞骨弹开的声音、麦克风藏在花盆里收到的杂音——它们都是笑点，也都是在干活。</li>
+      <li><strong>请用原速看（第三次，沿用第 29、34 期）。</strong>它的节奏是身体给的，一倍速以下会散架；二倍速以上，舞就不成立了。</li>
+      <li><strong>先别看那六分钟的片段，这是本期唯一一条「反向」提醒。</strong>让它在该来的位置上出现。<strong>你已经知道有这么一段了——这已经是我能给你的最大让步。</strong></li>
+    </ul>
+    <div class="ver">顺手说个观看顺序的事：如果你最近刚看完第 31 期《城市之光》，两部连着看会非常有味道——一部是 1931 年有人拒绝开口，一部是 1952 年有人回忆所有人被迫开口。<strong>但请隔几天，别一晚连看：一个 87 分钟黑白默片，一个 103 分钟彩色歌舞，中间最好睡一觉。</strong></div>
+  </div>
+
+  <div class="card">
+    <h2>带走三个问题（看完再回答）</h2>
+    <div class="ask">
+      <small>第一问 · 进场之前</small>
+      <p>先想一件你亲历过的「工具换代」：<strong>你哪样本事，是在某一次换代之后突然不算数的？</strong>——不必告诉我，记住它，再看这部片。它就是拿这件事当燃料的。</p>
+    </div>
+    <div class="ask">
+      <small>第二问 · 散场之后</small>
+      <p>回看那六分钟，回答两个技术问题：<strong>摄影机切过吗？如果他跳的只是「高兴」，为什么需要一条街、一场雨、一台吊车和几十个人配合？</strong>——如果快乐都可以被这样精确地制造出来，那么「我在影院里被感动」这件事，到底是谁的功劳？<strong>第 24 期《后窗》问过类似的问题（你看得那么过瘾，这算不算共犯）；这一期问得更轻，也更扎人：你被制造出来的快乐，还是你的快乐吗？</strong></p>
+    </div>
+    <div class="ask">
+      <small>第三问 · 跨期对照</small>
+      <p>本系列的三部片，凑成同一场技术革命上的三个座位：<strong>第 31 期《城市之光》，卓别林拒绝说话（1931）；第 34 期《东京物语》，想说的话谁都没说（1953）；本期，一屋子人拼命学说话，而说的不是自己的声音（1952）。</strong>——拒绝、说不出、学不像。<strong>你现在坐在哪个座位上？</strong>这一问没有标准答案，但这部片给了一个很清楚的提示：<strong>三个座位里，只有中间那个能笑出声。</strong></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>数据表（本期口径）</h2>
+    <table>
+      <tr><th>项目</th><th>数据</th></tr>
+      <tr><td>豆瓣</td><td>9.1（2024-09 快照 245,861 人评价，此后持续增长）</td></tr>
+      <tr><td>IMDb</td><td>8.3（约 26 万–27 万票，各源快照 260,346–277,000）</td></tr>
+      <tr><td>烂番茄 / MC</td><td>专业 100%（78 评，均分 9.3）· 爆米花 95%（10 万+）／Metacritic 99（17 评）</td></tr>
+      <tr><td>AFI</td><td>2006「25 部最伟大音乐电影」<strong>第 1</strong>；2007 百年百大<strong>第 5</strong>（1998 版第 10）；2000 百年百笑第 16；2002 百年百大爱情片第 16</td></tr>
+      <tr><td>视与听 2022</td><td>影评人榜<strong>第 10</strong>；导演榜第 53（TSPDT 2025 第 11）</td></tr>
+      <tr><td>奖项</td><td>1953-03-19 第 25 届奥斯卡<strong>2 提 0 中</strong>（女配简·哈根、歌舞片配乐伦尼·海顿）；<strong>未获最佳影片提名</strong>；金球音乐喜剧类影帝（唐纳德·奥康纳）+ 影片提名；BAFTA 最佳影片提名；WGA 最佳美国歌舞片剧本<strong>获奖</strong>；DGA 提名；国家评论协会年度十佳第 8</td></tr>
+      <tr><td>同届最佳影片</td><td>《戏王之王》（德米尔）——烂番茄「95 部最佳影片」倒数第 2（第 94）；那晚也是<strong>奥斯卡史上第一次电视直播</strong>，约 3400 万人收看</td></tr>
+      <tr><td>成本 / 票房</td><td>约 254 万美元／约 720 万美元（IMDb 另记 882 万，口径含重映与海外不一）</td></tr>
+      <tr><td>片长 / 制式</td><td>103 分钟；特艺七彩；米高梅；多南与凯利联合执导（多南主管文戏，凯利主管舞蹈）</td></tr>
+      <tr><td>音乐</td><td>绝大多数为弗里德与纳西奥·赫布·布朗 1929–1939 年旧作（按艾伯特：全片只有一支新歌）；《Make 'Em Laugh》与科尔·波特 1948《Be a Clown》高度相似，业内公案、当年未诉</td></tr>
+      <tr><td>影史收录</td><td>1989 年入选美国国家影片登记部<strong>首批 25 部</strong>；2019 年北京国际电影节展映成为爆款；2022 年 70 周年 4K 修复版在戛纳电影节放映</td></tr>
+      <tr><td>版本状况</td><td><strong>无删减陷阱</strong>，103 分钟各平台一致；请选 2022 年 4K 修复；<strong>必须原声</strong></td></tr>
+    </table>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 35 期 · 2026-11-12<br>
+    评分与榜单均于本次执行时现查，口径差异已逐条标注；本期红线划在「期待值」上——那六分钟，请留到它该来的位置。
+  </div>
+
+</div>
+</body>
+</html>

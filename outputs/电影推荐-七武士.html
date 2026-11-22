@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 七武士</title>
+<style>
+  :root{
+    --bg:#0d1218; --panel:#161d26; --panel2:#1d2531; --line:#2b3543;
+    --tx:#e8eef5; --tx2:#a3b0bf; --tx3:#6f7d8d;
+    --acc:#6ba7d8; --acc2:#e0b95c; --warn:#d98f6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(217,143,107,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 16 期</div>
+  <h1>七武士</h1>
+  <div class="en">七人の侍 / Shichinin no Samurai (1954)</div>
+  <div class="meta">
+    <span>日本</span><span>黑泽明</span><span>动作 · 剧情 · 时代剧</span>
+    <span>207 分钟</span><span>黑白</span><span>日语</span><span>1954-04-26 日本首映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.3</b><small>豆瓣 · 约 23.4 万人</small></div>
+    <div class="score"><b>8.6</b><small>IMDb · 约 40 万票</small></div>
+    <div class="score"><b>100%</b><small>烂番茄专业 · 104 评</small></div>
+    <div class="score"><b>98</b><small>Metacritic · 7 评</small></div>
+    <div class="score"><b>97%</b><small>烂番茄观众 · 5 万+</small></div>
+    <div class="score"><b>4.6</b><small>Letterboxd · 约 47 万</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣各源记 9.2–9.3、人数 11.8 万–23.9 万（取最新且样本最大的 9.3 / 23.4 万）；IMDb 各源 8.6 稳定，票數 39.9 万–40.2 万，TOP250 位次在各榜单上记第 19 至第 24 位不等；烂番茄专业分均分 9.70/10，观众区 4.7/5。有平台称它是 IMDb TOP250 中评分最高的非英语片（与《美丽人生》并列 8.6）。<br>
+    <strong>注意 Metacritic 那个 98 的样本：只有 7 条评论。</strong>
+  </div>
+
+  <div class="card">
+    <h2>先把话放在最前面</h2>
+    <p>昨天那部《这个杀手不太冷》被专业影评界扣到 74% 和 64，是本系列专业分最低的一档。今天这部，是十六期里<strong>第一个专业分满分</strong>——104 条影评，无一差评。</p>
+    <p>而它同时也是本系列争议性质最不一样的一部。前十五期的分歧都发生在<strong>同一时刻的不同人群之间</strong>（影评人 vs 观众、东方 vs 西方）。这一部的分歧发生在<strong>时间轴上</strong>：《视与听》十年一度的影史百大，它 1982 年第 3 位、1992 年第 9 位、2022 年第 20 位——四十年掉了十七个位次。而同一段时间里，它的豆瓣是 9.3、IMDb 是 8.6、烂番茄是 100%。</p>
+    <p>是这部片变差了，还是评它的那群人换了一代人？这个问题我留给下面。</p>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（不含剧透）</h2>
+    <p>战国乱世。一个山村年年在秋收后被同一伙山贼抢走粮食。这一年，村里有人偷听到了山贼的打算——<strong>等麦子熟了再来</strong>。</p>
+    <p>长老说：雇武士。可村里拿不出钱，能给的报酬只有<strong>一日三餐的白米饭</strong>。</p>
+    <p>几个农民进城去找。一开始没人理他们，甚至挨了打。直到他们遇见一个叫勘兵卫的浪人——他答应了，说至少要七个人。于是另外六个陆续加入：有他过去的部下，有剑术好到不必比试就知深浅的人，有脾气最好、靠砍柴换饭吃的人，也有一个怎么赶都赶不走、怎么看都不太像武士的人。</p>
+    <p>七个人进村。接着是全片最长的那段日子：修栅栏、挖沟、分岗、教农民怎么握长枪。武士和农民互相提防——农民怕他们，武士也清楚自己被怕着。山贼始终没来。</p>
+    <p><strong>等到他们来的时候，是雨里。</strong></p>
+    <div class="ver">
+      我们停在这里。从这一句往后，本卡片一个字都不写——某一个人的身份真相、任何一个人的结局、决战怎么打、最后那段被引用最广的台词、片尾村子的样子。理由见下方红线框。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点在哪里</h2>
+    <ul>
+      <li><strong>它发明了一套语法，而不只是拍了一部好片。</strong>同时代电影多用固定机位、单镜、碎剪；黑泽明在决战里架多台摄影机同时取景，配上长焦压缩空间、慢动作拉长瞬间。你今天在吴宇森的枪战、徐克《智取威虎山》那场村庄保卫战、以及所有"小队集结打 boss"的电影里看到的东西，源头都在这里。影评人安妮·比尔森认为，正是这部片让"集结团队"这个叙事套路在电影里普及开；1960 年的《豪勇七蛟龙》直接照搬了它的情节与部分台词。宫崎骏说没有它就没有《幽灵公主》——那是他这辈子唯一看过两遍的电影。</li>
+      <li><strong>它是本系列第一部"主角是一群人"的电影。</strong>前十五期——楚门、麦克墨菲、蝙蝠侠、阿甘、程蝶衣、1900、兰彻、里昂——都是一个人在扛。这一部换成七个人，而这七个人<strong>彼此之间没有义务</strong>：没有主君、没有俸禄、没有契约，报酬只有白米饭，事成之后各自散开。黑泽明写了六周剧本，给每个人写了详细的人物笔记（连说话方式、怎么系鞋带都写了），还给村民编了家谱，让演员在拍摄期间像一家人那样住在一起。</li>
+      <li><strong>它拍了 148 个工作日，中途钱花光、停机、东宝追加投资。</strong>最终成本英文维基记 2.1 亿日元、英国电影学会记 1.25 亿日元（约为当时日本平均成本的五倍）——两边都同意它是当时日本最贵的电影。它不是一次从容的创作，是一次工业冒险。</li>
+      <li><strong>它没有把任何一方写成好人。</strong>农民是受害者，也是会算计、会缩、会在安全之后立刻翻脸的人。武士是来救命的，也是一群没落、无处可去、拿命换饭的人。这两群人从头到尾没有真正融合过。这条裂缝是这部片最硬的地方——它拒绝给你一个"军民一心"的高潮。</li>
+      <li><strong>配乐与雨。</strong>早坂文雄的主题极简，不抢戏；最后那场雨战被讨论了七十年。塔尔科夫斯基把它列为自己影史最爱的第七部电影，乔治·卢卡斯在标准收藏访谈里说这是他最喜爱的黑泽明电影，斯科塞斯 2014 年给年轻电影人开的"39 部必看外语片"名单里有它。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评</h2>
+    <p>这一部被批评得比它 100% 的专业分看上去要重得多，而且批评几乎全部集中在<strong>政治与阶级</strong>，不是手艺。</p>
+    <ul>
+      <li><strong>1972 年一场日本导演与影评人的座谈会上，对它的评价整体是负面的。</strong>影评人多田道太郎指它缺乏心理冲突；佐藤忠男与他都认为黑泽明对农民<strong>居高临下</strong>；导演大岛渚批评它<strong>没有把集体战斗转化为个人冲突</strong>。佐藤忠男后来进一步指控这部片为 1954 年成立自卫队、重整军备张目——那正是日本宪法和平条款开始受到挑战的那一年。</li>
+      <li><strong>更硬的一个事实：2018 年 BBC 召集 209 位影评人投票选影史最佳外语片，本片第一。而在那 209 位里，没有一位是日本影评人。</strong>学者琼·梅伦认为它是黑泽明作品里"被写得最少、被误解最深"的一部。</li>
+      <li>1958 年，雅克·里维特在《电影手册》上把它称作一次<strong>"轻易的成功"</strong>（facile success），认为黑泽明对西方电影技巧的运用过于精细。</li>
+      <li>《纽约时报》当年的 Bosley Crowther：技术上杰出，但<strong>太长、影像重复</strong>；并质疑它对封建日本的描写是否准确——虽然他也承认它传达出了时代的质感。</li>
+      <li>2024 年 J. Hoberman 在《纽约时报》上：肯定它的情感与政治共鸣，但批评黑泽明认同武士主角，是一种<strong>精英主义</strong>。</li>
+      <li>观众侧最实在的一条（烂番茄观众区）：<em>"我是喜欢长片的，但这是少数几部让我全程感到疲惫的。"</em></li>
+    </ul>
+    <div class="ask">
+      <small>我的判断</small>
+      "居高临下地看农民"这条，我倾向于认为<strong>部分站得住</strong>：片里的农民确实被写成一群会缩、会算计、会翻脸的人，几乎没有一个被赋予完整的内心。但我不同意把它归结为傲慢——黑泽明要写的恰恰是"这两群人无法互相理解"，如果他把农民写得高尚，这条裂缝就没了。<br><br>
+      真正的问题在别处：他把所有的视点权重都压在七个武士身上。于是那条本该双向的裂缝，变成了一面单向的墙。<br><br>
+      佐藤忠男"为重整军备张目"那条，我无法判断，也不打算判断。但我要把它留在这里——一部 1954 年的电影在 1954 年的日本被这样读，这件事本身就是它的一部分。<br><br>
+      至于"太长、太重复"：我一半同意。207 分钟确实有你可以走神的地方。但请留意一句话——<strong>它本来还要更长。</strong>
+    </div>
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线 · 请务必先读这一段</h2>
+    <p>本卡片写到"他们来的时候，是雨里"为止。之后的一切我都不写。</p>
+    <p>这部片有一个特殊风险：它的结局是影史上被引用最广的若干段落之一，你几乎不可能在中文互联网上"顺便"避开它。五个高危剧透源，请绕开：</p>
+    <ul>
+      <li><strong>《豪勇七蛟龙》（1960）及其 2016 年翻拍的剧情简介</strong>——最隐蔽的一条。它是照搬本片拍的，读它的剧情梗概等于读掉本片后半段的结构。</li>
+      <li><strong>标题里带"全剧透"三个字的推荐长文</strong>——我这次查资料时就撞见了一篇，标题直接写着"全剧透推荐"，正文平铺直叙把后半段讲完了。</li>
+      <li><strong>那句结尾台词</strong>。它被引用得太广，几乎是所有"影史经典台词"榜单的常客。你迟早会看到，但请在看完之前避开。</li>
+      <li><strong>塔尔科夫斯基谈"电影意象"时举的例子</strong>，正是本片结尾的一幅画面。</li>
+      <li><strong>各类"影史百大"混剪视频</strong>，常直接放出结尾那一段。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <ul>
+      <li><strong>因为它把"一部商业片能装下多少东西"的边界往外推了一大截。</strong>207 分钟里有笑、有怕、有雨、有泥，也有大段什么都没发生的时间——而那些时间，正是后面所有东西分量的来源。你抽掉它们，决战就只是一场打斗。</li>
+      <li><strong>因为它问的题今天还在，而且你没有更日常的版本可以替换。</strong>谁该出手？出手的人能得到什么？被保护的人欠不欠他们？项目组、志愿者、任何一个"有人站出来了、后来没人记得"的场合，都是这道题。</li>
+      <li><strong>因为它可能是你片单里补起来性价比最高的那一部。</strong>它影响了半个世纪的电影。在你看它之前，你看过的很多片像是从石头里蹦出来的；看完之后，它们会突然连成一条线。</li>
+      <li><strong>因为它是本系列的一个反向极点。</strong>昨天那部是 110 分钟冷调室内两个人的戏、专业分 74%；这一部是 207 分钟黑白旷野里七个人的戏、专业分 100%。同一套评分体系给出来的两个数，隔了一天。</li>
+    </ul>
+    <div class="quote">
+      相隔 7 期的同一个导演：《罗生门》把一件事拆成四份，越拆越不确定；《七武士》把七个人聚起来，做成一件事。罗生门 88 分钟，七武士 207 分钟。黑泽明用同一只手，写下了这两句话。
+      <em>——第 9 期《罗生门》 / 第 16 期《七武士》</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>观看建议（版本很重要）</h2>
+    <p>这部片的片长版本极多，选错了等于看了一部别的电影：</p>
+    <table>
+      <tr><th>版本</th><th>片长</th><th>说明</th></tr>
+      <tr><td>完整版（含幕间）</td><td>207 分钟</td><td>1954 年日本首映版，<strong>应当看这个</strong></td></tr>
+      <tr><td>美国重映版</td><td>203 分钟</td><td>可接受</td></tr>
+      <tr><td>英国 1991 重映版</td><td>190 分钟</td><td>可接受</td></tr>
+      <tr><td>国际版（送威尼斯）</td><td>160 分钟</td><td>当年参赛即此版，删减明显</td></tr>
+      <tr><td>英国初版</td><td>150 分钟</td><td>不推荐</td></tr>
+      <tr><td>美国初版</td><td>141 分钟</td><td><strong>别看这个</strong>，删掉约三分之一</td></tr>
+    </table>
+    <div class="ver">
+      <strong>时间：</strong>留一个完整的下午，或者干脆分两次看。它是<strong>带幕间休息设计的</strong>，本来就不是让你一口气吞下去的。<br>
+      <strong>门槛：</strong>黑白、日语、1954 年、含暴力场面。前半段节奏慢，这是故意的，不是缺陷。<br>
+      <strong>情绪：</strong>不像昨天那部需要挑心情，但如果那天你已经很累，建议改天——207 分钟的疲惫感是真实的。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>留给你三道题</h2>
+    <div class="ask">
+      <small>第一层</small>
+      村民为什么一开始躲着武士？你看到那里的时候，是替武士不平，还是觉得村民没错？——先别急着答，把你当时的第一反应记住。
+    </div>
+    <div class="ask">
+      <small>第二层</small>
+      七个人里，有没有哪一个其实<strong>不必来</strong>？请指认<strong>具体的一场戏</strong>作为证据。指不出来，说明你可能还没真正开始读这部片。
+    </div>
+    <div class="ask">
+      <small>第三层</small>
+      第 2 期《十二怒汉》里，一个人对抗十一人，<strong>越辩越明</strong>；这一部里，七个人对抗一伙山贼，而真正的阻力来自他们要保护的那些人——<strong>越帮越冷</strong>。同样都是"少数对多数"，为什么一个越辩越明，一个越帮越冷？<br><br>
+      再往前一步：第 9 期《罗生门》也是黑泽明，它说真相不可得；这一部说行动仍然可能。同一个人用同一只手写下这两句话，你觉得他在说什么？
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 16 期 · 2026-10-21<br>
+    评分数据为本次实时检索所得，各平台口径不同，已标注取值范围
+  </div>
+
+</div>
+</body>
+</html>

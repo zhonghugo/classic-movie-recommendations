@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 三傻大闹宝莱坞</title>
+<style>
+  :root{
+    --bg:#0d1218; --panel:#161d26; --panel2:#1d2531; --line:#2b3543;
+    --tx:#e8eef5; --tx2:#a3b0bf; --tx3:#6f7d8d;
+    --acc:#6ba7d8; --acc2:#e0b95c; --warn:#d98f6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .foot{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--tx3);line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">今日电影推荐 · 2026-10-19</div>
+  <h1>三傻大闹宝莱坞</h1>
+  <div class="en">3 Idiots · 2009</div>
+
+  <div class="meta">
+    <span>导演　拉吉库马尔·希拉尼（兼剪辑）</span>
+    <span>编剧　阿布希贾特·乔希 / 希拉尼（故事另有奇坦·巴哈特）</span>
+    <span>原著　奇坦·巴哈特《五点人》（Five Point Someone, 2004）</span>
+    <span>主演　阿米尔·汗 / R. 马德哈万 / 沙曼·乔希 / 卡琳娜·卡普尔 / 博曼·伊拉尼</span>
+    <span>配乐　尚塔努·莫伊特拉（词：斯瓦南德·基尔基雷）</span>
+    <span>类型　喜剧 / 剧情 / 成长</span>
+    <span>片长　171 分钟</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.2</b><small>豆瓣 · 210 万+ 人 · TOP250 第 15</small></div>
+    <div class="score"><b>8.4</b><small>IMDb · 约 49 万票</small></div>
+    <div class="score"><b>94–100%</b><small>烂番茄专业（样本仅 15–20 评）</small></div>
+    <div class="score"><b>67</b><small>Metacritic · 仅 4 条评论（系列最少）</small></div>
+  </div>
+  <div class="note">
+    数据于 2026-10-19 现查核实。豆瓣 9.2 / 2,107,080 人（TOP250 第 15，2026-10-16 快照；另有来源记第 12，榜单浮动）；IMDb 8.4 / 约 48–49 万票；烂番茄专业 94%（另有来源记 100%，但样本仅 15–20 条评论，取区间并注明）、观众 88–93%；Metacritic 67（<strong>仅 4 条评论</strong>）；Letterboxd 4.18/5（23.6 万+）；时光网 8.6。奖项：第 57 届印度国家电影奖 3 项，含「最佳大众娱乐电影」；第 55 届 Filmfare 奖 11 提 6 中（与《Dev.D》并列最多），含最佳影片、最佳导演、最佳男配角（博曼·伊拉尼）；日本 Videoyasan 奖大奖、日本学院奖最佳外语片提名、北京国际电影节最佳外语片提名；全球累计 64 奖 30 提名。票房：预算 ₹55 crore，全球约 ₹460 crore（各源折算 6000 万–9000 万美元不等），为当时印度影史最高，直到 2013 年被《Dhoom 3》超过。中国内地 2011-12-08 上映，首周末 4 天 742 万人民币（当时印度片在内地纪录），内地累计约 1404 万；香港 2210 万港元（首部在香港正式上映的印度电影）；台北 1518 万新台币，映期 6 个月 28 天（台湾影史第二长映期）。
+  </div>
+
+  <div class="card">
+    <h2>为什么是今天这部</h2>
+    <p>昨天那部片的主角，<strong>一辈子不肯上岸</strong>。不是被拦着，是他自己不肯——他站在船梯中间，觉得陆地太大、琴键太多，无限的东西没法穷尽，于是转身回去了。</p>
+    <p>今天这个主角，方向完全反过来：<strong>他一头扎进了全片最僵化、最讲规矩、最讲究分数的地方，然后不肯按那里的规矩来。</strong></p>
+    <p>这是本系列十四期里，「个体与系统」这条线走到现在最关键的一格。我们把前面几格摆出来看看：</p>
+    <ul>
+      <li>第 7 期楚门：<strong>从里面往外逃</strong>——发现整个世界是假的，撞破它。</li>
+      <li>第 8 期麦克墨菲：<strong>从外面往里闯</strong>——闯进一个封闭机构，想把里面的人唤醒。</li>
+      <li>第 10 期蝙蝠侠：<strong>跟系统做交易</strong>——他知道系统烂，但仍然替它背锅。</li>
+      <li>第 11 期阿甘：<strong>根本不发生关系</strong>——穿过三十年，毫无损伤，因为他从不跟任何东西较劲。</li>
+      <li>第 12 期程蝶衣：<strong>想逃而不得</strong>——他只想唱戏，时代一次次主动找上门来改写他。</li>
+      <li>第 13 期 1900：<strong>不入场</strong>——连这个游戏都不参加。</li>
+    </ul>
+    <p>这六个人境遇天差地别，但有一个共同点：<strong>他们的对手都是「外面的某个东西」，而他们都没有改变它。</strong>楚门带走的是自己，麦克墨菲没能带走任何人，蝙蝠侠替系统兜了底，阿甘压根不碰它，程蝶衣被它碾压，1900 绕开它。</p>
+    <p>今天这个人是第七格，也是<strong>本系列第一个「留下来、从里面把它改动了」的人</strong>。他不逃、不闯、不做交易、不躲、不绕。他就在那所学院里读书，把两个室友的人生一起拽了出来，顺便把院长也惹毛了。</p>
+    <p>还有一个理由更直接：<strong>这是本系列十四期以来，第一部印度电影。</strong>前面 13 期是意大利 2 部、美国 5 部、日本 2 部、美英 1 部、中国 1 部——印度一直是空的。而它恰恰是这份榜单上最被中国观众接受的那一部：210 万人打出了 9.2。</p>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概（可以放心读完，无剧透）</h2>
+    <p>故事从「现在」开始。两个中年男人被一个电话提醒：十年前你们打过一个赌，期限到了。他们拔腿就走，去追一个当年毕业后就再没露过面、从此音讯全无的同学。</p>
+    <p>然后时间倒回十年前，印度最好的工程学院之一——<strong>帝国工程学院（ICE）</strong>。那是一个把分数当命的地方。</p>
+    <p>三个大一新生成了室友：</p>
+    <ul>
+      <li><strong>兰彻</strong>。全院最聪明的学生，也是最不守规矩的那个。他学东西是为了弄懂，不是为了考高分；为了搞明白一个原理，他能把东西拆了。他当众顶撞教授，把院长的话当众翻过来讲。</li>
+      <li><strong>法罕</strong>。他真正想做的是野生动物摄影，可家里安排他来读工程。他成绩垫底，因为心里装着另一件事。</li>
+      <li><strong>拉朱</strong>。家境贫寒，全家的翻身指望都压在他这一张文凭上。他越怕就越学不好，手上戴满祈福的戒指。</li>
+    </ul>
+    <p>他们头顶上有一个院长，外号叫<strong>「病毒」</strong>。他把纪律和分数当成真理，把背下来的定义当成知识，把毕业证书当成人生唯一的路。他坚信这套东西是对的，也坚信自己是在为学生好。</p>
+    <p>兰彻是这套东西的天敌。他不是不努力——他是全院第一——<strong>他只是拒绝用「害怕」当燃料。</strong>他有一句话，一遍遍对吓坏了的人说；那句话后来被印在无数件 T 恤上，也被引用到几乎让人生腻。</p>
+    <p>院长还有一个女儿，是学医的。</p>
+    <p>接下来的 171 分钟里，这三个人会各自遇到一件他们必须先跨过去的事。</p>
+    <div class="ver">
+      <strong>我们的剧透红线：</strong>写到「这三个人会各自遇到一件他们必须先跨过去的事」为止，就此停笔。<strong>那件事是什么、谁跨过去了、谁没有、十年后那场寻找的结果、以及那个消失的同学到底是谁——一个字都不写。</strong>另外提醒三句：第一，这部片在中文互联网上有两个东西的搜索结果几乎全是剧透——<strong>一句被引用到发腻的台词，和一个关于主角身份的答案</strong>，看片前请绕开这两个词；第二，网上有大量「三傻深度解析」「看懂三傻才懂人生」类长文和剪辑，那类内容的结构必然是摊开后半段，<strong>请先绕开</strong>；第三，它 2009 年上映，被讨论十七年，你可能「早就知道结局」——但知道答案，和在完整的 171 分钟里走到那一步，是完全不同的两件事。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点在哪</h2>
+    <ul>
+      <li><strong>它是本系列第一次出现「整部片都在问：该怎么学」的作品。</strong>昨天那部《海上钢琴师》里，1900 是<strong>无师自通</strong>的——没有人教过他，他爬上琴凳就会弹。今天这部问的是另一个问题：如果全世界都在教你怎么背，你该怎么学会「懂」。这不是一个只在印度成立的问题。</li>
+      <li><strong>阿米尔·汗的兰彻，是那种极难演的角色。</strong>他必须同时是「全院最聪明的人」和「最不像好学生的人」——如果他显得太天才，就成了说教的传声筒；太痞气，那套道理就没人信。这个分寸一旦失手，整部片就塌了。他抓住了。</li>
+      <li><strong>博曼·伊拉尼的「病毒」院长，是本系列十四个反派里最值得看的一个。</strong>因为他<strong>不是坏人</strong>。他不贪、不虐、不图什么，他真心认为分数就是一切，也真心认为自己是在救这些孩子。Filmfare 把最佳男配角给了他。看片时留意一件事：<strong>他说的每一句话，单独拎出来都成立。</strong></li>
+      <li><strong>片中出现的那些「小发明」，大部分是真的。</strong>剧组用了印度本土几位真实发明者的作品——包括雷米亚·何塞、穆罕默德·伊德里斯、贾汗吉尔·潘特，以及拉达克的工程师兼教育家<strong>索南·旺楚克</strong>，后者还直接启发了兰彻这个角色。这是本系列第一次有影片把现实中的发明直接搬进故事：它不是在演「天才」，它是在演<strong>解决问题的人</strong>。</li>
+      <li><strong>导演希拉尼自己剪的这部片。</strong>一个 171 分钟、又有歌舞又有泪点的商业大片，剪辑权握在导演手里，这在商业片里不多见。它的节奏之所以能在一半时间让你笑、一半时间让你红眼眶还不乱，和这个有直接关系。</li>
+      <li><strong>配乐是尚塔努·莫伊特拉，词是斯瓦南德·基尔基雷。</strong>《Aal Izz Well》和《Give Me Some Sunshine》这两首歌，十几年来一直是中文互联网上的「考前神曲」。<strong>但请注意它们在片中各自出现的位置</strong>——那才是这两首歌真正的分量所在，这个我不说。</li>
+    </ul>
+    <div class="quote">
+      「追求卓越，成功就会在不经意间追上你。」
+      <em>—— 我知道这句话你已经看到腻了。它在 171 分钟里落下来的那一次，和你在朋友圈看到它，不是同一件事</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>原著 vs 电影（本系列第 2 次单列此栏）</h2>
+    <p>这一栏上一次出现是第 11 期《阿甘正传》。那一期我们说的是：温斯顿·格鲁姆 1986 年的原著是一部黑暗、荒诞、脏话连篇的讽刺小说，电影大体只取了前 11 章，把讽刺腔调洗成了温情。</p>
+    <p><strong>今天这部，几乎是同一个动作的印度版本。</strong></p>
+    <p>原著是奇坦·巴哈特 2004 年的处女作《五点人》（<em>Five Point Someone: What not to do at IIT!</em>）——讲三个在印度理工学院挣扎的学生。它更冷、更犬儒，底色是「熬过去」。电影把它改成了热的：主角从一个叛逆的聪明学生，变成了一个近乎神话的、靠动手解决问题的天才，并且被安上了一个不断重复的人生信条。</p>
+    <p>两次改编，两位原作者都公开说了话，但说法相反：</p>
+    <ul>
+      <li>格鲁姆起初说「我恨那盒巧克力」，后来软化。</li>
+      <li>巴哈特则是在影片上映后写了一篇长文《一本书、一部电影和真相》，说制作方在映前对外宣称「只有 2%–5% 受到小说启发」，而看过原著的人会发现<strong>设定、人物、情节线、笑点、主题几乎都来自这本书</strong>；他还说，制作方曾多次要求他按合同拿到的「Based on a novel by」署名撤掉，理由是「这是原创电影」。</li>
+      <li>希拉尼一方的回应是：版权是买的，署名按合同给了，出现在滚动字幕里主演之后；他说「这本书在电影里占比不超过 5%」。阿米尔·汗则直接说巴哈特是在借电影的成功博眼球。制片人乔普拉在记者会上对提问记者喊了「shut up」，第二天公开道歉。</li>
+      <li>这件事后来进了一本学术书：剑桥大学出版社《A History of the Indian Novel in English》有专章讨论此案，把它和《贫民窟的百万富翁》对照——同样是畅销小说改编的爆款电影，原作者维卡斯·斯瓦鲁普站到了奥斯卡的聚光灯下，而巴哈特的名字在《三傻》里只出现了一次，位置很低。</li>
+    </ul>
+    <p><strong>我的看法：两边都有道理，而这恰恰是本栏存在的意义。</strong>法律上制作方没有做错任何事——他们买了版权。但巴哈特指出的那件事也是真的：一件作品的价值，不只由合同决定。把这条摆在这里，不是为了让你站队，是为了让你在看片时多一层意识——<strong>你现在看到的「天才」，是被改写过的。原书里那个更丧、更真实的版本，同样存在。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p>因为它问的那个问题，<strong>在 2026 年比在 2009 年更紧</strong>：你现在做的这件事，是因为你想把它弄懂，还是因为你怕拿不到那张纸？</p>
+    <p>我们活在一个把「正确答案」外包给系统的年代。什么专业好就业、什么证书有用、什么路径最优——答案永远有人替你算好了，你只需要执行。<strong>而这部片让一个人站起来说：我不按这个来，我要先弄懂。</strong>这句话在 2009 年的印度刺耳，在这里一样刺耳。</p>
+    <p>第二个理由，和它的传播路径有关，也和昨天那部片形成一个漂亮的对照：</p>
+    <p>第 13 期《海上钢琴师》在中国是<strong>先在影院里赢了</strong>——2019 年重映两周 1.3 亿人民币，一部 1998 年的意大利片，在二十年后被中国观众抬进了 TOP250。</p>
+    <p>而《三傻大闹宝莱坞》在中国<strong>几乎没在影院里赢过</strong>。2011 年 12 月引进，内地总票房约 1404 万人民币，在当年的贺岁档里被《金陵十三钗》《龙门飞甲》压着，算不上什么。可它有 <strong>210 万人在豆瓣给它打了 9.2</strong>——这个数字比它在中国内地的票房重要得多。</p>
+    <p>这是本系列第一次推荐一部<strong>「在原产国是现象级、在另一国的影院里表现平平、却在那个国家的互联网上被抬上神坛」</strong>的电影。它的中国名声，主要不是票房堆出来的，是十几年的字幕组、论坛、B 站剪辑和一句被用到发腻的台词堆出来的。</p>
+    <p>换句话说：<strong>昨天那部是被影院救活的，今天这部是被互联网救活的。</strong>两部片在中国都成了经典，走的是两条完全不同的路。</p>
+    <p>最后一个理由很朴素：<strong>它的门槛低得不像一部 171 分钟的片。</strong>不用补历史，不用补原著，不用认识任何人。一所学校、三个室友、一个严厉的院长。你可以笑着看完前四十分钟，然后——我不说后面发生了什么。</p>
+  </div>
+
+  <div class="card">
+    <h2>先说清楚门槛 —— 以及它挨过的批评</h2>
+    <ul>
+      <li><strong>第一个门槛不在片子里，在片名上。</strong>《三傻大闹宝莱坞》这个译名，是中文互联网上公认的「劝退型译名」——听起来像一部无厘头闹剧。<strong>它是本系列十四期里，唯一一部需要我先替它的中文片名道歉的作品。</strong>原名叫《3 Idiots》，港译《作死不离三兄弟》，台译《三个傻瓜》。</li>
+      <li><strong>它是本系列第一部「西方专业评分体系基本没覆盖它」的电影。</strong>Metacritic 只有 <strong>4 条评论</strong>（本系列最少），烂番茄专业也只有 15–20 条。<strong>这个情况和昨天那部完全相反</strong>——《海上钢琴师》是被 41 位影评人打了 54% 的低分，那是真的被评价、被否定了；而《三傻》根本没有被西方主流影评界认真评过。所以请注意：<strong>它 210 万人打 9.2 的经典地位，不是从这些数字里来的，它长在另一套体系里。</strong>这是本系列第一次遇到「缺席」而不是「分歧」或「落差」。</li>
+      <li><strong>最重的一条批评，我认为它站得住：全片用一个天才个人，解决了一个结构性问题。</strong>教育制度最后被改变了吗？没有。<strong>被改变的是他身边那几个人。</strong>系统照常运转，只是有人从里面被拽了出来。这条批评的分量在于：它指出了这部片的安慰性质——它给的不是方案，是「你可以不被它压垮」的示范。<br>我倾向于同意这个批评，<strong>但我不认为这构成缺点。</strong>一部电影能改变的东西本来就有限；要求它顺手解决一个国家的教育制度，是把说明书和药方弄混了。你要清楚自己拿到手的是哪一样。</li>
+      <li><strong>它对一次极端事件的处理被指过于简化。</strong>有影评认为片中涉及的一件事，把非常复杂的心理困境讲得太轻易、也太快给出了出路。<strong>这是全片最该由你自己判断的一段——所以我不说它是哪一段。</strong>看完之后你可以回来读这句，那时你就知道我在指什么了。</li>
+      <li><strong>它是「闹喜剧」开场，前四十分钟会劝退一部分人。</strong>歌舞、追打、恶作剧、夸张表演——宝莱坞的包装全在。如果你前四十分钟因为「太闹」而退出去，你会错过它真正的部分。<strong>但我也承认：前四十分钟的闹，不是所有人都吃得消。</strong>这是它的气质成本。</li>
+      <li><strong>那句名言被用烂了，这是真的。</strong>「追求卓越，成功就会追上你」在中文互联网上的滥用程度，可能仅次于「生活就像一盒巧克力」。我的建议是：看片前先把它当一句陈词滥调忘掉，<strong>它在片中的位置会重新把它挣回来。</strong></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>怎么看效果最好</h2>
+    <ul>
+      <li><strong>先确认片长。</strong>完整版是 <strong>171 分钟</strong>；2011 年引进中国内地时被记为 160 分钟，部分网络版本更短。尽量找 171 分钟版。</li>
+      <li><strong>看原声字幕版，不要看配音版。</strong>这一条有具体来历：2011 年内地公映时，发行方同时做了普通话配音版，请了文章、汤唯、黄渤配音；观众强烈反对，原声字幕版才成为主流。<strong>这是中国电影市场里罕见的一次「观众改变发行策略」。</strong></li>
+      <li><strong>前四十分钟别退出去。</strong>那段是闹的。如果你对宝莱坞歌舞天然抵触，请把它当入场券，忍过去。</li>
+      <li><strong>看之前不要搜那句台词，也不要搜主角的身份。</strong>这两个词的中文搜索结果几乎全是剧透。</li>
+      <li><strong>留意那几件小发明。</strong>它们大多是真东西，来自真实的印度发明者。看懂它们，你就看懂了这部片到底在推崇什么——不是聪明，是把东西修好。</li>
+      <li><strong>适合和昨天那部连着看。</strong>《海上钢琴师》里那个人没有人教过，他自己爬上琴凳就会弹；今天这部里，整个故事在问「人该怎么被教」。两部片放在一起，是一组关于「学习」的正反命题。</li>
+      <li><strong>171 分钟，找一个能一口气的时间。</strong>如果实在要分两段，请以影片的时间线切换处为界——它是双线叙事，别在一条线中间掐断。</li>
+    </ul>
+    <div class="ask">
+      <small>看完之后，可以顺着这三个问题往下想</small>
+      ① 兰彻会怎么回答 1900？——1900 站在船梯上说：陆地太大，琴键太多，无限的东西没法穷尽，所以我不下去。<strong>如果换成兰彻站在那条船梯上，你觉得他会说什么？</strong>再落到你自己身上：<strong>有没有一件事，你一直没开始，不是因为它难，而是因为它太大？</strong>这两个理由听起来很像，实际完全不同——先分清楚你属于哪一种。<br><br>
+      ② <strong>请指认具体的一场戏：全片里哪一段让你第一次觉得「这个人其实也在害怕」？</strong>——如果你指不出来，说明你可能还没真正开始读这部片。这道要求比第一题难，也比第一题有用：判断情绪容易，找证据难。<br><br>
+      ③ 和第 11 期《阿甘正传》对照着问：阿甘穿过美国三十年毫发无伤，因为他<strong>从不与任何系统发生关系</strong>；兰彻一头撞进系统里，跟它硬碰硬。<strong>他们两个谁更自由？</strong>——再往下推一层，这是个陷阱题，因为它取决于你怎么定义自由：是「不被任何东西要求」，还是「可以拒绝你不认可的那一套」？<strong>你回答它的方式，基本说明了你更想要哪种人生。</strong>
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 14 期（2026-10-19）<br>
+    已推荐：《天堂电影院》《十二怒汉》《千与千寻》《星际穿越》《教父》《美丽人生》《楚门的世界》《飞越疯人院》《罗生门》《黑暗骑士》《阿甘正传》《霸王别姬》《海上钢琴师》《三傻大闹宝莱坞》<br>
+    评分数据每次执行时现查，不做记忆引用。<br>
+    本系列坚持：结构可以讲清，结局一律不写。
+  </div>
+
+</div>
+</body>
+</html>

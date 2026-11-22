@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 公民凯恩</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 42 期</div>
+  <h1>公民凯恩</h1>
+  <div class="en">Citizen Kane（1941）&nbsp;·&nbsp; 奥逊·威尔斯 导演 / 制片 / 主演 &nbsp;·&nbsp; 赫尔曼·J·曼凯维奇 联合编剧 &nbsp;·&nbsp; 格雷格·托兰德 摄影 &nbsp;·&nbsp; 伯纳德·赫尔曼 配乐</div>
+  <div class="meta">
+    <span>美国</span><span>剧情 / 悬疑</span><span>119 分钟</span><span>1941-05-01 纽约首映 · 09-05 美国公映</span>
+    <span>RKO · 黑白 · 单声道 · 1.33:1</span><span>第 14 届奥斯卡最佳原创剧本</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>8.8</b><small>豆瓣 · 约 13.6 万人 · 恰好压线</small></div>
+    <div class="score"><b>8.2</b><small>IMDb · 约 49.9 万票 · TOP250 第 119–125 位浮动</small></div>
+    <div class="score"><b>99%</b><small>烂番茄专业 · 137 评 · 均分 9.90 · 观众 98%</small></div>
+    <div class="score"><b>100</b><small>Metacritic · 仅 19 评 · 通用盛赞</small></div>
+    <div class="score"><b>50 年</b><small>《视与听》影评人榜五连冠（1962–2002）</small></div>
+    <div class="score"><b>亏 16 万</b><small>成本 83.97 万 → 首轮北美约 98 万美元</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 8.8（135,616 人，2026-08-09 快照；另有公众号标 9.3，属不同口径，取低值）；IMDb 现值 8.2（498,601 票，2026-11-14），部分中文源记 8.3 属旧快照，一律取低值；烂番茄专业 99%（137 评，136 新鲜 1 烂，均分 9.90/10）· 观众 98%（100+ 认证，4.8/5）；Metacritic 100（<strong>只有 19 条评论</strong>，老片回溯分，样本极小）；Letterboxd 4.19；时光网 8.3。成本 AFI 记 839,727 美元（预算 723,800），首轮北美约 97.7 万美元、首轮亏约 16 万；<strong>各源含不含此后数十年多次重映差异极大，本期只写首轮，不挑一个数假装权威</strong>。<br>
+    选片线：豆瓣 8.8 恰好压线（≥8.8），IMDb 8.2 低于 8.3，按本系列「或」字口径靠豆瓣达标——与第 25 期《桃色公寓》同为压线形状，但那次两条线都压线、这次只有一条。<strong>本期不写成破例</strong>（第 22 期破例不可常态化）：分数本身没有争议，争议在「用哪套系统量一部 1941 年的黑白片」。<br>
+    <strong>主动弃用评分框架：</strong>前 41 期反复用过「大众分 vs 专业分」的分歧、落差、2×2 矩阵、时间轴（第 4/6/12/13/15/16/18/20/22/37 期）；本片若再摆那张表，只会重复第 22 期《钢琴课》的结论。所以本期把分数只当事实摆着，主菜让给时间线——但保留一条只属于本片的分数事实，见「为什么值得一看」第三件。<br>
+    <strong>节奏与线路：</strong>上期（第 41 期《死亡诗社》）是 1989 彩色校园群像 128 分钟，本期 1941 黑白单人传记 119 分钟，相隔 48 年，气质回冷回静；刻意<em>不</em>复用第 39→40 期「180 度掉头」、也不复用第 40→41 期「同题两端对读」（第 41 期后台账已注明两框架各用一次）。<strong>导演线（奥逊·威尔斯）、1941 年线、报业／传媒题材线三线全开</strong>；美国国别线已多次使用，不算新开。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（第 4 档「防最后一场戏」＋一条本片独有的悖论）</h2>
+    <p>本片的谜底大概是世界上被说得最久的一个电影谜底——从 1941 年起就被印在海报、教材、百科与梗图里，你很可能在不知道片名的情况下已经见过它。所以本期不装作守得住一个秘密；真正要防的是<strong>「以为知道答案就等于看过」</strong>。它讲的是几个人各讲一段、拼不回一个人；答案只是记者手里的一个任务，不是这部片的落点。</p>
+    <p>显式切割：第 28 期《控方证人》片尾求你别说、第 36 期《泰坦尼克号》历史早已剧透结局、第 40 期《生之欲》开场自己剧透自己——本期是<strong>第四种「结局已知」形状：答案早已公开，而它根本不是重点</strong>。</p>
+    <ul>
+      <li><strong>第一雷（第十三类「推荐／安利类长文」再犯，本次查资料实测）：</strong>搜索结果第一篇「经典电影推荐」公众号长文就从开场复述到最后一镜，直接写出那个词指什么、片尾发生了什么，还配一句「值得反复观看，因为每次重看会读懂新的……」。<strong>自称安利，防备最低</strong>——这是本系列第一次遇到「同行即剧透源」时记下的那一类，今天又撞上了。</li>
+      <li><strong>第二雷（第八类极端案例＋第九类＋第二十一类叠加）：</strong>中文百科「剧情简介」栏开场就写出遗言原话与那只玻璃球，侧栏密集挂着「三分钟快看」「六分钟谈谈情节与手法」「最大伏笔被我发现了」「那个词到底是个什么梗」「影史定格百大镜头」等标题，其中数个以科普姿态出现。演职员表、片长、获奖记录可读，<strong>剧情栏与侧栏视频一行别碰</strong>。</li>
+      <li><strong>第三雷（第十类「名字本身即雷」）：</strong>那个词。别搜它的解释、别搜「影史最伟大结尾」、别点开任何名场面盘点或视听语言讲义。我通篇不写它指什么，也不写片尾有什么——连它本身都不写。</li>
+      <li><strong>第四雷（检索词雷第 17 次）：</strong>大陆《公民凯恩》／港台《大国民》，「大国民」另有同名歌曲与剧集，且极易被打成《大公民》。近名易混还有 2020 年大卫·芬奇的《曼克》（Mank，讲的正是本片编剧过程，读它的简介等于提前摊开创作底牌）、同导演的《伟大的安巴逊》《历劫佳人》。<strong>认准 1941、奥逊·威尔斯、119 分钟、黑白。</strong></li>
+      <li><strong>第五雷（第五类「衍生文本简介」反向启用）：</strong>本片没有翻拍版要躲，却有海量「拉片拆解」「视听语言教材」「影史第一为什么」的讲义与视频，逐场讲镜头即等于逐场复述。看之前一律绕开。</li>
+    </ul>
+    <p><strong>剧情梗概（安全区，开场即交代完的前提）：</strong>一位掌控报业与金融帝国的巨富在自己的庄园里孤身离世，临终只留下一个词。新闻短片把他的一生剪成几分钟，片子的编辑却觉得还缺一块，于是派一名记者去问那些和他有过交集的人——老友、同事、家人、管家。每个人手里都只有一段，而且每段里的他都不太一样。记者要找的是那个词的意思；我们跟着他，一间一间地敲门。</p>
+    <div class="ver">我们停在这里。那个词指什么、每个人的回忆里发生了什么、记者最后有没有找到、片尾镜头停在什么上——一个字不写。片尾字幕升起来之前，请什么都别搜。</div>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概 · 亮点所在</h2>
+    <ul>
+      <li><strong>它把「谁有权看见什么」当成工程问题重算了一遍。</strong>低角度仰拍时画面顶端竟然有一整片看得见的天花板——1941 年棚内布景通常不封顶，顶上要留给灯具和吊杆话筒。剧组真给布景做了顶，摄影机得放进地面挖出来的坑里才够低；托兰德的深焦让前景、中景、后景同时清晰，这不是「把光圈收小」一句话能解决的，要靠更强的照明、更快的胶片与大量光学合成。片尾字幕里导演与摄影署名被放在同一张卡上，是威尔斯自己定的；托兰德为准备这部片，私下把约翰·福特 1939 年的《关山飞渡》看了约四十遍。</li>
+      <li><strong>省下来的实景成本，和留下来的破绽，他都算过。</strong>一场大型集会里台下「观众」其实是一张静态照片：剧组在照片上戳了几百个孔，让灯在后面移动，造出人群微微晃动的效果；另一场户外戏借了 1933 年《金刚》的素材，天上飞过的四只「鸟」其实是翼龙，RKO 要求删掉，威尔斯留下了。这些不是四处炫技，是同一件事的四个版本：镜头不再替观众挑重点。</li>
+      <li><strong>声音与蒙太奇是为彼此写的。</strong>RKO 破例给了赫尔曼 12 周（远超常规）在拍摄期间同步写谱，好让几场蒙太奇反过来配合音乐；他用大量只有几秒的短乐句、非常规配器，并把音效与音乐混在一起。片头只打片名、不打主演名字，在当时的好莱坞也没有先例。</li>
+      <li><strong>25 岁、第一次拍电影、拿到最终剪辑权。</strong>1939 年 RKO 签下从未拍过片的威尔斯，给了自选题材、自带班底与 final cut——此前从未给过新人，此后他也没再拿到过。开机时他向片厂谎称「还在试镜头」，实际已经拍了好几天，还禁止高管进组；多数演员来自他的水星剧团，几乎没有电影表演经验。</li>
+      <li><strong>没有一个人拿到完整版本，包括银幕外的我们。</strong>新闻短片、几段彼此不太对得上的回忆、记者一趟趟的走访叠在一起，威尔斯从青年演到老年，与约瑟夫·科顿、多萝西·康明戈尔、阿格妮丝·摩尔海德等搭戏。它不给你一个权威叙述者，只给你一堆证词和中间那段谁也不肯替他补上的空白。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看 · 三件先说清楚的事</h2>
+    <p><strong>第一件：41 期灯下黑。</strong>本系列推过 41 部公认经典，却始终绕开那部被所有影史榜单当坐标用的片。原因不是它不够格，恰恰是它太像「标准答案」——每次选片都在找「换个角度」，就把最标准的那个一次次挤掉了。它其实不是榜上的一名，是榜的刻度：《视与听》1962、1972、1982、1992、2002 连续五届影评人榜第 1（22／32／45／43／46 票），1992、2002 两届导演榜第 1；AFI 百年百大 1998 与 2007 两版都排第 1；法国《电影手册》2007、华语影评人票选 2012、西班牙 Nickel Odeon 1999，三地各自把它投成第 1。</p>
+    <div class="quote">「推了 41 部才轮到它——你觉得这是它的问题，还是这份片单的问题？」<em>本系列第 42 期 · 写在红线框之后</em></div>
+    <p>与第 37 期《偷自行车的人》「不是它掉了，是考场变大了」、第 16 期《七武士》「时间轴下行」显式切割：那两期讲名次怎么动，这次讲<strong>它长期不动，且被别人用来量</strong>。</p>
+    <p><strong>第二件：第 37 期那张时间轴上，1962 那一格空着的状元，今天补上。</strong>第 37 期写过《视与听》1952 首届第 1 是《偷自行车的人》（25 票），1962 掉到第 7——而<strong>1962 年接它棒的第 1 正是本片</strong>，一坐五届、整整五十年，直到 2012 才被《迷魂记》（191 票）在影评人榜、被<strong>第 34 期我们刚推过的《东京物语》</strong>在导演榜同时拉下。2022 年它回到影评人第 3、导演第 2；2022 导演榜第 1 是<strong>第 18 期《2001太空漫游》</strong>，而第 18 期卡片里那句「压《公民凯恩》《教父》」点名的两部片，教父第 5 期就出场了，另一部拖到今天。这是本系列第三次「下一期自动接住上一期一句话」，且这次隔了 24 期。</p>
+    <table>
+      <tr><th>《视与听》届次</th><th>影评人榜第 1</th><th>票数 / 样本</th><th>本系列位置</th></tr>
+      <tr><td>1952（首届）</td><td>偷自行车的人</td><td>25 票 / 63 位评委</td><td>第 37 期</td></tr>
+      <tr><td>1962–2002（五届）</td><td>公民凯恩</td><td>22→32→45→43→46 票</td><td><strong>本期 · 第 42 期</strong></td></tr>
+      <tr><td>2012</td><td>迷魂记</td><td>191 票 / 846 位评委</td><td>未推（希区柯克，第 24 期推过《后窗》）</td></tr>
+      <tr><td>2022</td><td>让娜·迪尔曼</td><td>1639 位评委</td><td>未推</td></tr>
+    </table>
+    <p><strong>这张表不是同一部片的名次轨迹，是同一把椅子换了四个人坐</strong>——与第 37 期那张表列的维度不同，不与它重复。</p>
+    <p><strong>第三件：它站了 85 年，靠的不是一次加冕，是被一代代人反复重估。</strong>而且要纠正一个常见误读：<strong>它不是「一上映就被公认为最伟大」</strong>。1941 年成本 83.97 万美元、首轮亏约 16 万；赫斯特系报纸全面封杀（连付费广告都不登），影院怕诽谤诉讼拒映，梅耶牵头的片厂高层凑了约 80.5 万美元想买下底片烧掉，RKO 拒绝，只把片长从约 122 分钟剪到 119。第 14 届奥斯卡 9 提 1 中（仅最佳原创剧本，曼凯维奇与威尔斯共获），最佳影片输《青山翠谷》、最佳导演输约翰·福特、最佳男主输加里·库珀《约克军曹》。真正把它捞回来的是 1950 年代巴赞等法国影评人，与 1956 年的美国重映——<strong>先是重新被看见，然后才被重新排序</strong>。此后：1962–2002 五连冠；2012-03 赫斯特家族终于同意在赫斯特城堡放映，距封杀 71 年，主持人是曼凯维奇的孙子；2022 影评人第 3、导演第 2。</p>
+    <p>还有一条最耐玩、也只属于本片的分数事实：<strong>2021 年烂番茄从 100% 掉到 99%，不是因为有人新写了差评，是因为补录了一篇 1941 年《芝加哥论坛报》的旧负评</strong>——一条 80 年前的报纸，把 2021 年的分数改了 1 个百分点。一个判断能活这么久，通常不是因为它当年赢了，是因为每一代都能把它重新拿去用；<strong>能被复用，比被称赞更耐磨损</strong>。与第 11 期《阿甘正传》「当时赢的与后来赢的不是同一部」显式切割：那次是两部片在争，这次是<strong>同一部片被同一套制度在七十年里改判两次，最后一次改判来自一条旧报纸</strong>。</p>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评 · 三笔不粉饰的账</h2>
+    <p><strong>第一条：「看不出好在哪」是真实反应，而且有原因。</strong>它那些手法后来被所有人学走了，今天第一次看很容易觉得「就这？」；豆瓣短评里那句「镜头牛，故事什么鬼」不是外行话，当年也有评论嫌它炫技大于情感。我不劝你「忍过前二十分钟」，只提醒一句：<strong>别拿「有没有被震惊到」当验收标准</strong>——1941 年的震惊已经被 85 年的电影史稀释掉了。与第 35 期《雨中曲》「防期待」显式切割：那次防的是被过度赞美后的验收心态，这次防的是「创新已成常识」造成的迟钝，方向相反。</p>
+    <p><strong>第二条：片里几个人拼不回一个人，片外半个世纪也拼不回「这剧本是谁的」。</strong>1940 年 2 月威尔斯给曼凯维奇 300 页笔记、由豪斯曼监督写初稿，合同本不给署名；临近上映曼凯维奇威胁登行业广告争取，1941 年 1 月才拿到联合署名。1971 年宝琳·凯尔在《纽约客》发《Raising Kane》，主张剧本几乎全属曼凯维奇；1978 年 Robert Carringer 查了 RKO 剧本档案，结论是威尔斯的贡献「不仅可观，而且是决定性的」；2020 年芬奇的《曼克》又把这笔账翻出来。<strong>一部关于「没人能替别人定义一生」的电影，它自己的作者归属至今也没有定论</strong>——我不裁决，只把两边并排放着（沿用第 32 期「并排放置」，不新立姿态）。与第 9 期《罗生门》显式切割：那次争的是片子里发生了什么，这次争的是片子是谁的。</p>
+    <p><strong>第三条：9 提 1 中，唯一中的那项还带着一个反讽。</strong>第 14 届奥斯卡（1942-02-26，因珍珠港事件一度取消）本片 9 提 1 中，唯一获奖是最佳原创剧本。更妙的是最佳配乐：赫尔曼凭本片提名，却输给了<strong>同一年他自己给《魔鬼与丹尼尔·韦伯斯特》写的配乐</strong>——同一晚、同一位作曲家，赢的那部今天几乎没人提，输的那部被后来的影史榜单反复引用。与第 27 期《辛德勒的名单》「音响输给斯皮尔伯格自己的《侏罗纪公园》」同形，但那次是导演名下两部片，这次是同一位作曲家名下两部片，且<strong>输的那部才是后来的经典</strong>。</p>
+  </div>
+
+  <div class="card">
+    <h2>版本与观看建议</h2>
+    <ul>
+      <li><strong>版本第 19 次「无陷阱」：</strong>通行 <strong>119 分钟</strong>，1941 年 RKO 院线版（AFI 记最终 10,734 英尺）与 Criterion 4K 修复版一致。上映前确有约 122–123 分钟的完成版被剪到 119（为软化可能触怒赫斯特的指涉），但那不是今天能选到的「加长版／导演剪辑版」——<strong>不存在需要挑的删减版</strong>。部分中文站标 114 分钟属旧口径，按 119 认。</li>
+      <li>画幅 1.33:1、单声道，别去找「宽银幕重制」；修复版只是把划痕修掉，不是换剪辑。老拷贝的划痕会毁掉深焦里后景那一层信息，<strong>能选修复版就选修复版</strong>。</li>
+      <li><strong>请用原速、一次看完（119 分钟）。</strong>它的信息量长在「同一格画面里前景和后景同时在说事」，跳着看或倍速，等于把它最要紧的东西关掉。</li>
+      <li><strong>情绪门槛不适用，认知门槛偏高：</strong>无血腥、无惊吓，但最好在你已经看过几部 1950 年代之后的好莱坞片之后再来看，否则很难察觉它到底改了什么。与第 18 期《2001》「把难量化成台词比例」不同：本片的难不在时长，在「你以为自己没看到新东西」。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>带进观影的三层问题</h2>
+    <div class="ask">
+      <small>第一层 · 进场前先写下答案</small>
+      <p>如果一部片的所有创新都已经被后来的电影学走了，你还能用什么标准判断它好不好？先写下你的验收办法——别用「看没看懂」和「震不震惊」这两个。</p>
+    </div>
+    <div class="ask">
+      <small>第二层 · 散场后指认一处画面作证</small>
+      <p>请指认一处「镜头没替你挑重点」的画面：前景、后景同时在说事，你得自己决定看哪。指不出来，想一想是不是整场都在等人告诉你该看哪。</p>
+    </div>
+    <div class="ask">
+      <small>第三层 · 把这个问题带回自己的判断里</small>
+      <p>第 37 期《偷自行车的人》是 1952 首届状元、1962 掉到第 7；接它棒的本片坐了五十年，又被第 34 期《东京物语》在导演榜拉下。<strong>一个判断能活多久，靠的是「被称赞」还是「能被每一代重新拿去用」？</strong> 你手上有没有一个自己改判过两次的旧判断？</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 42 期 · 2026-11-20<br>
+    评分与史实经 WebSearch 现查，不沿用记忆中的旧数字；剧透红线按最严口径；清单与台账已回写。
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 无间道</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#e8b44c; --acc2:#6fa3bd; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 30 期</div>
+  <h1>无间道</h1>
+  <div class="en">無間道 Infernal Affairs (2002) &nbsp;·&nbsp; 刘伟强、麦兆辉 执导 &nbsp;·&nbsp; 麦兆辉、庄文强 编剧 &nbsp;·&nbsp; 梁朝伟 · 刘德华 · 黄秋生 · 曾志伟</div>
+  <div class="meta">
+    <span>中国香港</span><span>刘伟强 / 麦兆辉</span><span>剧情 · 犯罪 · 惊悚</span>
+    <span>101 分钟</span><span>彩色</span><span>粤语</span>
+    <span>2002-12-12 香港上映 · 2003-09-05 中国内地上映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.3</b><small>豆瓣 · 约 150 万人</small></div>
+    <div class="score"><b>8.0</b><small>IMDb · 13.9 万票</small></div>
+    <div class="score"><b>94%</b><small>烂番茄专业 · 64 评</small></div>
+    <div class="score"><b>88%</b><small>烂番茄观众</small></div>
+    <div class="score"><b>75</b><small>Metacritic · 19 评</small></div>
+    <div class="score"><b>7 项</b><small>金像奖 · 16 提 7 中</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.3（各快照 149 万–157 万人，TOP250 第 18 位上下，属历年浮动）；IMDb 8.0（139,073 票）；烂番茄专业 94%（64 评，均分 7.50），观众 88%（4.4/5）；Metacritic 75（19 评）；Letterboxd 4.06（约 11.8 万评）。<br>
+    选片线：豆瓣 9.3、IMDb 8.0，按「豆瓣 ≥ 8.8 或 IMDb ≥ 8.3」达标。<strong>这是本系列第 30 期，也是第一部完全由香港出品、以香港为故事现场的港产片</strong>（第 12 期《霸王别姬》是内地与香港合拍，属另一个意义上的华语片）。<strong>剧透风险属第 4 档</strong>——它的可泄露物不在中段，而在一句被引用到烂的话和一个地点，红线框已就位。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（第 4 档——防最后那场戏、那句台词，以及「两个结局对比」）</h2>
+    <p>这部片的特殊之处在于：<strong>它的剧透不在剧情里，在「版本说明」里。</strong>你想确认自己看的是不是完整版，一定会去搜；而搜索结果的第一屏，往往是两个结局并排摆给你看。这一期红线要防的，是你在做一件很正当的事（确认版本）时被顺手剧透。</p>
+    <ul>
+      <li><strong>第一类：「港版结局 vs 内地版结局」对比文与对比视频（本次新增第十九类）。</strong>这类内容的标题就把两个结局并列写出来，作者以为自己在讲版本，读者其实是在读两个结尾。<strong>看到「结局」「港版」「内地版」「完整版」这些词同时出现在一个标题里，就划走。</strong></li>
+      <li><strong>第二类：续集与前传的剧情简介（本次新增第二十类）。</strong>《无间道 II》是前传、《无间道 III》是续集，而续集是<strong>建立在本片结局的后果之上</strong>的——它们的简介必然要交代这一部结束时谁在哪、谁还算谁。同理，2012 年日本拍的剧集版《DOUBLE FACE》也是从同一个设定出发。<strong>看完本片之前，三部曲里的另外两部，一个字都别搜。</strong></li>
+      <li><strong>第三类：中文百科的「剧情简介」（第八类）。</strong>它从前提一路写到最后一个镜头——这一类是本系列的老对手，从第 19 期起就挂在台账上。这次连词条页的目录都别往下拉。</li>
+      <li><strong>第四类：「几分钟看完」与深度解读（第九类）。</strong>本片的乐趣一半在「两边同时找内鬼」的对称结构里，解说会把结构摊平给你。</li>
+      <li><strong>第五类：那段被引用最多的对白与它的剧照（第十类）。</strong>它被当成了日常用语，出现在表情包、段子、朋友圈里——正因为它是梗，你不会有防备。我不写它的内容，也不建议你现在去搜「无间道 台词」。</li>
+      <li><strong>第六类：检索词雷（第 7 次启用，本次最密）。</strong>《无间道》、好莱坞翻拍版《无间道风云》（The Departed，台湾译《神鬼无间》）、日剧《DOUBLE FACE》、2013 年韩国片《新世界》，四者常被放进同一篇「卧底片盘点」。<strong>盘点类文章是把四个故事的结尾一起讲完的体裁。</strong></li>
+    </ul>
+    <p>安全区划给你（这些是官方简介与预告片就交代完的前提）：<strong>1991 年，一个黑帮底层的小弟被老大送进警队，从此他是警队里那个「黑社会的人」。1992 年，警校里最好的学员被上级挑走，抹掉档案，派进黑帮，从此他是黑帮里那个「警察的人」。十年之后，两个人都爬到了各自阵营的深处：一个坐在办公室里升职、结婚、买房子，一个在街头挨打、失眠、每周去见心理医生。他们都在做同一件事——每天早上起来，去演一个不是自己的人。然后某一天，两个阵营几乎同时发现：自己这边，有一个对方的人。于是一场对称的追查开始了：他要找出他，他也在找他，而他们要抓的那个人，正是对面那个和自己做着同一件事的人。</strong></p>
+    <div class="ver">我们停在这里。中段之后发生了什么、谁先被找到、最后那场戏在哪里、那句台词是什么、两个人各自的结尾——一个字不写。你只要带一句话进场：<strong>这部片里没有一个人可以拿出证据证明自己是谁。</strong></div>
+  </div>
+
+  <div class="card">
+    <h2>三件先说清楚的事</h2>
+    <p><strong>第一件：这片的「版本问题」，第一次不是长度，是判决。</strong>这个系列前 29 期遇到过八次「不用挑版本」、四次「删减陷阱」（第 13 期内地公映版少了约 40 分钟；第 15 期两个版本差 23 分钟；第 16 期有六个长短不一的版本，最短的删掉约三分之一；第 21 期美国初版比原版少 31.8%）。那些都是<strong>剪掉</strong>。今天这一部是<strong>另拍</strong>——内地公映版换了一个结尾，不是删几秒，是重新写了一个结尾，两个结尾的道德结论彼此相反。<strong>这是本系列第一次遇到「两个版本不是长短之分，而是两种判决」。</strong>这条我放在观看建议里讲，这里只先立下这个事实：你手上是哪一版，决定了这部电影最后要跟你说什么。</p>
+    <p><strong>第二件：这个故事后来不完全属于它自己的城市了。</strong>2003 年 1 月，五家好莱坞公司竞标它的重拍权，华纳兄弟以 <strong>175 万美元</strong>买下。三年后，《无间道风云》上映：马丁·斯科塞斯执导，莱昂纳多·迪卡普里奥与马特·达蒙主演，北美 1.32 亿、全球 2.915 亿美元；第 79 届奥斯卡（2007-02-25）拿下<strong>最佳影片、最佳导演、最佳改编剧本、最佳剪辑四座</strong>——而那是斯科塞斯<strong>在五次最佳导演提名全部落空之后的第六次，第一座</strong>。此处要与第 21 期《用心棒》那套「三条法律路径」明确区分：那期问的是<strong>授权算不算数</strong>（偷拍的赢了、买了授权的输了）；本期问的是另一件事——<strong>授权之后，故事还是不是同一个故事</strong>。原版把两个人困在身份里，谁都不给出口；美版把身份问题换成了罪恶清算，最后给了一个道德上分得清的说法。同一副骨架，两种骨气。</p>
+    <p><strong>第三件：本系列「个体与系统」序列的第九格，也是最无处可退的一格。</strong>前八格排一遍：楚门往外逃、麦克墨菲往里闯、蝙蝠侠做交易、阿甘根本不与系统发生关系、程蝶衣被时代改写、1900 连入场都不肯、兰彻留下来从里面改动它、里昂不在任何一份名单上。<strong>今天这两个人不一样：他们都在名单上——但名单上那个名字，不是他们自己的。</strong>而且他们不是被时代卷进去的，是被上级<strong>派</strong>进去的，签过字、有编号、有联络人；他们唯一想要的，是系统把那张纸还给他。这一格之所以最狠：前八个人至少还能选择离开，这两个人连「不干了」这句话都没有地方说。</p>
+    <div class="quote">
+      The movie pays off in a kind of emotional complexity rarely seen in crime movies. I cannot reveal what happens but will urge you to consider the thoughts of two men who finally confront their own real identities&mdash;in the person of the other character.
+      <em>——罗杰·伊伯特（三颗星／四星）：这部片兑现了一种犯罪片里罕见的情感复杂度。我不能透露发生了什么，但我会请你留意两个终于要面对自己真实身份的男人——在一个和自己做着同一件事的人身上。</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <ul>
+      <li><strong>它把「双雄」拍成了「互为镜像」，而且狠到不让两人同框。</strong>大多数双雄片靠对打和对话建立张力，这部片反过来：两条线平行剪辑，两个人各自在自己的世界里紧张，<strong>全片两人真正同处一室的戏，一只手数得过来</strong>。观众看到的不是两个人，是同一件事的两个视角——你在一个镜头里替他松一口气，下一个镜头就发现对面那个人也在松一口气。</li>
+      <li><strong>全片的赌注不是钱，也不是命，是一张纸。</strong>枪、钱、毒品都是背景，真正的筹码是<strong>档案</strong>：谁的名字写在哪个抽屉里、谁签的字、谁有权打开。这让一部警匪片变成了一部关于「证明」的电影——证明自己是谁，需要别人的系统盖章。这也是它二十多年后还扎人的原因：今天我们每个人都有好几份档案（工牌、简历、社保号、社交账号），可哪一份才算是你？</li>
+      <li><strong>它把声音当测谎仪用。</strong>两人第一次相遇在一家音响店，一个在挑线材，一个在试音——用一首老歌试探对方听不听得出来。<strong>这是全片最优雅的一场戏：不亮身份，不讲来路，只测一件事——你的耳朵配不配得上你穿的那身衣服。</strong>声音在这部片里比枪好用，因为枪只能吓人，声音能暴露教养。那首试音曲后来成了发烧友的入门标配，也成了这部片最有名的听觉记忆。</li>
+      <li><strong>同一部片里的两个男主角，被两套评审在同一个年度的两场颁奖礼上判成同一个结果（本系列第一次遇到这种「片内分歧」）。</strong>第 22 届香港电影金像奖：梁朝伟拿最佳男主角，刘德华同届提名；第 40 届台湾电影金马奖：梁朝伟拿最佳男主角，刘德华同届提名。<strong>同一个故事、两个评审团、两套不同的品味，结论一模一样：一个人在台上，一个人在台下。</strong>前 29 期的分歧都发生在「这部片 vs 那部片」之间，今天第一次发生在「这部片内部」——而这件事本身，恰好就是电影的主题：两个做同一件事的人，凭什么一个被认下、一个不被认下。</li>
+      <li><strong>它出现的时间点，比它的质量更值得记一笔。</strong>2002 年是香港电影的低谷年，而它在香港收 <strong>5,505 万港元</strong>，是当年香港年度票房冠军；第 22 届金像奖 <strong>16 项提名、7 项获奖</strong>（最佳电影、导演、编剧、男主角、男配角、剪辑、原创电影歌曲），第 40 届金马奖拿走最佳剧情片等 6 项，另获第 8 届金紫荆奖最佳影片、第 46 届日本蓝丝带奖最佳外语片；《帝国》杂志 2019 年「世界电影百大」把它排在第 30 位。2022 年 12 月，上映二十周年，4K 数字修复版在香港重映。<strong>一部救了一个行业信心的电影，通常不会被记得这么久；它被记得，是因为它救的不是行业，是「港片还能拍成这样」这件事。</strong></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>批评版块（三条：两条站得住，一条骂的是另一部片）</h2>
+    <p><strong>第一条：所有女性角色都是功能性的入口。</strong>这条批评有三个彼此独立的来源，方向完全一致——2002 年内地的一篇负评嫌两个女角色是「拉郎配」「可有可无」；香港大学电影学会当年那篇《无以载道》说得更狠：<strong>「片中的所有女角，也是多此一举的」</strong>；二十年后仍有影评人写「李心儿与 Mary 的支线未能充分融入主线，略显功能性」。<strong>我全接受，不辩护。</strong>但要补一句它为什么会这样：这部片的情感预算只够两个人用——所有体面、所有崩溃、所有想被认下的渴望，都押在了两个男人身上，剩下的人只能当门。这不是疏忽，是取舍；而取舍的代价，就是这几场戏确实立不住。</p>
+    <p><strong>第二条：「拍得漂亮，但不狠。」</strong>《纽约时报》的埃尔维斯·米切尔当年那句评价很微妙——<strong>「《无间道》拍得如此漂亮，那些画面偶尔会让你从它压缩过的情节里分神」</strong>：听着像夸，其实是说漂亮盖过了锋利。而与它同期的一篇内地负评把这话说透了：它让人想起杜琪峰的《非常突然》，「恰到好处地狠起来，一下子让人疼得彻骨」，而本片「像小钝刀儿一下下割你，说不疼吧还挺难受，说疼吧还不流血」。<strong>这条也站得住。</strong>我的表态是重新定位而不是反驳：这部片要拍的本来就不是「狠」，是<strong>体面</strong>——两个主角的日常工作就是把自己收拾得像个正常人，镜头当然要跟着他们一起体面；它要的痛感是慢性的、无从申诉的那种，而不是一刀下去的痛快。你要痛快，请看杜琪峰；你要的是「一直在忍」，这部片给得比谁都多。</p>
+    <p><strong>第三条：关于「结局突兀」「太直白」的那一类批评——按本系列第十二种表态法处理：先核对这条批评骂的是哪一版。</strong>第 25 期做过一次「给批评做时效分类」（这条批评今天还算不算数）；今天做的是另一件事——<strong>给批评做版本归属</strong>。网上大量「结尾生硬」「说教」的评价，针对的其实是内地公映版另拍的那个结尾，而不是 2002 年在香港上映的这一部。<strong>这类批评对它不成立，不是因为它更好，而是因为它骂的不是它。</strong>反过来说：如果你看完之后觉得结尾不够圆，也先确认一下你看的是哪一版——这个动作，本身就是这部电影教给你的：<strong>先查档案，再下判断。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>观看建议</h2>
+    <ul>
+      <li><strong>版本（第五次「删减／改判陷阱」，累计 8:5）——这一次请务必挑：</strong>香港原版 <strong>101 分钟</strong>，结局是它在香港上映时的那个；内地公映版（2003-09-05）<strong>另拍了一个结尾</strong>，两个结尾的道德结论相反，改的是什么我不写。条目上另记有一个 97 分钟的导演剪辑版，第一次看建议以 <strong>101 分钟港版原版</strong>为准。<strong>怎么看哪个是哪个：看结尾之前先别看简介，直接看片长与出品信息；拿不准就找粤语原声版。</strong></li>
+      <li><strong>看完之前，不要碰后两部。</strong>《无间道 II》（2003-10-01，前传）与《无间道 III：终极无间》（2003-12-12，续集）都建立在本片结局之上，简介即剧透（红线第二类）。三部曲连着看当然可以，但顺序是：先看完这一部，再去搜另外两部。</li>
+      <li><strong>不要做「版本对比」这件事。</strong>你的好奇心会推着你去搜「港版 结局」，那是全网最集中的剧透区（红线第一类）。想知道自己看没看对，只看片长，别看内容。</li>
+      <li><strong>门槛很低，可以今晚就看。</strong>101 分钟、节奏快、台词密、不需要任何电影史预习——这是本系列 30 期里最好进入的几部之一。唯一建议：<strong>别用二倍速。</strong>这部片的张力一半长在沉默和眼神里，加速会把它压成一部普通的警匪片。</li>
+      <li><strong>情绪门槛：不适用。</strong>它冷，但不压抑到看不下去；看完会闷一阵，属于「闷得值」的那种。</li>
+    </ul>
+  </div>
+
+  <div class="ask">
+    <small>散场之后 · 三层思考题</small>
+    <p><strong>第一层（进场前就问自己）：</strong>如果你每天上班都要演一个不是自己的人，你靠什么确认「我还是我」——证件、别人的称呼、工资单、还是你自己记得的那些事？<strong>先写下你的答案，再进场看这两个人各自的答案。</strong>留意一件事：他们两个人用来证明自己的东西，都不是自己造的。</p>
+    <p><strong>第二层（散场后）：</strong>指认一个瞬间——你从哪一刻开始希望其中一个人赢？再追问：<strong>你希望另一个人输，是因为他做了坏事，还是因为他挡住了前一个人的路？</strong>如果你发现自己希望两个人都别输，那正是这部片要你待的位置：它把两个都想要的人放在同一条窄路上，然后不给你一个可以站干净的立场。</p>
+    <p><strong>第三层（锚定第 12 期与第 29 期）：</strong>这个系列三次碰到「演别人」这件事，方向各不相同——第 12 期程蝶衣是<strong>爱上了自己演的角色</strong>，第 29 期《盗梦空间》是<strong>自愿进入别人的梦并造假</strong>，今天这两个人是<strong>被派进去的，而且没有退出机制</strong>。三种苦，你觉得哪一种最难熬？日常迁移也顺手想一想：<strong>职场里的人设、社交媒体上的账号、简历上的那段履历——哪一份档案更接近你？如果有一天这三份对不上，谁会先发现？</strong></p>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 30 期 · 2026-11-07<br>
+    已推荐 30 部 · 本期为系列首部纯港产片（第 12 期《霸王别姬》为内地与香港合拍）<br>
+    下一期预告：候选池剩余 · 放牛班的春天（11-08 起可用） / 东京物语 / 低俗小说 / 疯狂动物城 / 机器人总动员 / 活着 / 花样年华 / 搏击俱乐部（收尾）……
+  </div>
+
+</div>
+</body>
+</html>

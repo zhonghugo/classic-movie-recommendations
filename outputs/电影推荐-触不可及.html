@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 触不可及</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#e8b44c; --acc2:#6fa3bd; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 26 期</div>
+  <h1>触不可及</h1>
+  <div class="en">Intouchables (2011) &nbsp;·&nbsp; 奥利维埃·纳卡什 / 埃里克·托莱达诺 &nbsp;·&nbsp; 台译《逆转人生》· 港译《闪亮人生》</div>
+  <div class="meta">
+    <span>法国 / 高蒙</span><span>纳卡什 · 托莱达诺</span><span>喜剧 · 剧情</span>
+    <span>112 分钟</span><span>彩色</span><span>法语</span>
+    <span>2011-11-02 法国上映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.2</b><small>豆瓣 · 62–114 万人</small></div>
+    <div class="score"><b>8.5</b><small>IMDb · 约 90–103 万票</small></div>
+    <div class="score"><b>75%</b><small>烂番茄专业 · 128 评</small></div>
+    <div class="score"><b>57</b><small>Metacritic · 31 评</small></div>
+    <div class="score"><b>93%</b><small>烂番茄观众 · 爆米花</small></div>
+    <div class="score"><b>1 座</b><small>凯撒 8 提 1 中</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣各快照在 9.2 与 9.3 之间浮动，评价人数从约 62 万到约 114 万不等，TOP250 位次第 23 至 25 位浮动——按本系列取低值的习惯写 9.2；IMDb 8.5，约 90.6 万至 102.7 万票；烂番茄专业 74–76%（128 评，取 75%），观众 93–94%；Metacritic <strong>57 分，仅 31 条影评，官方定性是「褒贬不一」</strong>；CinemaScore A；时光网 8.3（7908 人）、猫眼 9.1、淘票票 9.3。<br>
+    关于选片线：<strong>本片豆瓣与 IMDb 双达标</strong>（下限分别是 8.8 与 8.3），不构成破例。第 22 期破过一次例之后，第 23、24、25 期都已回到线内，本期继续在线内——那次破例到此仍是一次，没有被常态化。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（本期防的是「年表」）</h2>
+    <p>这一部没有反转，也没有一句被引用了几十年的决定性台词，看起来很好防。但它有一个别的片没有的漏洞：<strong>它是真人真事，而那两个真人的生平是公开的。</strong>所以本期真正要防的不是「结局」，是<strong>人物年表</strong>——只要搜一句「原型后来怎么样了」，出来的东西会替你把后半程讲完，还会把电影没拍的部分也一并补上。这是本系列 26 期里第一次遇到这种形状，我把它单列为第 10 档：<strong>防年表</strong>。</p>
+    <ul>
+      <li><strong>第一类，本期新增第十七类剧透源：先于影片存在的纪实文本。</strong>2003／2004 年（各源不一）有一部纪录片《À la vie, à la mort》，讲的正是这两个人；菲利普·波佐·迪·博尔戈 2001 年的自传《Le Second Souffle》（英译 A Second Wind）与阿卜杜勒·塞卢 2012 年的《Tu as changé ma vie》，写得比电影还远。<strong>它们不是「改编自电影」，是电影改编自它们</strong>——这跟第 16 期那类「翻拍片简介会剧透」方向正好相反，而且挂着「真实故事」「纪录片」这几个字时，人的防备最低。别点开它们的梗概。</li>
+      <li><strong>第二类：三个翻拍版的剧情简介。</strong>印度《Oopiri》（2016）、阿根廷《Inseparables》（2016）、美版《The Upside》（2017 首映、2019 公映），三部的剧情介绍基本等于原片全文。这是第 19 期记过的第五类，本期一次撞齐三个。</li>
+      <li><strong>第三类：检索词雷（第 22 期固化、本期第五次启用，也是最乱的一次）。</strong>2011 法版：大陆《触不可及》、台《逆转人生》、港《闪亮人生》，另有《无法触碰》《不可触碰》《最佳拍档》等别名，英文 Untouchable／The Intouchables。<strong>坑在于 2019 年那部美版：大陆也叫《触不可及》，港也叫《闪亮人生》，台叫《活个精彩》，新加坡叫《逆转人生》——两部片共用至少两个中文片名。</strong>搜「触不可及 剧情」极容易落到美版去。认准四件事：<strong>2011 年、法语、弗朗索瓦·克鲁塞 + 奥玛·希、112 分钟。</strong></li>
+      <li><strong>第四类：「推荐 / 安利类」长文，本次查资料又亲历两篇。</strong>这是第 23 期记过的第十三类——两篇中文「经典电影推荐」公众号图文，把能写的都写完了，连被当成「精神内核」的那句台词都印了出来，还配了海报文字。<strong>它们自称安利，防备最低，却是这一期最实打实的剧透源。</strong>另：那句被做成法国流行梗的法语玩笑，别拿去搜，它是这类长文的入口。</li>
+      <li><strong>第五类：短视频「几分钟看完」与中文百科的「剧情简介」字段（第九类、第八类）。</strong>后者在这一部尤其危险，因为官方简介习惯把真实故事的结局一并写完。</li>
+    </ul>
+    <p>安全区先划给你（这些全是海报与预告片就交代完的前提）：<strong>巴黎。一位因滑翔伞事故四肢瘫痪的贵族要招一位全职陪护，薪酬优厚，应征者排着队，人人都专业、礼貌、体贴，也都知道该用什么词形容「照顾」这件事。他一个也没选。偏偏来了一个根本不想要这份工作的人——来自城市另一头，只想要一张「不予录用」的证明，没有任何护理经验，也不打算表现得很得体。雇主选了他。</strong>故事从这里开始。</p>
+    <div class="ver">我们停在这里，开场十几分钟。往下的部分一个字也不写——包括试用期里发生了什么、包括两个人各自改变了什么、包括收场、包括影片最后那几分钟。你可以先带着「被照顾好」和「被当成完整的人」是不是同一件事这一句进场。</div>
+  </div>
+
+  <div class="card">
+    <h2>两件先说清楚的事</h2>
+    <p><strong>第一件：台账上最老的一笔欠账，今天结清。</strong>自第 15 期起，「法国线」就挂在候选池里——放牛班的春天、触不可及，解禁之后整整挂了十一期，每一期的选题提示都写「下一期优先还」，然后每一期都被别的线索插了队。而且今天这部还是<strong>本系列 26 期以来第一部以法语拍、以法国本土生活为场景、由法国导演拍给法国观众看的片</strong>：第 15 期《这个杀手不太冷》虽是第一部真正意义的法国片，却是一部讲英语的纽约故事；第 1 期《天堂电影院》只含法国资本，讲的是意大利。法国话、法国人、法国的事，到今天才第一次凑齐。</p>
+    <p><strong>第二件：上一期那句注脚，又被这一期接住了。</strong>第 25 期写过一条黑白片的谱系：1960 年《桃色公寓》是此后 33 年里最后一部拿下奥斯卡最佳影片的黑白片，下一部要等到 1994 年的《辛德勒的名单》。<strong>再往后数，第三部是 2011 年的《艺术家》——一部向默片致敬的黑白片，第 84 届奥斯卡最佳影片。</strong>而 2012 年 2 月 24 日巴黎的第 37 届凯撒奖上，《艺术家》拿下最佳影片，<strong>它击败的正是今天这部</strong>；同一个晚上，本片八项提名里唯一拿到的一座——奥玛·希的最佳男主角——<strong>击败的正是《艺术家》的让·杜雅尔丹</strong>，两天后杜雅尔丹在洛杉矶拿了奥斯卡影帝。</p>
+    <div class="quote">
+      上一期那张黑白最佳影片的名单，往下走两步，正好走到了压住今天这部片的那部黑白片。同一届凯撒，两部片各拿一半：最佳影片给了黑白的那一部，影帝给了彩色的这一部。
+      <em>——这是本系列第二次「下一期自动接住上一期一句话」，第一次是第 25 期接住第 24 期希区柯克五次提名零获奖</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>四张成绩单：同一年，几套互不通气的系统</h2>
+    <p>过去 25 期做过很多次「分数打架」：专业分与观众分互相矛盾（第 4、6、7、11、20 期）、大众分东高西低（第 12、13 期）、西方影评界根本没评过（第 14 期）、同一份榜单上的名次漂移（第 16、24 期）、把票房摊开做观众地理学（第 23 期）、三个法庭<strong>先后</strong>开庭（第 25 期）。<strong>今天不一样：不是不同人群在同一时刻打架，也不是同一个判决在时间轴上换人，而是同一年、同一部片，几套彼此不通气的系统同时开出成绩单，量级差了好几个数量级。</strong>关键词是「同时」——这正是它与第 25 期「先后」的分界。</p>
+    <table>
+      <tr><th>谁在判</th><th>用什么判</th><th>2011–2012 的结果</th></tr>
+      <tr><td>法国观众</td><td>买票</td><td>约 1950 万观影人次／1.661 亿美元／<strong>连续 10 周冠军</strong>；法国片影史第二，仅次于《欢迎来北方》</td></tr>
+      <tr><td>全球观众</td><td>买票</td><td>4.26 亿至 4.45 亿美元（各源口径不一）；成本约 950 万至 1000 万欧元，<strong>约 40 倍</strong></td></tr>
+      <tr><td>打分的观众</td><td>分数</td><td>豆瓣 9.2–9.3／IMDb 8.5／烂番茄观众 93–94%／CinemaScore A</td></tr>
+      <tr><td>影评人</td><td>分数</td><td><strong>烂番茄专业 75%（128 评）／Metacritic 57（31 评，「褒贬不一」）</strong></td></tr>
+      <tr><td>法国学院</td><td>凯撒奖</td><td><strong>8 提 1 中</strong>（仅奥玛·希影帝）；最佳影片输给《艺术家》</td></tr>
+      <tr><td>奥斯卡</td><td>选送与提名</td><td>法国选送第 85 届最佳外语片，进了当年 12 月公布的外语片短名单（俗称「1 月短名单」），<strong>最终未获提名</strong></td></tr>
+    </table>
+    <p>还有一个日期值得单独写死：<strong>2012 年 3 月 20 日，它以约 2.81 亿美元超过《千与千寻》的 2.749 亿，成为当时影史最卖座的非英语片</strong>；同一天它也超过《第五元素》的 2.639 亿，成为最卖座的法国片。<strong>也就是说，本系列第 3 期那部片，是被今天这一部从榜首挤下来的。</strong>顺带一行硬数据：2011 年法国全年观影人次超过 2 亿，创历史新高——它是踩在一整个国家的观影热潮上被抬起来的。</p>
+    <p>但最刺眼的一行不是影评人那个 57，是<strong>凯撒颁奖的那个晚上</strong>。2012 年 2 月 24 日，它已在法国上映 16 周、约 1900 万人看过、刚坐满十周冠军。<strong>评委和那 1900 万人在同一个星期里，对同一部片给出了「最佳影片」与「不是最佳影片」两个答案。</strong>这不是时间差造成的误判，也不是代沟，是两套系统在同一时刻各判各的，谁也不打算参考谁。</p>
+    <p>至于地理：北美只有约 1019 万美元，占全球不到 3%；德国约 7907 万美元、中国内地约 2700 万美元。<strong>它几乎不是在英语世界赢的。</strong>第 23 期已经把「观众地理学」当过主菜，这里只把数字摆着，不再做地理结论——只留一句：<strong>「最卖座非英语片」这个头衔和「奥斯卡外语片提名」可以同时不成立，这两件事本来就不归同一个人管。</strong></p>
+    <div class="quote">
+      它把《千与千寻》从影史最卖座非英语片的位子上挤下来，却连一张奥斯卡外语片提名票都没拿到；法国每三个半人里就有一个买票进场，本国的凯撒把最佳影片给了别人。
+      <em>——这不是「它好不好」的分歧，是「谁有权说它好」从来没有一个统一的签字人</em>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>亮点在哪（这部分不剧透，放心看）</h2>
+    <ul>
+      <li><strong>两个人的动静分配，本身就是人物关系。</strong>一位几乎只剩头部与表情可用，被固定在画面里；另一位从头到脚都在动，进进出出、站着、晃着。<strong>镜头不需要解释谁被困住、谁能走出去，位置一摆就已经说完了。</strong>这是全片最省力也最准确的一处形式设计。</li>
+      <li><strong>它拒绝用怜悯当镜头语言。</strong>同类题材最容易滑向两条路：煽情式的讴歌，或者纪实式的直白。它两条都不走，选了喜剧——把沉重的事情用轻巧的玩笑说出来，<strong>不替观众决定该在哪一秒难过</strong>。中文影评里那句「没有刻意卖惨，没有廉价鸡汤」说得准，但它更准确的说法是：它把是否要感动的权力还给了你。</li>
+      <li><strong>配乐不是背景，是两套教养的碰撞。</strong>鲁多维科·艾奥迪的钢琴，与维瓦尔第、与 Earth, Wind &amp; Fire 的放克并置在同一条音轨上。<strong>谁的音乐在哪个房间里响，比任何台词都更快地交代了两个世界。</strong>《Una Mattina》《Fly》后来被单独拿出来听了十几年，但在片子里它们是有位置的。</li>
+      <li><strong>两位主演同时被认可，而且方式少见。</strong>2011 年东京国际电影节把樱花大奖（最佳影片）给了它，<strong>最佳男主角由弗朗索瓦·克鲁塞与奥玛·希共享</strong>；2012 年 2 月 24 日，<strong>奥玛·希成为凯撒奖史上首位非裔最佳男主角</strong>。一座奖同时承认「被照顾的人」和「照顾的人」是同一部片的两根柱子，这件事本身就挺难得。</li>
+      <li><strong>一部几乎没有大场面的片。</strong>112 分钟，成本不到 1000 万欧元，没有特效、没有动作戏、没有奇观，主要就是两个人在屋里说话，最后卖到 4.26 亿美元以上（约 40 倍）。<strong>它是「观众用脚投票」这件事最干净的一个样本：没有任何营销层面的东西可以替这个数字解释。</strong></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评：这一回我不替你裁决</h2>
+    <p>前面 25 期用过九种表态法：承认并重新定位、找出对立批评的共同前提、两边都留不做裁决、保留但不裁决、全盘接受并把缺点当推荐理由、承认且不辩护再转成观影动作、把矛头掉转回推荐者自己、指出赞美与指控本是同一句、给批评做时效分类。<strong>今天用第十种，也是本系列第一次用：承认我手里没有裁决所需的信息，并把缺的那一条明写出来。</strong></p>
+    <p><strong>最重的一条批评有个专门的名字：Magic Negro（「魔法黑人」），以及随之而来的《为黛西小姐开车》类比。</strong>说的是一类片子——一个少数族裔角色出现，主要功能就是让白人主角重新热爱生活，而他自己没有独立的人生。这一部的美国评论里，这条被说得很重：</p>
+    <ul>
+      <li>《独立报》称它是<strong>「一部三流的搭档片，几乎不理解自己的居高临下」</strong>，并追问：「《为黛西小姐开车》至少设在 1940 年代种族隔离的美国，<strong>这一部的借口是什么？</strong>」</li>
+      <li>《纽约时报》的斯蒂芬·霍尔登说它用尽了<strong>「黑人作为文化解放者的每一条陈腐刻板印象」</strong>；《综艺》的杰伊·韦斯伯格更狠，称那是<strong>「人们本以为已经永久退出美国银幕的汤姆大叔式种族主义」</strong>。</li>
+      <li>《每日电讯报》的罗比·柯林比作<strong>「一部加了字幕的、宽泛好懂、张扬到不含蓄的《为黛西小姐开车》」</strong>——但他同时承认两个人之间的胡闹「常常非常好笑」。</li>
+      <li>有一条可核查的硬事实撑着这些批评：<strong>真实护工阿卜杜勒·塞卢是阿尔及利亚裔，电影把这个角色改成了塞内加尔裔的黑人青年。</strong>《综艺》认为这个改动「很说明问题」；一条 Letterboxd 长评说得更直接——改了族裔，却<strong>什么也没拿这个族裔去做</strong>，反而绕开了法国社会对阿拉伯裔的歧视；另有影评提到几场跳舞让人想起早期的黑人滑稽秀。</li>
+      <li>原型本人也留过一句话，菲利普在自传后记里写：导演们<strong>「因为电影的限制，简化、改动、删去或虚构了许多场景」</strong>。这不是影评人的推测，是当事人自己标注的距离。</li>
+    </ul>
+    <p><strong>但反过来的一边同样给的是结构判断，不是观感。</strong>《Slate》一位法国作者写道，法国人几乎不这么读：在他们看来这片子若要批评，问题不是「种族主义」，而是<strong>「幻想化、政治正确」</strong>——《解放报》说它描画了一个「没有社会冲突、没有现代性、没有危机的世界」；这位作者还直接反驳了「魔法黑人」的定性：<strong>「本片的主角毫无疑问是德里斯，镜头跟着他从政府补贴的公寓到豪宅再回去，他的人生被写得最完整。」</strong>《赫芬顿邮报》的影评也认为，正因为它把两个人都写成了有过去、有要学的东西的完整的人，它才没落进那个类型。另一位《电讯报》作者奈杰尔·法恩代尔给了个反向理由：<strong>它给了观众许可，让人可以「和」残障者一起笑，而不是「笑」他们。</strong>还有一句最硬的反讽，来自那位法国作者：<strong>「我的祖国等了这么久才认可黑人演员，这件事比它获奖的那部电影更令人愤慨。」</strong></p>
+    <p>于是两派读的是<strong>同一批镜头</strong>，却得出相反结论，而且两边都不是在说「我喜欢／我不喜欢」，是在说<strong>镜头跟着谁、谁在改变谁、族裔为什么被改</strong>——都能查，都能证。我在纸面上裁不了这个案子，因为我缺的那一条信息只有看完才有：<strong>看完之后，你能不能说出那个护工自己想要什么。</strong>答得出来，《Slate》那派成立；答不出来，霍尔登那派成立。<strong>我特意不替你回答——而且正因为我要守住不剧透，我也确实不能回答。</strong></p>
+    <p>这是 26 期里第一次，我把一条批评原样交到你手上，不替你处理完再给结论。它不会让你看得更舒服，但会让你看得更清楚：<strong>这部片到底有没有把两个人各写成一个人，是它全部争议真正押着的地方。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>为什么今天值得看</h2>
+    <ul>
+      <li><strong>门槛低，而且和上一期正好掉个头。</strong>昨天是 1960 年的黑白办公室、125 分钟、要一点耐心；今天是 2011 年的彩色巴黎、112 分钟、不需要任何电影史知识。<strong>它和《寄生虫》一样，属于这个系列里最好进入的那一档</strong>——不黑不白、不老、不长、不慢，周五晚上打开就行。</li>
+      <li><strong>它把三个容易变成议题词的词，拍成了两个具体的人。</strong>阶层、身体、照护——这三个词放在任何一篇介绍里都像标语，放进这部片里变成了谁坐哪儿、谁替谁做决定、谁先笑出声。<strong>而且它拒绝用怜悯当镜头语言，这一点比「温暖」更难得。</strong></li>
+      <li><strong>分数是诚实的，你可以带着怀疑看。</strong>豆瓣 9.2–9.3、IMDb 8.5 双达标，可 Metacritic 只有 <strong>57 分（31 评，「褒贬不一」）</strong>。这个落差我不打算替它抹平：<strong>你完全可以一边被打动，一边保留「它是不是太顺了」的怀疑</strong>，这两件事在这部片身上不冲突。它适合带着怀疑看，不适合带着验收单看。</li>
+      <li><strong>它是一个罕见的观察样本。</strong>1900 万张票、8 提 1 中、57 分、奥斯卡零提名，四张成绩单摆在一起，你看到的不是「它好不好」，而是<strong>「经典」这件事从来不是一个人签的字</strong>。看完再回头看第 25 期那部 10 提 5 中的片，会更有意思。</li>
+      <li><strong>看完就能用。</strong>它对「怎么对待一个需要帮助的人」给了一个不讨好的答案——具体内容我不写，但那个答案不只在轮椅旁边成立：对长辈、对新人、对任何一个被你小心翼翼对待的人，都成立。</li>
+      <li><strong>版本上不用挑。</strong>各平台通行版一律 112 分钟（1 小时 52 分／1 小时 53 分属口径差），<strong>没有删减版、没有导演剪辑版之争</strong>——这是继第 22、23、24、25 期之后第五次「不用挑版本」，与第 13、15、16、21 期四次删减陷阱形成 5:4。唯一要提醒的是：<strong>别点开美版</strong>，那不是另一个版本，是另一部片。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>留给你三道题</h2>
+    <div class="ask">
+      <small>第一题 · 看之前先回答</small>
+      如果一个人总是被小心翼翼地对待——每句话都先替他筛一遍，每个动作都先问一句「要不要帮忙」，连玩笑都要先确认会不会冒犯——<strong>那份小心本身，会不会变成另一种隔离？</strong><br>先别急着说「当然要体贴」。<strong>先想清楚：「被照顾好」和「被当成一个完整的人」，差的到底是哪一步？</strong>然后看片时留意，剧里那些专业、礼貌、得体的应征者，缺的是哪一样。
+    </div>
+    <div class="ask">
+      <small>第二题 · 看的时候指认一个瞬间</small>
+      找出一个<strong>护工不是为了雇主、而是为了自己做了某个决定</strong>的确切瞬间，说清楚是哪一个、他当时是怎么做的。<br>如果一个都找不到——<strong>请把「找不到」当成一条数据，而不是当成你没看懂</strong>：那正是上一节那条批评想说的东西。但在下结论之前，再回想一件事：<strong>镜头大部分时间跟着谁？</strong>这两个问题的答案如果互相打架，你就已经站在那场争论的正中间了。
+    </div>
+    <div class="ask">
+      <small>第三题 · 和前面两期一起回答</small>
+      第 25 期那部黑白片，10 提 5 中拿走最佳影片；第 3 期那部动画，2012 年 3 月 20 日被今天这部从「最卖座非英语片」的位子上挤下来；而今天这部 8 提 1 中、影评人 57 分、奥斯卡零提名，却有约 1900 万法国人买票进场。<br><strong>如果「经典」是一张需要有人签字的证书，你觉得该由谁签？</strong>再往前追一层：<strong>假如 2012 年 2 月那个晚上《艺术家》没有出现，这张证书是不是就签给今天这部了？</strong>而「换个对手结果就变了」这件事，会不会恰好说明——签字这件事本身，没那么可靠？
+    </div>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 26 期 &nbsp;|&nbsp; 2011 · 法国 · 112 分钟 · 彩色 · 法语<br>
+    观看建议：任何平台 112 分钟通行版即可，无删减版本问题；请认准 2011 年法语原版（克鲁塞 + 奥玛·希），不要误点 2019 年美版。<br>
+    看之前：不点预告，不查剧情简介，不看「几分钟看完」，不搜原型人物的生平年表，不搜那句被做成梗的法语玩笑。
+  </div>
+
+</div>
+</body>
+</html>

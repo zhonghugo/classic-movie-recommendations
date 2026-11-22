@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 生之欲</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 40 期</div>
+  <h1>生之欲</h1>
+  <div class="en">生きる / Ikiru（1952）&nbsp;·&nbsp;黑泽明 导演 &nbsp;·&nbsp; 黑泽明、桥本忍、小国英雄 编剧 &nbsp;·&nbsp; 志村乔 主演 &nbsp;·&nbsp; 早坂文雄 配乐</div>
+  <div class="meta">
+    <span>日本</span><span>剧情</span><span>143 分钟</span><span>1952-10-09 日本上映</span>
+    <span>东宝 · 黑白</span><span>日语</span><span>第 4 届柏林参议院特别奖</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.3</b><small>豆瓣 · 约 4.2 万–5.8 万人 · 另有源记 9.1</small></div>
+    <div class="score"><b>8.3</b><small>IMDb · 约 8.7 万–10.4 万票 · 恰好压线</small></div>
+    <div class="score"><b>98%</b><small>烂番茄专业 · 55–57 评 · 观众 96%</small></div>
+    <div class="score"><b>—</b><small>Metacritic · 老片回溯分未查到有效条目</small></div>
+    <div class="score"><b>年度第 1</b><small>1952 年《电影旬报》最佳日本影片</small></div>
+    <div class="score"><b>第 4 次</b><small>黑泽明导演线 · 第四角度</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.3（各快照 41,702–58,100 人；另有影视站记 9.1·18,739，取低值仍过线）；IMDb 8.3（约 8.7 万–10.4 万票）；烂番茄 98%（55–57 条专业评，观众 96%·1 万+）；Metacritic 未见官方老片回溯分数，第三方聚合站记 92——按本系列第 37 期定下的口径，<strong>不硬凑一个数</strong>。榜单与奖项逐条现查核对：视与听 2022 影评人榜第 157–159、导演榜第 72–74；TSPDT 第 106；Criterion 编号 221；2005 年《时代》百大；BBC 2018 百大外语片；旬报 2009 日本影史百大第 13。<br>
+    选片线：豆瓣 9.3 远超 8.8，IMDb 8.3 恰好压线，本系列「或」字口径下双线达标。<br>
+    <strong>节奏与线路说明：上期是 154 分钟、彩色、吵闹、非线性的美国犯罪片，本期是 143 分钟、黑白、极静、单线的日本片——40 期里最干净的一次 180 度掉头。黑泽明线第 4 次启用（第 9 期罗生门、第 16 期七武士、第 21 期用心棒之后，隔 19 期）。日本黑白线需与第 34 期《东京物语》显式切割：只差一年、同为黑白、同为「静」，但小津拍的是「什么都没发生」，黑泽明拍的是「一个人拼命想做成一件事」——一个是空，一个是满。</strong>
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（第 4 档「防最后一场戏」＋两条本片特有的防线）</h2>
+    <p>这部片奇怪的地方在于：<strong>它自己开场就把结局交出来了</strong>——不是被谁泄露的，是导演第一分钟就摊给你。所以本期要防的不是「他后来怎样」，而是另外三样：<strong>那件小事最后的下落、最后一场戏、以及影片后段换过的那套讲法</strong>（我只说有这回事，不说换成什么）。另外还有一样本系列第一次遇到的高危物：<strong>一支歌的名字</strong>。它在中文影评里被引用了七十年，写出来的那一刻，一个画面就被预支了。我通篇不写它，也请你别去搜。</p>
+    <ul>
+      <li><strong>第一雷（第八类再犯）：中文百科与影视站的「剧情简介」栏。</strong>本次实测，多个中文简介一路写到结局画面，其中一条甚至直接标出「此时电影还有五十分钟」——等于替你把结构也拆了。<strong>演职员表、上映年份可以读，剧情栏一行别碰。</strong></li>
+      <li><strong>第二雷（第五类「翻拍片简介」正向启用，且本期最险）：2022 年那部英语翻拍。</strong>它中文也叫《生之欲》，剧情栏第一句就把原片的底牌当既定事实写；还有 2007 年日本电视电影版、1971 年印度片《Anand》的「致敬/改编自」介绍，读它们等于读原片。<strong>搜资料请一律加「1952」「黑泽明」「志村乔」限定。</strong></li>
+      <li><strong>第三雷（第二十一类名场面盘点 ＋ 第十类关键曲名）：以「影史最伟大结尾」为题的图文、被单独剪出来的那个画面、以及那支旧歌的名字。</strong>以科普、盘点、歌单、人生必看片单姿态出现的图文最不设防；「献给父亲」「重阳/父亲节片单」会以最温柔的包装复述最后一场戏（第二十五类）。片子的配乐与那支旧歌的名字，都属于按下不表的内容。</li>
+      <li><strong>第四雷（第 11 期「别查原著」规矩）：</strong>剧本部分灵感来自托尔斯泰 1886 年的《伊凡·伊里奇之死》，所有「原著与电影差在哪」的对照文都要求先摊开电影后半段，看之前一律绕开。</li>
+      <li><strong>检索词雷第 15 次，且三类齐发（本系列首次）：</strong>译名歧义——港译《留芳颂》、又译《活下去》、英文 Ikiru / To Live / Living；同名作品——2022 年翻拍版中文同名；易混近名——另一部华语片的英文名同样是 To Live。<strong>记住：1952、黑泽明、志村乔、143 分钟，这四个词能把你带回正片。</strong></li>
+    </ul>
+    <p><strong>剧情梗概（安全区，开场即交代完的前提）：</strong>东京某市政府市民科。科长渡边勘治在同一张桌子上坐了近三十年，全勤，没请过一天假；他的工作是盖章、看文件、把文件递给下一张桌子。一叠申请摆进来：几位居民想请市里把住处附近那片臭水洼填平，改成一个给孩子玩的小公园。申请书从市民科出发，走过土木、公园、卫生、防疫、下水、道路、都市计划、消防、儿童福祉、议员办公室，转了整整一圈，又回到市民科——每一处都客客气气，每一处都说这不归我管。影片开头用一张 X 光片和一段旁白，直接告诉你这个人的胃出了问题、剩下的时间不多，也直接告诉你「他这三十年等于没活过」。然后，他请了一次假。全科的人都在议论：三十年没缺过勤的人，今天没来。</p>
+    <div class="ver">我们停在这里。他为什么请假、后来做了什么、那件事有没有做成、影片后段换成了谁的讲法、最后一场戏在哪里、以及那支歌叫什么——一个字不写。片尾字幕升起来之前，请什么都别搜。</div>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概 · 亮点所在</h2>
+    <ul>
+      <li><strong>志村乔把「没活过」演成了一种身体姿势。</strong>不是崩溃、不是大哭，是停顿、含混的嘟囔、微微前倾的肩、以及一双慢慢开始真正在看的眼睛。一个压抑了三十年的人要演出「刚学会看」，靠的只能是减法；影评人反复说这是他生涯最好的一次表演，理由就在这里。</li>
+      <li><strong>官僚主义被拍成了物理空间，不是台词。</strong>成堆的文件、一排延伸到画面深处的办公桌、一枚接一枚的印章、被推来推去的那张纸——开场十来分钟几乎没有一句控诉，你却已经完全明白这套机器怎么运转。深焦镜头让「系统」始终在人物身后占着画面，比任何演讲都硬。</li>
+      <li><strong>它把「做好一件事」拍得毫无英雄气。</strong>没有动员、没有表彰、没有配乐替你下结论；镜头只是看着一个人一遍遍回到同一个窗口。全片最锋利的判断藏在形式里：影片过了大约三分之二，讲法会换一次——<strong>换成什么我不写</strong>，只提醒你留意那一刻你被交到了谁手里。</li>
+      <li><strong>早坂文雄的配乐极度克制。</strong>片中有一支旧歌，被用得非常省；我通篇不写它的名字，也不写它出现在哪里——这正是上面红线里那条「关键曲名即剧透」的纪律。</li>
+      <li><strong>它是黑泽明最「少」的一部。</strong>没有时代剧的千军万马，没有武士，没有树林与暴雨：一个人、一间办公室、一张申请书。第 37 期我们写过「拍『多』的人最爱『少』的片」（黑泽明把《偷自行车的人》列为最爱之一），这一部是他自己交出来的那份「少」。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看 · 三件先说清楚的事</h2>
+    <p><strong>第一件：它是本系列 40 期里第一部「开场就自己剧透自己」的电影。</strong>第 28 期《控方证人》的主框架是「史上最早的防剧透装置」——片尾字幕请求观众别把结局说出去，怀尔德把剧本最后十页扣到开拍当天才发给演员；第 36 期《泰坦尼克号》是另一种，结局写在历史课本里，全世界进场前都知道。本期是第三种：<strong>既不是求你别说，也不是别人早知道，是导演在第一分钟主动把底牌摊在桌上</strong>——病况、余下的时间、以及「这个人等于没活过」，全部由旁白直接讲明。悬念从一开始就被抽走了，剩下两小时二十分钟拍的，是<strong>一段被用掉的时间</strong>。于是你进场后得换一个问题：不再是「后来会怎样」，而是「这段时间，他打算拿来干什么」。片名「生きる」是动词，不是名词——它问的是动作，不是答案。</p>
+    <div class="quote">「一部电影把结局先给了你，通常是因为它根本不打算靠结局赢你。」<em>本系列第 40 期 · 写在红线框之后</em></div>
+    <p><strong>第二件：黑泽明第四角度——前三部问「怎么做成」，这一部问「做成之后，谁来解释它」。</strong>第 9 期《罗生门》拆真相（当事人自己都分不清记得的和希望发生过的）；第 16 期《七武士》拆集体（七个彼此无义务的人如何做成一件事）；第 21 期《用心棒》拆策略（既不追问真相也不组织集体，只让已有的两拨人互相消耗）。本期三部都不做：它拍的是<strong>一个人、一件小到不会被记进任何档案的事</strong>，然后把镜头转向那套每天照常盖章的机器，看它怎么处置一份没人认领的功劳。本系列「个体与系统」的九格序列已在第 30 期《无间道》收口，本期不是第十格——方向恰好反过来：前九格问个体怎么对待系统，这一格问系统怎么对待一个已经不在场的人。开场那张转了一整圈又回到原点的申请书，就是全片的题眼；它甚至不需要被解决，只要被你看见就已经够了。</p>
+    <p><strong>第三件：七十年后，有人把它重写了一遍，这件事本身就是推荐理由。</strong>2022 年有一部英语翻拍，把舞台从战后的东京搬到 1950 年代的伦敦，编剧是后来拿了诺贝尔文学奖的石黑一雄，主演是比尔·奈伊；此前 2007 年日本已有电视电影版，1971 年印度片《Anand》公开承认受它启发。一部 1952 年的黑白日本片能被反复搬到三个国家、三种语言里重讲，靠的不是「经典」这顶帽子，是那个谁都躲不掉的问题：<strong>如果剩下的时间已经数得出来，你手上哪件事值得被做完？</strong>顺带说明它为什么难查资料——翻拍版与正片中文同名，剧情栏第一句就会把原片底牌当常识写出来，所以上面的红线框把它列为第一险。</p>
+  </div>
+
+  <div class="card">
+    <h2>它挨过的批评（三条都站得住）</h2>
+    <p><strong>第一条：后段太长、反复、像在说教。</strong>这条从当年就有，早期影评直接把最后三分之一判为缺陷，说黑泽明在《罗生门》之后迷上了「为形式而形式」；Criterion 相关评论问得很客气：「这一段压成一个尾声，会不会同样有效？」；也有影评认为它足足多拖了半小时；烂番茄观众区到 2026 年仍有人写「结尾拖了一点」。<strong>我不替它辩护</strong>——只补一个观察：那一段拍的恰恰是一群人反复说同一件事、却什么也没改变，冗长既是缺点，也是它正在拍的那个东西。判断留给你：这是失手，还是同构。</p>
+    <p><strong>第二条：感伤、不够含蓄、主题太简单。</strong>有影评嫌开场那段旁白把「他没活过」直接说破，等于不给观众自己发现的机会；也有人嫌片中那支旧歌太「软」，配上了直白的情绪。2016 年《每日电讯报》更把它列进「十部最被高估的电影」，而烂番茄观众里也有「主题单薄」的判词。<strong>「被高估」这三个字我无法反驳，也不打算反驳</strong>——它评的不是片子，是片子头上那顶帽子。给一条观影动作就够：进场时先把「影史伟大」四个字摘下来，看看剩下的是不是还站得住。</p>
+    <p><strong>第三条：把公务机构一概写成无意义的空转。</strong>有论者指出，很少有人真会认为规章与审批是社会不需要的功能，影片把整套市政机器简化成踢皮球，是对公共工作不公平的漫画化。<strong>这条同意一半</strong>：它批判的其实不是「办事」本身，而是<strong>没有人认领</strong>这件事——每张桌子都合规，每张桌子都不负责。至于这个区分算不算它自己说清了，看的时候你自己验收。</p>
+    <p>本期不新立「表态法」编号：三条批评各说各的，硬凑成一种新姿态反而不诚实。<strong>共同点只有一句——它们说的都是同一件事：它太想让你明白。而它最好的几场，恰恰一个字都没解释。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>一份现查的成绩单</h2>
+    <table>
+      <tr><th>口径</th><th>数值</th><th>说明</th></tr>
+      <tr><td>日本本土</td><td>旬报 1952 年度第 1</td><td>并获每日电影奖最佳影片、最佳编剧、最佳录音；2009 年旬报日本影史百大第 13</td></tr>
+      <tr><td>国际奖项</td><td>第 4 届柏林参议院特别奖</td><td>另有金熊奖提名；英国电影学院奖最佳外国男演员提名（志村乔）</td></tr>
+      <tr><td>专业口碑</td><td>烂番茄 98%（55–57 评）</td><td>观众 96%（1 万+）；共识称其为黑泽明「最私密的一部」</td></tr>
+      <tr><td>影史榜单</td><td>视与听 2022 导演榜第 72–74</td><td>影评人榜第 157–159；TSPDT 第 106；Criterion 编号 221；《时代》百大、BBC 2018 百大外语片</td></tr>
+    </table>
+    <p style="margin-top:12px">一个反差值得留意：<strong>它在导演同行里的名次（七十多位）明显高于影评人榜（一百五十多位）</strong>。拍电影的人比写电影的人更看重它——本系列第 18 期《2001》记录过同形状的「越靠近工业排得越高」，但那次是一份榜单上的单调序列，这次只是两张榜之间的十几位差，不构成同一结论，别混着读。</p>
+  </div>
+
+  <div class="card">
+    <h2>观看建议</h2>
+    <ul>
+      <li><strong>版本（第 17 次「无陷阱」）：143 分钟全球通行</strong>，没有删减版、加长版、另拍结局之分（个别站点标 2 小时 23 分，为同一片的口径写法）。累计：删减/改判 8 · 无陷阱 17 · 更长≠更好 1。</li>
+      <li><strong>请选修复版。</strong>老拷贝的划痕与灰雾会吃掉面部特写——这部片最要紧的东西全长在志村乔的脸上，画质差一档，等于换了个演员。</li>
+      <li><strong>请用原速。</strong>它的节奏是「停顿也算戏」；二倍速会把那些欲言又止全抹平，只剩一个老头在办公室里走来走去。</li>
+      <li><strong>情绪门槛（正向提醒）：</strong>题材是绝症与余生，但它不催泪、不剥削你，也没有配乐命令你哭。不必挑一个郑重其事的夜晚，只需要一个能完整坐住的两小时。别在赶时间的时候开。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>散场以后：三个问题（按需取用）</h2>
+    <div class="ask">
+      <small>第一层 · 进场时</small>
+      <p>开场第一分钟，旁白已经把结局交给你了。<strong>既然「后来会怎样」这个问题被收走了，你打算拿什么撑完这两小时？</strong>先给自己想一个替代的验收标准，再按下播放——这个动作本身，就是这部片给你的第一道题。</p>
+    </div>
+    <div class="ask">
+      <small>第二层 · 散场时</small>
+      <p>请指认<strong>一个具体画面</strong>，说明你是在哪一刻觉得「他开始活了」。指不出来，就追问一句：那份感觉，是画面给你的，还是旁白和音乐替你下的结论？——上面第二条批评说它「太想让你明白」，这一问就是把裁判权拿回自己手里。</p>
+    </div>
+    <div class="ask">
+      <small>第三层 · 对照本系列第 28 期与第 36 期</small>
+      <p>三种「结局已知」：《控方证人》在片尾<strong>求你别说</strong>，《泰坦尼克号》是<strong>历史早就替它说了</strong>，本期是<strong>导演自己先说</strong>。哪一种最难受、哪一种最自由？再往自己身上落一步：<strong>你手边有没有一份正在十几个窗口之间转圈、谁都客客气气、谁都不认领的申请书？</strong>它转了几圈了？</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    本系列第 40 部 · 黑泽明导演线第 4 次（第四角度＝一件事做成之后，谁来解释它）· 日本黑白线与第 34 期《东京物语》显式切割<br>
+    已推清单与选片口径见每日执行台账 · 下期起候选：华语线 2026-12-02 解禁（花样年华第一优先）、动画线 12 月中旬后《机器人总动员》
+  </div>
+
+</div>
+</body>
+</html>

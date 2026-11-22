@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 疯狂动物城</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 33 期</div>
+  <h1>疯狂动物城</h1>
+  <div class="en">Zootopia（英国／欧洲作 Zootropolis，德国作 Zoomania）(2016) &nbsp;·&nbsp; 拜恩·霍华德、里奇·摩尔、杰拉德·布什 导演 &nbsp;·&nbsp; 迪士尼动画工作室第 55 部动画长片</div>
+  <div class="meta">
+    <span>美国</span><span>迪士尼动画工作室</span><span>动画 · 喜剧 · 犯罪 · 冒险</span>
+    <span>108 分钟</span><span>彩色</span><span>PG</span>
+    <span>2016-03-04 中国内地与北美同步上映</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.3</b><small>豆瓣 · 约 236 万人</small></div>
+    <div class="score"><b>8.0</b><small>IMDb · 约 65 万票</small></div>
+    <div class="score"><b>98%</b><small>烂番茄专业 · 293 评</small></div>
+    <div class="score"><b>78</b><small>Metacritic</small></div>
+    <div class="score"><b>1 / 1</b><small>第 89 届奥斯卡</small></div>
+    <div class="score"><b>10.26 亿</b><small>全球票房 · 美元</small></div>
+  </div>
+  <div class="note">
+    口径说明：豆瓣 9.3（约 236 万人，豆瓣 250 第 14 位，2026-11 快照）；IMDb 8.0（约 65 万票）；烂番茄专业 98%（293–298 评，各源口径微差）；Metacritic 78（部分旧源记 81，属不同快照）；全球票房 10.26 亿美元（Box Office Mojo 10.255 亿，早期报道多记 10.24 亿）。<br>
+    选片线：豆瓣 9.3 达标（线为「豆瓣 ≥ 8.8 或 IMDb ≥ 8.3」），但 <strong>IMDb 8.0 落在系列最低档</strong>——与第 13 期《海上钢琴师》、第 30 期《无间道》并列最低。<strong>这一期是系列 33 期以来第一次遇到"分数需要按类型折算"的情况：</strong>动画长片在 IMDb 的天花板本来就低（同一部片在豆瓣比 IMDb 高 1.3 分，是本系列第 3 次出现"东高西低"），所以 8.0 对一部动画不算差，只是没法跟真人片那套尺子放在一起比。<br>
+    <strong>这是第 33 期，全系列最好进入的一部（108 分钟、彩色、零门槛），也是第三部动画片</strong>——第 3 期《千与千寻》手绘、第 23 期《寻梦环游记》皮克斯 CG、本期迪士尼自家 CG。前两期是 87 分钟的默片和 201 分钟的史诗，今天把重量一次性放下来。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（第 11 档「防凶手」＋ 防中段那次公开场合的发言）</h2>
+    <p>这部片的剧透风险和它可爱的外表完全不匹配。它表面上是一部合家欢动画，实际上是一部<strong>结构完整的侦探片</strong>：有线索、有谜面、有一个要到最后一幕才被指认的人。所以本期要防的不是"结局好不好"，而是<strong>"那个人是谁"</strong>，以及<strong>两个主角之间在中段发生的那件事</strong>——那件事一漏，后面四十分钟的情绪就全没了支点。</p>
+    <ul>
+      <li><strong>第一类：中文百科与影视站的「剧情简介」（第八类）。</strong>本期这一栏一半安全一半危险：百度百科的"剧情介绍"只写到前提就停（可以看），但豆瓣长评、维基的完整剧情段、各类影视站的"剧情"字段会一路写到指认那个人为止。<strong>看分数可以，正文别点。</strong></li>
+      <li><strong>第二类：续集简介（第二十类，本系列第 2 次启用）。</strong>2025-11-26 上映了续集，而它的任何一条简介，第一句都会写"朱迪与尼克这对黄金搭档再度联手"——<strong>这句话已经把第一部的结尾当作既定事实送给你了。</strong>"他们最后成了搭档"这件事，是要你自己看到的。</li>
+      <li><strong>第三类：片尾贴片预告（第二十三类，本期新增）。</strong>2025-08-08 内地重映版在片尾加映了续集预告。也就是说：如果你看的是那一版，<strong>正片结束、字幕一升起来就起身走</strong>，别坐在那儿等彩蛋。</li>
+      <li><strong>第四类：同人维基与角色百科的人物词条（第二十二类，第 32 期入账）。</strong>这类站点的角色条目第一行就写身份与结局。<strong>看完之前，不要搜任何角色名</strong>，包括你觉得"肯定没问题"的那几个。</li>
+      <li><strong>第五类：关键道具的名字（第十类，第 20 期入账）。</strong>片中有一种花，<strong>它的名字本身就是第一条线索</strong>。我通篇不写它，请你也别去搜"那朵花叫什么"。</li>
+      <li><strong>第六类：几分钟看完、安利长文、影史名场面盘点（第九、十三、二十一类）。</strong>这部片被盘点得极狠：几段最出名的戏都被单独剪成短视频传播，其中有一段一被提起就等于把中段的走向说了。<strong>别在看完前刷它的片段。</strong></li>
+      <li><strong>第七类：检索词雷（第 9 次启用，本期是"一名三语"最乱的一次）。</strong>中文三名：内地《疯狂动物城》／香港《优兽大都会》／台湾《动物方城市》，另有人译作《动物乌托邦》《动物大都会》。英文三名：北美 <strong>Zootopia</strong>、英国与欧洲 <strong>Zootropolis</strong>、德国 <strong>Zoomania</strong>——<strong>这不是三部片，是同一部片换了三个名字</strong>（原因见下）。再加 2025 年的续集与本片共用片名。<strong>搜索请加年份 2016。</strong></li>
+    </ul>
+    <p>安全区划给你（这些是预告片和开场二十分钟就交代完的前提）：<strong>一座只有哺乳动物、没有人、所有动物都穿衣服上班的城市，它的口号是"任何人可以成为任何事"。一只乡下兔子从小想当警察，考了第一，成了城里第一个兔子警官；报到第一天，她被分去贴罚单。一只靠小骗术过日子的狐狸，被她抓住把柄，成了她的线人。就在这段时间，城里开始出现"食肉动物突然发狂"的事件，人心浮动，市长需要有人尽快给出一个答案——他把这个几乎不可能完成的案子，压给了她，并给了一个期限。</strong></p>
+    <div class="ver">我们停在这里。案子怎么查、他们俩怎么从互相利用变成搭档、那个人是谁、最后那二十分钟怎么收——一个字不写。<strong>有一点可以提醒：这是一部侦探片，所以它所有的笑点都在给线索让路。</strong>你如果把它当喜剧看，会觉得它前半小时有点慢；你如果把它当案子看，会发现每一场闲聊都在埋东西。</div>
+  </div>
+
+  <div class="card">
+    <h2>三件先说清楚的事</h2>
+    <p><strong>第一件：它差点成为它自己要批判的那部电影。</strong>这一点很少有人提，但它比"迪士尼又拍了一部好动画"重要得多。本片开发到中段时，主角其实是那只狐狸，故事也不在现在这个世界里：<strong>食肉动物被法律要求戴一种"驯顺项圈"，情绪一激动就会被电击</strong>；狐狸在地下经营一个叫"野性时代"的俱乐部，食肉动物可以在里面摘下项圈，做几个小时自己。<strong>这个项圈的点子，来自 1970 年美国广播公司那部纪录片《暴风眼》</strong>——马丁·路德·金遇刺后，一位小学老师在课堂上让一部分孩子戴上蓝色领巾，用一天时间让他们体会"被一个记号决定命运"是什么感觉。也就是说，那一版里的偏见不是态度，是<strong>城市基础设施</strong>：它有开关，有电流，有编号。</p>
+    <p>结果是：几轮内部试映之后，团队自己先受不了了。<strong>试映观众认为这个世界太黑、不值得被拯救</strong>；皮克斯那边的同行看完直说不行，建议把项圈换成更微妙的社会态度与政策；当时的监制约翰·拉塞特留下一句话，本期我把它当引语用：</p>
+    <div class="quote">
+      I wanted to love this world. But because of the color of the story at the beginning, I hated this world.
+      <em>——约翰·拉塞特，纪录片《想象动物城》（Imagining Zootopia）。译：我本来是想爱上这个世界的。但因为故事一开始的那种底色，我恨这个世界。</em>
+    </div>
+    <p>2014 年 11 月，团队做了一个决定：<strong>把主角换成兔子，把项圈、俱乐部、那一整套设施全部废掉，重写。</strong>当时距离上映只剩大约十六个月——一部 CG 动画长片，在最后一年多推翻主角和世界观，在工业上接近自杀。他们做到了，代价是：<strong>偏见从"设施"降级成了"态度"。</strong></p>
+    <p>请你记住这个降级，因为本期最重的一句话就在这儿：<strong>这部电影今天挨的那条最狠的批评——"它没有讲结构，只讲了个体"——恰恰是它能被拍出来、能被一个八岁孩子看下去的条件。</strong>项圈版里，偏见是可以被拆掉的机器；现在的版本里，偏见只存在于每个人脑子里，于是它只能一个人一个人地改。<strong>它换来了观众，付出了锋利。</strong>这两件事是同一笔交易，不能分开算。</p>
+
+    <p><strong>第二件：奖项这一栏，本期要写的不是"拿了几座"，是"它被放进了哪个抽屉"。</strong>把它的获奖表摊开，会看到一件很奇怪的事——<strong>六套系统给了它六次"最佳动画"，而第七套系统根本没把它当动画，直接把它放进了"年度十佳影片"。</strong></p>
+    <table>
+      <tr><th>机构</th><th>给它开的格子</th><th>结果</th></tr>
+      <tr><td>第 89 届奥斯卡（2017-02-26）</td><td>只有一格：最佳动画长片</td><td>全片仅此 1 项提名，1 中</td></tr>
+      <tr><td>第 74 届金球奖</td><td>最佳动画长片</td><td>中</td></tr>
+      <tr><td>第 44 届安妮奖（动画界行业奖）</td><td>11 项提名（影片·导演·编剧·配音·分镜·角色设计等）</td><td>6 中，含最佳配音（杰森·贝特曼）</td></tr>
+      <tr><td>美国制片人工会（PGA）</td><td>最佳动画长片</td><td>中</td></tr>
+      <tr><td>纽约影评人协会</td><td>最佳动画片</td><td>中</td></tr>
+      <tr><td>评论家选择奖</td><td>最佳动画长片</td><td>中</td></tr>
+      <tr><td><strong>美国电影学会（AFI）</strong></td><td><strong>年度十佳影片——不分类型</strong></td><td><strong>入选</strong>（同榜《爱乐之城》《月光男孩》）</td></tr>
+      <tr><td>英国电影学院奖（BAFTA）</td><td>最佳动画片</td><td><strong>提名，输给《魔弦传说》</strong></td></tr>
+    </table>
+    <p>看明白这张表要三秒钟，看明白它的问题要久一点：<strong>同一部片，奥斯卡只允许它参加一格（而且只有一格可参加），AFI 却把它和当年的真人片放在同一张"年度十佳"名单上。</strong>前者说"这是今年最好的动画"，后者说"这是今年最好的十部电影之一"——<strong>两个说法不是程度差别，是分类差别。</strong>而这张表上八套系统里，唯一说"今年最好的动画不是它"的是 BAFTA，它把奖给了《魔弦传说》。</p>
+    <p>这和本系列前几期的奖项框架都不一样：第 32 期《指环王3》是"全中"（11 提 11 中），第 31 期《城市之光》是"零提名"（压根没进评选），第 25 期《桃色公寓》是"三个法庭先后开庭"（判决机构换了三轮）。<strong>本期问的是更前面一步的问题：谁来决定这个案子归哪个庭审。</strong>一部动画片被放进"动画"这个抽屉，它就不用跟《月光男孩》比了；它被放进"电影"这个抽屉，它就得比。<strong>本期两个抽屉都开了，它两边都进了。</strong></p>
+
+    <p><strong>第三件：十年过去，它在中国的曲线是往上走的，在它自己国家的曲线是平的。</strong>2016-03-04 内地与北美同步上映，首日 2239 万，不起眼；然后口碑自己跑起来了——3 月 12 日单日 1.66 亿，刷掉《功夫熊猫3》刚创下的内地动画单日纪录；3 月 19 日累计破 10 亿，成为<strong>内地影史第一部破 10 亿的动画片</strong>；最终 15.30 亿，是<strong>当年进口片票房冠军</strong>，也是那一年的内地年度第二（第一是《美人鱼》）。北美 3.41 亿美元、全球 10.26 亿——在全球是 2016 年度第四，在北美是"迪士尼动画开画纪录"（7,506 万，超过《冰雪奇缘》）。</p>
+    <p>然后是九年后的那一笔：<strong>2025-11-26 续集上映，内地累计逾 45.89 亿元，登顶中国影史进口片票房榜第一，中国成为它全球第一大票仓</strong>——比它自己国家还大。<strong>所以这部片在中国的地位，不是靠 2016 年那一次定下的，是被这十年一点点抬上去的。</strong>顺便说一句，这也是本期剧透风险的真实来源：一个还在扩张的 IP，意味着它的剧情被反复重述、被当成常识使用。</p>
+    <p>本系列做过一次"观众地理学"（第 23 期《寻梦环游记》，讲同一时刻的横切：74.4% 的票房来自北美以外）。<strong>本期是纵切：同一部片，在两个市场里用十年走出两条不同的斜率。</strong>横切讲的是"谁在看"，纵切讲的是"看的人后来做了什么"。</p>
+  </div>
+
+  <div class="card">
+    <h2>亮点所在（不看剧情也能看懂的四个看点）</h2>
+    <ul>
+      <li><strong>一、它把"共存"当成一个工程问题来解决，而且解得极漂亮。</strong>这座城市分四个气候区，而真正的难题不是天气，是<strong>尺寸</strong>：大象、老鼠、长颈鹿、鼩鼱共用一套公共设施，于是门要有小门中门大门，电梯要有四层按钮，车厢要分高度，连咖啡杯和手机都得重新设计。<strong>这部片最了不起的设计不是某个角色，是"一套能让所有体型都用得上的基础设施"。</strong>为了拍它，团队调研动物用了 18 个月，跑遍各地动物园与动物学家，还派了一支小队飞 9,000 英里到肯尼亚待了两周；全片约 800 人参与，城市形态参考了北京、上海、香港、东京、巴塞罗那、巴黎。<strong>你看的时候留意一下镜头里那些"没人会注意到"的地方——那才是这部片的论点：共存不是一种感情，是一种设计。</strong></li>
+      <li><strong>二、它是一部真侦探片，只是穿了一身毛。</strong>前 32 期里演过法庭（第 2 期《十二怒汉》、第 28 期《控方证人》）、演过偷窥（第 24 期《后窗》）、演过卧底（第 30 期《无间道》），但<strong>没有一部是拿"查案"当主结构的动画</strong>。它的骨架是标准的搭档警匪片：一个信规则的人，一个只信自己的人；线索一条条推进，误判一次，代价一次，然后翻盘。它敢让两个主角在中段真的闹到无法收场——这是真人类型片的标配，很少出现在一部 PG 动画里。</li>
+      <li><strong>三、配音是顶级水准，尤其是那只狐狸。</strong>杰森·贝特曼拿下安妮奖最佳配音——他的语速本身就是笑点，那种"每个字都在算计你"的节奏是演出来的，不是配出来的。夏奇羊由夏奇拉本人配音、造型按她本人设计，是这部片最自嘲的一处植入。<strong>还有一段几乎全靠节奏的喜剧（车管所那场），是这十年被模仿最多的动画段落之一</strong>——你不必知道它在哪，看到就会笑。</li>
+      <li><strong>四、配乐与那首主题曲。</strong>配乐是迈克·吉亚奇诺，这是他第一次与迪士尼动画工作室合作；主题曲《Try Everything》由 Sia 与 Stargate 写、夏奇拉唱，拿到格莱美"最佳影视媒体歌曲"提名，并在美国卖到 RIAA 白金。<strong>这首歌的歌词就是全片的论点，而且是全片唯一一处把论点直接唱出来的地方——你如果只记住一句台词，大概会是它。</strong></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看</h2>
+    <p><strong>因为它同时是两部电影，而且两部都成立。</strong>八岁的人看到的是：一只不被看好的兔子，靠努力和嘴皮子进了一个不属于她的地方，破了案。三十八岁的人看到的是：<strong>恐惧是怎么被生产出来的</strong>——不是被坏人喊出来的，是被新闻标题、被"我们都是为你好"、被一句无心的玩笑一点点攒出来的。绝大多数"合家欢"是给大人留几个只有大人懂的笑话；<strong>这一部是给大人留了一整套他们不愿意承认的诊断。</strong></p>
+    <p><strong>因为它拍出了"善意的偏见"，这是最难拍的一种。</strong>大部分反歧视的故事，坏人一眼就能认出来；这部片最狠的一刀<strong>砍在主角自己身上</strong>——她在片中最重要的一次公开表达里，说出了一句她自己都没意识到有问题的话，而那句话造成的后果，整部片剩下的时间都在还。<strong>这个设计在教育上的价值，远超它作为娱乐的价值：它告诉孩子（和大人），歧视不是坏人的专利，它是好人的默认设置。</strong></p>
+    <p><strong>因为它把问题摆对了，尽管答案给得太便宜。</strong>它没有说"偏见是不对的"（那是口号），它说的是"偏见是有用的"——对某些人有用，所以它会被生产、被利用、被卖。<strong>这一层它讲得比很多真人电影都清楚。但它最后的解法是"揪出一个人"，这个解法轻得让人不舒服</strong>——而这份不舒服本身就是值得看的东西，我在下面批评版块里正面处理它。</p>
+    <p><strong>最后一个理由很朴素：它是这个系列 33 期以来最好进入的一部。</strong>108 分钟，不黑不白，不需要任何电影史准备，看完可以立刻和一个八岁的人讨论，也可以和一个三十八岁的人讨论，而两种讨论不会互相看不起。<strong>这种"两边都能谈"的片，一年也碰不到一部。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>批评版块（三条：一条最重的、一条最技术的、一条最根本的，再加我的一条）</h2>
+    <p><strong>第一条（最重）：它讲的是"没有特权的种族主义"。</strong>2016 年 Consequence 那篇《迪士尼的〈疯狂动物城〉把种族主义搞错了》是当年传播最广的一篇批评，核心论点极硬：<strong>种族主义要成立，必须有一套权力等级；而这部电影里没有等级。</strong>证据是它自己的设定对不上：食肉动物只占城市人口的 10%，可市长是一头狮子；而占 90% 的食草动物一边被叫做"小个子"，一边握着绝对多数。<strong>"一部关于'他者'的电影，如果每个人都是他者，那它就没有'他者'了。"</strong>结论是那句最刺人的话：<strong>在动物城里，系统不是问题，个体才是问题。</strong></p>
+    <p><strong>第二条（最技术）：这个寓言在生物学上站不住，而它能被两边同时使用。</strong>马萨诸塞大学学生报《Daily Collegian》那篇《一堆混杂的信息》说得更直接：把"掠食者"编码成受歧视的群体，在现实里说不通——<strong>因为狐狸确实会吃兔子。</strong>片中最常被引用的那个比喻（地铁上一只兔子下意识抱紧孩子，旁边坐着一只老虎）因此出了个难题：<strong>种族主义地怀疑一个黑人会抢你，和合理地怀疑一只真老虎想吃你，不是同一件事；而这一幕让观众该站老虎的时候站了兔子。</strong>《牛津学生报》补了更根本的一刀：<strong>它把"物种之间真实的生物学差异"类比"种族之间伪科学的差异"，这个类比既能用来反驳种族主义，也能被种族主义者拿去用。</strong>另有一层它只敢暗示不敢说：<strong>这座城市的高层几乎清一色是男性，而片中最吃力不讨好的几个岗位都落在女性身上——性别这一层，被物种隐喻挡住了。</strong></p>
+    <p><strong>第三条（最根本）：它含混到任何人都能读出自己想读的东西。</strong>影评人马特·佐勒·塞茨那句判词，本期我当成核心引语放在这里，因为它把"含混"从审美问题变成了可验证的后果：</p>
+    <div class="quote">
+      I can imagine an anti-racist and a racist coming out of this film, each thinking it validated their sense of how the world works.
+      <em>——马特·佐勒·塞茨。译：我能想象一个反种族主义者和一个种族主义者同时走出这部片的放映厅，各自认为这部电影印证了自己对世界运转方式的理解。</em>
+    </div>
+    <p><strong>我的一条：它擅长拍结构，不擅长拍结构怎么被拆。</strong>这部片最好的镜头全都跟"位置"有关——谁站在队伍的哪一段、谁的工位在走廊尽头、谁的办公室在顶楼。<strong>它对空间与权力的观察准得可怕</strong>；可一到"那怎么办"，它就退回了一个人的善恶。<strong>它像一个把 CT 片子拍得极清楚的医生，然后开了一颗止痛药。</strong></p>
+    <p><strong>我的表态（本系列第十四种）：给批评做层次归属。</strong>前面十三条表态法里，有做时效分类的（第 25 期），有做版本归属的（第 30 期），这一期用一个新的：<strong>这些批评其实在说两件不同的事，得分开判。</strong></p>
+    <ul>
+      <li><strong>(a)「它没看见结构」——不成立，而且它比大多数批评者承认的看得更清楚。</strong>兔子警官报到的第一天被派去贴罚单；警局前台的豹子坐在一个明显塞不下他的窗口后面；她破案后被问的第一句话是"你是不是走了配额"；而这座城市最著名的那句口号，是被印在广告牌上、被唱进流行歌里的——<strong>它把"人人平等"当成一句营销语来使用，这个细节本身就是对结构的指认。</strong>说它"看不见结构"的批评，是把自己的尺子当成了它的失明。</li>
+      <li><strong>(b)「它看见了，但最后让个体负责」——成立，而且成立得很彻底。</strong>所以我不打算替它辩护。这一条我只做一件事：把它放在这，让你带着它去看最后二十分钟。<strong>如果你看完觉得"就这样？"——那不是你没看懂，那是你看懂了。</strong></li>
+    </ul>
+    <p><strong>为什么这个分层有用？</strong>因为 (a) 不成立的时候，(b) 才真正致命：一部根本没看见结构的电影，只是浅；<strong>一部看见了结构、却选择让一个人顶罪的电影，是在替结构做公关。</strong>前者可以原谅，后者值得警惕。而它究竟属于哪一种，取决于你愿不愿意把那个"顶罪"的动作当回事。<strong>这也是我推荐它而不是赞美它的理由：它把一个正确的问题问得很响，然后给了一个便宜的回答——这两样都得让你看见。</strong></p>
+    <p><strong>一条影片外的事实，按老规矩写在这里（不算剧透）：</strong>2016-03-21，编剧加里·戈德曼起诉迪士尼，称本片抄了他的创意、主题、角色与对白；加州联邦法院审理后认定，仅就受保护的部分而言，两者的相似程度不足，判迪士尼不侵权。<strong>我把这条放在批评版块而不是八卦版块，因为它是这部片"原创性"这顶帽子唯一一次被拿到法庭上称过重。</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>观看建议（本期是第十次"不用挑版本"）</h2>
+    <ul>
+      <li><strong>版本：没有陷阱，放心看。</strong>IMDb 记 1 小时 48 分（108 分钟），部分中文源记 109 分钟——<strong>这是四舍五入口径不同，不是删减</strong>。内地 2016-03-04 与北美同步上映，公映版无删减。本系列十次"不用挑版本"里，这次是最省心的一次。</li>
+      <li><strong>有一版要避开：2025-08-08 内地重映版。</strong>那一版在片尾加映了续集预告（见红线第三类）。它的正片和原版一样，但<strong>字幕一升起来就得走</strong>。</li>
+      <li><strong>配音：优先原声。</strong>那只狐狸的笑点百分之七十在语速和语气上，配音一换就掉一半。带孩子看可以选国语版——季冠霖（兔子）与张震（狐狸）这一版质量在迪士尼国配里属上乘，是少数"不亏"的国配。</li>
+      <li><strong>制式：2D 就够。</strong>它不是靠 3D 撑起来的片，它的信息密度在画面里的细节，不在纵深。</li>
+      <li><strong>年龄：6 岁以上可看。</strong>片中有两三场"动物突然变野"的段落，对 5 岁以下偏吓人——不血腥，但气氛突然变冷。</li>
+      <li><strong>情绪门槛：不适用。</strong>这个词条在第 8 期《飞越疯人院》首次启用、第 27 期《辛德勒的名单》第二次启用，第 28 期《控方证人》起改为反向声明，本期是第二次反向声明。<strong>这一部你可以累的时候看、可以陪人看、可以当背景音看，都不亏。</strong></li>
+    </ul>
+    <div class="ver">补一句关于片名的：英文在两个地区叫两个名字，是因为"Zootopia"这个名字在英国与欧洲已被丹麦的吉夫斯库动物园注册（该园 2010 年前后为五十周年园区做了商标），迪士尼在当地用不了，于是改用 Zootropolis（把"乌托邦"换成"大都会"）；到德国，Zootropolis 又撞上一本 2010 年的德语童书，只好改成 Zoomania。<strong>这不是三部片，也不是续集关系——这是同一部电影被商标法逼着改了两次名。</strong></div>
+  </div>
+
+  <div class="card">
+    <h2>带走三个问题（看完再回答）</h2>
+    <div class="ask">
+      <small>第一问 · 关于那句口号</small>
+      <p>这座城市的口号是"任何人可以成为任何事"，主角从片头信到片尾。<strong>看完之后请你判断：这句话是这部电影的主题，还是它批判的对象？</strong>——主题是它自己相信的，批判对象是这座城市卖给居民的。<strong>如果两者都是，那它到底站在哪一边？</strong></p>
+    </div>
+    <div class="ask">
+      <small>第二问 · 关于那一刀</small>
+      <p>片中有一个时刻，一个明显的"好人"说了一句歧视的话，而且说的人自己没意识到。<strong>你能指出是哪一刻吗？</strong>——指得出来，你就会明白这部片最锋利的地方不在反派身上，在主角身上。<strong>再追一层：那句无心的话和你自己说过的话，有区别吗？</strong></p>
+    </div>
+    <div class="ask">
+      <small>第三问 · 关于那个便宜的答案</small>
+      <p>它最后的解法是"揪出一个人"。<strong>如果换成你写结尾，你会让"制度"付出什么代价？</strong>——<strong>然后再问一句：如果你真那样写，这部电影还能给八岁的孩子看吗？</strong>这一问没有标准答案。但它会把本期开头那件事接上：<strong>2014 年 11 月之后的十六个月里，一群人推翻了自己写了两年的故事，正是因为这个问题答不上来。</strong></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>数据表（本期口径）</h2>
+    <table>
+      <tr><th>项目</th><th>数据</th></tr>
+      <tr><td>豆瓣</td><td>9.3（约 236 万人，豆瓣 250 第 14 位，2026-11 快照）</td></tr>
+      <tr><td>IMDb</td><td>8.0（约 65 万票，系列并列最低）</td></tr>
+      <tr><td>烂番茄 / MC</td><td>专业 98%（293–298 评）／Metacritic 78（旧源记 81）</td></tr>
+      <tr><td>片长</td><td>108 分钟（1 小时 48 分）；部分中文源记 109 分钟，口径差异</td></tr>
+      <tr><td>制作</td><td>预算 1.5 亿美元；迪士尼动画工作室第 55 部长片；约 800 人团队；动物调研 18 个月、肯尼亚两周（约 9,000 英里）</td></tr>
+      <tr><td>票房</td><td>北美 3.4127 亿／海外约 6.83 亿／全球 10.255 亿（美元）；2016 年度全球第四</td></tr>
+      <tr><td>中国内地</td><td>15.30 亿元人民币；2016 年进口片票房冠军；内地影史第一部破 10 亿的动画片</td></tr>
+      <tr><td>奥斯卡</td><td>第 89 届（2017-02-26）最佳动画长片，全片仅 1 项提名</td></tr>
+      <tr><td>其他主要奖</td><td>金球最佳动画长片；安妮奖 11 提 6 中（含最佳配音）；PGA／纽约影评人／评论家选择最佳动画；<strong>AFI 2016 年度十佳影片</strong>；BAFTA 最佳动画提名（输《魔弦传说》）</td></tr>
+      <tr><td>续集</td><td>2025-11-26 上映，内地累计逾 45.89 亿元，登顶中国影史进口片票房榜第一</td></tr>
+    </table>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 33 期 · 2026-11-10<br>
+    评分与票房均于本次执行时现查，口径差异已逐条标注；本片剧透敏感度中等，红线写在中段而非结尾。
+  </div>
+
+</div>
+</body>
+</html>
