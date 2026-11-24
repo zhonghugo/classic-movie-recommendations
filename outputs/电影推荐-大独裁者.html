@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 大独裁者</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 46 期</div>
+  <h1>大独裁者</h1>
+  <div class="en"><span>The Great Dictator (1940)</span>&nbsp;·&nbsp; 查理·卓别林 编剧·导演·制片·主演 &nbsp;·&nbsp; 宝莲·高黛 / 杰克·奥基 / 雷金纳德·加德纳 / 亨利·丹尼尔 &nbsp;·&nbsp; 摄影 卡尔·斯特拉斯 / 罗兰·托瑟罗 &nbsp;·&nbsp; 剪辑 威拉德·尼科 &nbsp;·&nbsp; 配乐 梅雷迪思·威尔森 &nbsp;·&nbsp; 联美发行</div>
+  <div class="meta">
+    <span>美国</span><span>政治讽刺 / 黑色喜剧 / 战争</span><span>125 分钟</span><span>黑白 · 单声道</span>
+    <span>1940-10-15 纽约首映</span><span>第 13 届奥斯卡 5 提 0 中</span><span>1997 入选国家电影登记表</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.2</b><small>豆瓣 · 各快照 9.1–9.2 · 约 5.7 万–9.3 万人</small></div>
+    <div class="score"><b>8.4</b><small>IMDb · 约 25.9 万–26.1 万票</small></div>
+    <div class="score"><b>92–96%</b><small>RT 专业三种口径 · 44–52 评</small></div>
+    <div class="score"><b>95%</b><small>RT 观众 · 2.5 万+ 评分</small></div>
+    <div class="score"><b>5 提 0 中</b><small>奥斯卡 · 却是卓别林最卖座一部</small></div>
+    <div class="score"><b>125 分</b><small>本期片长 · 上期 136 分 · 回黑白中档</small></div>
+  </div>
+  <div class="note">
+    <strong>口径说明（均经本次现查）：</strong>豆瓣 <strong>9.1–9.2</strong>，打分人数各快照差异较大（57,165 / 81,193 / 约 9.3 万），按本系列老规矩<strong>取区间、不挑一个假装权威</strong>；IMDb 官方口径 <strong>8.4 / 约 25.9 万–26.1 万票</strong>（个别聚合站记 8.3，属浮动）；烂番茄专业分<strong>三种口径同时在流通</strong>——<strong>92%（52 评）、93%（44 票）、96%（49 评，均分 8.9）</strong>，差异来自补录旧评与样本口径，观众分 <strong>95%（2.5 万+）</strong>；Metacritic 见第三方聚合站记 85，但老片回溯条目在官方源里或缺失或标「—」，按第 37 期规矩<strong>不硬凑一个权威值</strong>；Letterboxd 约 <strong>4.33/5（20 万+）</strong>；时光网 8.5。<strong>另记一处样本提醒（第 16 期纪律）：RT 专业分看着接近满分，但评论数只有四十几条，是典型「高分 + 小样本」，与 IMDb 26 万票的大样本要分开看。</strong><br>
+    <strong>选片线：</strong>豆瓣 9.2 与 IMDb 8.4 <strong>双双过线且都不压线</strong>。这正好同时避开台账写明的三种「勿复用」形状——第 42 期「只有豆瓣过、IMDb 未过」、第 44 期「只有 IMDb 单线过、豆瓣未过」、以及第 45 期提醒的「后续若遇单线片须换第三种写法」。本期不需要动用「或」字口径，也不用新造单线写法，只作事实登记。<br>
+    <strong>连续第 5 期不重摆评分框架：</strong>第 42–45 期已决定不再重摆「大众 vs 专业」，本期沿用。四套分数同向偏高、无「东高西低」落差、也无第 16/17 期那种「样本量三格」可讲，重摆只会重复第 22 期《钢琴课》。主菜让给三件事：<strong>沉默了十三年之后第一次开口</strong>、<strong>一部被现实追上的讽刺</strong>、<strong>一个人一去二十年又被请回来</strong>。<br>
+    <strong>节奏与线路：</strong>上期 136 分钟、2.39:1、满屏信息、爽点密度全系列最高；本期 125 分钟、1940 年黑白、单声道、喜剧，<strong>年代／色彩／信息密度／类型四项一次全掉头</strong>，按第 45 期台账「下期宜换气质或回中档，避免连续两期高密度／科幻／动作」执行。避开：1999 年线、沃卓斯基导演线、赛博朋克／科幻动作线（上期刚开）；「哲学概念科普／跨媒体宇宙自指／导演身份改写」三个切入（上期刚用）；华语禁期（<strong>12-02 才解禁，今天 11-24</strong>）；动画禁期（12 月中）；意大利线（约 11-25 后够 10 期，今天差一天）；歌舞片线（够 10 期但须换切入且评分不达标，且本期不是歌舞片）；英国／1962／里恩／一战／传记片线（第 44 期刚开）；日本线（34／40 期连触）；昆汀线（须换年代换类型）；默片／奇幻史诗；诺兰／斯皮尔伯格／泽米吉斯导演线（均刚用过）。<br>
+    <strong>关于「二战犹太题材已 2 次」的显式切割：</strong>本片上映于 <strong>1940 年 10 月，美国尚未参战、仍与纳粹德国保持和平</strong>，它是拿<strong>当时还在台上的人</strong>开玩笑的<strong>当代讽刺喜剧</strong>；第 6 期《美丽人生》与第 27 期《辛德勒的名单》则是<strong>事后回望</strong>的剧情片。差别在<strong>时态</strong>，不在「有没有出现某个场景」。这一差别由作者自己点破：卓别林 1964 年自传写，若当时知道集中营的真实规模，他不会把它拍成喜剧——<strong>它拍在「还不知道」的时候</strong>，这正是它与后两部最根本的不同。<br>
+    <strong>台账偏离说明：</strong>池外新增（1940／美国／黑白政治讽刺喜剧，池中原本无此年代与类型），池内条目本期一部未动（与第 41–45 期同形状）。<strong>兑现第 31 期台账预留</strong>：「下一部若再碰卓别林建议换到有声期《大独裁者》1940」——第 31 期《城市之光》后隔 15 期，本期第一次回到他，且按约定换到有声期。池内《活着》《大话西游》《让子弹飞》《卧虎藏龙》《花样年华》仍在华语禁期，《机器人总动员》在动画禁期，《椿三十郎》属日本黑白线，《搏击俱乐部》《肖申克》按台账留作收尾，均与「回中档、换气质、避开禁期」冲突。<strong>1940 年线首开 · 政治讽刺喜剧线首开 · 本系列首部一人分饰两角挑大梁的片</strong>。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（不建在结局上，建在「那段话提前到达」上）</h2>
+    <p>先想一个问题：如果一部电影没有凶手、没有反转、没有藏着的身份，连它自己最著名的段落都是<strong>一段被印在无数语录卡上的公开讲话</strong>，那还有什么可被剧透？答案不在情节，在<strong>顺序</strong>——你是憋了两小时、跟着一个一路挨过来的人听到它，还是在等电梯时从一条十五秒的短视频里刷到它。两者是同一句话，<strong>却不是同一件事</strong>。本片卖的从来不是「发生了什么」，是「最后那口气是怎么攒出来的」。</p>
+    <p><strong>显式切割：</strong>「结局已知」五种形状已立满（第 28 期求你别说／第 36 期历史已剧透／第 40 期开场自剧透／第 42 期答案公开且不是重点／第 43 期结果无悬念、伤的是倒计时），第 44、45 期连续不用、也不硬立第六种，<strong>本期连续第 3 期不用</strong>。红线也不复用第 45 期「防设定揭晓的次序」（那次防的是「世界原来怎么回事、你在哪一刻知道」——本片压根没有设定要揭），改建为「<strong>防摘录／防金句提前到达</strong>」型：与第 43 期「防倒计时」、第 44 期「防过程／防转折／防去向」都不同，那几次防的是<strong>事件</strong>，这次防的是<strong>一句被从片子里摘出来、单独传了八十六年的话</strong>。</p>
+    <ul>
+      <li><strong>第一雷（新增第二十八类剧透源：以「伟大演讲／名人名言／金句」姿态出现的语录摘录与励志短视频，本次实测）：</strong>「影史最伟大的演讲」「卓别林最后六分钟」「这段话说透了人性和自由」「震撼八十年的一段话」——这类内容不是影评、不是解析、甚至不算推荐，它只是<strong>把片尾那段话整段贴出来</strong>，配上音乐和字幕，读起来像在补一句名人名言，防备最低。2026 年这类语录卡与短视频口播密度最高。<strong>与第 36 期第二十四类「结局物理学复盘」、第 44 期第二十六类「历史／人物传记史料长文」、第 45 期第二十七类「哲学／AI 概念长文」同族（都是知识／科普姿态），但载体不同：那三次分别是灾难机制、殖民史料、哲学概念，这次是语录卡、演讲合集与口播短视频。</strong></li>
+      <li><strong>第二雷（第八类中文百科／影视站「剧情简介」极端案例 + 官方商品页，本次实测）：</strong>某官方电视商店的影片简介直接写「被军队误认为独裁者本人，于是趁机慷慨激昂地做了演说」——<strong>把结尾摆在了商品页上</strong>；夸克百科、若干影视资料库从一战战场一路复述到收场；烂番茄官方梗概也写到中段「他回到街区，被周遭的剧变惊住，随即和邻人一起反抗」。<strong>凡带「剧情简介／影片介绍／角色介绍」的推荐长文与商品页，一律不读。</strong>演职员表、片长、获奖记录、拍摄年表、国名词源可读。</li>
+      <li><strong>第三雷（第九类解说视频 + 第二十一类名场面盘点 + 第十类台词即雷）：</strong>「几分钟看完」「地球仪那段到底在讽刺什么」「那场宴会为什么好笑」「最后是谁站上了台」这类标题，会把两个已跑出电影的公开形式符号（<em>气球地球仪</em>、<em>片尾那段讲话</em>）绑到「出现在哪一场、之前发生了什么、之后通向哪里」一起讲。下面我只把这两样当作早已公共化的形式符号提一句，<strong>不写它们出现在哪场、不写内容、不写随后发生什么、不写任何人的去向</strong>。</li>
+      <li><strong>第四雷（检索词雷第 21 次）：</strong>《大独裁者》／港台《大獨裁者》／旧译《独裁者》／英文 The Great Dictator 撞大量时评、纪录片与同名书籍标题；「大独裁者」四字在中文里常被拿来泛指现实人物，搜出来多半不是电影；「卓别林最后演讲」又撞他 1972 年领奖感言与无数同名演讲合集。<strong>与第 41 期「一名四译」、第 45 期「一名四译」形状相近，按台账提醒勿混记。</strong>认准 <strong>1940、卓别林、125 分钟、黑白、联美</strong>。</li>
+      <li><strong>主动收紧的一处口径：</strong>IMDb 一句话梗概、多家百科简介、以及无数语录号，其实都已经把结尾那次身份错位与那段话写出来了。但本系列按更严的口径，把「谁被认成了谁、认错之后发生什么、最后由谁开口、那段话说了什么」<strong>一律划进禁区</strong> —— 因为本片卖的从来不是答案，是答案被抵达之前的那一百多分钟。按第 20 期纪律，<strong>凡含结尾动作、身份错位后果、或那段讲话任何一句原文的批评与推荐文字，本期整句略去未写</strong>。</li>
+    </ul>
+    <p><strong>剧情梗概（安全区，只到官方公开前提）：</strong>两次大战之间，一个虚构的国度里，一位大权在握的独裁者正把整座国家拧成另一种形状；同一时间，一位在战地医院里待了很久、记不太清往事的理发师，回到自己旧日的街区，发现街上的规矩、邻里的神情、连他赖以谋生的那门手艺，都不再对得上记忆。<strong>影片在开场字幕里就自己声明：这两个人长得像，纯属巧合。</strong></p>
+    <div class="ver">我们停在这里。谁被认成了谁、那次认错之后发生什么、两位独裁者怎么谈的、谁去了哪里、最后那场集会由谁开口、那段话说了什么、片尾停在哪个画面 —— 一个字不写。也别去搜「演讲全文」「最后六分钟」「结局是什么意思」「地球仪那段在讲什么」。片尾字幕升起来之前，请什么都别搜。</div>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概 · 亮点所在</h2>
+    <ul>
+      <li><strong>一个人演了两个相反的人，而「两人长得像」是影片自己在第一分钟就交给你的前提。</strong>卓别林同时演一个虚构国度里大权在握的独裁者，和一个战后回到旧街区、发现周遭变了的理发师：前者靠嗓门、手势与越来越快的语速撑着，后者几乎还留着默片时代那套靠身体说话的节奏。据幕后资料，为免两套状态互相串味，他<strong>先集中拍完理发师的戏，再拍独裁者的戏</strong>。这是他第一次真正开口的有声片，却也是对「不说话也能演」的一次回望——同一个人，用两种节奏，把「像」这件事演成了整部片的地基。</li>
+      <li><strong>它连国名和人名都是用笑话造的。</strong>虚构国 <em>Tomainia</em> 被普遍拆解为「罗马尼亚（Romania）+ ptomaine（旧时指细菌性食物中毒）」，对手国直接叫 <em>Bacteria</em>（细菌），邻国 <em>Osterlich</em> 影射奥地利；属下的姓氏 <em>Garbitsch</em>、元帅 <em>Herring</em>（鲱鱼），以及那位对手独裁者 <em>Napaloni</em>，全是厨房、生物课与谐音里的词。更妙的是那段著名的「外语」演说：<strong>它基本是一串自造的胡言乱语，夹着食物名和听不懂的音节</strong>，靠停顿、音量、手势和忽然拍桌子的节奏，让全场（和观众）都明白「这是一场煽动」，却一个字都不必听懂。形式先于语义，讽刺就已经完成了。</li>
+      <li><strong>他把「开口」这件事，推迟到了全片最后。</strong>1927 年《爵士歌手》之后有声片席卷好莱坞，卓别林是唯一坚持继续拍默片的大导演：1931 年《城市之光》只配音乐与音效，1936 年《摩登时代》仍以默片为主体，只留出广播、机器噪音和一段故意唱不清的胡编歌词。到 1940 年他终于让角色说话——<strong>而全片被引用最多的那次「说话」，是最后一段对着镜头、用他自己的声音、不再扮演任何人的讲话</strong>。沉默了十三年，一开口就不是角色，是作者本人。这一点后面还会回来。</li>
+      <li><strong>一个气球做的地球，被一个人抱着在屋里转。</strong>动作轻得像抒情，内容却是把整个世界当玩具抛起来、托住、再转一圈。这是全片被复刻、做成动图、写进教材最多的一个画面，也是「喜剧怎么同时让人发笑和发凉」的标准范本。<strong>我只说它存在</strong>——不说它出现在哪一场、不说它通向什么、不说它常被解释成什么意思。</li>
+      <li><strong>五提零中，却是他一生最卖座的一部。</strong>第 13 届奥斯卡（1941 年初颁）提名<strong>最佳影片、最佳男主角（卓别林）、最佳男配角（杰克·奥基）、最佳原创剧本、最佳原创配乐（梅雷迪思·威尔森）</strong>，<strong>一项没拿</strong>；同年被美国国家评论协会等列入年度名单，<strong>1997 年入选美国国家电影登记表</strong>（理由为「具有文化、历史或美学意义」）。预算各源 <strong>200 万 / 220 万美元</strong>，票房口径差异极大：英文维基记<strong>全球租金 500 万美元</strong>，多个资料库记<strong>全球约 1100 万美元</strong>（含重映、口径不同），按本系列老规矩<strong>两值并列，不挑一个假装权威</strong>。但有一处各源一致：它是<strong>卓别林商业上最成功的一部</strong>。</li>
+      <li><strong>它曾叫「6 号作品」，秘拍了两年，而现实跑得比电影快。</strong>约 1937 年起筹备，对外只以 <em>Production No. 6</em> 代称，拍摄尽量不公开；联美的宣传稿自己就在回应「这片会不会不公映、会不会为迎合潮流重剪」的传闻。上映时美国仍与纳粹德国保持和平、国内孤立主义占主流，拍这样一部片要顶着压力；卓别林自掏腰包、坚持拍完，并公开表示过「当对方在煽起疯狂的时候，他必须受到嘲笑」。《时代》当年的评论留下一句很准的话：<strong>卓别林埋头拍片的这两年里，独裁者变得太凶险，已经不适合喜剧了——这不是他的错。</strong>一部讽刺片还没上映，它要讽刺的现实就追上了它。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看 · 沉默了十三年，第一次开口就说在最后</h2>
+    <p>先想一个问题：<strong>一个用十三年拒绝让角色开口的人，为什么偏偏在这一部里，让全片最后一段话由一个「不再扮演任何人」的人说出来？</strong></p>
+    <p>本系列第 31 期《城市之光》写过一句话：有声片赢了三年之后，最有权力的人选择不说话。卓别林当年给的理由不是技术保守，是<strong>人物逻辑</strong>——流浪汉一开口，就变成「一个具体的人」，而他要的是「每一个人」。九年后（影片时间）、十五期后（本系列时间），同一个人拍了第一部有声片；<strong>让他终于开口的不是录音技术成熟了，是一个他觉得不能再用沉默对付的对象</strong>。而他做了一件很奇怪的事：第一次让这个人说话，就把话说在了全片最后，并且让他脱下角色、直视镜头、用自己的声音讲。沉默的终点不是「学会说话」，是<strong>不再需要角色</strong>。这也是流浪汉形象最后一次出现在银幕上——<strong>开口即告别</strong>。</p>
+    <p>把它和本系列另外两部「管住嘴」的片并排放，形状会更清楚：</p>
+    <table>
+      <tr><th>期次 / 片</th><th>面对「说话」做的决定</th><th>代价或结果</th></tr>
+      <tr><td>第 28 期 控方证人 (1957)</td><td>片尾打出字幕，求观众别把结局说出去</td><td>把「保密」做成了影片的一部分</td></tr>
+      <tr><td>第 31 期 城市之光 (1931)</td><td>有声片赢了三年，他坚持不说话</td><td>流浪汉因此仍是「每一个人」</td></tr>
+      <tr><td>第 46 期 大独裁者 (1940)</td><td>沉默十三年后第一次开口</td><td>第一次说话，就不再是角色</td></tr>
+    </table>
+    <p>还有一层与本系列自身有关的自反：这张卡片从头到尾在防剧透，而本片最值钱的段落恰恰是<strong>一段话</strong>，且这段话被全文转载了八十六年。<strong>它不需要被保密，它需要被留到那一刻。</strong>这大概也是「不剧透」这件事最不常见的一种理由：不是怕你知道答案，是怕你先拿到结论，再也没耐心走完那两小时。</p>
+  </div>
+
+  <div class="card">
+    <h2>三种诚实 · 被现实追上的讽刺，与一去二十年</h2>
+    <p><strong>其一，它拍在「还不知道」的时候。</strong>1940 年 10 月，美国尚未参战。它与第 6 期《美丽人生》、第 27 期《辛德勒的名单》的分别不是题材清单，而是<strong>时态</strong>：那两部是事后回望，这一部是当场、同步、拿当时还在台上的人开玩笑。而这个分别是作者自己后来点破的——<strong>卓别林在 1964 年自传里写，如果当时知道纳粹集中营的真实规模，他不会把它拍成喜剧。</strong>这不是收回影片，是收回「用喜剧处理」这个前提；也是本系列第一次遇到<strong>创作者多年后亲手否定自己的类型选择</strong>。按本系列的老规矩不裁决，只把两句并排放着：1940 年那句「他必须受到嘲笑」，和 1964 年这句「早知道就不会」。两句都诚实，中间隔着一段当时还无法知道的历史。</p>
+    <p><strong>其二，同一套制度，先关上门，再发请柬。</strong>五提零中的十来年后，1952 年他携家人乘船赴欧，美国司法部长宣布除非接受审查否则不得再入境，他选择定居瑞士，一去二十年；<strong>1972 年学院请他回来领奥斯卡荣誉奖，全场起立</strong>。本片当年没拿到那五座里的任何一座，而它作者的去留，后来由同一个城市重新写了一遍。<strong>与第 44 期《阿拉伯的劳伦斯》「黑名单编剧 1995 年获学院追认署名」显式切割</strong>：那一次更正的是<strong>一行署名</strong>，这一次来回的是<strong>一个人</strong>。</p>
+    <p><strong>其三，把批评也摆上来（按第 20 期纪律，凡提及即泄露情节的原句整句不引）。</strong>当年就有评论嫌结尾那段长篇讲话冲淡了喜剧、像作者忽然走上台讲话；今天的观众评价里仍常见「喜剧与严肃之间的切换生硬」「部分段落偏长」这一条；《时代》1940 年那句「独裁者变得太凶险，不适合喜剧了」更是当年最重的一刀。<strong>不打折、也不反驳，只登记一个事实：这个被挑了八十六年的「缺点」，和它八十六年来被引用最多的，是同一段。</strong>按第 20 期纪律，涉及结尾动作、身份错位后果与讲话原文的所有批评原句，本期整句略去未写。</p>
+    <div class="quote">「用特写镜头看生活，生活是一个悲剧；但用长镜头看生活，则是一出喜剧。」<em>——常被归于卓别林的一句自述；本期只作片外注脚，不指涉影片情节</em></div>
+  </div>
+
+  <div class="ask">
+    <small>观前留一个问题给你</small>
+    <p>如果那段话你早就在手机上刷到过、甚至能背出一两句，那么当它在片子里真正到来时，你听到的会是一句「名言」，还是两小时之后终于攒够的那口气？</p>
+    <p>这就是为什么上面这张卡片，一个字都不肯引它。<strong>观看条件很轻：125 分钟、黑白、喜剧，不需要任何电影史背景</strong>；唯一要替自己守住的，是别在开看之前先去搜那六分钟。</p>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 46 期 · 2026-11-24<br>
+    评分与事实均本次现查，多口径并列、不挑一个假装权威 · 全片不剧透，梗概只到官方公开前提<br>
+    本系列已推荐 46 部，按台账逐期避开重复与题材连用
+  </div>
+
+</div>
+</body>
+</html>
