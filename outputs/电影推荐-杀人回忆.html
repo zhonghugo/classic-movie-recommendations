@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 杀人回忆</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 47 期</div>
+  <h1>杀人回忆</h1>
+  <div class="en"><span>Memories of Murder (2003)</span>&nbsp;·&nbsp; 살인의 추억 &nbsp;·&nbsp; 奉俊昊 导演·编剧 &nbsp;·&nbsp; 宋康昊 / 金相庆 / 金雷夏 / 宋在浩 / 边熙峰 / 朴海日 / 全美善 &nbsp;·&nbsp; 摄影 金炯奎 &nbsp;·&nbsp; 剪辑 金鲜珉 &nbsp;·&nbsp; 配乐 岩代太郎 &nbsp;·&nbsp; Sidus Pictures 出品 / CJ Entertainment 发行</div>
+  <div class="meta">
+    <span>韩国</span><span>犯罪 / 悬疑 / 剧情</span><span>131 分钟</span><span>彩色</span>
+    <span>2003-05-02 韩国上映</span><span>第 40 届大钟奖 最佳影片·导演·男主角</span><span>525 万观影人次 · 2003 韩国年度冠军</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>8.9</b><small>豆瓣 · 约 74.9 万–85.8 万人 · TOP250 第 91</small></div>
+    <div class="score"><b>8.1</b><small>IMDb · 约 21.5 万–27.8 万票 · TOP250 第 198</small></div>
+    <div class="score"><b>95%</b><small>RT 专业 · 80 评 · 观众 92–93%</small></div>
+    <div class="score"><b>82</b><small>Metacritic · 仅 18 评 · 用户 8.6</small></div>
+    <div class="score"><b>4.4</b><small>Letterboxd · 约 107 万–114 万人</small></div>
+    <div class="score"><b>131 分</b><small>本期片长 · 上期 125 分 · 回彩色中档</small></div>
+  </div>
+  <div class="note">
+    <strong>口径说明（均经本次现查）：</strong>豆瓣 <strong>8.9</strong>，打分人数随快照从 <strong>749,075（2024-03 快照）到约 85.8 万（本次现查）</strong>，按本系列老规矩<strong>取区间、不挑一个假装权威</strong>；IMDb 官方口径 <strong>8.1</strong>，票数在不同语言页与快照间从 <strong>21.5 万到 27.8 万</strong>浮动；烂番茄专业分 <strong>95%（80 评，2023-12 快照）</strong>、观众 <strong>92–93%</strong>；Metacritic <strong>82（仅 18 评）</strong>、用户 8.6；Letterboxd <strong>4.4（约 107 万–114 万人）</strong>；时光网 8.2（8,606）。榜单：豆瓣 TOP250 第 91、IMDb TOP250 第 198、Letterboxd 500 第 49、TSPDT 1000 第 504、<strong>《纽约时报》2025「21 世纪百佳」第 99</strong>。<strong>另记一处小提醒：</strong>连 NYT 那条榜单条目都把年份印成了 2005（实为 2003），按老规矩只登记、不替它圆场。<br>
+    <strong>选片线：</strong>豆瓣 8.9 <strong>过 8.8 线</strong>，IMDb 8.1 <strong>未过 8.3 线</strong>，按本系列「或」字口径<strong>靠豆瓣达标、不写成破例</strong>。这恰好又是台账提醒过的「只有豆瓣过、IMDb 未过」形状（第 42 期）与「只有 IMDb 过、豆瓣未过」（第 44 期）之后的第三次单线；按第 45 期「须换第三种写法」的提醒，本期<strong>不把它摆成评分框架</strong>，只做一句解释放在后面「三种诚实」里——那不是又一次「分歧／落差」，而是一部<strong>把两小时都留在「还不知道」里</strong>的片，在以「解决」为默认期待的大众评分系统里<strong>结构性吃亏</strong>。四套分数同向、无东高西低落差、也无样本量三格可讲，重摆只会重复第 22 期《钢琴课》。<strong>连续第 6 期不重摆评分框架。</strong><br>
+    <strong>节奏与线路：</strong>上期 125 分钟、1940 年、黑白、单声道、政治讽刺喜剧、极轻；本期 <strong>131 分钟、2003 年、彩色、犯罪悬疑、中档</strong>，<strong>年代／色彩／类型／情绪四项一次掉头</strong>，按第 46 期台账「下期宜回彩色／中档或换年代，避免连续两期黑白老片／喜剧」执行。逐条避开：1940 年线、卓别林导演线（已 2 次）、政治讽刺喜剧线、一人分饰两角线（上期刚开）；「沉默→开口」「时态切割」「语录即剧透」三个切入（上期刚用）；1999／沃卓斯基／赛博朋克（第 45 期）；「减法↔加法」「哲学概念科普／跨媒体宇宙自指／导演身份改写」（第 45 期）；英国／1962／里恩／一战／传记片线（第 44 期）；日本线（34／40 期连触）；华语禁期（<strong>12-02 才解禁，今天 11-25</strong>）；动画禁期（12 月中）；二战犹太题材（已 2 次）；诺兰／斯皮尔伯格／泽米吉斯导演线（均刚用过）。<br>
+    <strong>台账偏离说明：</strong>本期是<strong>池内启用、不是池外新增</strong>——兑现第 17 期台账预留的韩国候选（「杀人回忆 2003 / 老男孩 / 辩护人 / 熔炉 / 燃烧」，并特别注明「杀人回忆剧透风险高」）。<strong>连续六期池外新增之后第一次回到池内</strong>；韩国线第 2 次（第 17 期《寄生虫》后<strong>隔 30 期</strong>，远超 ≥5 期）、奉俊昊导演线第 2 次（同隔 30 期，按台账要求换年代换类型、不复用第 17 期的「阶级对读／全票金棕榈／全平台大样本」角度）。2003 年线第 2 次（第 32 期《指环王 3》同年，但类型与气质全反、隔 15 期）。<strong>本系列首部真实刑案改编、首部刑侦／连环案题材、首部以「查不到」为主体的片</strong>。池内《活着》《大话西游》《让子弹飞》《卧虎藏龙》《花样年华》仍在华语禁期，《机器人总动员》在动画禁期，《椿三十郎》属日本黑白线，《搏击俱乐部》《肖申克》按台账留作收尾。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（不建在「谁是凶手」上，建在「你带着答案进场」上）</h2>
+    <p>先想一个问题：如果一部悬疑片讲的案子，<strong>在它上映那天，现实里还没有答案</strong>，那它还有什么可被剧透？答案不在情节里，在<strong>两件事的顺序</strong>——你是跟着一群人在当时的条件下把能查的都查完，还是在点开播放之前，就先从一条新闻里知道了现实世界十六年后给出的那个结论。两者看的是同一部片，<strong>却不是同一件事</strong>。本片卖的从来不是「凶手是谁」，是<strong>那段「还不知道」的时间本身</strong>。</p>
+    <p><strong>显式切割与新立第六种：</strong>「结局已知」五种形状已立满（第 28 期求你别说／第 36 期历史早已剧透／第 40 期开场自己剧透自己／第 42 期答案公开且不是重点／第 43 期结果无悬念、伤的是倒计时），第 44–46 期连续三期不用、也不硬立第六种。前期五种，<strong>答案都还在影片内部</strong>，只是被以不同方式提前知道；本期第一次出现<strong>「电影拍完时，答案根本还不存在」</strong>——它不在片内，是十六年后<strong>从片外</strong>送回来的，而且送到时<strong>法律已经用不上它了</strong>。这是第六种，也是本卡片的主菜。红线因此不复用第 46 期「防摘录／防金句提前到达」（那次防一句被摘出来传了 86 年的话）、第 45 期「防设定揭晓的次序」、第 44 期「防过程／防转折／防去向」，改建为「<strong>防答案提前进场</strong>」型：<strong>防的是你带着 2019 年新闻里的那个结论，去看一部 2003 年拍「查不到」的电影。</strong></p>
+    <ul>
+      <li><strong>第一雷（新增第二十九类剧透源：以「案件告破／真凶落网」新闻与纪实报道姿态出现的「现实结局文本」，本次实测）：</strong>「悬案终告破」「逃亡 33 年，凶手找到了」「原型疑凶已服刑 24 年」这类报道，读起来是新闻、是科普、甚至不算影评，防备最低；而它们几乎都会顺手补上<strong>一句对影片收场方式的定性</strong>，或<strong>把最后那个镜头是什么意思直接讲明</strong>——把影片最用力的那个设计，和现实结论写在同一段里。本次实测某篇 2019 年报道标题即「悬案终告破」，正文两样都写全了；<strong>本卡片只登记「它写了这类信息」，不转述其中任何一句</strong>。<strong>与第 36 期第二十四类「结局物理学复盘」、第 44 期第二十六类「历史／人物传记史料长文」、第 45 期第二十七类「哲学／AI 概念长文」、第 46 期第二十八类「语录卡／金句短视频」同族（都是知识姿态），但载体不同：这次是新闻，而且它剧透的不是情节，是影片赖以成立的前提。</strong></li>
+      <li><strong>第二雷（第八类中文百科／影视站「剧情简介」极端案例，本次再犯）：</strong>多家百科的「剧情简介」从第一具女尸一路复述到<strong>谁被怀疑、几次抓错、物证送检结果、片尾与谁对话、最后停在哪个画面</strong>，其中一版连最后一个镜头的含义都写全了；「影片评价」栏还常见<strong>一句定性就拆掉整部片</strong>的写法（同样是<strong>只登记其写法、不转述其句子</strong>）。<strong>凡带「剧情简介／影片介绍／角色介绍／影片评价」的页面，一律不读。</strong>演职员表、片长、获奖记录、制作年表、真实案件年表可读——但真实案件年表请见第三雷。</li>
+      <li><strong>第三雷（第 10 档「防年表」第 4 次，但换成新表述「防现实后记」）：</strong>1986–1991 的案件、2006-04-02 诉讼时效到期、2019-09-18 DNA 比对公布、2020-07-02 最终调查结论——这些是<strong>真实世界的事</strong>，读起来像背景资料，实际上会改变你对整部片的预期：你会在全程里一直等一个「后来」。<strong>本片上映时，这些结论与公众认知都还不存在</strong>（案件本身当然存在，只是无人知道它通向哪里），这正是它最独特的观看条件。所以本卡片会用到这几个年份作骨架，但<strong>一个字不写影片自己怎么收场</strong>；也别在开看之前去搜「原型破案了吗」「真凶是谁」「结尾是什么意思」。</li>
+      <li><strong>第四雷（检索词雷第 22 次，且性质最特别的一次）：</strong>别的期次是「片名撞同名片」，这次是<strong>片名被现实新闻征用</strong>——2019 年之后，中文互联网上「杀人回忆」四个字大量被用来直接指代那桩案件本身（「现实中的杀人回忆」「杀人回忆真凶落网」），<strong>搜片名，第一屏就是最不该提前看到的结论</strong>。另有《谋杀回忆》《杀人的记忆》《杀手回忆录》等旧译、港台《殺人回憶》、韩文 살인의 추억 与英文 Memories of Murder（撞大量同名新闻、纪录片与剧集标题）。<strong>与第 22 期《钢琴课》「译名雷」（错取成另一部片）显式切割：那次是找错片，这次是找对片、却先看到了片外答案。</strong>认准 <strong>2003、奉俊昊、宋康昊、131 分钟、韩国</strong>。</li>
+      <li><strong>主动收紧的一处口径（把边界说清楚）：</strong>本卡片<strong>会</strong>写「2003 年这桩案子在现实中尚未侦破」（历史事实），也<strong>会</strong>写「影片把重心放在那段还不知道的过程」（类型定位）；但<strong>不会</strong>写影片自己怎么收场、停在哪个画面、那个画面后来被解释成什么。真实案件早已是公共知识，多家官方简介与新闻其实都已把影片结尾状态写出来了，本系列仍按更严的口径，把「谁被怀疑过、几次抓错、物证送检结论、最后停在哪个画面、以及现实里后来查明的那个人是谁」<strong>一律划进禁区</strong>。按第 20 期纪律，<strong>凡含结尾动作、结尾台词、或把收场方式当作既成事实来评价的批评与推荐文字，本期整句略去未写</strong>；NYT 榜单里那句对结尾的著名评语也只登记其存在、不引原句、不指涉内容。</li>
+    </ul>
+    <p><strong>剧情梗概（安全区，只到官方公开前提）：</strong>1986 年，韩国京畿道一处乡野，田野边发现一具女尸；此后同类案件接连发生。两个背景、方法、脾气都不一样的人被放进同一个专案组：一个靠经验、直觉和土办法办案的本地刑警，一个从汉城调来、信证据与推理的年轻刑警。那是<strong>还没有 DNA 比对能力、物证要送海外、夜里会宵禁灯火管制</strong>的年代；线索一次次被推翻，方法一次次换，人越来越疲惫。影片把 1980 年代韩国乡间的阴雨、泥地、稻田与一整套捉襟见肘的办案条件，和这群人一起拍进了这桩案子里。<strong>而它拍的，是「当时还不知道」的那段过程本身。</strong></p>
+    <div class="ver">我们停在这里。谁被怀疑过、每一次怎么靠近又怎么落空、物证送检的结论、影片最后停在哪个画面、那个画面通向什么解释、以及现实里后来查明的一切 —— 一个字不写。片尾字幕升起来之前，请什么都别搜；尤其别搜那四个字加「真凶」。</div>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概 · 亮点所在</h2>
+    <ul>
+      <li><strong>两个不对付的人，被塞进同一个案子里。</strong>本地刑警凭眼睛、经验和一时冲动办案，汉城来的年轻人只认档案、证据与逻辑；一个把「我觉得」当线索，一个把「我觉得」当要排除的噪声。全片最耐看的不是追凶，是<strong>两套认知方式在同一张桌子上互相磨损</strong>——谁也没能说服谁，两个人都被这桩案子改了一遍。这也是它区别于普通刑侦片的地方：没有神探，没有灵光一闪，只有一群人在能力上限之内反复试错。</li>
+      <li><strong>它把「1980 年代」拍成了办案条件本身，而不是布景。</strong>当时韩国国内还没有 DNA 比对能力，关键物证得送到海外去等结果；每月例行民防演习、夜间灯火管制、停电后打着手电翻档案、收音机里的点歌节目、办案靠脚和拳头——这些不是怀旧装饰，<strong>它们直接决定了这案子能查到哪一步、查不到哪一步</strong>。奉俊昊自己给过一句话：「可以说 80 年代的无能，社会的缺陷，是电影要极力说明的。」把它定义成一部「<strong>农村惊悚片</strong>」，而不是城市犯罪片。</li>
+      <li><strong>为拍回 1986 年，先把 2003 年的韩国走了一遍。</strong>剧组原想去案发地附近实地取景，那里早已高楼林立，找不到当年；于是几乎跑遍全国（制片经理说「除了庆尚道，几乎全国都跑遍了」），创下当时外景地点最多的纪录。全片定灰暗基调，随案子推进越拍越暗，白天也多是阴天或下雨；<strong>为尊重真实案件中的受害者，田野调查开始前先办了一场佛教祈福仪式</strong>。选角时他要求演员「必须平凡，不能太有名气」。</li>
+      <li><strong>前六个月，一行剧本都没写。</strong>2000 年 6 月他决定改编时 31 岁，只拍过一部长片，且那部片子票房口碑都失利、一度让投资方想撤资；他花了一年写这个本子，<strong>前六个月全在做调查</strong>——找当年的刑警与记者、重走现场，攒下的材料据称够拍一部 30 集的剧。剧本借力于 1996 年 2 月首演、金光林编导的舞台剧《来看我》（剧团「演友舞台」，也是宋康昊表演起步的地方；原剧演员金雷夏后来把这部戏推荐给奉俊昊，自己也进了电影组）。<strong>那出戏的名字，来自一个念头：一直没抓到的人，有可能就坐在观众席里看这出戏。</strong>此处只说 1996 年舞台剧的命名缘由，<strong>不写电影是否、以及如何回应了这个念头</strong>。另外，托尼·雷恩斯送他的、艾伦·摩尔讲开膛手杰克的漫画《来自地狱》，也是他自陈的灵感来源之一。</li>
+      <li><strong>当年两套奖项，开出了两张不一样的成绩单。</strong>第 40 届大钟奖把<strong>最佳影片、最佳导演、最佳男主角（宋康昊）</strong>都给了它，另加最佳照明；第 24 届青龙奖给的是<strong>最卖座韩国电影奖与最佳摄影（金炯奎）</strong>，而<strong>最佳影片只到提名</strong>；另有第 16 届东京国际电影节「亚洲之风」亚洲电影奖、第 51 届圣塞巴斯蒂安电影节最佳导演银贝壳奖（另有源并记新人导演奖）。票房上它是 <strong>525 万观影人次、连续四周冠军、2003 年韩国年度票房冠军</strong>；预算各源约 280 万美元，全球票房口径差异极大（中文资料库截至 2024-03 记约 120.8 万美元，聚合站记约 2,600 万美元），按老规矩<strong>两值并列，不挑一个假装权威</strong>。</li>
+      <li><strong>同行给它的位置，比奖项更长久。</strong>《纽约时报》2025 年请 500 余位导演、演员与影人票选「21 世纪百佳」，本片列<strong>第 99</strong>；同一张榜单上<strong>第 1 名是本系列第 17 期推过的《寄生虫》</strong>——同一位导演，两部片分居首尾。据多方转述，昆汀·塔伦蒂诺多次把本片列入自己最喜爱的电影名单，并说奉俊昊让他想起 1970 年代的斯皮尔伯格（<strong>此处只作为一句同行评价带过，不构成本系列昆汀导演线</strong>）。2019 年时光网「韩国电影百年 100 部佳片」亦收录。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看 · 答案迟到十六年，到的时候已经用不上了</h2>
+    <p>先想一个问题：<strong>一部电影在 2003 年拍完，讲一桩到那时还没破的案子；十六年后，现实把答案送了回来——那么当年坐在影院里的人看到的，和今天我们查资料时看到的，还是同一桩案子吗？</strong></p>
+    <p>本系列前 46 期里，凡是「结局已知」的形状，答案都还在影片内部：只是被片尾字幕求你别说、被历史提前写死、被开场自己交代、被公开得根本不重要、或者干脆没有悬念只剩倒计时。这一部第一次反过来：<strong>它上映的那一天，现实里还没有答案，而且此后十六年都不会有。</strong>它把重心放在那段「还不知道」的过程上，不是故弄玄虚，而是<strong>忠实于当时的无知</strong>——1986 至 1991 年间京畿道华城一带的那串案子，累计动员警力约 205 万人次、调查 2 万余人、比对指纹 4 万余例，长期未破。</p>
+    <table>
+      <tr><th>时间</th><th>片外的世界</th></tr>
+      <tr><td>1986–1991</td><td>京畿道华城一带先后发生 10 起针对女性的案件，长期未破</td></tr>
+      <tr><td>1996-02</td><td>金光林舞台剧《来看我》首演，电影后来借了它的结构</td></tr>
+      <tr><td>2003-05-02</td><td>本片在韩国上映。此时现实里这桩案子仍未侦破</td></tr>
+      <tr><td>2006-04-02</td><td>最后一起案件的公诉时效到期</td></tr>
+      <tr><td>2019-09-18</td><td>警方公布：重新鉴定的物证 DNA 与一名<strong>已在押</strong>的人员一致</td></tr>
+      <tr><td>2020-07-02</td><td>警方公布最终调查结论，并就不当侦查向相关人员致歉</td></tr>
+    </table>
+    <p>最锋利的一刀在这里：<strong>2019 年被 DNA 连上旧案的那个人，自 1990 年代中期起因另一起案件就在服无期徒刑——也就是说，2003 年本片上映时，他已经在狱里了，只是没有任何人知道两件事有关。</strong>而等到 2019 年这件事被认出来，<strong>诉讼时效早在十三年前就到期了，法律已经用不上这个答案</strong>。警方仍组了 57 人专案组、重查 15 万余项记录，说法是「带着历史使命竭尽全力」。本卡片按老规矩<strong>不裁决</strong>：不写「这是不是正义」，也不写那个人的姓名（严格讲，他从未因这串案件被起诉或定罪，媒体常用的那个称呼并不严谨），只把这几件事<strong>并排放置</strong>。</p>
+    <p>于是第六种「结局已知」形状可以这样落定：</p>
+    <table>
+      <tr><th>期次 / 片</th><th>答案在哪</th><th>被提前知道的是什么</th></tr>
+      <tr><td>第 28 期 控方证人</td><td>片内，藏着</td><td>片尾求你别说</td></tr>
+      <tr><td>第 36 期 泰坦尼克号</td><td>片内，历史写死</td><td>结局早已公开</td></tr>
+      <tr><td>第 40 期 生之欲</td><td>片内，开场自陈</td><td>过程之外的落点</td></tr>
+      <tr><td>第 42 期 公民凯恩</td><td>片内，公开且非重点</td><td>谜底本身</td></tr>
+      <tr><td>第 43 期 回到未来</td><td>片内，无悬念</td><td>倒计时</td></tr>
+      <tr><td><strong>第 47 期 杀人回忆</strong></td><td><strong>片外，上映时不存在</strong></td><td><strong>十六年后才到，且到了也用不上</strong></td></tr>
+    </table>
+    <p>把它和第 17 期《寄生虫》并排看，还有一种不吵不闹的对称：<strong>同一个导演，一部把「当时还不知道」拍成了全部，另一部把「阶级」拍成了一栋房子；十六年后，一张 500 人票选的榜单把它们放在第 99 和第 1。</strong>按台账第 17 期「同一张榜单上的两个方向」可复用但<strong>须换榜</strong>的约定，本期换的是 NYT 2025（那次用的是《视与听》2022），且角度不是名次上行／下行，而是<strong>同一个人、同一张榜的两端</strong>。第 17 期的「阶级对读／全票金棕榈／全平台六位数样本」三个写法，本期一个都没复用。</p>
+  </div>
+
+  <div class="card">
+    <h2>三种诚实 · 慢、吃亏、以及一份不替它圆场的清单</h2>
+    <p><strong>其一，把批评也摆上来（按第 20 期纪律，凡提及即泄露情节后果的原句整句不引）。</strong>当年与今天都有人嫌它<strong>慢</strong>：中段反复、线索一次次推倒、迟迟不肯把节奏收紧；影评聚合站也在「喜欢」之外单列了「有人觉得节奏偏慢」这一条。<strong>不打折、也不反驳</strong>，只登记一个事实：这个被挑了二十多年的「慢」，和它被反复称赞的那种<strong>耐心</strong>，其实是同一件事。按纪律，涉及结尾状态、结尾动作与「有没有答案」的批评文字，本期整句略去未写。</p>
+    <p><strong>其二，关于 IMDb 8.1 的「第三种写法」——不摆框架，只做一句解释。</strong>第 42 期把「只有豆瓣过」写成压线达标、第 44 期把「只有 IMDb 过」写成方向相反的单线，两次都在处理<strong>口径</strong>；本期不重摆，也不造第三种口径形状，而是问一句：为什么一部拿下年度票房冠军、进了 NYT 世纪百佳、被同行列入最爱的片，在 IMDb 停在 8.1，在豆瓣却有 8.9 和八十多万人？<strong>这不是「大众 vs 专业」的分歧，也不是东西方落差</strong>——四套分数其实同向。更像是：一部<strong>把两小时都留在「还不知道」里</strong>的片，在一个默认「好片子该把事情解决掉」的评分习惯里，<strong>结构性地少吃了一点分</strong>。它低的那一分，和它最值得看的那一处，是同一个地方。这句话只作解释，不立框架、不进主菜。</p>
+    <p><strong>其三，一份只登记、不圆场的清单。</strong>NYT 2025 第 99（条目年份误印 2005）· 豆瓣 TOP250 第 91 · IMDb TOP250 第 198 · Letterboxd 500 第 49 · TSPDT 1000 第 504 · 第 40 届大钟奖最佳影片／导演／男主角 · 第 24 届青龙奖最卖座＋最佳摄影（最佳影片仅提名）· 东京「亚洲之风」亚洲电影奖 · 圣塞巴斯蒂安最佳导演银贝壳 · 525 万人次、2003 韩国年度冠军。<strong>别把其中任何一个名次当权威</strong>——它们量的是不同的东西。另：本期版本判定为<strong>第 23 次「无陷阱」</strong>，各源 127 / 129 / 130 / 131 / 132 分钟属地区发行版与影展版口径差，通行 131 分钟，无导演剪辑版、加长版或删减争议（累计：删减／改判 9 · 无陷阱 23 · 更长≠更好 1）。</p>
+    <div class="quote">「前六个月我一句话也没写，一直在做调查工作。」<em>——奉俊昊谈 2000 年起写这个剧本的那一年；本期只作片外注脚，不指涉影片情节</em></div>
+  </div>
+
+  <div class="ask">
+    <small>观前留一个问题给你</small>
+    <p>如果一部电影把两小时都留在「还不知道」里，你会因为它没给一个痛快的收束而少给一分，还是会因为它<strong>敢把过程拍到底</strong>而多记它很多年？</p>
+    <p>还有一个更贴这一期的：现实后来把答案送了回来，而法律已经用不上它。<strong>看完之后再去看 2019 年那条新闻，和看之前就搜过，是同一部电影吗？</strong>这就是为什么上面这张卡片，把那几个年份写进了骨架，却一个字不肯写影片自己怎么收场。观看条件不重：<strong>131 分钟、彩色、2003 年，不需要任何电影史背景</strong>；唯一要替自己守住的，是别在开看之前先去搜那四个字。</p>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 47 期 · 2026-11-25<br>
+    评分与事实均为本次现查，随快照浮动；卡片严格遵守不剧透口径，红线内所列内容一律未展开。<br>
+    本片涉及真实案件与暴力内容，观看前请自行判断情绪门槛。
+  </div>
+
+</div>
+</body>
+</html>
