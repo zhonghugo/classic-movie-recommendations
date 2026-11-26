@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 黄金三镖客</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 48 期</div>
+  <h1>黄金三镖客</h1>
+  <div class="en"><span>The Good, the Bad and the Ugly (1966)</span>&nbsp;·&nbsp; Il buono, il brutto, il cattivo &nbsp;·&nbsp; 赛尔乔·莱昂内 导演 &nbsp;·&nbsp; 编剧 阿杰诺雷·因克罗奇 / 富里奥·斯卡佩利 / 卢恰诺·温琴佐尼 / 赛尔乔·莱昂内（另有源并记塞尔乔·多纳蒂）&nbsp;·&nbsp; 摄影 托尼诺·德利·科利 &nbsp;·&nbsp; 配乐 埃尼奥·莫里康内 &nbsp;·&nbsp; 制片 阿尔贝托·格里马尔迪 &nbsp;·&nbsp; 克林特·伊斯特伍德 / 伊莱·瓦拉赫 / 李·范·克里夫 &nbsp;·&nbsp; PEA（意）/ Arturo González（西）/ Constantin Film（西德）/ United Artists 发行</div>
+  <div class="meta">
+    <span>意大利 / 西班牙 / 西德合拍（IMDb 另列美国）</span><span>西部 / 冒险 / 黑色幽默</span><span>161 分钟（国际版）</span><span>彩色 · Techniscope 2.35:1 · 单声道</span>
+    <span>1966-12-23 意大利首映 · 1967-12-29 美国公映</span><span>预算约 120 万美元</span><span>全球约 2528 万美元（BOM 口径）</span><span>奥斯卡零提名</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.2–9.3</b><small>豆瓣 · 约 9.3 万–14.8 万人 · 多快照浮动</small></div>
+    <div class="score"><b>8.8</b><small>IMDb · 约 79.7 万–90.7 万票 · TOP250 第 9–11 位浮动</small></div>
+    <div class="score"><b>97–99%</b><small>RT 专业 · 73–74 评两口径 · 观众 97%（10 万+）</small></div>
+    <div class="score"><b>90</b><small>Metacritic · 仅 7 评 · 老片回溯分不硬凑</small></div>
+    <div class="score"><b>0</b><small>奥斯卡提名 · IMDb「零提名佳片」片单第 1</small></div>
+    <div class="score"><b>第 4 次</b><small>意大利线 · 距第 37 期 11 期解禁</small></div>
+  </div>
+  <div class="note">
+    <strong>口径说明（均经本次现查）：</strong>豆瓣 <strong>9.2–9.3</strong>，打分人数在不同快照从 <strong>92,812 / 122,813 / 125,397 到 138,199 / 145,539 / 148,157</strong> 人浮动；IMDb 官方口径 <strong>8.8</strong>，票数从 <strong>797,298 到 907K</strong>，TOP250 名次在 <strong>第 9–11 位</strong>间浮动（IMDb 页快照记 #11、百度百科 2026-09 快照记第 10、榜单快照记第 9）；烂番茄专业分<strong>两种口径并存：97%（74 评）与 99%（73 评）</strong>，观众 <strong>97%（10 万+）</strong>；Metacritic <strong>90（仅 7 评，老片回溯分）</strong>——按第 37 期「MC 完全缺席／小样本不硬凑」口径，<strong>只登记、不拿它当权威</strong>；Letterboxd 本次未查到有效中文可核快照，<strong>按同口径留空不补</strong>。榜单：BFI《视与听》<strong>2022 影评人榜第 169</strong>（2012 影评人榜第 78）、Empire 2008「500 佳片」<strong>第 25</strong>、Empire 2014 读者版「301 佳片」第 47、Time「上世纪百大」、Variety「50 佳」第 49、Film4 2002 百大第 46、TimeOut 2014 百大动作片第 52。<strong>以上按本系列老规矩取区间、不挑一个假装权威</strong>。<br>
+    <strong>选片线：</strong>豆瓣 9.2–9.3 <strong>过 8.8 线</strong>，IMDb 8.8 <strong>过 8.3 线</strong>，<strong>双线均过且都不压线，无需动用「或」字</strong>；正好避开第 42 期「只有豆瓣过、IMDb 未过」、第 44 期「只有 IMDb 过、豆瓣未过」、第 47 期「单线第三种写法」三种形状，<strong>连续第 7 期不重摆评分框架</strong>。<br>
+    <strong>节奏与线路：</strong>上期 131 分钟、2003 年、彩色、犯罪悬疑、气质偏沉偏冷、真实刑案底色；本期 <strong>161 分钟、1966 年、彩色、西部冒险＋黑色幽默</strong>，<strong>一次把年代往回推 37 年、把类型整块换掉</strong>，按第 47 期台账「下期宜回 lighter／暖色或换年代，避免连续两期冷峻／刑侦／真实案件」执行。逐条核过并避开：韩国线、奉俊昊导演线、真实刑案改编线、刑侦／连环案线（第 47 期刚开）；「答案迟到十六年」「同一个人同一张榜的两端」「片外答案提前进场」三切入（第 47 期刚用）；1940／卓别林／政治讽刺喜剧／一人分饰两角（第 46 期）；1999／沃卓斯基／赛博朋克（第 45 期）；英国／1962／里恩／一战／传记片（第 44 期）；日本线（34／40 期连触）；<strong>华语线 2026-12-02 才解禁，今天 11-26 未到</strong>（《花样年华》仍留，钩子已预埋两次，本期不碰第三次）；动画线 12 月中（《机器人总动员》仍留）；二战犹太题材（已 2 次）；诺兰／斯皮尔伯格／泽米吉斯导演线；韩国剩余候选须再隔 ≥5 期。<br>
+    <strong>台账偏离说明：</strong>本期为<strong>池外新增</strong>（候选池第 100 行无此片），是第 47 期「连续六期池外后回到池内一次」之后<strong>重回池外</strong>，池内条目一部未动。<strong>意大利线第 4 次</strong>（1《天堂电影院》／13《海上钢琴师》／37《偷自行车的人》／48 本片），距第 37 期 <strong>11 期 ≥ 10 期</strong>，兑现第 47 期台账「意大利线自第 37 期起今天已够 10 期，明天即可用」的绿灯，并按要求<strong>换角度</strong>：第 37 期走的是「《视与听》首届状元＋新现实主义极简＋非职业演员＋战后罗马底层」，本期改走「通心粉西部片的归属倒置」与「评价翻案被压缩在同一个人身上」，两角度都不复用。<strong>西部片线首开 · 1966 年线首开 · 莱昂内导演线首开 · 首部意／西／西德合拍</strong>。另按台账显式切割：<strong>第 32 期《指环王 3》已用过「三部曲／系列终章」形态（一次拍完、分三年放完的工业角度），本期不复用该框架</strong>；本片三部曲是<strong>松散连缀</strong>——三部各有独立故事、同一位主演却每部换个名字、当年被当成三部互不相干的 B 级片，与第 32 期连续剧情的史诗三部曲性质不同，此处只作一句登记、不立框架。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（不建在「那笔金子的下落」上，建在「片名已经替你把人分好类了」上）</h2>
+    <p>先想一个问题：如果一部电影的名字，<strong>在你看第一帧之前就把三个主角分别贴好了「好」「坏」「丑」三张标签</strong>，那你进场之后，究竟是在看这三个人，还是在等电影来替你确认那三张标签？本片最耐看的地方，恰恰是<strong>这三个词一直没能稳稳落回去</strong>。所以这一期的红线防的不是答案，也不是过程，<strong>是你自己带进去的那张分类表</strong>。</p>
+    <p><strong>显式切割：</strong>「结局已知」六种形状已立满（第 28 期求你别说／第 36 期历史早已剧透／第 40 期开场自己剧透自己／第 42 期答案公开且不是重点／第 43 期结果无悬念、伤的是倒计时／第 47 期答案在片外、上映时根本不存在），第 47 期已新立第六种，<strong>本期不硬立第七种</strong>。红线也不复用第 47 期「防答案提前进场」、第 46 期「防摘录／防金句提前到达」、第 45 期「防设定揭晓的次序」、第 44 期「防过程／防转折／防去向」、第 43 期「防倒计时」，改建为「<strong>防片名提前替你分好类</strong>」型——这是本系列第一次，剧透风险来自<strong>片名本身携带的判断</strong>，而不是任何一段情节。</p>
+    <ul>
+      <li><strong>第一雷（新增第三十类剧透源：以「无剧透推荐／经典日推／补课指南」姿态出现的推荐文案本身，本次实测两篇）：</strong>一篇公众号「经典电影每日推荐」和一篇带「无剧透声明」的日推站文章，标题先承诺不剧透，正文却把三人的关系走向、对「所谓正义／所谓英雄」的总结性定性、以及「哪一场戏是影史最伟大」一起写完——<strong>它剧透的不是情节，是看完之后本该由你自己形成的那个判断</strong>。本次实测还见到一篇「60 岁补课前先定版本」的指南，把版本讲得极清楚，顺手把中段几处转折也点到了。<strong>与第 47 期第二十九类「以案件告破类新闻与纪实报道姿态出现的现实结局文本」同族（都以非影评的知识姿态出现），但载体不同：这次是推荐者本人。</strong>还有一句得说给自己听：<strong>你正在读的这张卡片，也属于它提醒你小心的那一类</strong>——所以下面那句「我们停在这里」是硬边界，不是修辞。<strong>本卡片只登记这些文案的写法，不转述其中任何一句</strong>。</li>
+      <li><strong>第二雷（第八类中文百科／影视站「剧情简介」极端案例，本次再犯）：</strong>某华文百科条目在「主題」段落里直接把<strong>结局的完整画面</strong>写全（谁在场、谁不在、东西怎么分、最后停在什么动作），连「影片评价」栏都夹着定性；多个资源站的「简介」字段则从第一场一路写到「两人各得一半信息」。按第 47 期首次写入、本期固化为检查项的纪律：<strong>只登记其写法、不转述其句子</strong>。<strong>凡带「剧情简介／影片介绍／角色介绍／影片评价／主题分析」的页面一律不读</strong>；演职员表、片长、获奖记录、制作年表、版本年表、上映与票房数据可读。</li>
+      <li><strong>第三雷（第九／二十一／十类叠加，且本次多一个「曲名即雷」）：</strong>「几分钟看完」解说视频、以「影史最伟大结尾／百大决斗／名场面盘点」为姿态的科普长文、以及<strong>直接把末段那两段配乐的曲名写进标题</strong>的文章——后一种最隐蔽，看着像音乐赏析，曲名本身已经把末段的地点与形态交代了，<strong>本卡片因此一个曲名都不写</strong>。英文检索里带 cemetery / trio / standoff 的词组，也会把末段推到第一屏。另：本片的「影史最伟大」标签密度极高，越是以赞美姿态出现的盘点，越容易顺手把结果写出来。</li>
+      <li><strong>第四雷（检索词雷第 23 次，且「一名六译＋三部曲内部串片」双雷齐发）：</strong>大陆《黄金三镖客》／港《独行侠决斗地狱门》／台《黄昏三镖客》／直译《好·坏·丑》《善恶丑》《好家伙，坏家伙，丑家伙》，一名六译；而《荒野大镖客》(1964)、《黄昏双镖客》(1965) 与台译《黄昏三镖客》同属「镖客三部曲」，<strong>台译名反而与《黄昏双镖客》成对，最容易串片</strong>。<strong>本次实测</strong>：一篇「全球评分最高的 10 部电影」榜单文把本片的背景与主演写成了三部曲里另一部的（只登记、不转述其句子），可见连做榜单的人都会串。另有 IMDb 页面「Also known as 黄金三镖客」与意大利原名 Il buono, il brutto, il cattivo 并存。<strong>再说一层更吵的：</strong>The Good, the Bad and the Ugly 早已进入英语日常用语，用来概括一件事的优点、缺点与本可做得更好的部分；搜这个片名会撞到大量与电影毫无关系的政论、财报与产品评测标题。<strong>与第 47 期「片名被现实新闻征用」显式切割：那次搜片名先看到最不该提前看到的结论（带剧透），这次只是找不到片（不剧透，但吵）。</strong>认准 <strong>1966、莱昂内、伊斯特伍德／瓦拉赫／范·克里夫、161 分钟国际版</strong>。</li>
+    </ul>
+    <p><strong>剧情梗概（安全区，只到官方公开前提）：</strong>美国南北战争期间，西部荒野上有三个人：一个话少、靠悬赏过日子的枪手，一个收钱办事、不留余地的杀手，一个满嘴跑火车、总能在绝境里钻出条缝的江洋大盗。一笔传闻中埋在某处的黄金，把三条本来不相干的路拧到了一起；每个人手里都只有一部分信息，谁也没法单独走到终点，于是三人彼此提防、又谁都离不开谁。他们穿过沙漠、战俘营、被炮火削平的城镇与一座桥，而战争在他们周围一路推进，<strong>可这三个人从头到尾关心的，都不是谁打赢</strong>。影片把「宏大历史」放在背景里，把「三个小人物的贪心、算计和黑色笑料」放在正中央。</p>
+    <div class="ver">我们停在这里。三人之间几次结盟与翻脸的先后、那笔东西的下落与归属、末段那场三人面对面具体怎么收场、以及任何一个被称作「影史最伟大」的画面 —— 一个字不写。片尾字幕升起来之前，请什么都别搜；尤其别搜片名加「结局」「墓园」「三人」。</div>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概 · 亮点所在</h2>
+    <ul>
+      <li><strong>三个人，一笔谁也凑不齐的线索。</strong>这片的骨架简单到一句话能讲完，难的是它<strong>把「简单」拉成了近三小时的耐心</strong>：没有神探，没有正义阵营，没有一句台词替观众解释谁更该被同情；三个人每次靠近都因为需要，每次分开都因为不信。关系一次次重排，而片名那三个形容词始终没能稳稳贴住任何一个人。它好看的不是寻宝，是<strong>三个各自只肯信自己的人，怎么被同一件事绑在一起</strong>。</li>
+      <li><strong>「意大利面西部片」这个绰号，当年是骂人的。</strong>1960 年代美国影评界把这类片看作对好莱坞西部片的<strong>廉价、可笑的模仿</strong>；「spaghetti western」这个叫法正是因为它们在意大利和西班牙拍，起意是贬低，不是分类。IMDb 上一条高赞短评把这段记得很直白：三部片上映时被普遍斥为拙劣的仿作，四分之一个世纪后影评人改了口，如今被公认为经典。<strong>一个贬义外号，后来成了一个被反复研究的类型名</strong>——这件事本身就是本片最有趣的背景。</li>
+      <li><strong>一部「最美国」的西部片，从导演、资金、外景到语言，没有一样是美国的。</strong>导演是罗马人，钱来自意大利、西班牙与西德，外景主要在<strong>西班牙安达卢西亚的阿尔梅里亚与 Cabo de Gata</strong>（IMDb 明确列出修道院与沙漠长途那几段），棚内回罗马；全片<strong>现场不录对白</strong>，演员各说各的语言，后期再分别配成英语、意大利语等版本——所以严格讲，「原声」这件事在本片里本身就不止一个答案。摄影用 <strong>Techniscope</strong>（一种省胶片、牺牲分辨率的小画幅宽银幕工艺，2.35:1），托尼诺·德利·科利把<strong>极近的脸部特写</strong>和<strong>极远的地平线</strong>轮流摆在同一场戏里；后来无数西部片学的就是这套「先盯住一双眼睛，再突然把人丢回荒漠」的语法。</li>
+      <li><strong>配乐不是拍完才贴上去的。</strong>据 BFI 对莫里康内合作方式的介绍，莱昂内<strong>在拍摄现场就给演员放配乐</strong>，让步伐、停顿与场面节奏提前和音乐对上；这为末段那种近似歌剧的节拍提供了一条制作脉络。<strong>但要按口径把边界说清楚：这不代表每个镜头都是照着音乐拍的</strong>，只是「音乐参与了表演」，不是「音乐指挥了全片」。配乐里除了那段人人认得的口哨，还有甩鞭声、男声戏谑合唱、加弱音器小号的怪诞音色、以及模仿土狼嚎叫的人声；据唱片资料，莫里康内用<strong>两个音符</strong>做三人共通的主题，再用笛子、陶笛与人声把三个角色区分开。顺带一句：其中一段配乐自 <strong>1985 年起被一支重金属乐队用作演唱会开场</strong>，用了四十来年——很多人是先认得这段旋律，很多年后才看正片。</li>
+      <li><strong>一座桥，炸了两次，第一次没有摄影机在拍。</strong>据 IMDb 的幕后条目：剧组请西班牙陆军协助爆破一座桥，约定由莱昂内通过对讲机喊「Vai!」才点火；结果同一频道上另一位剧组人员先对别人说了句「vai, vai」（意思是「好了，继续」），上尉误听成信号，桥当场炸了，<strong>而摄影机没开</strong>。莱昂内盛怒之下解雇了那位剧组人员；上尉很过意不去，提出由陆军把桥<strong>重建</strong>再炸一次，唯一条件是重新雇回被开除的人——莱昂内答应了，桥重建，戏补拍成功。这条轶事之所以值得写，是因为它把这部片的两面同时露出来：<strong>调度精密到毫秒，现场却乱得像它自己拍的战场</strong>。伊莱·瓦拉赫 2005 年的回忆录里也记了不少险些出事的特技与语言误会，此处只登记、不展开。</li>
+      <li><strong>连演员表都在跟片名唱反调。</strong>片名把三个人整整齐齐并列成「好／坏／丑」，可 IMDb 的「Crazy credits」记着：戏份最多的伊莱·瓦拉赫，署名被排在所有演员之后，写成「…and Eli Wallach in the role of Tuco」。<strong>一个连署名顺序都不肯按片名的整齐来</strong>的小细节，恰好是本片对那三个标签最轻的一次表态。</li>
+      <li><strong>它当年是门很划算的生意，却没拿到学院的入场券。</strong>预算约 <strong>120 万美元</strong>；Box Office Mojo 口径北美约 <strong>2510 万美元（占约 99.3%）</strong>、国际约 15.9 万、全球合计 <strong>25,283,525 美元</strong>，另有资料库记约 3890 万，按老规矩<strong>两值并列、不挑一个假装权威</strong>。1966-12-23 意大利首映、1967-12-29 美国公映（Metacritic 记美国发行日 1967-12-29，另有源记 1966-12-29，属口径差）。<strong>第 40 届奥斯卡零提名</strong>；IMDb 奖项汇总记「2 胜 5 提」，来自大卫奖、金球配乐提名一类，与学院无关（各源对具体奖项记载不一，<strong>只登记、不挑一个</strong>）。IMDb 甚至有个片单就叫「Top 10 Great Movies with No Oscar Nominations」，把它放在<strong>第 1</strong>。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看 · 把「美国西部」拍成标准像的，是个没去过美国西部的人</h2>
+    <p>先想一个问题：<strong>如果有一天，全世界一想起「西部片」，脑子里浮出来的画面是宽檐帽、眯起的眼睛、口哨、和一片根本不在美国的荒漠——那这套标准像，到底算谁拍出来的？</strong></p>
+    <p>本片给出的答案有点别扭。它是影史里被模仿、被致敬、被剪进教科书次数最多的西部片之一，可它的作者是个罗马人，钱是意／西／西德凑的，沙漠是西班牙南部的，对白是拍完之后各国分别配上去的。当年正因如此，它被美国主流影评界当成「不入流的仿作」——<strong>不是没被看见，是被看见了、然后归错了类</strong>。几十年后，把它送进影史榜的，又恰恰是同一套体系里的人。</p>
+    <table>
+      <tr><th>这一层</th><th>当年被怎么归</th><th>后来被怎么认</th></tr>
+      <tr><td>出身</td><td>「spaghetti western」＝廉价模仿的贬称</td><td>成了一个有专名的类型，被写进电影史</td></tr>
+      <tr><td>奖项</td><td>奥斯卡零提名，学院体系成熟期整部跳过</td><td>IMDb「零提名佳片」片单第 1</td></tr>
+      <tr><td>同行</td><td>1967 年主流评论嫌它长、嫌它脏、嫌它暴力</td><td>昆汀·塔伦蒂诺在 2002 与 2012 两次《视与听》导演票选里，都把它列为自己的第一选择；BFI 2022 影评人榜第 169；Empire 2008 五百佳第 25</td></tr>
+      <tr><td>观众</td><td>北美约 2510 万美元，票房好但口碑不体面</td><td>IMDb 8.8、约 90 万票，常驻 TOP250 前十上下；豆瓣 9.2–9.3</td></tr>
+    </table>
+    <p>这张表不是要替它鸣冤，只是把一件事摆平：<strong>「公认经典」这四个字，很多时候不是上映那天就发下来的，是几十年里一层层追认上去的</strong>。而这一部的特殊在于，追认它的人，正是当年嫌它「不够美国」的那套系统。</p>
+    <p><strong>与第 44 期《阿拉伯的劳伦斯》显式切割：</strong>同样是 1960 年代、同样在欧洲与沙漠里拍别国的故事、同样超长、同样有一堆版本要挑，但那一期处理的是<strong>「拍别人、被别人拒绝」</strong>（英国人拍阿拉伯，多国禁映）；这一期是<strong>「拍别人、被别人认领」</strong>（意大利人拍美国，先被美国影评界嫌，后被美国同行与观众奉为类型标准）。一句登记，不复用第 44 期的「减法史诗／把空拍成最贵的东西」框架。</p>
+    <p><strong>与第 37 期《偷自行车的人》也只做一句国别线交代：</strong>同为意大利，一个把「少」推到极致（约 13 万美元、非职业演员、战后罗马街头），一个把「多」推到极致（近三小时、三国合拍、沙漠与战场）。<strong>不重摆第 45 期已成对用过的「减法↔加法」框架</strong>。</p>
+    <div class="quote">「我片里的杀戮是夸张的，因为我想对那些流水线西部片开个带点善意的玩笑。」<em>——莱昂内自述创作意图，中文转述；本期只作片外注脚，不指涉任何具体情节</em></div>
+  </div>
+
+  <div class="card">
+    <h2>评价翻案 · 同一个人，隔了几十年，亲手把少给的那一星补了回去</h2>
+    <p>这一期最动人的一条材料，不在榜单上，在一句自我更正里。<strong>罗杰·艾伯特</strong>后来把本片收进自己的「Great Movies」并补成四星，还写明了当年为什么少给一星——他形容自己当年<strong>「描述的是一部四星电影，却只给了三星，大概因为它是『意大利西部片』，所以不可能是艺术」</strong>。把「偏见」两个字省掉，直接把偏见的<strong>名字</strong>写出来的，是他自己。</p>
+    <p>于是可以把 1967 年前后和后来并排放置，<strong>不裁决、不打折</strong>：</p>
+    <table>
+      <tr><th>时间</th><th>同一部片，被怎么说</th></tr>
+      <tr><td>1967–68 首轮</td><td>《纽约时报》雷娜塔·阿德勒称它是「这一特殊类型史上最昂贵、最虔敬、也最令人反感的电影」；《洛杉矶时报》查尔斯·钱普林把片名改写成「坏、闷、没完没了」；另有刊物嫌它「一堆令人不安的暴力与虐待」</td></tr>
+      <tr><td>其后数十年</td><td>艾伯特改判四星并收入「Great Movies」；昆汀称它是「有史以来导得最好的电影」；BBC 谈它的持久影响时，把那场三人场面列为影史最扣人心弦、最受推崇的段落之一；Time、Variety、Film4、Empire、TimeOut 各自把它收进榜单</td></tr>
+      <tr><td>2002 / 2012 / 2022</td><td>BFI《视与听》导演票选里昆汀两次把它列为个人第一；2022 影评人榜第 169（2012 第 78）；BFI 页面列出的投票者里还有马丁·麦克唐纳、亚历山大·佩恩、埃德加·赖特等导演</td></tr>
+    </table>
+    <p><strong>显式切割：</strong>第 42 期《公民凯恩》写过「不是一上映就被公认为最伟大」，那是<strong>群体、五连冠之后被拉下</strong>；第 44 期写过「分数是后来追认上去的」，那是<strong>首映当季的赞美与差评并排</strong>。这一期是第三种形状：<strong>同一个人，隔了几十年，亲手改了自己那一星，并且把当年少给一星的原因（「这种片不可能是艺术」）原样写了出来</strong>。翻案不再是一张榜单的名次变化，而是一句可以署名的自白。</p>
+    <p><strong>关于「零提名」，也要和前两期切开：</strong>第 31 期《城市之光》是 1931 年、评奖机制尚早、<strong>未进入评选系统</strong>（同年被 NBR 列入年度十佳）；第 14 期《三傻》是<strong>西方主流影评界根本没评过</strong>（MC 仅 4 条）；本片是<strong>评了，而且评得很难听</strong>——1966/67 年的奥斯卡体系早已成熟，它连一项提名都没有。<strong>「没被评」「没进系统」「被评了却判为不够格」是三件不同的事</strong>，本系列到这一期才算凑齐。另按第 20 期纪律：<strong>凡含结尾动作、结尾台词、或把收场方式当作既成事实来评价的批评原文，本期整句略去未写</strong>。</p>
+  </div>
+
+  <div class="card">
+    <h2>三种诚实 · 慢、长、以及一张不替它圆场的清单</h2>
+    <p><strong>其一，把批评也摆上来。</strong>当年最集中的四条：太长、太慢、暴力太密、以及「一个意大利人凭什么拍美国西部」。<strong>不打折、也不反驳</strong>，只登记一个事实：被挑了近六十年的「慢」，和它被反复称赞的那种<strong>敢把等待拍到底</strong>，其实是同一件事。有资料把当年的暴力争议与 <strong>1968 年 11 月 MPAA 正式分级制的确立</strong>连成一条线，按老规矩<strong>只登记这种归类、不裁决因果</strong>。批评版块里凡涉及结局状态与收场方式的字句，按纪律整句未引。</p>
+    <p><strong>其二，片名跑得比电影远。</strong>「the good, the bad and the ugly」早已进了英语日常用语，用来概括一件事的好处、坏处、以及本可以做得更好却没做的部分——<strong>用这个短语的人，未必知道它是一部电影的名字</strong>；那段口哨和主题旋律同理，被演唱会、综艺、游戏、乐队曲名借走几十年。再叠上本期下面要讲的版本问题：<strong>很多人认得旋律、认得片名，却没完整看过正片，而正片至少有三个片长在流通</strong>。<strong>与第 38 期「旋律的逃逸」显式切割</strong>（那次讲配乐脱离电影独立存活，本期讲的是<strong>片名</strong>）；<strong>与第 43 期「失败商品被电影借尸还魂」切割</strong>（那次是一件实物 DMC-12，这次是一个词组）。</p>
+    <p><strong>其三，版本提醒：第 24 次判定＝删减／改判陷阱</strong>（累计 删减／改判 <strong>10</strong> · 无陷阱 23 · 更长≠更好 1）。这不是画质党折腾，是六十年里真被剪来剪去的历史：</p>
+    <table>
+      <tr><th>片长</th><th>是什么</th></tr>
+      <tr><td>约 177–178 分</td><td><strong>1966-12-23 意大利首映版</strong>，BFI 片目记 177 分；莱昂内最初交出去的形态</td></tr>
+      <tr><td>161 分（另有源 162）</td><td><strong>国际版／美国院线版</strong>，1967-12-29 公映；由莱昂内本人为海外发行剪成，流通最广，多数资源是这个底子</td></tr>
+      <tr><td>179 分</td><td><strong>2003 年 MGM 修复加长版</strong>，从意大利首映底片补回十余分钟，伊斯特伍德与瓦拉赫亲自为恢复的台词补配音</td></tr>
+      <tr><td>95 分</td><td>2006 年美国电视辛迪加版，<strong>删掉近一半</strong>；另有英国 BBFC 删减版、1970 年代为双片连映大幅删短的版本，1999 年录像带才逐步恢复</td></tr>
+    </table>
+    <p><strong>新判断（与第 32 期「更长≠更好」、第 44 期「最长版≠导演定本」都切割）：</strong>那两次争的是<strong>「哪个版本有权叫定本」</strong>——第 44 期是后人挂名、里恩 1989 亲自定 216 分钟。这一期更别扭一层：<strong>179 分钟那版里，有一场戏是莱昂内在罗马首映之后自己立刻删掉的，是修复者替他加了回来</strong>。所以不是「更长更好」，也不只是「更长不算数」，而是<strong>「补得更全，未必更对」</strong>——最短的 161 分反倒有作者本人授权，最长的一版比导演的最终意愿还宽容一点。另：2021 年 Kino Lorber 55 周年 4K UHD 逐镜调色，因整体偏黄被不少影迷挑过，此处只登记、不参与版本优劣之争。</p>
+    <p><strong>一张只登记、不圆场的清单：</strong>豆瓣 9.2–9.3 · IMDb 8.8 / TOP250 第 9–11 · RT 97–99% · MC 90（7 评）· BFI 视与听 2022 影评人第 169（2012 第 78）· Empire 2008 第 25 / 2014 第 47 · Variety 50 佳第 49 · Film4 2002 第 46 · TimeOut 2014 动作片第 52 · Time 世纪百大 · 奥斯卡 0 提名 · 预算约 120 万美元 / 全球 2528 万（BOM）或 3890 万（另源）· 161 / 177 / 179 / 95 分钟四个流通片长。<strong>别把其中任何一个数字当权威</strong>——它们量的是不同的东西，而这一部恰好连「它到底多长」都不肯只给一个答案。</p>
+    <div class="quote">「我描述的是一部四星电影，却只给了三星，大概因为它是『意大利西部片』，所以不可能是艺术。」<em>——罗杰·艾伯特谈自己当年的评分，中文转述；本卡片引用它，只因为它把偏见的名字写了出来</em></div>
+  </div>
+
+  <div class="ask">
+    <small>观前留一个问题给你</small>
+    <p>如果片名在第一帧之前就把三个人贴好了标签，你会带着标签去找证据，还是允许自己看到最后、它们仍然对不上？<strong>那张分类表是谁给你的，你又打算什么时候把它放下？</strong></p>
+    <p>还有一个更贴这一期的：一段你没看过电影就认得的口哨、一个你天天在用却不知道出自电影的短语——<strong>它们是帮你走近这部片，还是替你省掉了走近它？</strong>这也是为什么上面这张卡片把「无剧透推荐」自己也列进了雷区。观看条件不重：<strong>161 分钟（国际版）或 179 分钟（加长版）、彩色、1966 年，不需要任何西部片知识</strong>；唯一要替自己守住的，是别在开看之前搜「结局」「墓园」「三人」，也别先去听那两段被盘点了几十年、连名字都自带画面的配乐。</p>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 48 期 · 2026-11-26<br>
+    评分与事实均为本次现查，随快照浮动；卡片严格遵守不剧透口径，红线内所列内容一律未展开。<br>
+    本片涉及战争与暴力内容，观看前请自行判断情绪门槛。
+  </div>
+
+</div>
+</body>
+</html>
