@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 天使爱美丽</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 49 期</div>
+  <h1>天使爱美丽</h1>
+  <div class="en"><span>Amélie / Le Fabuleux Destin d'Amélie Poulain (2001)</span>&nbsp;·&nbsp; 让-皮埃尔·热内 导演 &nbsp;·&nbsp; 编剧 纪尧姆·洛朗 / 让-皮埃尔·热内 &nbsp;·&nbsp; 摄影 布鲁诺·德尔博内尔 &nbsp;·&nbsp; 配乐 扬·提尔森 &nbsp;·&nbsp; 美术 阿琳·博内托 &nbsp;·&nbsp; 剪辑 埃尔韦·施奈德 &nbsp;·&nbsp; 奥黛丽·塔图 / 马修·卡索维茨 / 贾梅尔·杜布兹 / 多米尼克·皮诺 / 友兰达·梦露 &nbsp;·&nbsp; UGC（法）/ 米拉麦克斯（美）发行</div>
+  <div class="meta">
+    <span>法国 / 德国合拍</span><span>剧情 / 喜剧 / 爱情</span><span>122 分钟（部分源 123）</span><span>彩色 · 法语对白</span>
+    <span>2001-04-25 法国首映 · 2001-11-16 美国公映</span><span>预算约 1000 万美元</span><span>全球约 1.74 亿美元</span><span>奥斯卡 5 提 0 中</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>8.7</b><small>豆瓣 · 约 96 万人 · 本次现查</small></div>
+    <div class="score"><b>8.3</b><small>IMDb · 约 78 万票 · 恰好压线</small></div>
+    <div class="score"><b>89%</b><small>RT 专业 · 186 评 · 均分 8.10/10</small></div>
+    <div class="score"><b>69</b><small>Metacritic · 31 评 · 各源 69–70</small></div>
+    <div class="score"><b>5 提 0 中</b><small>第 74 届奥斯卡 · 含最佳外语片</small></div>
+    <div class="score"><b>第 2</b><small>Empire 2010 非英语百大 · 第 1 是第 16 期《七武士》</small></div>
+  </div>
+  <div class="note">
+    <strong>口径说明（均经本次现查）：</strong>豆瓣 <strong>8.7</strong>（约 96 万余条评论，华文百科口径）；IMDb <strong>8.3</strong>（约 78 万余票）；烂番茄专业 <strong>89%（186 评，均分 8.10/10）</strong>，观众分本次未查到可核的有效快照，按第 48 期口径<strong>留空不补</strong>；Metacritic <strong>69（31 评，「普遍好评」）</strong>，另有聚合站记 70，按老规矩<strong>两值并列、不挑一个假装权威</strong>；Letterboxd 本次未取到可信中文快照，同样留空。榜单：英国《帝国》杂志 2010 年「世界非英语百大佳片」<strong>第 2</strong>（该榜条目把年份误印为 2000，实为 2001，<strong>只登记、不圆场</strong>）、《纽约时报》「有史以来最好的一千部电影」之一、Paste 杂志 2000 年代五十大第 2。<br>
+    <strong>选片线：</strong>豆瓣 8.7 <strong>未过 8.8 线</strong>，IMDb 8.3 <strong>恰好压过 8.3 线</strong>，按「或」字达标，<strong>不写成破例</strong>。这是本系列第 <strong>3 次单线片</strong>（第 42 期「只有豆瓣过」、第 44 期「只有 IMDb 过」、第 47 期已用掉「单线第三种写法」）。按第 47 期台账「后续再遇单线片须换第四种写法或干脆不写」的约定，<strong>本期选择干脆不写</strong>：不摆评分框架、不把落差做成解读，只把数字摆在这里。<strong>连续第 8 期不重摆评分框架</strong>；「结局已知」六格立满，<strong>继续不用、也不硬立第七种</strong>。<br>
+    <strong>节奏与线路：</strong>上期 161 分钟、1966 年、彩色西部冒险、粗粝荒诞、长片、含战争与暴力；本期 <strong>122 分钟、2001 年、彩色都市喜剧</strong>，<strong>短 39 分钟、年代一次前推 35 年、零枪战零荒漠零长片</strong>，把第 48 期台账「下期宜回短／轻／暖或换当代」<strong>两条同时兑现</strong>。逐条核过并避开：意大利线（已 4 次）、西部片线、1966 年线、莱昂内导演线、镖客三部曲（第 48 期刚开）；「通心粉西部片贬称」「艾伯特自白」「学院零提名」「版本四片长」四切入（第 48 期刚用）；韩国线／奉俊昊／真实刑案（第 47 期）；1940／卓别林／政治讽刺喜剧（第 46 期）；1999／沃卓斯基／赛博朋克（第 45 期）；英国／1962／里恩／一战／传记片（第 44 期）；日本线（34／40 连触）；二战犹太题材（已 2 次）；诺兰／斯皮尔伯格／泽米吉斯导演线。<strong>华语线 2026-12-02 解禁，今天 11-27 还有 5 天，《花样年华》仍留，钩子已预埋两次、本期不碰第三次</strong>；动画线 12 月中（《机器人总动员》仍留）；歌舞片、默片、奇幻史诗各线虽已够间隔，但均与本期「当代都市轻喜剧」不符。<br>
+    <strong>台账偏离说明：</strong>本期为<strong>池外新增</strong>（候选池无此片、无此年代与国别组合），池内条目一部未动，延续第 48 期「池外」走向。<strong>法国线第 4 次</strong>（15《这个杀手不太冷》／26《触不可及》／38《放牛班的春天》／49 本片），距第 38 期 <strong>11 期 ≥ 10 期</strong>；<strong>让-皮埃尔·热内导演线首开 · 2001 年线第 2 次（第 3 期《千与千寻》后隔 46 期）· 首部以「当代都市孤独者」为主角的法国片</strong>。必须自觉认领一件事：第 38 期《放牛班的春天》同样是暖系法语片、同样以配乐出名，只隔 11 期容易显得重复——所以本期在下面<strong>显式做一次方向切割</strong>：那期是<strong>群像＋儿童＋外省寄宿学校＋配乐从电影里跑出去</strong>，本期是<strong>独角＋成人＋蒙马特＋配乐在电影之前就已存在</strong>；四期法国片正好四张面孔（杀手与少女／阶级与身体／合唱与教育／匿名善意），此处只作一句登记、不立框架。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（不建在「她后来怎么样了」上，建在「有人替你把顺序排好了」上）</h2>
+    <p>先想一个问题：<strong>如果一部电影几乎没有悬念、没有反转、也不打算吓你，那还有什么东西是「提前知道」会毁掉的？</strong>本片最怕的不是答案，是<strong>节奏被别人替你走完</strong>——它靠一连串小小的、彼此不解释的偶然往前挪，谁先把这些偶然按顺序念一遍，那种「自己也刚好被生活轻轻推了一下」的感觉就没了。所以这一期防的不是结局，<strong>是代读</strong>。</p>
+    <p><strong>显式切割：</strong>「结局已知」六种形状已立满（第 28 期求你别说／第 36 期历史早已剧透／第 40 期开场自己剧透自己／第 42 期答案公开且不是重点／第 43 期结果无悬念、伤的是倒计时／第 47 期答案在片外、上映时根本不存在），本期<strong>不硬立第七种</strong>。红线也不复用第 48 期「防片名提前替你分好类」、第 47 期「防答案提前进场」、第 46 期「防摘录／防金句提前到达」、第 45 期「防设定揭晓的次序」、第 44 期「防过程／防转折／防去向」、第 43 期「防倒计时」，改建为「<strong>防代读／防最后一镜</strong>」型——这是本系列第一次，剧透风险主要来自<strong>把一串小事件按因果排好、再讲给你听</strong>，而不是任何一个可以被概括成一句话的结果。</p>
+    <ul>
+      <li><strong>第一雷（新增第三十一类剧透源：以「取景地朝圣／蒙马特打卡路线／巴黎旅行攻略」姿态出现的攻略文本，本次实测）：</strong>本片把一处真实咖啡馆和几条真实街道变成了朝圣地，于是网上大量「跟着电影走巴黎」的路线文，会<strong>按打卡顺序把片中段落一一复述</strong>；它们看起来是旅行资料，不是影评，防备最低。<strong>与第 48 期第三十类「无剧透推荐文案」同族（都以非影评的知识姿态出现），但载体不同：这次是地图。</strong>与第 44 期第二十六类「史料长文」、第 47 期第二十九类「案件告破新闻」亦属同族不同载体。还有一句得说给自己听：<strong>你正在读的这张卡片，也属于「先于观看的推荐文本」这一大类</strong>——所以下面那句「我们停在这里」是硬边界，不是修辞。<strong>本卡片只登记这些文案的写法，不转述其中任何一句</strong>。</li>
+      <li><strong>第二雷（第八类中文百科／影视站「剧情简介」再犯）：</strong>某华文百科的简介字段从童年一路写到「从此开始了一系列令人哭笑不得的助人计划」，并顺手点出帮助对象；多个资源站的「剧情介绍」则从那次偶然发现写到后段的人物关系。<strong>凡带「剧情简介／影片介绍／角色介绍／影片评价／主题分析／幕后花絮」字样的页面一律不读</strong>；演职员表、片长、获奖记录、制作年表、上映与票房数据、美术与配乐的技术资料可读。按第 47 期首写、第 48 期固化的纪律：<strong>只登记写法、不转述句子</strong>。</li>
+      <li><strong>第三雷（第九／二十一／十类叠加，且本片多一个「曲名即雷」）：</strong>「几分钟看完」解说、以「影史最治愈结尾／百大暖心瞬间／法式浪漫名场面」为姿态的盘点长文、以及<strong>直接把那首最出名的华尔兹曲名写进标题</strong>的音乐赏析——后一种最隐蔽，看着只是谈音乐，标题却已经把末段的形态与地点交代了，<strong>本卡片因此一个具体曲名都不写</strong>。另：本片的「治愈」「必看」「一个人也要好好生活」标签密度极高，越是以安慰姿态出现的片单，越容易顺手把收束方式写出来。</li>
+      <li><strong>第四雷（检索词雷第 24 次，一名多译＋同名衍生＋真实地点三重）：</strong>大陆《天使爱美丽》／台《艾蜜莉的异想世界》／港《天使爱美丽》／另译《天使艾米莉》《艾蜜丽》《阿梅丽的奇妙命运》《天使艾美丽》，一名多译；Amélie 同时是常见法语人名、也是后来改编的同名音乐剧名，<strong>搜英文名会撞到大量与本片无关的人名页与音乐剧条目，而音乐剧的剧情页会正向剧透本片</strong>（第五类「翻拍／衍生简介」）；片中那间咖啡馆是真实营业的店，搜店名出来的打卡文又回到第一雷。<strong>与第 48 期「片名被现实新闻征用」、第 47 期「一名六译＋三部曲串片」显式切割：那两次是找错片或先看到结论，这次是找对了片、却被三种不相干的资料夹住。</strong>认准 <strong>2001、热内、奥黛丽·塔图、122 分钟</strong>。</li>
+    </ul>
+    <p><strong>剧情梗概（安全区，只到官方公开前提）：</strong>巴黎蒙马特，一个在咖啡馆做女侍的年轻姑娘，从小在安静得有点过分的家里长大，习惯了把自己收得很小。某天一次偶然的发现，让她起了一个念头：<strong>悄悄替身边的人把日子拧回正轨</strong>。于是她开始做一连串不留名的小事——不解释、不现身、也不要求谁感谢。她替别人安排得越来越顺手，而<strong>「怎么轮到自己」这件事，她一直没学会</strong>。影片就沿着这条轻巧的线，把一整条街上的邻居、同事、陌生人和几件旧物串在一起；它没有要破的案、要赢的仗，也没有要赶的期限。</p>
+    <div class="ver">我们停在这里。她找到了什么、替谁做了哪几件、每一件怎么被接住、后半段那些人各自走向哪里、最后那一步有没有迈出去、以及任何一个被称作「最治愈」的画面 —— 一个字不写。片尾字幕升起来之前，请什么都别搜；尤其别搜片名加「结局」「解析」「取景地路线」，也别先去听那首被用进无数短视频的华尔兹。</div>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概 · 亮点所在</h2>
+    <ul>
+      <li><strong>一个「不署名」的主角。</strong>这部片最不寻常的地方，是它把「做好事」拍成了<strong>必须偷偷进行</strong>的事：主人公替别人设计一切，却坚持不出现在收件人那一栏。于是全片的动力不是冲突、不是目标，而是一种很轻的<strong>观察—出手—退开</strong>的节拍。它好看的不是「她帮成了什么」，是<strong>一个人怎么把注意力练成一门手艺</strong>——以及这门手艺为什么偏偏不肯用在自己身上。</li>
+      <li><strong>颜色是剧本的一部分。</strong>美术指导阿琳·博内托按人物性格给空间定色：主人公的公寓是暖红，杂货店是枯绿，整部片被压进红、绿、金三档里；内景主要在<strong>德国科隆的 Coloneum 摄影棚</strong>搭成，外景才回巴黎。热内还用了 CGI 与数字中间片做统一调色——2001 年这算相当早的用法。<strong>你后来想起这部片，先浮上来的往往不是某句台词，而是一整块颜色</strong>，这不是偶然，是提前设计好的。</li>
+      <li><strong>蒙马特被拍成了「室内」。</strong>影片的故事发生在塞纳河右岸的蒙马特，那间 <strong>Café des 2 Moulins</strong> 是真实存在的店；可镜头里几乎没有旅游明信片式的巴黎全景，多是台阶、门洞、柜台、运河边的一小段水、以及无数被放大的小物件。热内学动画出身，他在 2021 年的一次中文专访里把这件事说得很直白：<strong>「谁想看现实中到处都是交通堵塞和狗大便的巴黎，我只想拍动画师眼中的巴黎。」</strong>把一座大城市拍成一间可以揣进口袋的屋子，是本片最见功力的一笔。</li>
+      <li><strong>配乐不是为这部片写的。</strong>热内开车时听到扬·提尔森的音乐，买下能找到的每一张专辑，从旧作里挑出约十五段，再补少量新写的乐句，拼成了整部片的配乐；提尔森本人 2019 年说得更干脆：<strong>「我从来没有主动为《Amélie》制作配乐，只是同意使用自己先前的作品。」</strong>也就是说，很多观众以为「为电影而生」的旋律，<strong>比电影早了好几年就已经躺在唱片里</strong>。原声带后来登上法国榜冠军、全球约 200 万张，并在 2002 年为提尔森带来一座凯撒最佳原创音乐。</li>
+      <li><strong>选角换过一次方向，才换出这张脸。</strong>据制作资料，最初属意的是英国女演员艾米丽·沃森，因法语不流利、又与另一部片的档期冲突而作罢；热内索性把剧本改写给一位法国演员。<strong>奥黛丽·塔图是他试镜的第一个人</strong>——他在 1999 年《维纳斯美容院》的海报上看到她。拍摄从 <strong>2000-03-02 到 07-07</strong>，主要在巴黎完成。一个「不说话也能让人相信她在想很多事」的表情，撑起了整部片。</li>
+      <li><strong>它当年是门极划算的生意，却没换到学院的奖。</strong>预算约 <strong>1000 万美元</strong>，全球票房各源在 <strong>1.739 亿–1.749 亿美元</strong>之间（按老规矩两值并列），约 <strong>17 倍</strong>；法国首映在 432 家影院拿到约 4320 万法郎、居当周榜首，<strong>在前十名里停了 22 周</strong>，成为 2001 年法国本土票房冠军。奖项侧却另有一套账：第 <strong>14 届欧洲电影奖最佳影片／导演／摄影</strong>、第 <strong>27 届凯撒奖最佳影片／导演等数项</strong>（各源记 4 或 5 项）、第 <strong>55 届 BAFTA 两项</strong>（含最佳原创剧本）、多伦多影展观众票选奖、卡罗维瓦利水晶地球仪、哥雅奖最佳欧洲电影、法国影评人协会最佳法国片；而第 <strong>74 届奥斯卡 5 提 0 中</strong>（最佳外语片、原创剧本、摄影、艺术指导、音响）。</li>
+      <li><strong>一张榜单上，本系列已经来过六次。</strong>英国《帝国》杂志 2010 年评「世界非英语百大佳片」，<strong>第 1 名是第 16 期推过的《七武士》，第 2 名就是本片</strong>；同一张榜上还有第 9 期《罗生门》、第 40 期《生之欲》、第 3 期《千与千寻》、第 30 期《无间道》（第 30 位）、第 12 期《霸王别姬》（第 97 位）。<strong>本系列走到第 49 期，今天补的是这张榜上最高的那个空位</strong>——一句登记，不拿它当评价结论。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看 · 它没拍真实的巴黎，后来真实的巴黎却长成了它的样子</h2>
+    <p>先想一个问题：<strong>如果有人把一座城市的堵车、灰楼、噪音和所有不体面的部分全擦掉，只留下暖红、枯绿、金黄和一屋子小物件——那它还是那座城市吗，还是它更像是你「希望」它是的那个地方？</strong></p>
+    <p>本片上映时，法国影评界有一批很挑衅的批评，说它拍的是<strong>虚假的巴黎、被擦干净的巴黎</strong>。热内没有否认「擦」这个动作，他只反问了擦的理由：动画师掌控一切，所以他拍的也是动画师眼中的巴黎。<strong>这一期不替两边裁决</strong>，只想请你注意一件更容易被漏掉的事：<strong>它连「现在是哪一年」也一起擦掉了</strong>。全片几乎找不到能把你锚定在具体年份的东西——没有手机、没有网络、街角的店像从更早的年代搬来；唯一指向现实时间的，是一条 1997 年的新闻（是什么、把谁推向了哪一步，这里不写）。除此之外，故事像发生在一个被折起来的、没有日期的巴黎。</p>
+    <table>
+      <tr><th>这一层</th><th>被怎么处理</th><th>后来发生了什么</th></tr>
+      <tr><td>片里的巴黎</td><td>三档颜色、棚内搭景、数字调色，几乎没有全景明信片</td><td>观众记住的不是地标，是一整块色调</td></tr>
+      <tr><td>2001 年的真实巴黎</td><td>被批评「虚假」「被擦干净」，热内以动画师视角自辩</td><td>争议本身成了这部片最常被讨论的一层</td></tr>
+      <tr><td>今天的那条街</td><td>咖啡馆、台阶、运河原本只是普通地点</td><td>变成朝圣路线，被按电影的颜色重新看了一遍</td></tr>
+    </table>
+    <p>所以这张表真正有意思的是第三行：<strong>电影没有拍真实的巴黎，但真实的巴黎后来长出了一层电影给的膜</strong>。这也是它值得一看的理由——它不只提供一个「轻、暖、好进入」的两小时，它还示范了<strong>一种改写现实的方式：不靠说服，靠把颜色先定下来</strong>。看完你大概会重新留意自己每天路过的那条街，会想：如果也允许我替它擦掉三样东西，我会留下什么？</p>
+    <p><strong>与第 20 期《窃听风暴》显式切割：</strong>那期的批评第一次不指向「拍得好不好」而指向「有没有权利这么拍」，核心是历史与档案；本期同样有人质疑「凭什么这么拍」，但争的是<strong>一座当代城市该不该被美化</strong>，与真实事件、受害者、史料都无关。<strong>与第 44 期《阿拉伯的劳伦斯》「谁被允许进画幅」也切一刀</strong>：那期谈的是人的缺席，本期谈的是<strong>时间与不体面之物</strong>的缺席。</p>
+    <p><strong>与第 48 期「片名跑得比电影远」、第 38 期「旋律的逃逸」切割：</strong>那两次是<strong>电影里的东西离开电影</strong>（一个词组进日常用语／一段配乐独立活下去）；这次方向反过来，是<strong>电影给现实地点上了色</strong>，走出去的是看的人，不是片里的东西。</p>
+    <div class="quote">「谁想看现实中到处都是交通堵塞和狗大便的巴黎，我只想拍动画师眼中的巴黎。」<em>——让-皮埃尔·热内 2021 年中文专访，谈「虚假巴黎」的批评；本期只作片外注脚，不指涉任何具体情节</em></div>
+  </div>
+
+  <div class="card">
+    <h2>配乐比电影先存在 · 和第 38 期正好反着来的一次</h2>
+    <p>这一期最耐人寻味的一条材料，不在榜单上，在创作顺序里。<strong>如果一部电影的配乐，在开机之前就已经录好、发过唱片、被人买回家听了很多年——那到底是谁配了谁？</strong></p>
+    <p>热内在车上听到提尔森，买齐能找到的专辑，从 1995 年《La Valse des monstres》、1996/97 年《Rue des cascades》、1998 年《Le Phare》这些旧作里挑出约十五段，再补少量新写乐句，拼成全片配乐；他 2021 年回忆：<strong>「我从中选了 15 首作为《天使爱美丽》的配乐」</strong>，还说<strong>「制作完成后，我就再也没见过他」</strong>。原声带约一半是旧曲，法国榜冠军、全球约 200 万张。另一个几乎没人提的岔口：热内<strong>原本想找的配乐家是迈克尔·尼曼</strong>——正是<strong>第 22 期《钢琴课》</strong>的配乐；提尔森当年还被叫作「高卢的迈克尔·尼曼」。<strong>一句登记，不立框架。</strong></p>
+    <p><strong>而最漂亮的一次自反，发生在戛纳。</strong>据制作资料，时任戛纳影展的吉尔·雅各布把本片评为「无趣」，影片因此<strong>没有进影展</strong>；法国媒体与观众的热烈反应和评审的判断形成强烈反差，这件事当时就引出争议。关键在于：<strong>他看的那一版是没有配乐的早期粗剪</strong>。也就是说，判它「无趣」的那一版，缺的恰好是后来全世界最先认出来的那部分。一部连音乐都还没装进去的片子被请了出去，几年后人们却先认得旋律、再去找正片。</p>
+    <p><strong>与第 38 期《放牛班的春天》显式切割：</strong>同为法国片、同为暖系、同以配乐出名，只隔 11 期，最容易混。但那期的主框架是<strong>「旋律的逃逸」——配乐从电影里跑出去</strong>（原声带独立卖、被人在奥斯卡现场演唱、二十年后被 remix 重新推上榜）；本期方向<strong>正好相反</strong>：<strong>配乐在电影之前就已经在那儿，是电影走进了音乐</strong>。一个是「离开」，一个是「先到」。与第 29 期《盗梦空间》「配乐自反」也切一刀：那次讲配乐即主题（把片中唤醒曲放慢做母题），这次讲的是<strong>创作时序</strong>，不是语义。</p>
+    <p>还要把两位当事人后来的话并排放置，<strong>不裁决、不打折</strong>：提尔森 2011 年对地方日报说「如果能重来一次，我不接」，2019 年告诉《Prog》自己从来没有主动为这部片制作配乐、只是同意使用旧作，同年《独立报》一篇访问的标题直接引用了他关于这张唱片带来负面影响的看法；他否定的不是那些旋律，是<strong>被加在旋律上的那层「蒙马特民俗想象」</strong>，此后他搬到布列塔尼外海的岛上继续做自己的唱片。热内那边则说：<strong>「直到今天，我再去听那些音乐，依然觉得杨·提尔森的那些作品太出色了，我很庆幸将它们放在《天使爱美丽》里。」</strong>一个人被一部片框住，一个人庆幸把它们放了进去——两句话都不需要谁赢。</p>
+    <div class="quote">「我从来没有主动为《Amélie》制作配乐，只是同意使用自己先前的作品。」<em>——扬·提尔森 2019 年受访，中文转述；本卡片引用它，只因为它把创作顺序说了出来</em></div>
+  </div>
+
+  <div class="card">
+    <h2>不圆场的三笔账 · 批评、榜单与版本</h2>
+    <p><strong>其一，把批评也摆上来。</strong>最集中的三条：<strong>太甜</strong>——《卫报》彼得·布拉德肖称其中浪漫的幻想「太过甜腻，令人无法接受」，影评人基思·菲普斯认为素材足够做几部迷人的短片、拉成长片后妙处就有些审美疲劳；<strong>太假</strong>——「被擦干净的巴黎」，与热内的动画师自辩并排放置（见上一节）；<strong>太轻</strong>——它拿遍欧洲奖项却始终被一部分人当作「好看但不重要」的片子。与此同时，CNN 的保罗·塔塔拉当年恰恰夸它<strong>「异想天开、自由放养」，尤其第一个小时充满和蔼可亲的、带讽刺的笑声</strong>。<strong>不打折、也不反驳</strong>，只登记一个事实：被嫌「太甜」的那份甜，和被那么多人记住的那份暖，是同一件东西。按第 20 期纪律，<strong>凡含收场方式、结尾动作或把后段关系当既成事实来评价的原文，本期整句略去未写</strong>。</p>
+    <p><strong>其二，一张榜单上补齐了第 2 名。</strong>第 16 期《七武士》的卡片里写过「Empire 2010 世界电影百大第 1」；隔 <strong>33 期</strong>，同一张榜的<strong>第 2 名</strong>今天补上。更有意思的是这张榜上本系列已经来过多次：<strong>第 1《七武士》、第 2 本片、第 30《无间道》、第 97《霸王别姬》</strong>，另有《罗生门》《生之欲》《千与千寻》在榜。<strong>与第 17 期「同一张榜单两个方向」（《视与听》2022，七武士下行／寄生虫刚进场）、第 47 期「同一个人同一张榜的两端」（NYT 2025，奉俊昊第 1 与第 99）显式切割</strong>：那两次比的是<strong>名次的方向</strong>，这次比的是<strong>一份名单被本系列一格格填满</strong>——按第 17 期约定已换到第三个榜、换了角度，且不再称「新立」。另按第 47 期口径：该榜条目把本片年份印成 2000，实为 2001，<strong>只登记、不圆场</strong>。</p>
+    <p><strong>其三，版本提醒：第 25 次判定＝无陷阱</strong>（累计 删减／改判 <strong>10</strong> · 无陷阱 <strong>24</strong> · 更长≠更好 <strong>1</strong>）。流通片长 <strong>122 分钟</strong>，部分资料库记 123 分钟，属四舍五入口径差；<strong>没有需要避开的删减版、加长版或另拍结局</strong>，这一点与第 30 期《无间道》「一部片两个结尾」、第 44 期《阿拉伯的劳伦斯》「最长版≠导演定本」、第 48 期「补得更全，未必更对」都不同。观看条件也因此是近期最轻的一次：<strong>彩色、法语、122 分钟、不需要任何背景知识、全片无战争与枪战场面</strong>。</p>
+    <p><strong>一张只登记、不圆场的清单：</strong>豆瓣 8.7（约 96 万人）· IMDb 8.3（约 78 万票）· RT 89%（186 评，均分 8.10）· MC 69（31 评，另源 70）· 奥斯卡 5 提 0 中 · 欧洲电影奖 3 项 · 凯撒奖 4–5 项（各源不一）· BAFTA 2 项 · 预算约 1000 万美元 / 全球约 1.74 亿美元 · 法国本土前十 22 周 · Empire 2010 非英语百大第 2 · 122 / 123 分钟。<strong>别把其中任何一个数字当权威</strong>——它们量的是不同的东西；而这一部恰好连「它讨不讨人喜欢」都不肯只给一个答案（RT 89 与 MC 69 之间那 20 分，正是它二十多年来一直被喜欢、也一直被嫌太甜的地方）。</p>
+  </div>
+
+  <div class="ask">
+    <small>观前留一个问题给你</small>
+    <p>如果有人替你把身边每个人的日子都悄悄拧顺了，却始终不肯在自己那一栏署名——<strong>你会觉得这是善良，还是一种更体面的躲藏？</strong>而这部片真正轻声问的，也许是另一句：<strong>替别人安排得越熟练，是不是就越不知道怎么轮到自己？</strong></p>
+    <p>还有一个更贴这一期的：一座被擦干净了堵车与噪音的城市、一段比电影还早几年就存在的旋律——<strong>它们是帮你走近这部片，还是替你省掉了走近它？</strong>这也是为什么上面把「取景地打卡攻略」也列进了雷区。观看条件不重：<strong>122 分钟、彩色、2001 年，不需要任何法国电影知识</strong>；唯一要替自己守住的，是别在开看之前搜「结局」「解析」「取景地路线」，也别先去听那首被用进无数短视频的华尔兹。看完之后，倒很欢迎你再去查那间咖啡馆到底在哪儿。</p>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 49 期 · 2026-11-27<br>
+    评分与事实均为本次现查，随快照浮动；卡片严格遵守不剧透口径，红线内所列内容一律未展开。<br>
+    本片节奏轻快、无战争与暴力场面，适合作为一段不费力的两小时。
+  </div>
+
+</div>
+</body>
+</html>
