@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日电影推荐 · 惊魂记</title>
+<style>
+  :root{
+    --bg:#0d0f12; --panel:#151920; --panel2:#1d222c; --line:#2e3646;
+    --tx:#eef1f6; --tx2:#b7bfcd; --tx3:#7c8698;
+    --acc:#d9a441; --acc2:#7fa88c; --warn:#e07a5f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--tx);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; padding:40px 20px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  .kicker{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;margin-bottom:10px}
+  h1{font-size:32px;line-height:1.25;letter-spacing:-.01em;margin-bottom:6px}
+  .en{font-size:15px;color:var(--tx3);font-style:italic;margin-bottom:18px}
+  .meta{font-size:13px;color:var(--tx2);display:flex;flex-wrap:wrap;gap:8px 14px;margin-bottom:24px}
+  .meta span{white-space:nowrap}
+  .scores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .score{
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;
+    padding:12px 16px;min-width:112px;
+  }
+  .score b{display:block;font-size:22px;color:var(--acc);line-height:1.2}
+  .score small{color:var(--tx3);font-size:11.5px}
+  .note{font-size:12.5px;color:var(--tx3);margin-bottom:28px;line-height:1.7}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px;margin-bottom:18px}
+  h2{
+    font-size:15px;color:var(--acc);letter-spacing:.06em;margin-bottom:12px;
+    display:flex;align-items:center;gap:9px;
+  }
+  h2::before{content:"";width:3px;height:15px;background:var(--acc);border-radius:2px}
+  p{color:var(--tx2);font-size:14.6px;margin-bottom:11px}
+  p:last-child{margin-bottom:0}
+  strong{color:var(--tx);font-weight:600}
+  ul{list-style:none;color:var(--tx2);font-size:14.6px}
+  li{padding-left:16px;position:relative;margin-bottom:11px}
+  li:last-child{margin-bottom:0}
+  li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--acc2)}
+  .quote{
+    border-left:2px solid var(--acc2);padding:4px 0 4px 16px;margin:16px 0 0;
+    color:var(--tx);font-size:15px;font-style:italic;
+  }
+  .quote em{display:block;font-style:normal;color:var(--tx3);font-size:12.5px;margin-top:7px}
+  .ver{background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13.5px;color:var(--tx2)}
+  .ask{
+    background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--warn);
+    border-radius:10px;padding:16px 18px;margin-top:16px;font-size:14.2px;color:var(--tx);
+  }
+  .ask small{display:block;color:var(--tx3);font-size:12.5px;margin-bottom:6px;letter-spacing:.08em}
+  .ask p{color:var(--tx);margin-bottom:10px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 4px;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left}
+  th{background:var(--panel2);color:var(--acc);font-weight:600;font-size:12.5px}
+  td{color:var(--tx2)}
+  td:first-child{color:var(--tx);white-space:nowrap}
+  .redline{background:rgba(224,122,95,.07);border:1px dashed var(--warn);border-radius:12px;padding:18px 20px;margin-bottom:18px}
+  .redline h2{color:var(--warn)}
+  .redline h2::before{background:var(--warn)}
+  .redline ul li::before{background:var(--warn)}
+  .foot{font-size:12.5px;color:var(--tx3);text-align:center;padding:14px 0 4px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">每日经典电影推荐 · 第 50 期</div>
+  <h1>惊魂记</h1>
+  <div class="en"><span>Psycho (1960)</span>&nbsp;·&nbsp; 阿尔弗雷德·希区柯克 导演 / 监制 &nbsp;·&nbsp; 编剧 约瑟夫·斯蒂凡诺（改编自罗伯特·布洛克同名小说） &nbsp;·&nbsp; 摄影 约翰·L·罗塞尔 &nbsp;·&nbsp; 剪辑 乔治·托马西尼 &nbsp;·&nbsp; 配乐 伯纳德·赫尔曼 &nbsp;·&nbsp; 海报设计 马卡里奥·高梅兹·奎布斯 &nbsp;·&nbsp; 安东尼·博金斯 / 珍妮特·利 / 维拉·迈尔斯 / 约翰·加文 / 马丁·鲍尔萨姆 &nbsp;·&nbsp; 派拉蒙制作发行（后归环球）</div>
+  <div class="meta">
+    <span>美国</span><span>悬疑 / 惊悚 / 恐怖</span><span>109 分钟（部分源 110）</span><span>黑白 · 英语对白</span>
+    <span>1960-06-16 纽约首映 · 美国公映各源记 08-08 或 09-08</span><span>预算约 80–81 万美元</span><span>全球票房 1500 万与 5000 万两口径</span><span>第 33 届奥斯卡 4 提 0 中</span>
+  </div>
+
+  <div class="scores">
+    <div class="score"><b>9.0</b><small>豆瓣 · 约 36.9 万人 · 另源 8.9（本次现查）</small></div>
+    <div class="score"><b>8.5</b><small>IMDb · 约 79.7–79.9 万票 · 各快照浮动</small></div>
+    <div class="score"><b>97%</b><small>RT 专业 · 115 评 · 观众 95%（10 万+）</small></div>
+    <div class="score"><b>97</b><small>Metacritic · 老片回溯分 · 样本极小</small></div>
+    <div class="score"><b>4 提 0 中</b><small>第 33 届奥斯卡 · 含最佳导演、最佳女配角</small></div>
+    <div class="score"><b>第 14</b><small>AFI 百年百大 · 另：视与听影评人第 31</small></div>
+  </div>
+  <div class="note">
+    <strong>口径说明（均经本次现查）：</strong>豆瓣 <strong>9.0</strong>（约 36.9 万条，聚合站口径），另源记 <strong>8.9／140,142 人</strong>、<strong>9.0／345,314 人</strong>，属随评价人数上行的浮动，按第 43 期口径<strong>取人数最多的最新快照并明写另源</strong>；IMDb <strong>8.5</strong>（各快照 768K／797K／799K 票，约 79.7–79.9 万）；烂番茄专业 <strong>97%（115 评）</strong>，观众 <strong>95%（10 万+）</strong>；Metacritic <strong>97</strong> 为<strong>老片回溯分、样本极小</strong>，按第 37 期口径<strong>不硬凑、只登记</strong>；Letterboxd 约 <strong>8.6／10（152.1 万评，聚合站换算口径）</strong>，同样只登记。榜单：AFI 百年百大 <strong>第 14</strong> ·《视与听》2022 影评人 <strong>第 31</strong>／导演 <strong>第 48</strong> · TSPDT 千部 <strong>第 24</strong> · IMDb 250 <strong>第 39</strong>（另源第 35）· 豆瓣 250 <strong>第 158</strong> · Letterboxd 500 <strong>第 122</strong>。<br>
+    <strong>选片线：</strong>豆瓣 9.0 <strong>过 8.8 线</strong>、IMDb 8.5 <strong>过 8.3 线</strong>，<strong>双线过线且都不压线</strong>，无需动用「或」字；<strong>正好避开第 44 与第 49 期「豆瓣 8.7 未过 · IMDb 8.3 恰好压线」被台账明令「勿再撞第三次」的数值形状</strong>，也避开第 42 期「只有豆瓣过」、第 44 期「只有 IMDb 过」、第 45 期「单线须换第三种写法」、第 47／49 期「单线干脆不写」。<strong>连续第 9 期不重摆评分框架</strong>；「结局已知」六格立满，<strong>继续不用、也不硬立第七种</strong>。<br>
+    <strong>节奏与线路：</strong>上期 122 分钟、2001 年、彩色当代都市轻喜剧、极轻极暖零门槛；本期 <strong>109 分钟、1960 年、黑白心理惊悚</strong>，<strong>年代一次回推 41 年、彩色→黑白、暖→冷、喜剧→惊悚，四项一次掉头</strong>，把第 49 期台账「下期宜换气质或加重，避免连续两期轻／暖／当代都市喜剧」一条兑现，并落在建议的「1930s–1970s」「悬疑／剧情」区间（109 分钟略短于建议的 120–150 中档，以换气质、换年代、换类型三条补足）。逐条核过并避开：第 49 期六框架（没拍真实的巴黎→真实巴黎长成它的样子／配乐比电影先存在／戛纳无配乐粗剪自反／善意必须匿名／同一张 Empire 榜补齐第 2 名／电影给现实地点上色）与第 48 期四切入（通心粉西部片贬称／艾伯特亲手补一星／学院零提名／版本四片长）；法国线（已 4 次）·热内导演线·2001 年线（第 49 期）；意大利线·西部片线·1966 年线·莱昂内·镖客三部曲（第 48 期）；韩国线·奉俊昊·真实刑案（第 47 期）；1940·卓别林·政治讽刺喜剧（第 46 期）；1999·沃卓斯基·赛博朋克（第 45 期）；英国·1962·里恩·一战·传记片（第 44 期）；日本线（34／40 连触）；二战犹太题材（已 2 次）；诺兰／斯皮尔伯格／泽米吉斯导演线。<strong>华语线 2026-12-02 解禁，今天 11-28 还有 4 天，《花样年华》仍留，钩子已预埋两次、本期不碰第三次</strong>；动画线 12 月中；歌舞片／默片／奇幻史诗各线虽已够间隔，但与本期气质不符。<br>
+    <strong>台账偏离说明：</strong>本期为<strong>池外新增</strong>（候选池无此片、无此年代与类型组合），池内条目一部未动，延续第 48–49 期「池外」走向。<strong>希区柯克导演线第 2 次</strong>（第 24 期《后窗》后<strong>隔 26 期</strong>），按台账对导演线第 2 次的要求<strong>换年代（1954→1960）、换色彩（彩色→黑白）、换子类型（密闭空间偷窥悬疑→心理惊悚）</strong>，并在下面显式切一刀：《后窗》是<strong>一个动不了的人主动去看</strong>，本片是<strong>看的人不知道自己正被安排</strong>——同样谈「看」，方向正相反。<strong>1960 年线首开 · 首部黑白心理惊悚 · 首部把「观看顺序」本身当材料的影片</strong>。另须自觉认领一件事：第 28 期《控方证人》同样以「请别说出结局」闻名，只隔 22 期，最容易混——所以下面用一整节做方向切割（那次是片尾一句恳求，这次是整套发行合同）。
+  </div>
+
+  <div class="redline">
+    <h2>剧透红线（不建在「后来怎么了」上，建在「有人替你把入场时间改了」上）</h2>
+    <p>先想一个问题：<strong>如果一部电影最怕的不是你知道答案，而是你从一半开始看——那它究竟在保护什么？</strong>本片最怕的不是任何一个可以被概括成一句话的结果，是<strong>影片的重心在哪一刻换手、谁在什么时候还留在画里</strong>。一旦有人先把这个「形状」告诉你，前半段就不再是跟着一个人往前走，而变成「等一件事发生」。所以这一期防的是<strong>结构提前到达</strong>，不是答案。</p>
+    <p><strong>显式切割：</strong>「结局已知」六种形状已立满（第 28 期求你别说／第 36 期历史早已剧透／第 40 期开场自己剧透自己／第 42 期答案公开且不是重点／第 43 期结果无悬念、伤的是倒计时／第 47 期答案在片外、上映时根本不存在），本期<strong>不硬立第七种</strong>。红线也不复用第 43 期「防倒计时」、第 44 期「防过程／防转折／防去向」、第 45 期「防设定揭晓的次序」、第 46 期「防摘录／防金句提前到达」、第 47 期「防答案提前进场」、第 48 期「防片名提前替你分好类」、第 49 期「防代读／防最后一镜」，改建为「<strong>防从中间进场／防叙事形状提前到达</strong>」型。与第 45 期再切一刀：那次问的是<strong>哪个概念先被告知</strong>，这次问的是<strong>叙事主体何时被换掉</strong>——是结构，不是概念。</p>
+    <ul>
+      <li><strong>第一雷（新增第三十二类剧透源：以「营销史／防剧透趣闻／影史冷知识」姿态出现的幕后科普文，本次实测）：</strong>本次检索首屏就有文章以「下面就要来给你剧透《惊魂记》了」起头，紧接着把两处结构上的意外逐条写出；它们打着「教你别剧透」的旗号，正文却先把谜底说光。<strong>与第 46 期第二十八类（语录／励志口播）、第 47 期第二十九类（案件告破新闻）、第 48 期第三十类（无剧透推荐文案）、第 49 期第三十一类（取景地打卡攻略）同族不同载体：这次是科普，且讽刺性最强——标题在防剧透，段落本身在剧透。</strong>按第 47 期首写、第 48 期固化的纪律：<strong>本卡片只登记这些文案的写法，不转述其中任何一句</strong>。</li>
+      <li><strong>第二雷（第八类中文百科／影视站「剧情简介」再犯，本次实测）：</strong>某华文百科的简介字段从携款潜逃一路写到人物最终去向与动机说明；某影视站的「剧情介绍」也把关键处的一个身影直接点了出来。<strong>凡带「剧情简介／影片介绍／角色介绍／影片评价／主题分析／幕后花絮」字样的页面一律不读</strong>；演职员表、片长、获奖记录、制作年表、上映与票房数据、摄影配乐的技术资料可读。同样<strong>只登记写法、不转述句子</strong>。</li>
+      <li><strong>第三雷（第九／二十一／十类叠加，且本片多一个「曲名即雷」）：</strong>「几分钟看完」解说、以「影史最著名段落／百大惊悚瞬间／逐帧拉片」为姿态的盘点长文（<strong>此处不点名任何一个段落</strong>）、把那段弦乐的俗称写进标题的音乐赏析、以及<strong>以「心理学／精神分析／人物解析」姿态出现的角色长文</strong>——最后一类最凶：本片讲人物就等于讲谜底。按第 48／49 期纪律，<strong>本卡片一个具体曲名都不写</strong>。还有一句得说给自己听：<strong>第 11 期「别查原著」的规矩，在这一期要扩写成「别查幕后」</strong>——原著小说与所有讲它怎么保密的史料，都写着它要保的东西。</li>
+      <li><strong>第四雷（检索词雷第 25 次，一名多译且其中一个译名自己就是雷）：</strong>大陆／台《惊魂记》· 港《触目惊心》· 新加坡《逆旅惊魂》· 另译《精神病患者》《精神病人》——<strong>有一个旧译名把类型判断提前写死在封面上</strong>，只登记、不展开。Psycho 同时是常见英语词，也是续集与衍生剧集的共用词，搜英文会撞到大量 franchise 条目与心理学词条，而 franchise 条目会正向剧透本片（第五类「翻拍／衍生简介」）。<strong>与第 47 期「片名被现实新闻征用」、第 48 期「一名六译＋三部曲串片」、第 49 期「一名多译＋同名音乐剧＋真实地点」显式切割：那三次是找错片、串错片或被不相干资料夹住，这次是译名本身先替你判了类型。</strong>认准 <strong>1960、希区柯克、安东尼·博金斯、109 分钟、黑白</strong>。</li>
+    </ul>
+    <p><strong>剧情梗概（安全区，只到官方公开前提）：</strong>凤凰城，一个周五的下午，一名女秘书替老板去银行存一笔四万美元的公款。她没有走进银行，而是开车出了城。出城时被熟人瞥见，第二天一早又被巡逻的警察盘问；她用旧车换了另一辆，继续往前开。入夜后下起大雨，视线差到没法再走，她把车停进路边一家看起来没什么客人的汽车旅馆。年轻的店主客气、有点拘谨，住在旅馆背后那栋老宅里；他没能请她上家里那张桌子，于是把晚餐端到下层的客厅，两人隔着一份简单的夜宵聊了几句——聊到住在这儿的人不多，也聊到各自被什么困在原地。她回房，把那笔钱放在一边，决定第二天早上原路开回去。<strong>到这儿为止，这都还只是一次再普通不过的投宿。</strong></p>
+    <div class="ver">我们停在这里。她后来有没有把钱还回去、那顿夜宵之后还发生了什么、旅馆里究竟住着几个人、谁在找她、找的人又遇到了什么、以及那栋老宅里到底有什么 —— 一个字不写。片尾字幕升起来之前，请什么都别搜；尤其别搜片名加「结局」「解析」「幕后」「原著」「精神分析」，也别去读任何以「带你了解这段影史趣闻」开头的长文。<strong>这条尤其说给我们自己听：下面这张卡片花了一整节讲它怎么防剧透，而「讲它怎么防剧透」恰恰是今天最容易剧透它的方式——所以我们只讲制度，不讲制度保护的是什么。</strong></div>
+  </div>
+
+  <div class="card">
+    <h2>剧情梗概 · 亮点所在</h2>
+    <ul>
+      <li><strong>把「准时」写进了放映合同。</strong>1960 年的影院是连续放映的：上午开门到深夜，正片、双片、短片、预告穿插着放，观众习惯随时进出。希区柯克要求<strong>开场之后任何人不得入场</strong>，而且不是说说而已——这一条被写进放映合同强制影院执行；他还给院线寄了两份各二十多页的宣传手册，亲自解释为什么非如此不可。院线老板顾虑观众不买账、有几家甚至想干脆不排这部片，他在受访时把话说得很直：<strong>「这就像是在和观众做游戏，一次智力的较量。倘若允许观众在影片放到一半时再进场，编剧和我苦心经营的种种惊喜，那就全都毁了。」</strong>（下一节展开。）</li>
+      <li><strong>用拍电视剧的班底，拍了一部影史教科书。</strong>紧接在彩色宽银幕的《西北偏北》（1959）之后，他忽然掉头用约 <strong>80–81 万美元</strong>、<strong>黑白</strong>、以及自己电视节目《希区柯克剧场》的班底来拍这部片，当时被视作「背离前作」。低预算逼出来的镜头组织、剪辑节奏与克制，后来成了全世界电影课反复拆的东西。<strong>便宜不是它的缺点，是它的形式。</strong></li>
+      <li><strong>整部片只准用一种音色。</strong>伯纳德·赫尔曼写的配乐<strong>只用弦乐</strong>——没有管乐、没有打击乐，一整片尖锐、迟迟不肯解决的和声压着画面走；据制作资料，导演最初对配乐另有设想。这套声音后来成了影史被模仿、被引用最多的声音之一，而它做的事其实极省：<strong>不告诉你该怕什么，只让你一直没法松下来</strong>。按老规矩，<strong>本卡片一个具体曲名都不写</strong>。</li>
+      <li><strong>三部预告片里没有一帧正片。</strong>它们全部另拍，共花费约 <strong>9600 美元</strong>：第一部只讲放映规则，第二部只讲「别把结尾说出去」，第三部由希区柯克本人出镜，带着观众把那处场地走一遍，一路讲解、一路不说破。1960 年肯把宣传预算花在「不给你看正片」上，是相当反直觉的一步。</li>
+      <li><strong>海报把「保密」直接做成卖点。</strong>当年的平面广告与海报上印着「<strong>不要透露结尾。这是我们仅有的东西</strong>」「<strong>如果你不能保守秘密，请你看完后远离人群</strong>」；影院门口立着希区柯克本人约五英尺高的纸质人像，配他亲自录的广播，上映后还请了人维持现场秩序。为把控制权握在手里，他<strong>拒绝把剧本给派拉蒙的执行制片人看</strong>，并自降片酬、改拿后期分成。<strong>一部片把「别剧透」从请求升级成了一整套发行工程。</strong></li>
+      <li><strong>黑白是选择，不只是预算的账。</strong>1960 年彩色早已普及，选择黑白除了省钱，也有制作资料常提的另一层考虑：<strong>不想把某些东西拍得过于直白</strong>。各源表述不一，这里只登记、不当定论。你能明显感到它在用明暗、门框、百叶窗的条影替观众划边界——<strong>看得见多少，是被安排过的</strong>。</li>
+      <li><strong>一部被当作 B 级片待遇的作品，换来 4 项奥斯卡提名和一个类型。</strong>第 <strong>33 届奥斯卡 4 提 0 中</strong>（最佳导演、最佳女配角、黑白摄影、黑白艺术指导），珍妮特·利另获第 <strong>18 届金球奖最佳女配角</strong>。上映时评价褒贬不一，票房成功后被重新估量，后来进了 <strong>AFI 百年百大第 14</strong>、《视与听》2022 影评人榜第 31、TSPDT 千部第 24。今天提到「现代恐怖片从哪儿开始」，多半还是要回到这一部。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>为什么值得一看 · 它把「别剧透」从一句请求写成了一份合同</h2>
+    <p>先想一个问题：<strong>如果导演买断了原著、锁上了放映厅的门、连预告片都不肯用正片素材——他到底是在防你，还是在替你保住一种观看方式？</strong></p>
+    <p>这套动作里最容易被漏掉的是<strong>「从一半进场」</strong>这件事本身。希区柯克当年担心的，不是有人把一句话传出去，而是观众习惯了随意进出：一旦从中间坐下来，前面铺好的东西全作废，后面剩下的也不再是同一部片。于是他不指望观众的善意，改靠制度——买断并尽量收走布洛克的原著小说、把入场规则写进合同、两份二十多页的《操作手册》、另拍的预告、拒给剧本、自降片酬换控制权、门口的人形立牌与广播。他在给影院的公报里写：<strong>「这是一部非同寻常的电影，理应享有这充满神秘感的不凡地位。」</strong></p>
+    <table>
+      <tr><th>这一层</th><th>1960 年之前／当年</th><th>后来剩下什么</th></tr>
+      <tr><td>影院惯例</td><td>连续放映、双片与短片穿插，观众随时进出</td><td>被一份放映合同打断了一次</td></tr>
+      <tr><td>导演加的锁</td><td>买断原著、开场后不得入场、另拍预告、拒给剧本</td><td>「请从头看」成了默认的观影礼貌</td></tr>
+      <tr><td>今天我们说的「别剧透」</td><td>当年是海报上的一行字与门口的立牌</td><td>还是他 1960 年那套语汇，只是搬到了网上</td></tr>
+    </table>
+    <p>所以这一部值得一看的理由，和它吓不吓人其实是两件事：<strong>它第一次把「观看顺序」变成了作品的一部分</strong>。你今天在流媒体点开一部片被提醒「请从头看」、被朋友告诫「先别搜」，这套默认的规矩有一大半是 1960 年那几张广告和一份放映合同留下来的。看懂这件事，再回头看片里那些门框、条影和被安排好的视线，会发现它不只在讲一个故事，<strong>它在管理你什么时候被允许看见什么</strong>。</p>
+    <p><strong>与第 28 期《控方证人》显式切割：</strong>那次是<strong>片尾一句恳求</strong>（「请你别告诉任何人」），求的是观众的善意，而且求的是「看完之后别说出去」；这次是<strong>一整套发行制度</strong>，不指望善意，管的是<strong>「还没看之前、以及从哪儿开始看」</strong>。一个管出口，一个管入口。与第 46 期「防摘录／防金句提前到达」也切一刀：那次防的是<strong>内容被摘走</strong>（一句被单独传了 86 年的话）；这次防的是<strong>入场的时间点</strong>——不是泄露一句话，是「从一半开始看」这个动作本身就够了。</p>
+    <p><strong>与第 42 期《公民凯恩》「不是一上映就被公认为最伟大」、第 44 期「分数是后来追认上去的」再切一刀：</strong>那两次的翻盘靠的是影评人、重映与几十年时间；<strong>本片的重估只用了几个月，推手是票房和门口排队的人，不是评论界、也不是重映</strong>。当年英国《视与听》那句评断最典型——一边说它是「<strong>一件很小的作品</strong>」，一边又承认「<strong>其张力、惊奇、炫技与控制的优点却都是顶级的</strong>」；今天烂番茄专业 97%。两句话并排放置，<strong>不裁决、不打折</strong>。</p>
+    <div class="quote">「这就像是在和观众做游戏，一次智力的较量。倘若允许观众在影片放到一半时再进场，编剧和我苦心经营的种种惊喜，那就全都毁了。」<em>——希区柯克 1960 年受访，谈「开场后不得入场」的放映规则；本期只作片外注脚，不指涉任何具体情节</em></div>
+  </div>
+
+  <div class="card">
+    <h2>只准用一种音色 · 和第 38、49 期都不一样的配乐</h2>
+    <p>这一期还有一条耐人寻味的材料，不在榜单上，在编制里。<strong>如果整部片的音乐只准由同一个乐器族发出，连一声鼓都不给——那紧张感到底是从哪儿来的？</strong></p>
+    <p>赫尔曼给的全是弦乐：高音区持续的、不解决的和声，短促而重复的弓法，没有铜管替你壮胆，也没有低音鼓替你标出「该怕了」的那个点。它不渲染情绪，只是<strong>不让你有落下来的地方</strong>。据制作资料，导演对配乐原本另有设想，成品由作曲家坚持下来；这套声音后来被影视、广告、短视频引用了六十多年，多到很多人没看过正片也认得。<strong>一句登记，不立框架。</strong></p>
+    <p><strong>与第 38 期《放牛班的春天》「旋律的逃逸」、第 49 期《天使爱美丽》「配乐比电影先存在」显式切割：</strong>那两次讲的是<strong>配乐与电影的先后与离合</strong>——一次是配乐从电影里跑出去、独立活成一张唱片，一次是配乐早在开机前就躺在唱片里、是电影走进了音乐。本期两样都不是：这里讲的是<strong>配乐被关进一间只有弦乐的屋子</strong>，不是它去了哪里、也不是它什么时候到，而是<strong>它被允许用什么发声</strong>。与第 29 期《盗梦空间》「配乐自反」也切一刀：那次把片中一支曲放慢做母题，讲的是语义；这次讲的是<strong>编制</strong>。</p>
+    <p>也正因为它这么克制，<strong>「曲名即雷」在这部片上是实打实的</strong>：那段音乐最常见的俗称，往往连它出现在哪儿一起写进标题。所以这一节从头到尾不写任何曲名——不是卖关子，是第 48／49 期已经立过的纪律，这一部尤其适用。</p>
+  </div>
+
+  <div class="card">
+    <h2>不圆场的三笔账 · 批评、榜单与版本</h2>
+    <p><strong>其一，把批评也摆上来。</strong>最集中的三条：<strong>当年嫌它「小」</strong>——首映评价褒贬不一，有评论嫌它通俗、低预算、不像希区柯克，《视与听》1960 年那句「a very minor work」最常被引用，而同一篇紧接着承认它的张力、惊奇、炫技与控制都是顶级的；<strong>今天嫌它「把人当装置」</strong>——以当代眼光看，把心理／精神层面的异常当作惊吓来源，以及由此牵出的污名化讨论，是它最常被质疑的一处，另一边的读法则认为影片的凝视本身也在被审视；<strong>还有一层是它自己也没躲过的</strong>——一部把「保密」做成制度的片，后来被续集、1998 年格斯·范·桑特的逐镜彩色重拍与衍生剧集反复搬出来。<strong>不打折、也不反驳，并排放置。</strong>与第 45 期《黑客帝国》「讲系统收编反抗的片自己成了跨媒体宇宙」显式切割：那次是<strong>主题被收编</strong>（内容自反），这次是<strong>保密机制被复制</strong>（发行自反）——当年锁在门里的东西，后来成了可以反复出售的 IP。按第 20 期纪律，<strong>凡含人物最终去向、收场动作或把后段关系当既成事实来评价的原文，本期整句略去未写</strong>。</p>
+    <p><strong>其二，一张只登记、不圆场的清单：</strong>豆瓣 8.9–9.0（各快照 14 万／34.5 万／36.9 万人）· IMDb 8.5（约 79.7–79.9 万票）· RT 97%（115 评）／观众 95%（10 万+）· MC 97（回溯分、样本极小）· Letterboxd 约 8.6／10（152.1 万评，聚合站口径）· 第 33 届奥斯卡 4 提 0 中 · 第 18 届金球最佳女配角 · AFI 百年百大第 14 ·《视与听》2022 影评人第 31／导演第 48 · TSPDT 第 24 · IMDb 250 第 39（另源 35）· 豆瓣 250 第 158 · 预算约 80–81 万美元／全球票房 1500 万与 5000 万两口径（租金与票房、含不含重映口径差异极大，按第 44 期口径<strong>并列不挑一个</strong>）· 109／110 分钟。<strong>别把其中任何一个数字当权威</strong>——它们量的是不同的东西；而这一部恰好连「它算不算艺术」都不肯只给一个答案：1960 年被叫「很小的作品」，今天被放进 AFI 百大第 14。</p>
+    <p><strong>其三，版本提醒：第 26 次判定＝无陷阱。</strong>通行片长 <strong>109 分钟</strong>，部分资料库记 110 分钟，属四舍五入口径差；<strong>没有需要避开的删减版、加长版或另拍结局</strong>，这一点与第 30 期《无间道》「一部片两个结尾」、第 44 期《阿拉伯的劳伦斯》「最长版≠导演定本」、第 48 期「补得更全，未必更对」都不同。观看条件也因此很干净：<strong>黑白、109 分钟、1960 年、不需要任何希区柯克知识</strong>；本片含突发惊吓场面，观看前请留意。唯一真正的门槛不是知识，是<strong>必须从第一分钟开始，中途别进场、别快进、别跳</strong>——这一条恰好就是这部片自己当年写在合同里的那一条。</p>
+  </div>
+
+  <div class="ask">
+    <small>观前留一个问题给你</small>
+    <p>如果一部电影把「你必须从头看」写进合同，它保护的到底是情节，还是<strong>一种被安排好的、不许你抢先的观看方式</strong>？换个角度想：今天我们说「别剧透」时，多半是在保护一个答案；可 1960 年那份合同保护的，似乎更像是<strong>一整段顺序</strong>。这两样东西，是同一件事吗？</p>
+    <p>还有一句更贴这一期：上面这张卡片花了一整节讲它怎么防剧透——<strong>而「讲它怎么防剧透」恰恰是今天最容易剧透它的方式</strong>。你觉得这种自相矛盾，是它六十多年后还在被讨论的原因，还是它已经变成一部「只能被谈论、很难再被第一次看见」的作品？<strong>唯一要替自己守住的，是别在开看之前搜「结局」「解析」「幕后」「原著」「精神分析」，也别去读任何以「下面就要来给你剧透」开头的趣闻长文。</strong>看完之后，倒很欢迎你把那套发行手册找来读一遍——那时候它才是有趣的史料，而不是提前到达的答案。</p>
+  </div>
+
+  <div class="foot">
+    每日经典电影推荐 · 第 50 期 · 2026-11-28<br>
+    评分与事实均为本次现查，随快照浮动；卡片严格遵守不剧透口径，红线内所列内容一律未展开。<br>
+    本片为黑白心理惊悚、含突发惊吓场面；建议原速、从头、不中途进场。
+  </div>
+
+</div>
+</body>
+</html>
